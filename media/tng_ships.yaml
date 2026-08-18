@@ -7,14 +7,14 @@
 # author changed applied on top - not the mod's copy of the entry, which
 # carries its year-old value for every field it never meant to touch.
 # VERSION Cosmos-TNG-Mod v0.2.3
-# artfilepath baked at build time: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships
+# artfileroot prefix baked at build time (exe-relative, v1.3.6+): data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships
 #
 '#ship-list':
 - key: tng_crd_damar
   name: Damar
   origin: Cardassian
   side: Cardassian
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Damar
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Damar
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 120.0
@@ -156,12 +156,11 @@
       range: 1470
       arcwidth: 90
       barrel_angle: 180
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_crd_galor
   name: Galor
   origin: Cardassian
   side: Cardassian
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Galor
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Galor
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 100.0
@@ -269,12 +268,11 @@
       range: 1680
       arcwidth: 90
       barrel_angle: 30
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_crd_heideki
   name: Heideki
   origin: Cardassian
   side: Cardassian
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Heideki
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Heideki
   meshscale: 0.4
   radarscale: 0.3
   exclusionradius: 25.0
@@ -327,12 +325,11 @@
       range: 1260
       arcwidth: 90
       barrel_angle: 15
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_crd_keldon
   name: Keldon
   side: Cardassian
   origin: Cardassian
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Keldon
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Keldon
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 100.0
@@ -463,12 +460,11 @@
       range: 1470
       arcwidth: 60
       barrel_angle: 30
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_freighter
   name: Cargo
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/GNR_Freighter
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/GNR_Freighter
   meshscale: 0.255
   radarscale: 0.819
   exclusionradius: 90.0
@@ -498,12 +494,11 @@
   jump_energy_cost: 1
   roles: ship,civilian,cargo
   hull_port_sets: {}
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_kaz_fighter
   name: Fighter
   origin: Kazon
   side: Kazon
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Raider
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Raider
   meshscale: 0.01
   radarscale: 0.3
   exclusionradius: 10.0
@@ -554,12 +549,11 @@
       range: 800
       arcwidth: 144
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_kaz_cruiser
   name: Cruiser
   origin: Kazon
   side: Kazon
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Cruiser
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Cruiser
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 90.0
@@ -656,12 +650,11 @@
       range: 1470
       arcwidth: 60
       barrel_angle: 90
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_kaz_raider
   name: Raider
   origin: Kazon
   side: Kazon
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Raider
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Raider
   meshscale: 0.1
   radarscale: 0.75
   exclusionradius: 50.0
@@ -714,12 +707,11 @@
       range: 1400
       arcwidth: 90
       barrel_angle: 60
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_kaz_carrier
   name: Carrier
   origin: Kazon
   side: Kazon
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Carrier
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Carrier
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 180.0
@@ -839,12 +831,11 @@
       arcwidth: 90
       barrel_angle: 90
   baycount: 8
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_orn_corsair
   name: Corsair Carrier
   origin: Orion
   side: Orion
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Corsair
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Corsair
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 110.0
@@ -940,12 +931,11 @@
       range: 1400
       arcwidth: 72
       barrel_angle: 168
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_orn_interceptor
   name: Interceptor
   origin: Orion
   side: Orion
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Interceptor
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Interceptor
   meshscale: 0.1
   radarscale: 0.75
   exclusionradius: 25.0
@@ -996,12 +986,11 @@
       range: 1200
       arcwidth: 90
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_orn_corvette
   name: Corvette Frigate
   origin: Orion
   side: Orion
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Corvette
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Corvette
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 50.0
@@ -1041,12 +1030,11 @@
       range: 1470
       arcwidth: 144
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_orn_brigand
   name: Brigand Cruiser
   origin: Orion
   side: Orion
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Brigand
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Brigand
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 125.0
@@ -1163,12 +1151,11 @@
       range: 1680
       arcwidth: 72
       barrel_angle: 192
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_nova
   name: NoVa Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Nova
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Nova
   meshscale: 0.1401
   radarscale: 0.675
   exclusionradius: 50.0
@@ -1198,12 +1185,11 @@
   jump_energy_cost: 1.5
   roles: ship,civilian,science
   hull_port_sets: {}
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_jem_attack_ship
   name: Attack Ship
   origin: Dominion
   side: Dominion
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/JEM_Attack_Ship
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/JEM_Attack_Ship
   meshscale: 0.1
   radarscale: 0.75
   exclusionradius: 25.0
@@ -1256,12 +1242,11 @@
       range: 1400
       arcwidth: 108
       barrel_angle: 320
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_brn_chel_grett
   name: Chel Grett
   origin: Breen
   side: Breen
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/BRN_Chel_Grett
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/BRN_Chel_Grett
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 70.0
@@ -1347,12 +1332,11 @@
       range: 1400
       arcwidth: 108
       barrel_angle: 180
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_jem_battlecruiser
   name: Battlecruiser
   origin: Dominion
   side: Dominion
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/JEM_Battlecruiser
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/JEM_Battlecruiser
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 130.0
@@ -1460,12 +1444,11 @@
       range: 1400
       arcwidth: 60
       barrel_angle: 150
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_crd_terok_nor
   name: Terok Nor
   origin: Cardassian
   side: Cardassian
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Terok_Nor
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Terok_Nor
   meshscale: 0.4
   radarscale: 0.5
   internalmapscale: 1.0
@@ -1612,12 +1595,11 @@
       range: 1680
       arcwidth: 90
       barrel_angle: 75
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_station
   name: Civilian Starbase
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_GenStation
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_GenStation
   meshscale: 0.266668
   radarscale: 0.66667
   internalmapscale: 1.0
@@ -1629,12 +1611,11 @@
   - 680
   hullpoints: 100
   roles: station
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_starbase
   name: Command Starbase
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_CommandBase
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_CommandBase
   meshscale: 0.4
   radarscale: 1.0
   internalmapscale: 1.0
@@ -1780,12 +1761,11 @@
       range: 1470
       arcwidth: 90
       barrel_angle: 90
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_ds9
   name: Deep Space 9
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Terok_Nor
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Terok_Nor
   meshscale: 0.4
   radarscale: 1.0
   internalmapscale: 1.0
@@ -1997,7 +1977,6 @@
       range: 1680
       arcwidth: 90
       barrel_angle: 75
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_kaz_base
   name: Kazon Base
   origin: Kazon
@@ -2027,12 +2006,11 @@
       range: 1000
       arcwidth: 360
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_comms_base
   name: Science Starbase
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_ScienceBase
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_ScienceBase
   meshscale: 0.4
   radarscale: 1.0
   internalmapscale: 1.0
@@ -2044,7 +2022,6 @@
   - 680
   hullpoints: 100
   roles: station
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_jem_base
   name: Dominion Base
   origin: Dominion
@@ -2085,7 +2062,6 @@
       range: 1000
       arcwidth: 360
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_rmn_base
   name: Romulan Base
   origin: Romulan
@@ -2116,12 +2092,11 @@
       range: 1500
       arcwidth: 360
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_rmn_scimitar
   name: Scimitar
   origin: Romulan
   side: Romulan
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_Scimitar
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_Scimitar
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 180.0
@@ -2340,12 +2315,11 @@
       range: 1540
       arcwidth: 90
       barrel_angle: 120
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_rmn_tvaro
   name: T'Varo
   origin: Romulan
   side: Romulan
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_TVaro
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_TVaro
   meshscale: 0.1
   radarscale: 0.75
   exclusionradius: 50.0
@@ -2432,12 +2406,11 @@
       range: 1400
       arcwidth: 90
       barrel_angle: 180
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_rmn_mogai
   name: Mogai
   origin: Romulan
   side: Romulan
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_Mogai
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_Mogai
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 120.0
@@ -2612,12 +2585,11 @@
       range: 1400
       arcwidth: 90
       barrel_angle: 180
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_rmn_dderidex
   name: D'Deridex
   origin: Romulan
   side: Romulan
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_DDeridex
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_DDeridex
   meshscale: 0.839
   radarscale: 1.0
   exclusionradius: 270.0
@@ -2759,12 +2731,11 @@
       range: 1400
       arcwidth: 90
       barrel_angle: 150
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_olympic
   name: Olympic Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Olympic
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Olympic
   meshscale: 0.2158
   radarscale: 0.77
   exclusionradius: 75.0
@@ -2794,12 +2765,11 @@
   jump_energy_cost: 2
   roles: ship, civilian,transport
   hull_port_sets: {}
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_ambassador
   name: Ambassador Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Ambassador
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Ambassador
   meshscale: 0.296400010585785
   radarscale: 0.87
   exclusionradius: 105.0
@@ -2961,12 +2931,11 @@
       arcwidth: 90
       barrel_angle: 150
   baycount: 2
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_galaxy
   name: Galaxy Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Galaxy
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Galaxy
   meshscale: 0.331099987030029
   radarscale: 0.914
   exclusionradius: 130.0
@@ -3172,12 +3141,11 @@
       arcwidth: 90
       barrel_angle: 165
   baycount: 2
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_danube_rollbar
   name: Danube Bomber
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Danube_Bomber
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Danube_Bomber
   meshscale: 0.04
   radarscale: 0.25
   exclusionradius: 25.0
@@ -3217,12 +3185,11 @@
       range: 1260
       arcwidth: 144
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_akira
   name: Akira Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Akira
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Akira
   meshscale: 0.266200006008148
   radarscale: 0.833
   exclusionradius: 95.0
@@ -3384,12 +3351,11 @@
       range: 1400
       arcwidth: 90
       barrel_angle: 150
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_defiant
   name: Defiant Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Defiant
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Defiant
   meshscale: 0.1
   radarscale: 0.625
   exclusionradius: 50.0
@@ -3507,12 +3473,11 @@
       arcwidth: 90
       barrel_angle: 180
   baycount: 1
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_sovereign
   name: Sovereign Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Sovereign
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Sovereign
   meshscale: 0.342500001192093
   radarscale: 0.928
   exclusionradius: 140.0
@@ -3718,12 +3683,11 @@
       range: 1680
       arcwidth: 90
       barrel_angle: 165
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_intrepid
   name: Intrepid Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Intrepid
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Intrepid
   meshscale: 0.226699993014336
   radarscale: 0.783
   exclusionradius: 75.0
@@ -3840,12 +3804,11 @@
       range: 1400
       arcwidth: 90
       barrel_angle: 210
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_peregrine
   name: Peregrine
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Peregrine
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Peregrine
   meshscale: 0.04
   radarscale: 0.25
   exclusionradius: 25.0
@@ -3896,12 +3859,11 @@
       range: 1470
       arcwidth: 144
       barrel_angle: 5
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_luna
   name: Luna Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Luna
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Luna
   meshscale: 0.270999997854233
   radarscale: 0.839
   exclusionradius: 95.0
@@ -4106,12 +4068,11 @@
       range: 1680
       arcwidth: 90
       barrel_angle: 90
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_galaxy_x
   name: Galaxy Dreadnought Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_GalaxyX
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_GalaxyX
   meshscale: 0.331099987030029
   radarscale: 0.914
   exclusionradius: 130.0
@@ -4361,12 +4322,11 @@
       range: 1540
       arcwidth: 150
       barrel_angle: 90
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_constellation
   name: Constellation Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Constellation
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Constellation
   meshscale: 0.210999995470047
   radarscale: 0.764
   exclusionradius: 65.0
@@ -4483,12 +4443,11 @@
       range: 1260
       arcwidth: 90
       barrel_angle: 45
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_saber
   name: Saber Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Saber
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Saber
   meshscale: 0.165700003504753
   radarscale: 0.707
   exclusionradius: 50.0
@@ -4605,12 +4564,11 @@
       range: 1470
       arcwidth: 90
       barrel_angle: 90
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_excelsior_refit
   name: Excelsior Refit Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_ExcelsiorRefit
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_ExcelsiorRefit
   meshscale: 0.276800006628036
   radarscale: 0.846
   exclusionradius: 95.0
@@ -4727,12 +4685,11 @@
       range: 1400
       arcwidth: 90
       barrel_angle: 150
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_nebula
   name: Nebula Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Nebula
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Nebula
   meshscale: 0.266200006008148
   radarscale: 0.833
   exclusionradius: 90.0
@@ -4915,12 +4872,11 @@
       range: 1470
       arcwidth: 90
       barrel_angle: 150
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_california
   name: California Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_California
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_California
   meshscale: 0.299299985170364
   radarscale: 0.874
   exclusionradius: 107.0
@@ -5038,12 +4994,11 @@
       arcwidth: 90
       barrel_angle: 180
   baycount: 2
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_danube
   name: Danube
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Danube
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Danube
   meshscale: 0.04
   radarscale: 0.25
   exclusionradius: 25.0
@@ -5085,12 +5040,11 @@
       range: 1470
       arcwidth: 144
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_fed_centaur
   name: Centaur Class
   origin: Federation
   side: Federation
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Centaur
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Centaur
   meshscale: 0.170200005173683
   radarscale: 0.713
   exclusionradius: 50.0
@@ -5185,12 +5139,11 @@
       range: 1680
       arcwidth: 90
       barrel_angle: 90
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_klg_vorcha
   name: Vor'Cha
   origin: Klingon
   side: Klingon
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_VorCha
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_VorCha
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 145.0
@@ -5296,12 +5249,11 @@
       range: 1470
       arcwidth: 90
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_klg_brel
   name: B'Rel
   origin: Klingon
   side: Klingon
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_BRel
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_BRel
   meshscale: 0.1
   radarscale: 0.75
   exclusionradius: 25.0
@@ -5374,12 +5326,11 @@
       range: 1470
       arcwidth: 90
       barrel_angle: 0
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_klg_ktinga
   name: K'Tinga
   origin: Klingon
   side: Klingon
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_KTinga
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_KTinga
   meshscale: 0.1333
   radarscale: 0.667
   exclusionradius: 90.0
@@ -5474,12 +5425,11 @@
       range: 1400
       arcwidth: 90
       barrel_angle: 330
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships
 - key: tng_klg_neghvar
   name: Negh'Var
   origin: Klingon
   side: Klingon
-  artfileroot: ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_NeghVar
+  artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_NeghVar
   meshscale: 0.4
   radarscale: 1.0
   exclusionradius: 140.0
@@ -5641,4 +5591,3 @@
       range: 1680
       arcwidth: 90
       barrel_angle: 60
-  artfilepath: data/missions/Cosmos-TNG-Mod/media/ships

@@ -1,7 +1,6 @@
 {
     "mod": "Cosmos-TNG-Mod",
     "version": "v0.2.3",
-    "artfilepath": "../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships",
     "interiors": {
         "Breen": [
             "tng_brn_chel_grett.grid"

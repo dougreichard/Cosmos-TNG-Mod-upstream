@@ -49,10 +49,9 @@ import yaml                                                     # noqa: E402
 #
 # The pack unpacks to `__lib__/media/{owner}.{repo}.media.{version}/`, and every part of
 # that is known at BUILD time - owner defaults to `artemis-sbs` in `sbs.pyz lib`, repo is
-# this folder, version is below. So `artfilepath` is baked here rather than patched at
-# runtime, which means a release built by CI carries the right path already and no mod has
-# to write a file while the game is running. The add-on keeps a self-heal check for the case
-# where the two disagree (someone re-versioned by hand, or unpacked under another name).
+# this folder, version is below. So the ART PATH is baked into `artfileroot` here rather
+# than patched at runtime, which means a release built by CI carries the right path already
+# and no mod has to write a file while the game is running.
 OWNER = "artemis-sbs"                              # `sbs.pyz lib -u` default
 REPO = os.path.basename(HERE)
 
@@ -63,23 +62,21 @@ def mod_version():
 
 
 def art_path(version):
-    """Where the art is, relative to DATA/GRAPHICS - which is what artfileroot resolves
-    against, and the only spelling the engine opens.
+    """Where the art is, relative to the EXE FOLDER - which is what artfileroot resolves
+    against as of engine v1.3.6.
 
-    MEASURED on engine 1.3.6 with one copy of the art per candidate, so the filesystem
-    could attribute the answer rather than saying "one of these three worked":
+    THE RULE CHANGED IN v1.3.6 AND THE OLD NOTE HERE IS RETIRED. This used to bake a
+    graphics-relative path (`../missions/<pack>/ships/X`) on the strength of a measurement
+    taken before the change, which recorded exe-relative as "not opened, then assert".
+    That is no longer how the engine resolves it. Confirmed by Doug against the current
+    build; do not re-derive it from the old comment, which is why the comment is gone
+    rather than merely corrected.
 
-        ../missions/<pack>/ships/X   graphics-relative -> OPENED (mesh and 1024 bitmap)
-        data/missions/<pack>/ships/X exe-relative      -> not opened, then assert
-        missions/<pack>/ships/X      data-relative     -> not opened, then assert
-        X                            bare              -> assert
-
-    This replaced an exe-relative path that was written into a separate `artfilepath`
-    field. That field is gone from the engine's own data, and artfileroot is a path now -
-    the stock shipData.yaml reads `ships/<name>` for all 184 entries, which is the same
-    rule seen from inside the graphics folder rather than outside it.
+    `artfilepath` is OBSOLETE and is not written anywhere any more - not into the manifest
+    here, and not patched into entries at runtime by tng_setup. artfileroot is the whole
+    path on its own.
     """
-    return f"../missions/__lib__/media/{OWNER}.{REPO}.media.{version}/ships"
+    return f"data/missions/__lib__/media/{OWNER}.{REPO}.media.{version}/ships"
 
 
 ZIP = os.path.join(MISSIONS, "Cosmos-TNG-Mod_v0-2-3.zip")
@@ -602,7 +599,6 @@ def build_manifest(entries, report):
         # the pack it loaded from, which is how a half-updated install gets caught.
         "mod": REPO,
         "version": mod_version(),
-        "artfilepath": art_path(mod_version()),
         "interiors": {f: sorted(v) for f, v in sorted(interiors.items())},
         "fleets": {f: f"tng_{f.lower()}_fleets.yaml" for f in sorted(LADDERS)},
         # Breen hulls are Dominion assets; they load with that faction rather than
@@ -771,9 +767,9 @@ def main():
     # .yaml then .json itself, so the format is the mod's choice - and YAML has real
     # comments, which JSON only fakes with the `//` lines every reader then has to strip.
     #
-    # NOTE `artfilepath` is NOT written here. It is the folder the art lives in, relative to
-    # the EXE, and where the pack unpacks depends on the install - so the add-on patches it
-    # in at load time. See tng_setup.py.
+    # `artfilepath` IS NOT WRITTEN ANYWHERE. The field is obsolete as of engine v1.3.6 -
+    # artfileroot carries the whole path on its own, resolved against the exe folder - so it
+    # is stripped from every imported entry below and no longer patched in at load time.
     version = mod_version()
     numeric_fixed = 0
     for entry in entries:

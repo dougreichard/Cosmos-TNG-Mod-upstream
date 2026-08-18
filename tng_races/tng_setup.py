@@ -54,63 +54,17 @@ def tng_safe_status(text):
     return text if len(text) <= 300 else text[:297] + "..."
 
 
-def tng_resolve_art_path(ships_file):
-    """Point every entry's `artfilepath` at wherever this pack actually unpacked.
-
-    `artfilepath` is the FOLDER the art lives in and `artfileroot` stays the file's base
-    name - they work together, and the path is relative to the EXE folder, exactly as the
-    engine team's own example does it:
-
-        "artfileroot": "tsn_light_cr",
-        "artfilepath": "data/missions/BeamArcTest/extraShipGraphicData"
-
-    IT CANNOT BE BAKED AT BUILD TIME. The pack unpacks to
-    `data/missions/__lib__/media/<owner>.<repo>.media.<version>/`, so the path carries the
-    version and the install layout - neither of which the author knows when writing the
-    file. And the ENGINE reads it off disk, so patching the entries in memory would not
-    reach it: the file itself has to be right before `add_extra_ship_data` opens it.
-
-    Writing here is legitimate where writing into the mission was not. The unpacked pack is
-    already a generated artifact under `data/missions/__lib__/`, rebuilt by `sbs.pyz lib`
-    whenever the zip changes. Nothing in the game install is touched.
-
-    Rewrites only when the value is actually wrong, so a normal run touches no files.
-    """
-    import os
-    from sbs_utils import fs
-
-    art_dir = os.path.join(os.path.dirname(ships_file), "ships")
-    if not os.path.isdir(art_dir):
-        return "no ships/ folder in the pack"
-    try:
-        want = os.path.relpath(art_dir, fs.exe_dir).replace("\\", "/")
-    except ValueError:                      # a different drive from the exe
-        want = art_dir.replace("\\", "/")
-
-    try:
-        from sbs_utils import yaml
-        with open(ships_file, encoding="utf-8") as f:
-            text = f.read()
-        entries = (yaml.safe_load(text) or {}).get("#ship-list") or []
-        if entries and all(e.get("artfilepath") == want for e in entries):
-            return want + " (already correct)"
-        for e in entries:
-            e["artfilepath"] = want
-        head = "".join(l for l in text.splitlines(True)
-                       if l.lstrip().startswith("#") or not l.strip())
-        tmp = ships_file + ".tmp"
-        with open(tmp, "w", encoding="utf-8") as f:
-            f.write(head)
-            yaml.safe_dump({"#ship-list": entries}, f, sort_keys=False,
-                           default_flow_style=False, allow_unicode=False,
-                           width=100000)  # width=100000 = NEVER WRAP. A wrapped plain scalar stops round-tripping the
-                           # moment the value holds a `:` or `,`, which ship long_desc
-                           # text routinely does - and the engine, not this script, is
-                           # where that surfaces.
-        os.replace(tmp, ships_file)         # atomic on Windows and POSIX
-        return want + " (patched)"
-    except Exception as e:
-        return tng_safe_status("artfilepath NOT set: " + str(e))
+# `tng_resolve_art_path` LIVED HERE and is gone. It rewrote every entry's `artfilepath`
+# inside the unpacked pack at load time, because that field held the art FOLDER relative to
+# the exe and only the running game knew where the pack had unpacked.
+#
+# ENGINE v1.3.6 RETIRED `artfilepath`: `artfileroot` now carries the whole path on its own,
+# still exe-relative, and it is baked at build time by `_build_from_zip.py` (art_path()).
+# So there is nothing left to patch, and the mod no longer writes a file during startup at
+# all - which also removes the only reason this add-on ever touched the disk.
+#
+# If ship art ever goes missing, the suspect is the baked prefix in media/tng_ships.yaml,
+# not this.
 
 
 def tng_declare_ships(ships_file):
@@ -186,8 +140,9 @@ def tng_declare_ships(ships_file):
             except OSError:
                 pass
 
-    # Point the entries at where the art really is BEFORE the engine opens the file.
-    art = tng_resolve_art_path(ships_file)
+    # No art-path patching here any more: artfileroot is baked exe-relative at build time
+    # and artfilepath is obsolete as of engine v1.3.6. See the note above.
+    art = "baked"
 
     told_engine = None
     try:
