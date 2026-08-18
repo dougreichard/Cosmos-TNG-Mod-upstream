@@ -1,0 +1,86 @@
+# The TNG add-on's own viewer - the mission that ships WITH the mod source.
+#
+#   python -m cosmos_dev.mission_runner Cosmos-TNG-Mod --gui
+#   open http://localhost:8765/server
+#
+# WHY THIS LIVES AT THE REPO ROOT. A mod repo is otherwise just an addon: nothing in it can
+# be run, so having the source in hand gives you nothing to look at. Putting a mission
+# beside the addon folders - the shape LegendaryMissions and OpenUniverse already use -
+# means the repo tests itself. It needs ONLY sbs_utils and this mod: no LegendaryMissions,
+# which is the part that makes the pattern portable to any other mod.
+#
+# It has to be the ROOT, not a subfolder. Three things are one-level-only: `pinned_packs`
+# globs missions/*/story.json and `prune_media` DELETES any unpacked pack nothing pins (so a
+# nested mission would have the 405MB media pack pruned out from under it), mission
+# discovery is one level, and a mission inside tng_races/ would be zipped INTO the mastlib
+# and compiled into every consuming mission.
+#
+# WHAT THIS DOES NOT TEST. MAST prefers source over a declared lib, so this loads
+# tng_races/ from SOURCE - a fast edit-and-run loop, but it cannot catch "forgot to rebuild
+# the lib". That is TNG_TestRange's job: a sibling folder with no tng_races/ of its own, so
+# it loads the BUILT mastlib inside a full LegendaryMissions install. Two missions, two
+# different questions. Keep both.
+
+# No client-connect dialog. This is a VIEWER - nobody is joining a bridge, so the server's
+# "a client connected" prompt is pure nag here, and it interrupts the operator's own screen.
+#
+# THE ARGUMENT IS 0, AND THAT IS BACKWARDS FROM THE NAME - CONFIRMED IN THE ENGINE. The flag
+# is the state of the DIALOG, not of the suppression: 0 = dialog off, 1 = dialog on, despite
+# the function being called suppress_*. Do not 'correct' this to 1; it reads like a bug and
+# is not one.
+sbs.suppress_client_connect_dialog(0)
+
+sim_create()
+await delay_app(0.1)
+sim_resume()
+
+
+# THE PICKER LIVES IN sbs_utils NOW, so this mission is two @map labels and three lines.
+#
+# It used to be a hand-rolled menu of buttons, because @map was unusable without
+# LegendaryMissions: LM's server console draws the selection screen, so with sbs_utils alone
+# the server page came up empty with no way in. gui_map_picker() is that screen, generalized
+# into the library - a carousel of the story's @map labels plus each map's Properties panel -
+# and map_start() is the launch sequence that used to be duplicated (and drifted) between
+# LM's console and the headless runner.
+#
+# main FALLS THROUGH into this label, which is what keeps main - and therefore page.gui_task -
+# alive. Do not move it to an imported file: main only falls through into a label in its OWN
+# file, and a dead gui_task makes every gui_task_jump a silent no-op.
+=== tngview_picker
+---pick
+    chosen = await gui_map_picker()
+    map_start(chosen)
+---running
+    # PARK - do NOT ->END here, and this is not defensive padding.
+    #
+    # main IS page.gui_task. The started map's body runs on its own scheduled task and
+    # calls gui_task_jump to put its page on the gui task, and gui_task_jump silently
+    # DISCARDS a jump when that task has finished (it checks `task is not None` but never
+    # `task.done`, and tick() returns early on a done task before it looks at
+    # pending_jump). Ending main here therefore killed the gui task a moment before the
+    # map tried to use it: no error, no page, blank screen.
+    await delay_sim(1)
+    jump running
+
+
+@map/tng_faces "TNG Faces - browse every face the mod ships"
+    " Every face in the add-on's registry, by species. The registry is the same one
+    " random_face() reads, so this cannot drift from the shipped sheets.
+    gui_task_jump("tng_faces_page")
+    ->END
+
+
+@map/tng_ships "TNG Ships - browse every hull the mod declares"
+    " Every declared hull, grouped by faction, with its stats and its 3D model. The verify
+    " mission proves the DATA arrived; this is what shows the ART actually renders.
+    gui_task_jump("tng_ships_page")
+    ->END
+
+
+# IMPORTS LAST. `import` INLINES the file where it appears, so imports placed above the
+# top-level code would push it behind a run of `===` labels - it would stop being main's
+# code and become the tail of whichever label was inlined last.
+import maps/tng_faces.mast
+import maps/tng_ship_info.py
+import maps/tng_ships.mast

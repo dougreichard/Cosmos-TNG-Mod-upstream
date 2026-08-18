@@ -1,0 +1,51 @@
+ship: tng_fed_california
+layout: default
+size: 14x15
+legend:
+  a: aft-shield / shield,system,aft
+  s: astro-lab / lab,astro,room
+  b: beam-port-aft / weapon,system,beam
+  e: beam-port-fwd / weapon,system,beam
+  m: beam-starboard-aft / weapon,system,beam
+  -: beam-starboard-fwd / weapon,system,beam
+  i: bio-lab
+  r: brig / cabin,brig,room
+  c: cargo / bay,cargo,room
+  o: conference-room / cabin,conference,room
+  w: crew-galley / cabin,galley,room
+  R: crew-mess / cabin,mess,room
+  q: crew-quarters / cabin,quarters,room
+  f: fwd-shield / shield,system,fwd
+  y: gymnasium / cabin,gym,room
+  p: impulse
+  u: maneuver / ENGINE,system,maneuver
+  t: observation-lounge / cabin,lounge,room
+  F: officer-quarters / cabin,quarters,room
+  l: officers-galley / cabin,galley,room
+  E: officers-mess / cabin,mess,room
+  h: physics-lab / lab,physics,room
+  A: recreation / cabin,rec,room
+  S: saloon
+  N: sensors / sensor,system
+  H: shuttle-bay / bay,shuttle,room
+  k: sick-bay / med,sickbay,room
+  T: torp-tube / weapon,system,torpedo
+  V: vip-quarters / cabin,vip,room
+  W: warp / ENGINE,system,warp
+  K: workshop
+---
+....qKSSKq....
+..uVeRSS.-Vu..
+.stfwikkif.ts.
+.AehTFNNFTh-A.
+yKqfT.FF.T.qKy
+..NppcoocppN..
+.ykppcElcppky.
+..uqbcrrcmqu..
+....HbNNHHm...
+...a..NN..a...
+...W..aa..W...
+...W..tt..W...
+...W......W...
+...W......W...
+...W......W...

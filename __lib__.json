@@ -1,0 +1,9 @@
+{
+    "version": "v0.2.3",
+    "mastlib": [
+        "tng_races"
+    ],
+    "zip": [
+        "media"
+    ]
+}

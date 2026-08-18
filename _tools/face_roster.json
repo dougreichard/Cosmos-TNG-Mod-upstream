@@ -1,0 +1,1291 @@
+{
+ "cell": 512,
+ "grid": 8,
+ "cells": [
+  {
+   "key": "chapel",
+   "era": "tos",
+   "race": "human",
+   "role": "medical",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a human nurse, blonde hair pinned up, calm expression, wearing a white medical tunic",
+   "group": "tos",
+   "source_cell": "c06r00"
+  },
+  {
+   "key": "chekov",
+   "era": "tos",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a very young human man with a mop of dark brown hair, wearing a brick red 1960s starfleet velour tunic with a black collar and a gold delta insignia",
+   "group": "tos",
+   "source_cell": "c05r00"
+  },
+  {
+   "key": "kirk",
+   "era": "tos",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a confident square-jawed human man in his thirties, short side-parted light brown hair, wearing a mustard gold 1960s starfleet velour tunic with a black collar and a gold delta insignia",
+   "group": "tos",
+   "source_cell": "c00r00"
+  },
+  {
+   "key": "mccoy",
+   "era": "tos",
+   "race": "human",
+   "role": "medical",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a wry human doctor in his fifties, receding brown hair, deep frown lines, wearing a sky blue 1960s starfleet velour tunic with a black collar and a gold delta insignia",
+   "group": "tos"
+  },
+  {
+   "key": "scotty",
+   "era": "tos",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a human engineer in his forties with dark side-parted hair and a broad face, wearing a brick red 1960s starfleet velour tunic with a black collar and a gold delta insignia",
+   "group": "tos"
+  },
+  {
+   "key": "spock",
+   "era": "tos",
+   "race": "vulcan",
+   "role": "science",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a stern vulcan man with a severe black bowl-cut fringe, upswept eyebrows, pointed ears, wearing a sky blue 1960s starfleet velour tunic with a black collar and a gold delta insignia",
+   "group": "tos",
+   "source_cell": "c01r00"
+  },
+  {
+   "key": "sulu",
+   "era": "tos",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a human helmsman of japanese descent with neat black hair and a confident half-smile, wearing a brick red 1960s starfleet velour tunic with a black collar and a gold delta insignia",
+   "group": "tos"
+  },
+  {
+   "key": "tos_command_01",
+   "era": "tos",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, olive skin, silver hair swept back, wearing a mustard gold 1960s starfleet velour tunic with a black collar and a gold delta insignia, raised eyebrows",
+   "group": "tos"
+  },
+  {
+   "key": "tos_ops_01",
+   "era": "tos",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a human, tan skin, tight dark curls, wearing a brick red 1960s starfleet velour tunic with a black collar and a gold delta insignia, a weary expression",
+   "group": "tos"
+  },
+  {
+   "key": "tos_ops_02",
+   "era": "tos",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a human, pale skin, long straight black hair, wearing a brick red 1960s starfleet velour tunic with a black collar and a gold delta insignia, raised eyebrows",
+   "group": "tos"
+  },
+  {
+   "key": "uhura",
+   "era": "tos",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a human woman with deep black skin, hair swept up, large gold hoop earrings, wearing a brick red 1960s starfleet velour tunic with a black collar and a gold delta insignia",
+   "group": "tos",
+   "source_cell": "c04r01"
+  },
+  {
+   "key": "beverly_crusher",
+   "era": "tng",
+   "race": "human",
+   "role": "medical",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a human woman doctor with long straight red hair and pale skin, wearing a blue medical jumpsuit",
+   "group": "tng",
+   "source_cell": "c13r00"
+  },
+  {
+   "key": "data",
+   "era": "tng",
+   "race": "android",
+   "role": "ops",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "an android man with uniformly pale gold skin, bright yellow-gold eyes and slicked-back black hair, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge",
+   "group": "tng",
+   "source_cell": "c10r00"
+  },
+  {
+   "key": "data_alt",
+   "era": "tng",
+   "race": "android",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "an android man with pale gold skin and gold eyes, slicked-back black hair with a grey streak, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge",
+   "group": "tng"
+  },
+  {
+   "key": "geordi",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a human man with dark brown skin wearing a curved golden metal visor across his eyes, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge",
+   "group": "tng"
+  },
+  {
+   "key": "guinan",
+   "era": "tng",
+   "race": "elaurian",
+   "role": "civilian",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a serene woman with deep black skin wearing an enormous wide-brimmed fabric hat and flowing plum robes",
+   "group": "tng",
+   "source_cell": "c14r01"
+  },
+  {
+   "key": "obrien",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a stocky human man with short receding brown hair and a broad honest face, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge",
+   "group": "tng"
+  },
+  {
+   "key": "picard",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a bald elderly human man with a lined severe face and a strong nose, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge",
+   "group": "tng",
+   "source_cell": "c08r00"
+  },
+  {
+   "key": "picard_alt",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a bald elderly human man, lined face, wearing a maroon and grey command jacket",
+   "group": "tng"
+  },
+  {
+   "key": "riker",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a broad-shouldered human man with dark brown hair and a full trimmed beard, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge",
+   "group": "tng",
+   "source_cell": "c09r00"
+  },
+  {
+   "key": "riker_alt",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a broad-shouldered human man, dark hair, clean shaven, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge",
+   "group": "tng"
+  },
+  {
+   "key": "tng_civilian_01",
+   "era": "tng",
+   "race": "human",
+   "role": "civilian",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a human, dark brown skin, long straight black hair, wearing soft civilian robes in muted earth tones, a faint confident smile",
+   "group": "tng"
+  },
+  {
+   "key": "tng_civilian_02",
+   "era": "tng",
+   "race": "human",
+   "role": "civilian",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, tan skin, a shaved head, wearing soft civilian robes in muted earth tones, a calm neutral expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_01",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a human, dark brown skin, a neat brown side part, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a weary expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_02",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a human, tan skin, chin-length brown hair, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, raised eyebrows",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_03",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a human, pale skin, auburn hair tied back, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, an alert focused look",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_04",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, deep black skin, a bald head and a moustache, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a stern set jaw",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_05",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a human, freckled fair skin, a blonde bob, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a faint confident smile",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_06",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a human, light brown skin, a greying beard and short hair, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a calm neutral expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_07",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a human, olive skin, tight dark curls, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a weary expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_08",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a human, dark brown skin, long straight black hair, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, raised eyebrows",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_09",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, tan skin, a shaved head, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, an alert focused look",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_10",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a human, dark brown skin, a neat brown side part, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a weary expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_11",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a human, tan skin, chin-length brown hair, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, raised eyebrows",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_12",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a human, pale skin, auburn hair tied back, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, an alert focused look",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_13",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, deep black skin, a bald head and a moustache, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a stern set jaw",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_14",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a human, freckled fair skin, a blonde bob, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a faint confident smile",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_15",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a human, light brown skin, a greying beard and short hair, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a calm neutral expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_16",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a human, olive skin, tight dark curls, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a weary expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_17",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a human, dark brown skin, long straight black hair, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, raised eyebrows",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_18",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, tan skin, a shaved head, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, an alert focused look",
+   "group": "tng"
+  },
+  {
+   "key": "tng_command_19",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a human, pale skin, short red hair, wearing a starfleet uniform with black shoulders and a crimson red chest panel, high grey collar, combadge, a stern set jaw",
+   "group": "tng"
+  },
+  {
+   "key": "tng_medical_01",
+   "era": "tng",
+   "race": "human",
+   "role": "medical",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a human, light brown skin, close-cropped black hair, wearing a starfleet uniform with black shoulders and a teal chest panel, high grey collar, combadge, an alert focused look",
+   "group": "tng"
+  },
+  {
+   "key": "tng_ops_01",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, pale skin, a shaved head, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge, a calm neutral expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_ops_02",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a human, deep black skin, short red hair, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge, a weary expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_ops_03",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a human, freckled fair skin, short grey hair, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge, raised eyebrows",
+   "group": "tng"
+  },
+  {
+   "key": "tng_ops_04",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a human, light brown skin, a dark ponytail, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge, an alert focused look",
+   "group": "tng"
+  },
+  {
+   "key": "tng_ops_05",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a human, olive skin, long braided black hair, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge, a stern set jaw",
+   "group": "tng"
+  },
+  {
+   "key": "tng_ops_06",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, dark brown skin, silver hair swept back, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge, a faint confident smile",
+   "group": "tng"
+  },
+  {
+   "key": "tng_ops_07",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a human, tan skin, close-cropped black hair, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge, a calm neutral expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_ops_08",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a human, pale skin, a neat brown side part, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge, a weary expression",
+   "group": "tng"
+  },
+  {
+   "key": "tng_ops_09",
+   "era": "tng",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a human, deep black skin, chin-length brown hair, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge, raised eyebrows",
+   "group": "tng"
+  },
+  {
+   "key": "tng_science_01",
+   "era": "tng",
+   "race": "human",
+   "role": "science",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a human, pale skin, short grey hair, wearing a starfleet uniform with black shoulders and a teal chest panel, high grey collar, combadge, raised eyebrows",
+   "group": "tng"
+  },
+  {
+   "key": "troi",
+   "era": "tng",
+   "race": "betazoid",
+   "role": "science",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a woman with long wavy dark brown hair and large dark eyes, wearing a teal blue jumpsuit",
+   "group": "tng",
+   "source_cell": "c12r00"
+  },
+  {
+   "key": "troi_alt",
+   "era": "tng",
+   "race": "betazoid",
+   "role": "science",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a woman with dark hair worn in a tight bun, large dark eyes, wearing a starfleet uniform with black shoulders and a teal chest panel, high grey collar, combadge",
+   "group": "tng",
+   "source_cell": "c12r01"
+  },
+  {
+   "key": "wesley",
+   "era": "tng",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a teenage human boy with short brown hair, wearing a grey and rust cadet jumpsuit",
+   "group": "tng"
+  },
+  {
+   "key": "worf",
+   "era": "tng",
+   "race": "klingon",
+   "role": "ops",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a klingon man with a tall ridged forehead crest, long black hair tied back, a beard, wearing a starfleet uniform with black shoulders and a mustard gold chest panel, high grey collar, combadge and a metallic sash",
+   "group": "tng",
+   "source_cell": "c11r00"
+  },
+  {
+   "key": "bashir",
+   "era": "ds9",
+   "race": "human",
+   "role": "medical",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a young human doctor with light brown skin, short dark hair and an eager expression, wearing a grey-shouldered starfleet jumpsuit with a teal yoke and black torso, high collar, combadge",
+   "group": "ds9"
+  },
+  {
+   "key": "dax",
+   "era": "ds9",
+   "race": "trill",
+   "role": "science",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a trill woman with brown leopard spots down her temples and neck, long dark hair, wearing a grey-shouldered starfleet jumpsuit with a teal yoke and black torso, high collar, combadge",
+   "group": "ds9"
+  },
+  {
+   "key": "ds9_civilian_01",
+   "era": "ds9",
+   "race": "human",
+   "role": "civilian",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a human, olive skin, short grey hair, wearing a practical civilian jacket in worn brown and grey, raised eyebrows",
+   "group": "ds9"
+  },
+  {
+   "key": "ds9_command_01",
+   "era": "ds9",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, olive skin, a bald head and a moustache, wearing a grey-shouldered starfleet jumpsuit with a crimson red yoke and black torso, high collar, combadge, a stern set jaw",
+   "group": "ds9"
+  },
+  {
+   "key": "ds9_command_02",
+   "era": "ds9",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a human, dark brown skin, a blonde bob, wearing a grey-shouldered starfleet jumpsuit with a crimson red yoke and black torso, high collar, combadge, a faint confident smile",
+   "group": "ds9"
+  },
+  {
+   "key": "ds9_ops_01",
+   "era": "ds9",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a human, tan skin, a dark ponytail, wearing a grey-shouldered starfleet jumpsuit with a mustard gold yoke and black torso, high collar, combadge, an alert focused look",
+   "group": "ds9"
+  },
+  {
+   "key": "ds9_ops_02",
+   "era": "ds9",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a human, pale skin, long braided black hair, wearing a grey-shouldered starfleet jumpsuit with a mustard gold yoke and black torso, high collar, combadge, a stern set jaw",
+   "group": "ds9"
+  },
+  {
+   "key": "garak",
+   "era": "ds9",
+   "race": "cardassian",
+   "role": "civilian",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a cardassian with grey scaled skin, a spoon-shaped forehead indent and an affable smile, wearing an ornate tailored civilian tunic",
+   "group": "ds9"
+  },
+  {
+   "key": "kira",
+   "era": "ds9",
+   "race": "bajoran",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a bajoran woman with short red-brown hair, a ridged nose bridge and a beaded right earring, wearing a grey-shouldered starfleet jumpsuit with a crimson red yoke and black torso, high collar, combadge",
+   "group": "ds9"
+  },
+  {
+   "key": "kira_alt",
+   "era": "ds9",
+   "race": "bajoran",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a bajoran woman with short red-brown hair and a ridged nose bridge, wearing a rust-brown bajoran militia jacket",
+   "group": "ds9"
+  },
+  {
+   "key": "odo",
+   "era": "ds9",
+   "race": "changeling",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a man with a smooth unfinished face, barely-formed features and slicked-back fair hair, wearing a plain rust-brown jumpsuit",
+   "group": "ds9"
+  },
+  {
+   "key": "quark",
+   "era": "ds9",
+   "race": "ferengi",
+   "role": "civilian",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a ferengi with enormous lobed ears and a wrinkled domed skull, a sly grin, wearing a loud patterned gold jacket",
+   "group": "ds9",
+   "source_cell": "c03r10"
+  },
+  {
+   "key": "sisko",
+   "era": "ds9",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "from-cell",
+   "prompt": "a human man with deep black skin, a shaved head and a greying goatee, wearing a grey-shouldered starfleet jumpsuit with a crimson red yoke and black torso, high collar, combadge",
+   "group": "ds9",
+   "source_cell": "c00r09"
+  },
+  {
+   "key": "sisko_alt",
+   "era": "ds9",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a human man with deep black skin, a shaved head and a greying goatee, wearing an ornate gold-trimmed bajoran ceremonial robe",
+   "group": "ds9"
+  },
+  {
+   "key": "worf_alt",
+   "era": "ds9",
+   "race": "klingon",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a klingon man with a ridged forehead crest, long black hair, a beard, wearing a grey-shouldered starfleet jumpsuit with a mustard gold yoke and black torso, high collar, combadge and a metallic sash",
+   "group": "ds9"
+  },
+  {
+   "key": "chakotay",
+   "era": "voy",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a human man with light brown skin, short black hair and a small angular tattoo above his left eyebrow, wearing a grey-shouldered starfleet jumpsuit with a crimson red yoke and black torso, high collar, combadge",
+   "group": "voy"
+  },
+  {
+   "key": "janeway",
+   "era": "voy",
+   "race": "human",
+   "role": "command",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a human woman starfleet captain in her forties, auburn hair in a tight bun, a firm set jaw, wearing a grey-shouldered starfleet jumpsuit with a crimson red yoke and black torso, high collar, combadge",
+   "group": "voy"
+  },
+  {
+   "key": "kes",
+   "era": "voy",
+   "race": "ocampa",
+   "role": "medical",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a delicate young woman with very short pale blonde hair and small ridged ears, wearing a soft lilac tunic",
+   "group": "voy"
+  },
+  {
+   "key": "kim",
+   "era": "voy",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a young human man of east asian descent with neat black hair, wearing a grey-shouldered starfleet jumpsuit with a mustard gold yoke and black torso, high collar, combadge",
+   "group": "voy"
+  },
+  {
+   "key": "neelix",
+   "era": "voy",
+   "race": "talaxian",
+   "role": "civilian",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a talaxian with mottled yellow skin, spotted temples, a tuft of ginger whiskers and a cheerful grin, wearing a patchwork chef's tunic",
+   "group": "voy"
+  },
+  {
+   "key": "seven_of_nine",
+   "era": "voy",
+   "race": "human",
+   "role": "science",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a blonde woman with her hair in a tight twist, a silver metallic implant arcing over her left eyebrow and a small implant on her cheek, wearing a plain silver-grey bodysuit",
+   "group": "voy"
+  },
+  {
+   "key": "the_doctor",
+   "era": "voy",
+   "race": "hologram",
+   "role": "medical",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a bald man with an impassive clinical expression, wearing a grey-shouldered starfleet jumpsuit with a teal yoke and black torso, high collar, combadge",
+   "group": "voy"
+  },
+  {
+   "key": "torres",
+   "era": "voy",
+   "race": "klingon",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a half-klingon woman with light brown skin, subtle forehead ridges and dark hair pulled back, wearing a grey-shouldered starfleet jumpsuit with a mustard gold yoke and black torso, high collar, combadge",
+   "group": "voy"
+  },
+  {
+   "key": "tuvok",
+   "era": "voy",
+   "race": "vulcan",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "a vulcan man with deep black skin, upswept eyebrows, pointed ears and a severe fringe, wearing a grey-shouldered starfleet jumpsuit with a mustard gold yoke and black torso, high collar, combadge",
+   "group": "voy"
+  },
+  {
+   "key": "voy_maquis_01",
+   "era": "voy",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a human, light brown skin, auburn hair tied back, wearing a grey-shouldered starfleet jumpsuit with a mustard gold yoke and black torso, high collar, combadge, an alert focused look",
+   "group": "voy"
+  },
+  {
+   "key": "voy_maquis_02",
+   "era": "voy",
+   "race": "human",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a human, olive skin, a bald head and a moustache, wearing a grey-shouldered starfleet jumpsuit with a mustard gold yoke and black torso, high collar, combadge, a stern set jaw",
+   "group": "voy"
+  },
+  {
+   "key": "andorian_01",
+   "era": "race",
+   "race": "andorian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, an andorian with blue skin, white hair and two antennae on the forehead, wearing an imperial guard tunic, a stern set jaw",
+   "group": "race"
+  },
+  {
+   "key": "andorian_02",
+   "era": "race",
+   "race": "andorian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, an andorian with blue skin, white hair and two antennae on the forehead, wearing an imperial guard tunic, a faint confident smile",
+   "group": "race"
+  },
+  {
+   "key": "andorian_03",
+   "era": "race",
+   "race": "andorian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, an andorian with blue skin, white hair and two antennae on the forehead, wearing an imperial guard tunic, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "bajoran_01",
+   "era": "race",
+   "race": "bajoran",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a bajoran with a ridged nose bridge and a beaded earring on the right ear, short red hair, wearing a rust-brown bajoran militia jacket, a weary expression",
+   "group": "race"
+  },
+  {
+   "key": "bajoran_02",
+   "era": "race",
+   "race": "bajoran",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a bajoran with a ridged nose bridge and a beaded earring on the right ear, short grey hair, wearing a rust-brown bajoran militia jacket, raised eyebrows",
+   "group": "race"
+  },
+  {
+   "key": "bajoran_03",
+   "era": "race",
+   "race": "bajoran",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a bajoran with a ridged nose bridge and a beaded earring on the right ear, a dark ponytail, wearing a rust-brown bajoran militia jacket, an alert focused look",
+   "group": "race"
+  },
+  {
+   "key": "benzite_01",
+   "era": "race",
+   "race": "benzite",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a benzite with smooth blue-grey skin, a high domed hairless skull and a small breathing apparatus at the chest, close-cropped black hair, wearing a starfleet-style tunic with a chest respirator unit, an alert focused look",
+   "group": "race"
+  },
+  {
+   "key": "borg_base_human",
+   "era": "race",
+   "race": "borg",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a borg drone with grey exsanguinated skin and black veins, wearing dark utilitarian armour, a stern set jaw",
+   "group": "race"
+  },
+  {
+   "key": "borg_base_klingon",
+   "era": "race",
+   "race": "borg",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a borg drone with grey exsanguinated skin and black veins, wearing dark utilitarian armour, a faint confident smile",
+   "group": "race"
+  },
+  {
+   "key": "cardassian_01",
+   "era": "race",
+   "race": "cardassian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a cardassian with grey scaled skin, a spoon-shaped forehead indent, thick neck cords and black swept-back hair, wearing black and grey cardassian armour with a raised neck plate, a faint confident smile",
+   "group": "race"
+  },
+  {
+   "key": "cardassian_02",
+   "era": "race",
+   "race": "cardassian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a cardassian with grey scaled skin, a spoon-shaped forehead indent, thick neck cords and black swept-back hair, wearing black and grey cardassian armour with a raised neck plate, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "cardassian_03",
+   "era": "race",
+   "race": "cardassian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a cardassian with grey scaled skin, a spoon-shaped forehead indent, thick neck cords and black swept-back hair, wearing black and grey cardassian armour with a raised neck plate, a weary expression",
+   "group": "race"
+  },
+  {
+   "key": "cardassian_04",
+   "era": "race",
+   "race": "cardassian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a cardassian with grey scaled skin, a spoon-shaped forehead indent, thick neck cords and black swept-back hair, wearing black and grey cardassian armour with a raised neck plate, raised eyebrows",
+   "group": "race"
+  },
+  {
+   "key": "cardassian_05",
+   "era": "race",
+   "race": "cardassian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a cardassian with grey scaled skin, a spoon-shaped forehead indent, thick neck cords and black swept-back hair, wearing black and grey cardassian armour with a raised neck plate, an alert focused look",
+   "group": "race"
+  },
+  {
+   "key": "cardassian_06",
+   "era": "race",
+   "race": "cardassian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a cardassian with grey scaled skin, a spoon-shaped forehead indent, thick neck cords and black swept-back hair, wearing black and grey cardassian armour with a raised neck plate, a stern set jaw",
+   "group": "race"
+  },
+  {
+   "key": "cardassian_07",
+   "era": "race",
+   "race": "cardassian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a cardassian with grey scaled skin, a spoon-shaped forehead indent, thick neck cords and black swept-back hair, wearing black and grey cardassian armour with a raised neck plate, a faint confident smile",
+   "group": "race"
+  },
+  {
+   "key": "cardassian_08",
+   "era": "race",
+   "race": "cardassian",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a cardassian with grey scaled skin, a spoon-shaped forehead indent, thick neck cords and black swept-back hair, wearing black and grey cardassian armour with a raised neck plate, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "ferengi_01",
+   "era": "race",
+   "race": "ferengi",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a ferengi with an enormous lobed ears, a wrinkled orange-brown domed skull and sharp teeth, long braided black hair, wearing a loud patterned ferengi jacket, a stern set jaw",
+   "group": "race"
+  },
+  {
+   "key": "ferengi_02",
+   "era": "race",
+   "race": "ferengi",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a ferengi with an enormous lobed ears, a wrinkled orange-brown domed skull and sharp teeth, silver hair swept back, wearing a loud patterned ferengi jacket, a faint confident smile",
+   "group": "race"
+  },
+  {
+   "key": "ferengi_03",
+   "era": "race",
+   "race": "ferengi",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a ferengi with an enormous lobed ears, a wrinkled orange-brown domed skull and sharp teeth, close-cropped black hair, wearing a loud patterned ferengi jacket, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "ferengi_04",
+   "era": "race",
+   "race": "ferengi",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a ferengi with an enormous lobed ears, a wrinkled orange-brown domed skull and sharp teeth, a neat brown side part, wearing a loud patterned ferengi jacket, a weary expression",
+   "group": "race"
+  },
+  {
+   "key": "gorn",
+   "era": "race",
+   "race": "gorn",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a gorn reptilian with green pebbled scales, a heavy brow and faceted compound eyes, wearing a simple metallic harness, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "gorn_01",
+   "era": "race",
+   "race": "gorn",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a gorn reptilian with green pebbled scales, a heavy brow and faceted compound eyes, wearing a simple metallic harness, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "gorn_02",
+   "era": "race",
+   "race": "gorn",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a gorn reptilian with green pebbled scales, a heavy brow and faceted compound eyes, wearing a simple metallic harness, a weary expression",
+   "group": "race"
+  },
+  {
+   "key": "hologram_01",
+   "era": "race",
+   "race": "hologram",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a person rendered as a luminous blue holographic projection, translucent, scanline-lit, silver hair swept back, wearing a uniform rendered in the same luminous blue projection, a faint confident smile",
+   "group": "race"
+  },
+  {
+   "key": "hologram_02",
+   "era": "race",
+   "race": "hologram",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a person rendered as a luminous blue holographic projection, translucent, scanline-lit, close-cropped black hair, wearing a uniform rendered in the same luminous blue projection, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "hologram_03",
+   "era": "race",
+   "race": "hologram",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a person rendered as a luminous blue holographic projection, translucent, scanline-lit, a neat brown side part, wearing a uniform rendered in the same luminous blue projection, a weary expression",
+   "group": "race"
+  },
+  {
+   "key": "hologram_04",
+   "era": "race",
+   "race": "hologram",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a person rendered as a luminous blue holographic projection, translucent, scanline-lit, chin-length brown hair, wearing a uniform rendered in the same luminous blue projection, raised eyebrows",
+   "group": "race"
+  },
+  {
+   "key": "klingon_01",
+   "era": "race",
+   "race": "klingon",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a klingon with a tall ridged forehead crest, deep-set eyes, long wild hair and a beard, wearing ridged klingon battle armour with a metallic baldric, a stern set jaw",
+   "group": "race"
+  },
+  {
+   "key": "klingon_02",
+   "era": "race",
+   "race": "klingon",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a klingon with a tall ridged forehead crest, deep-set eyes, long wild hair and a beard, wearing ridged klingon battle armour with a metallic baldric, a faint confident smile",
+   "group": "race"
+  },
+  {
+   "key": "klingon_03",
+   "era": "race",
+   "race": "klingon",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a klingon with a tall ridged forehead crest, deep-set eyes, long wild hair and a beard, wearing ridged klingon battle armour with a metallic baldric, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "klingon_04",
+   "era": "race",
+   "race": "klingon",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a klingon with a tall ridged forehead crest, deep-set eyes, long wild hair and a beard, wearing ridged klingon battle armour with a metallic baldric, a weary expression",
+   "group": "race"
+  },
+  {
+   "key": "klingon_05",
+   "era": "race",
+   "race": "klingon",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a klingon with a tall ridged forehead crest, deep-set eyes, long wild hair and a beard, wearing ridged klingon battle armour with a metallic baldric, raised eyebrows",
+   "group": "race"
+  },
+  {
+   "key": "romulan_01",
+   "era": "race",
+   "race": "romulan",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a romulan with pointed ears, a V-shaped forehead ridge and a heavy blunt fringe, wearing a grey and green quilted romulan tunic with angular shoulders, a stern set jaw",
+   "group": "race"
+  },
+  {
+   "key": "romulan_02",
+   "era": "race",
+   "race": "romulan",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a romulan with pointed ears, a V-shaped forehead ridge and a heavy blunt fringe, wearing a grey and green quilted romulan tunic with angular shoulders, a faint confident smile",
+   "group": "race"
+  },
+  {
+   "key": "species8472_01",
+   "era": "race",
+   "race": "species8472",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a tall alien with pale ridged chitin skin, three-lobed eyes and no hair, bare chitinous shoulders, a weary expression",
+   "group": "race"
+  },
+  {
+   "key": "tellarite_01",
+   "era": "race",
+   "race": "tellarite",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a tellarite with a broad porcine snout, tusks and coarse bristled hair, wearing a heavy utilitarian tunic, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "trill_01",
+   "era": "race",
+   "race": "trill",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a trill with a line of brown leopard spots running down the temples and neck, long straight black hair, wearing a civilian tunic in muted colors, a faint confident smile",
+   "group": "race"
+  },
+  {
+   "key": "trill_02",
+   "era": "race",
+   "race": "trill",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "elderly, broad-shouldered, a trill with a line of brown leopard spots running down the temples and neck, a shaved head, wearing a civilian tunic in muted colors, a calm neutral expression",
+   "group": "race"
+  },
+  {
+   "key": "trill_03",
+   "era": "race",
+   "race": "trill",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "young, slight, a trill with a line of brown leopard spots running down the temples and neck, short red hair, wearing a civilian tunic in muted colors, a weary expression",
+   "group": "race"
+  },
+  {
+   "key": "trill_04",
+   "era": "race",
+   "race": "trill",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a trill with a line of brown leopard spots running down the temples and neck, short grey hair, wearing a civilian tunic in muted colors, raised eyebrows",
+   "group": "race"
+  },
+  {
+   "key": "vorta_01",
+   "era": "race",
+   "race": "vorta",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "older, wiry, a vorta with violet eyes, pale skin and large ridged ears, long braided black hair, wearing a high-collared mauve dominion tunic, a stern set jaw",
+   "group": "race"
+  },
+  {
+   "key": "vulcan_01",
+   "era": "race",
+   "race": "vulcan",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "in their thirties, heavyset, a vulcan with upswept eyebrows, pointed ears and a severe blunt fringe, wearing a formal vulcan robe with a high collar, a weary expression",
+   "group": "race"
+  },
+  {
+   "key": "vulcan_02",
+   "era": "race",
+   "race": "vulcan",
+   "role": "ops",
+   "kind": "base",
+   "mode": "txt2img",
+   "prompt": "middle-aged, lean, a vulcan with upswept eyebrows, pointed ears and a severe blunt fringe, wearing a formal vulcan robe with a high collar, raised eyebrows",
+   "group": "race"
+  }
+ ]
+}

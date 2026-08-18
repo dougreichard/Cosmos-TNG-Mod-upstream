@@ -1,0 +1,47 @@
+ship: tng_orn_brigand
+layout: default
+size: 17x17
+legend:
+  C: COMPUTER
+  a: aft-shield
+  b: beam-aft
+  e: beam-fwd
+  r: cargo
+  g: cargo_hatch
+  o: conference-room
+  w: crew-galley
+  -: crew-quarters
+  s: crews-mess
+  f: fwd-shield
+  y: gymnasium
+  i: impulse
+  m: maneuver
+  l: officers-galley
+  F: officers-mess
+  u: officers-quarters
+  S: saloon
+  E: science-lab
+  N: sensors
+  k: sick-bay
+  t: torp-tube
+  p: vip-quarters
+  W: warp
+  h: workshop
+---
+.......SSS.......
+......epNpe......
+......eENEe......
+.......eNe.......
+.......kfk.......
+.......yfy.......
+......mfffm......
+......-hfh-......
+.....k-sss-k.....
+....---wyw---....
+...rrtukFkutrr...
+.mrrrthlolhtrrrm.
+.grrrtNNoNNtrrrg.
+.mbbCaaaWaaaCbbm.
+..EbiiiWWWiiibE..
+.....i.WWW.i.....
+........W........

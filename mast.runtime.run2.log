@@ -1,0 +1,63 @@
+Mast eval level Runtime Error:
+Traceback (most recent call last):
+  File "E:\a\Cosmos-dev\data\missions\__lib__\artemis-sbs.sbs_utils.v1.4.0.sbslib\sbs_utils\mast\mastscheduler.py", line 1245, in eval_code_checked
+    return eval(code, self.eval_globals(), allowed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<mast:55>", line 1, in <module>
+    tngview_row_key(ship_lb.get_value())
+     ^^^^^^^^^^^^^^^
+NameError: name 'tngview_row_key' is not defined
+
+mast RUNTIME ERROR
+
+      line: 46 in file: maps/tng_ships.mast (E:\a\Cosmos-dev\data\missions\Cosmos-TNG-Mod\maps)
+      label: tng_ships_page
+      loc: 12 cmd: Assign
+
+NOTE: to see code Set Mast.include_code to True is script.py only during development.
+
+
+Mast eval level Runtime Error:
+
+NameError in expression:
+     tngview_row_key(ship_lb.get_value())
+name 'tngview_row_key' is not defined
+tngview_row_key(ship_lb.get_value())
+function: <module>
+line: 1
+File: <mast:55>
+SBS Utils Page level Runtime Error:
+Traceback (most recent call last):
+  File "E:\a\Cosmos-dev\data\missions\__lib__\artemis-sbs.sbs_utils.v1.4.0.sbslib\sbs_utils\mast\mastscheduler.py", line 1245, in eval_code_checked
+    return eval(code, self.eval_globals(), allowed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<mast:55>", line 1, in <module>
+    tngview_row_key(ship_lb.get_value())
+     ^^^^^^^^^^^^^^^
+NameError: name 'tngview_row_key' is not defined
+
+SBS Utils Page level Runtime Error:
+
+mast RUNTIME ERROR
+
+      line: 46 in file: maps/tng_ships.mast (E:\a\Cosmos-dev\data\missions\Cosmos-TNG-Mod\maps)
+      label: tng_ships_page
+      loc: 12 cmd: Assign
+
+NOTE: to see code Set Mast.include_code to True is script.py only during development.
+
+
+Mast eval level Runtime Error:
+
+NameError in expression:
+     tngview_row_key(ship_lb.get_value())
+name 'tngview_row_key' is not defined
+tngview_row_key(ship_lb.get_value())
+function: <module>
+line: 1
+File: <mast:55>
+name 'tngview_row_key' is not defined
+tngview_row_key(ship_lb.get_value())
+function: <module>
+line: 1
+File: <mast:55>

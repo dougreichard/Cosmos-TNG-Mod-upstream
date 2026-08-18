@@ -1,0 +1,56 @@
+ship: tng_fed_sovereign
+layout: default
+size: 15x20
+legend:
+  P: PRODUCTION
+  a: aft-shield
+  s: astro-lab
+  b: beam-port-aft
+  e: beam-port-fwd
+  m: beam-starboard-aft
+  -: beam-starboard-fwd
+  i: bio-lab
+  r: brig
+  c: cargo
+  o: conference-room
+  w: crew-galley
+  R: crew-mess
+  q: crew-quarters
+  f: fwd-shield
+  y: gymnasium
+  p: impulse
+  u: maneuver
+  t: observation-lounge
+  l: officers-galley
+  F: officers-mess
+  E: officers-quarters
+  h: physics-lab
+  M: rec-room
+  S: saloon
+  N: sensors
+  H: shuttle-bay
+  k: sick-bay
+  T: torp-tube
+  V: vip-quarters
+  W: warp
+---
+.....y.S.y.....
+...VefeR-f-V...
+.uefPEsSsEPf-u.
+.fyNkrwRwrkNyf.
+.MeqkqoSoqkq-M.
+.MhikcTNTckihM.
+.fVePiTNTiP-Vf.
+..uppcTNTcppu..
+....pHbtmHp....
+......bFm......
+......PlP......
+.hh...aHa...hh.
+.Wp..NbHmN..pW.
+.WWpaaTHTaapWW.
+.Wbu.......umW.
+.Wb.........mW.
+.W...........W.
+.W...........W.
+...............
+...............

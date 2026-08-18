@@ -1,0 +1,76 @@
+// The TNG factions as diplomacy SIDES, authored declaratively.
+//
+// Declared from //shared/signal/create_sides in __init__.mast, the same route LM uses, so
+// they exist before player ships and before any map runs.
+//
+// A side is NOT the same thing as the faction name on a hull. shipData `side` (and
+// `origin`, and therefore `race`) says what a ship IS - it is how a prefab finds "a Klingon
+// warship" and how taunts are looked up. THIS file says who shoots whom. They share names
+// here because that reads better, not because the systems are the same.
+//
+// You do not have to use these. LM's fleet spawner puts raiders on the shared "raider"
+// side by default, and that keeps working with TNG hulls. These matter when you want the
+// factions to be diplomatically distinct - a Cardassian ceasefire while the Dominion keeps
+// firing - which is what fleet_create(..., faction_side=True) is for.
+//
+// Relations are declared from BOTH ends deliberately. The engine's table is DIRECTIONAL
+// (colouring looks up viewer-side -> contact-side), and although side_set_relations mirrors
+// each pair for you, LM's sides.amd carries the same duplication and its comment warns not
+// to "tidy it up" as redundant. Do not.
+
+# [Federation](federation)
+---
+Color: #07F
+Enemies: klingon, romulan, cardassian, kazon, orion, dominion, breen
+---
+The United Federation of Planets.
+
+# [Klingon](klingon)
+---
+Color: #C30
+Enemies: federation
+---
+The Klingon Empire. Hostile here because the mod fields them as a raiding faction; a
+mission that wants the TNG-era alliance can flip it with side_set_relations.
+
+# [Romulan](romulan)
+---
+Color: #0A6
+Enemies: federation
+---
+The Romulan Star Empire.
+
+# [Cardassian](cardassian)
+---
+Color: #B93
+Enemies: federation
+---
+The Cardassian Union.
+
+# [Kazon](kazon)
+---
+Color: #A63
+Enemies: federation
+---
+The Kazon sects.
+
+# [Orion](orion)
+---
+Color: #9C3
+Enemies: federation
+---
+The Orion Syndicate.
+
+# [Dominion](dominion)
+---
+Color: #96C
+Enemies: federation
+---
+The Dominion.
+
+# [Breen](breen)
+---
+Color: #6AC
+Enemies: federation
+---
+The Breen Confederacy, fighting alongside the Dominion.

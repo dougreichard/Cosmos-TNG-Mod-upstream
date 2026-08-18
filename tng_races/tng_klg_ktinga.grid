@@ -1,0 +1,42 @@
+ship: tng_klg_ktinga
+layout: default
+size: 17x17
+legend:
+  a: aft-shield
+  b: beam-port-fwd
+  e: beam-starboard-fwd
+  r: brig
+  c: cargo
+  w: crew-galley
+  -: crew-quarters
+  s: crews-mess
+  f: fwd-shield
+  g: gymnasium
+  i: impulse
+  m: maneuver
+  o: officers-galley
+  F: officers-mess
+  u: officers-quarters
+  R: rec-room
+  S: sensors
+  k: sick-bay
+  t: torp-tube
+  p: warp
+---
+.......tft.......
+........f........
+........t........
+........f........
+........t........
+........-........
+........s........
+........f........
+....b.S.s.S.e....
+...bkcc-u-ccke...
+...bSrccoccrSe...
+p.bR.rriFirr.Re.p
+pmgaa.iiwii.aagmp
+pgm...........mgp
+p...............p
+m...............m
+.................

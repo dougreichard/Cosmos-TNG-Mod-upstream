@@ -1,0 +1,52 @@
+ship: tng_fed_excelsior_refit
+layout: default
+size: 15x17
+legend:
+  a: aft-shield
+  s: astro-lab
+  b: beam-port-aft
+  e: beam-port-fwd
+  m: beam-starboard-aft
+  -: beam-starboard-fwd
+  i: bio-lab
+  r: brig
+  c: cargo
+  o: conference-room
+  w: crew-galley
+  q: crew-quarters
+  R: crews-mess
+  f: fwd-shield
+  y: gymnasium
+  p: impulse
+  u: maneuver
+  t: officer-quarters
+  l: officers-galley
+  F: officers-mess
+  h: physics-lab
+  S: saloon
+  E: science-lab
+  N: sensors
+  H: shuttle-bay
+  k: sick-bay
+  d: torpedo-tube
+  V: vip-quarters
+  W: warp
+  K: workshop
+---
+...............
+.....SsSsS.....
+..uKRVeV-VRKu..
+sqffeqqwqq-ffq.
+ikfecNNwNNc-fki
+.urehltotFh-ru.
+..ppccdodccpp..
+....pyyNyyp....
+.....dkNkd.....
+..E..dhKhd..E..
+..W..uNKNu..W..
+..WKabaHamaKW..
+..W..baHam..W..
+..W...bHm...W..
+..W....H....W..
+..W.........W..
+..u.........u..

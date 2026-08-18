@@ -1,0 +1,63 @@
+ship: tng_fed_luna
+layout: default
+size: 13x22
+legend:
+  A: Airlock
+  C: COMPUTER
+  P: PRODUCTION
+  a: aft-shield
+  s: astro-lab
+  b: beam-port-aft
+  e: beam-port-fwd
+  m: beam-starboard-aft
+  -: beam-starboard-fwd
+  i: bio-lab
+  r: brig
+  g: cargo
+  o: cargo_hatch
+  f: conference-room
+  w: crew-galley
+  R: crew-mess
+  u: crew-quarters
+  d: fwd-shield
+  y: gymnasium
+  p: impulse
+  M: maneuver
+  t: observation-lounge
+  l: officers-galley
+  F: officers-mess
+  E: officers-quarters
+  h: physics-lab
+  j: rec-room
+  S: saloon
+  N: science-lab
+  k: sensors
+  H: shuttle-bay
+  K: sick-bay
+  T: torp-tube
+  V: vip-quarters
+  W: warp
+  x: workshop
+---
+....SkkkS....
+..tyRgogRyt..
+..wReggg-Rw..
+.MeeC.E.C--M.
+.seuCdEdCu-s.
+VueNdlfFdN-uV
+AujdKkfkKdjuA
+.ibKKkTkKKmi.
+.MjbprTrpmjM.
+..ypbTTTmpy..
+...ppbTmpp...
+.x...PPP...x.
+xh...PPP...hx
+hW...xxx...Wh
+Wx..taHat..xW
+WxMiKaHaKiMxW
+Wkk..aHa..kkW
+xWM..kHk..MWx
+xW....H....Wx
+Wx.........xW
+Ws.........sW
+.............

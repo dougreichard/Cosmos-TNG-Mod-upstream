@@ -1,0 +1,52 @@
+ship: tng_klg_vorcha
+layout: default
+size: 20x19
+legend:
+  I: Impulse
+  J: JUMP-DRIVE
+  S: School
+  W: Workshop
+  a: aft-shield
+  s: astro-lab
+  b: beam-fwd
+  e: beam-port-fwd
+  m: beam-starboard-fwd
+  i: bio-lab
+  r: brig
+  c: cargo
+  o: conference-room
+  w: crew-galley
+  -: crew-mess
+  q: crew-quarters
+  f: fwd-shield
+  y: gymnasium
+  u: maneuver
+  t: observation-lounge
+  p: physics-lab
+  R: rec-room
+  A: saloon
+  E: sensors
+  h: shuttle-bay
+  k: sick-bay
+  d: torpedo-tube
+  V: vip-quarters
+---
+....................
+........q..q........
+.......qqVVqq.......
+......qq.VV.qq......
+......qbfVVfbq......
+.....t.ofddfo.t.....
+.....p.o-ww-o.s.....
+e...pp..----..ss...m
+....A..JJkkJJ..R....
+q...A..J.kk.J..R...q
+q......Jr..rJ......q
+qEcc...Jr..rJ...ccEq
+qEccuiiJr..rJSSuccEq
+..cc..yJ.kk.JA..cc..
+....u.yJJkkJJA.u....
+.h..WW...RR...WW..h.
+.h................h.
+.....IIaa..aaII.....
+.....I..IIII..I.....

@@ -1,0 +1,87 @@
+# Cardassian raiding fleets, by difficulty.
+#
+# Eleven tiers, five variants each; a variant is the ship keys making up one
+# fleet. Loaded when this faction is in the NPC_RACES setting.
+#
+# The escalation curve is LM's own races/pirate_fleets.yaml, which is built on
+# the same spread - three combat hulls plus a flagship. A shipped, played
+# curve beats an invented one.
+race: Cardassian
+fleets:
+  # difficulty 0
+  -
+    - [tng_crd_heideki]
+    - [tng_crd_heideki]
+    - [tng_crd_heideki]
+    - [tng_crd_heideki]
+    - [tng_crd_heideki]
+  # difficulty 1
+  -
+    - [tng_crd_heideki]
+    - [tng_crd_heideki]
+    - [tng_crd_heideki]
+    - [tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_heideki, tng_crd_heideki]
+  # difficulty 2
+  -
+    - [tng_crd_heideki]
+    - [tng_crd_heideki]
+    - [tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor]
+  # difficulty 3
+  -
+    - [tng_crd_heideki]
+    - [tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor]
+    - [tng_crd_galor]
+  # difficulty 4
+  -
+    - [tng_crd_heideki]
+    - [tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor]
+    - [tng_crd_galor]
+    - [tng_crd_galor]
+  # difficulty 5
+  -
+    - [tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor]
+    - [tng_crd_galor, tng_crd_heideki]
+    - [tng_crd_galor, tng_crd_heideki]
+    - [tng_crd_galor, tng_crd_heideki, tng_crd_heideki]
+  # difficulty 6
+  -
+    - [tng_crd_heideki, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_keldon]
+  # difficulty 7
+  -
+    - [tng_crd_galor, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_keldon, tng_crd_heideki]
+    - [tng_crd_keldon, tng_crd_heideki, tng_crd_heideki]
+  # difficulty 8
+  -
+    - [tng_crd_galor, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor, tng_crd_heideki, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_keldon, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_keldon, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_keldon, tng_crd_heideki, tng_crd_heideki, tng_crd_heideki]
+  # difficulty 9
+  -
+    - [tng_crd_galor, tng_crd_galor, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_keldon, tng_crd_heideki, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_galor, tng_crd_keldon, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_keldon, tng_crd_keldon, tng_crd_heideki, tng_crd_heideki]
+    - [tng_crd_damar, tng_crd_galor, tng_crd_keldon, tng_crd_heideki, tng_crd_heideki]
+  # difficulty 10
+  -
+    - [tng_crd_damar, tng_crd_keldon, tng_crd_keldon, tng_crd_galor, tng_crd_galor, tng_crd_heideki]
+    - [tng_crd_damar, tng_crd_keldon, tng_crd_keldon, tng_crd_galor, tng_crd_galor, tng_crd_heideki]
+    - [tng_crd_damar, tng_crd_keldon, tng_crd_keldon, tng_crd_galor, tng_crd_galor, tng_crd_heideki]
+    - [tng_crd_damar, tng_crd_keldon, tng_crd_keldon, tng_crd_galor, tng_crd_galor, tng_crd_heideki]
+    - [tng_crd_damar, tng_crd_keldon, tng_crd_keldon, tng_crd_galor, tng_crd_galor, tng_crd_heideki]

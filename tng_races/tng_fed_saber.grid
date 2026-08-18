@@ -1,0 +1,56 @@
+ship: tng_fed_saber
+layout: default
+size: 18x15
+legend:
+  C: COMPUTER
+  I: Impulse
+  P: PRODUCTION
+  a: aft-shield
+  s: astro-lab
+  b: beam-port-aft
+  e: beam-port-fwd
+  m: beam-starboard-aft
+  -: beam-starboard-fwd
+  i: bio-lab
+  r: brig
+  g: cargo
+  o: cargo_hatch
+  f: conference-room
+  w: crew-galley
+  R: crew-mess
+  u: crew-quarters
+  d: fwd-shield
+  y: gymnasium
+  M: maneuver
+  t: observation-lounge
+  F: officers-galley
+  E: officers-mess
+  S: officers-quarters
+  p: passenger
+  h: physics-lab
+  A: recreation / cabin,rec,room
+  L: saloon
+  N: science-lab
+  j: sensors
+  H: shuttle-bay
+  k: sick-bay
+  T: torpedo-tube
+  V: vip-quarters
+  W: warp
+  K: workshop
+---
+..................
+..................
+.....tddLLddt.....
+...MudVeRw-VduM...
+...KuAerjjr-AuK...
+..KNuekujjuk-uNK..
+.NkggiyTCCTyiggkN.
+sPPggCyTffTyCggPPs
+h.MoIIpTppTpIIoM.h
+W...IIaTFETaII...W
+W.....aaSSaa.....W
+W.....MkjjkM.....W
+W......bjjm......W
+W......bbmm......W
+s......MHHM......s

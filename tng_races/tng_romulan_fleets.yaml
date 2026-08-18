@@ -1,0 +1,87 @@
+# Romulan raiding fleets, by difficulty.
+#
+# Eleven tiers, five variants each; a variant is the ship keys making up one
+# fleet. Loaded when this faction is in the NPC_RACES setting.
+#
+# The escalation curve is LM's own races/pirate_fleets.yaml, which is built on
+# the same spread - three combat hulls plus a flagship. A shipped, played
+# curve beats an invented one.
+race: Romulan
+fleets:
+  # difficulty 0
+  -
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro]
+  # difficulty 1
+  -
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_tvaro, tng_rmn_tvaro]
+  # difficulty 2
+  -
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai]
+  # difficulty 3
+  -
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai]
+    - [tng_rmn_mogai]
+  # difficulty 4
+  -
+    - [tng_rmn_tvaro]
+    - [tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai]
+    - [tng_rmn_mogai]
+    - [tng_rmn_mogai]
+  # difficulty 5
+  -
+    - [tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai]
+    - [tng_rmn_mogai, tng_rmn_tvaro]
+    - [tng_rmn_mogai, tng_rmn_tvaro]
+    - [tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro]
+  # difficulty 6
+  -
+    - [tng_rmn_tvaro, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_dderidex]
+  # difficulty 7
+  -
+    - [tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_dderidex, tng_rmn_tvaro]
+    - [tng_rmn_dderidex, tng_rmn_tvaro, tng_rmn_tvaro]
+  # difficulty 8
+  -
+    - [tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_dderidex, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_dderidex, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_dderidex, tng_rmn_tvaro, tng_rmn_tvaro, tng_rmn_tvaro]
+  # difficulty 9
+  -
+    - [tng_rmn_mogai, tng_rmn_mogai, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_dderidex, tng_rmn_tvaro, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_mogai, tng_rmn_dderidex, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_dderidex, tng_rmn_dderidex, tng_rmn_tvaro, tng_rmn_tvaro]
+    - [tng_rmn_scimitar, tng_rmn_mogai, tng_rmn_dderidex, tng_rmn_tvaro, tng_rmn_tvaro]
+  # difficulty 10
+  -
+    - [tng_rmn_scimitar, tng_rmn_dderidex, tng_rmn_dderidex, tng_rmn_mogai, tng_rmn_mogai, tng_rmn_tvaro]
+    - [tng_rmn_scimitar, tng_rmn_dderidex, tng_rmn_dderidex, tng_rmn_mogai, tng_rmn_mogai, tng_rmn_tvaro]
+    - [tng_rmn_scimitar, tng_rmn_dderidex, tng_rmn_dderidex, tng_rmn_mogai, tng_rmn_mogai, tng_rmn_tvaro]
+    - [tng_rmn_scimitar, tng_rmn_dderidex, tng_rmn_dderidex, tng_rmn_mogai, tng_rmn_mogai, tng_rmn_tvaro]
+    - [tng_rmn_scimitar, tng_rmn_dderidex, tng_rmn_dderidex, tng_rmn_mogai, tng_rmn_mogai, tng_rmn_tvaro]

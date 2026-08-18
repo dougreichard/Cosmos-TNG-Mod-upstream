@@ -1,0 +1,165 @@
+# The TNG mod, declared instead of installed.
+#
+# 51 Star Trek hulls across seven factions, with their own keys. Nothing here collides with
+# `data/shipData.yaml`, so this ADDS ships rather than replacing them - a mission can spawn
+# a Saber and a Light Cruiser in the same map, and a second Trek mod can be installed
+# alongside this one.
+#
+# That is a deliberate departure from the zip this came from, which is a re-skin: it
+# repoints 50 keys the game already owns, so installing it turns every light cruiser in
+# every mission into a Saber. The re-skin does work - measured on engine 1.3.5 by
+# missions/shipdata_override, an add-on entry beats the engine's own shipData for the same
+# key - but it makes the mod a conversion rather than content. The zip's author wants this
+# too: "I'll eventually create a TNG mission suite that breaks away from this."
+#
+# Nothing in `f:\a\Cosmos-1-3-0\data\` is touched. See README.md for what installing the
+# original zip costs, and for the parts of the mod that still cannot declare.
+provides tng_races
+
+import tng_setup.py
+import tng_media.mast
+import tng_face_builder.mast
+
+
+# ---- Factions ------------------------------------------------------
+#
+# ADDS the TNG factions to PLAYABLE_RACES / NPC_RACES rather than replacing them, so
+# Klingons can raid a TSN crew and a Galaxy can fight Kraliens. A pure TNG game is then a
+# mission SETTING - name only these factions - rather than something a mastlib does to you.
+#
+# First, because every gate below reads those settings.
+tng_registered = tng_register_races()
+log("tng_races: factions added -> " + ", ".join(tng_registered), "tng_races")
+
+
+# ---- Soundtrack ----------------------------------------------------
+#
+# Same stance as the factions above: this is a DEFAULT, not a takeover.
+# `settings_set_mod_default` loses to anything the mission's settings.yaml, a profile, or
+# the operator's dropdown actually says - so a mission that wants stock music simply says
+# so, and one that says nothing gets the mod's. The bank itself is declared in
+# tng_media.mast; see there for why it may still play `default` on engine 1.3.6.
+tng_music_applied = tng_set_default_music()
+log("tng_races: soundtrack -> " + tng_music_applied, "tng_races")
+
+
+# ---- Version -------------------------------------------------------
+#
+# Logged and published as a shared variable, so a running game can say which build of the
+# mod it has - and so the test range can catch a HALF-UPDATED install, where the mastlib is
+# one version and the media pack another. Both halves are stamped by _build_from_zip.py from
+# __lib__.json, which is the single place to bump.
+tng_manifest = load_json_string(media_read_relative_file("tng_manifest.json"))
+tng_version = tng_manifest.get("version")
+set_shared_variable("TNG_MOD_VERSION", tng_version)
+log("tng_races: " + tng_manifest.get("mod") + " " + tng_version, "tng_races")
+
+
+# ---- Ships ---------------------------------------------------------
+#
+# Unconditional. The gates below decide whose INTERIORS and FLEETS load; the hulls
+# themselves should always be spawnable, or a mission cannot place a single Galor without
+# turning the whole Cardassian race on.
+#
+# The ship list lives in the MEDIA PACK, not in this mastlib, because the ENGINE opens it
+# itself and a mastlib is a zip. `media_shared` resolves it out of the unpacked pack in
+# __lib__, so the path is the same in a clone and in a fetched copy - which is why a
+# mission has to declare the pack in `shared_media` alongside this mastlib.
+#
+# YAML: `add_extra_ship_data` takes the name WITHOUT an extension and tries .yaml then
+# .json, so the format is the mod's choice - and YAML has real comments.
+tng_ships_file = media_shared("tng_ships.yaml")
+tng_declared = tng_declare_ships(tng_ships_file)
+log("tng_races: 51 hulls, " + tng_declared, "tng_races")
+
+
+# ---- Interiors and fleets ------------------------------------------
+#
+# Driven by tng_manifest.json rather than fifty literal calls, which would drift silently
+# the first time a hull is renamed. The helpers ask the settings which factions are on.
+
+for tng_plan in tng_interiors_enabled(tng_manifest):
+    grid_merge_ascii(media_read_relative_file(tng_plan), "tng_races")
+
+for tng_ladder in tng_fleets_enabled(tng_manifest):
+    fleet_table_load_yaml(media_read_relative_file(tng_ladder), "tng_races")
+
+
+# ---- Portraits -----------------------------------------------------
+#
+# 192 character portraits, keyed by name: `image://tng:picard`. They are IMAGES, not faces -
+# `gui_face` needs 512px layers from a sheet listed in `data/graphics/allFaceFiles.txt`, and
+# a mastlib cannot write that file. `ImageAtlas` resolves out of the unpacked media pack, so
+# these ship with the mod and need nothing installed.
+#
+# The sheet is in the MEDIA PACK because the engine opens the .png itself; the name list is
+# in this mastlib because only MAST reads it. Same split as the ship data above.
+#
+# 36 cells are identified people (picard, worf, quark, ...). The rest carry descriptive keys
+# built from era and uniform division (`tng_ops_07`) rather than guessed names - a wrong
+# name here would fail silently, because a bad atlas key just never matches.
+tng_portrait_names = load_json_string(media_read_relative_file("tng_portraits.json"))
+tng_portrait_sheet = media_shared("portraits/tng_portraits")
+tng_portrait_status = tng_register_portraits(tng_portrait_sheet, tng_portrait_names)
+log("tng_races: " + tng_portrait_status, "tng_races")
+
+
+# ---- Faces ---------------------------------------------------------
+#
+# The atlas sheets are a DIFFERENT mechanism from the portraits above. A portrait is a
+# flat image out of an ImageAtlas (`image://tng:picard`); a face is composited by the
+# engine from 512px cells of a sheet listed in `data/graphics/allFaceFiles.txt`, and can
+# stack layers - which is what lets an implant overlay be drawn once and worn by anyone.
+#
+# `tng_faces.json` shipped in this mastlib from the first build and nothing read it, so
+# `random_face("klingon")` was impossible. Registering it fixes that. What registration
+# CANNOT do is make the engine find the sheets: only allFaceFiles.txt does that, and a
+# mastlib is a zip, so those lines are pasted by hand (`_tools/facesheets.py` prints them).
+# Registering anyway is still right - the mock, the AMD site and the VS Code preview all
+# read the registry, and a missing sheet degrades to a face that does not draw rather
+# than to an error.
+tng_face_map = load_json_string(media_read_relative_file("tng_faces.json"))
+tng_face_index = load_json_string(media_read_relative_file("tng_face_index.json"))
+tng_face_status = tng_register_faces(tng_face_map, tng_face_index)
+log("tng_races: " + tng_face_status, "tng_races")
+
+
+# ---- Taunts --------------------------------------------------------
+#
+# Trek taunts by Mike Substelny, keyed by faction - `race` IS `origin`, so a Galor looks up
+# "cardassian". LM's own groups are left alone.
+#
+# THIS IS THE WEAKEST SEAM IN THE MOD. There is no registry for taunts the way there is for
+# ship data, interiors and fleets, so this reaches for LM's `taunt_data` shared variable by
+# name after its comms add-on has set it. Read through get_shared_variable, because a bare
+# name for a variable no add-on defined is a NameError and "LegendaryMissions is not loaded"
+# is a supported way to run. `.update()` so LM's groups survive. See README.
+tng_taunt_data = load_json_string(media_read_relative_file("tng_taunts.json"))
+tng_lm_taunts = get_shared_variable("taunt_data")
+
+if tng_taunt_data is not None and tng_lm_taunts is not None:
+    tng_lm_taunts.update(tng_taunt_data)
+else:
+    # Said out loud: the silent version is a game that quietly uses stock taunts forever.
+    log("tng_races: taunt_data unavailable, TNG taunts NOT applied. Is this add-on listed "
+        "after LegendaryMissions.comms in story.json?", "tng_races", "warning")
+
+
+# ---- Diplomacy -----------------------------------------------------
+#
+# On the same route LM declares its own sides from, so the TNG sides exist before player
+# ships and before any map runs. MUST NOT await - server_console relies on this route
+# completing synchronously inside signal_emit.
+#
+# Not `once`: create_sides is re-run deliberately, because sim_create() leaves the sim
+# handle stale for the rest of the frame and the sides have to be re-declared after it.
+//shared/signal/create_sides
+    tng_sides_doc = amd_document(media_read_relative_file("tng_sides.amd"), data_parser=amd_side_data)
+    sides_declare_amd(tng_sides_doc)
+
+
+# ART IS THE UNRESOLVED PART, and it is the only reason anyone would still be told to unzip
+# over their game folder. The meshes travel in this mod's shared-media pack, but the engine
+# resolves `artfileroot` relative to `data/graphics/ships`, so these hulls get their declared
+# stats and the engine's `unknown` placeholder. See README.md - a 51-hull, seven-faction
+# conversion now declares everything EXCEPT its art.

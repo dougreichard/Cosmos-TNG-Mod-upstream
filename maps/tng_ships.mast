@@ -1,0 +1,74 @@
+#
+#  TNG ship browser - every hull the add-on declares, with its stats and its model.
+#
+#  The verify mission proves the DATA merged; this is the only thing that shows the ART
+#  renders. Structure follows modding_tools/grid_editor/pane_pick_ship.mast, which is this
+#  panel already: a faction-grouped listbox on one side, a live gui_ship plus a detail
+#  block on the other, and a selection that swaps the model IN PLACE rather than rebuilding.
+#
+#  gui_ship is the same engine widget (send_gui_3dship) the ship-select roster uses, so the
+#  hull that appears here is the hull a player would see. It renders in the browser mock
+#  too - as a textured, slowly spinning mesh - because the installed media pack writes
+#  artfileroot as a full graphics-relative path the mock can resolve.
+#
+
+=== tng_ships_page
+    default shared TNGVIEW_SHIP = None
+    default shared TNGVIEW_HINT = None
+
+    ship_rows = tngview_ship_rows()
+    if TNGVIEW_SHIP is None:
+        TNGVIEW_SHIP = tngview_first_ship(ship_rows)
+
+---repaint
+    # ---- header ----------------------------------------------------------
+    gui_section(style="area:2,2,98,9;")
+    gui_row("row-height:1fr;")
+    gui_text("color:#8cf;font:gui-3;$text:" + tngview_heading() + ";")
+
+    # ---- hull picker -----------------------------------------------------
+    gui_section(style="area:2,10,32,95;")
+    # collapsible groups the 51 hulls under their eight factions. reveal AND hint for the
+    # same reason the face gallery needs them: this page repaints on selection, and a
+    # repaint restarts the view at the top, so without them the clicked row slides out
+    # from under the pointer.
+    ship_lb = gui_list_box(ship_rows, "row-height:1.6em;",
+                           item_template=tngview_ship_row,
+                           title_template=tngview_ship_title,
+                           select=True, collapsible=True,
+                           reveal=True, hint=TNGVIEW_HINT)
+    on change ship_lb.value:
+        # A faction header is selectable too and carries no hull key. tngview_row_key
+        # returns None for one, so the panel keeps showing the current hull rather than
+        # blanking. The check is a helper and not inline MAST because `hasattr` is not in
+        # MAST's eval-globals whitelist - it raises NameError, and only when a row is
+        # actually clicked.
+        picked = tngview_row_key(ship_lb.get_value())
+        # `picked != TNGVIEW_SHIP` is what stops a REPAINT LOOP, and it is not defensive
+        # padding. Repainting rebuilds this listbox, the rebuilt one reports its value as
+        # changed, and that fires this handler again - measured, one row click turned into
+        # ~10,000 rebuilds a second until the guard went in. Only a genuinely different
+        # hull is worth a repaint.
+        if picked is not None and picked != TNGVIEW_SHIP:
+            TNGVIEW_SHIP = picked
+            TNGVIEW_HINT = ship_lb.get_selection_hint()
+            jump repaint
+
+    # ---- the hull --------------------------------------------------------
+    gui_section(style="area:33,10,98,68;")
+    gui_row("row-height:1fr;")
+    # col-width: square is REQUIRED. gui_face and gui_icon are square already; gui_ship and
+    # the image widgets are not, so beside anything else they flex and take half the row.
+    gui_ship(TNGVIEW_SHIP, style="col-width: square;")
+
+    # ---- its stats -------------------------------------------------------
+    gui_section(style="area:33,69,98,89;")
+    gui_row("row-height:1fr;")
+    gui_text_area(tngview_ship_detail(TNGVIEW_SHIP))
+
+    gui_section(style="area:33,90,98,97;")
+    gui_row("row-height:1fr;")
+    gui_button("maps", on_press="tngview_picker")
+
+    await gui()
+

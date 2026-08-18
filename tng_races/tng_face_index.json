@@ -1,0 +1,3410 @@
+{
+ "andorian_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_24": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "andorian_25": {
+  "era": "race",
+  "kind": "base",
+  "race": "andorian",
+  "role": "ops"
+ },
+ "android_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "android_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "bajoran_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_24": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bajoran_25": {
+  "era": "race",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "ops"
+ },
+ "bashir": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "human",
+  "role": "medical"
+ },
+ "benzite_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "benzite",
+  "role": "ops"
+ },
+ "betazoid_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "betazoid_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "ops"
+ },
+ "beverly_crusher": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "medical"
+ },
+ "borg_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_base_human": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "borg_base_klingon": {
+  "era": "race",
+  "kind": "base",
+  "race": "borg",
+  "role": "ops"
+ },
+ "cardassian_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_24": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_25": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_26": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_27": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_28": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_29": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "cardassian_30": {
+  "era": "race",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "ops"
+ },
+ "chakotay": {
+  "era": "voy",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "changeling_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "changeling_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "chapel": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "medical"
+ },
+ "chekov": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "data": {
+  "era": "tng",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "data_alt": {
+  "era": "tng",
+  "kind": "base",
+  "race": "android",
+  "role": "ops"
+ },
+ "dax": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "trill",
+  "role": "science"
+ },
+ "dominion_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "dominion_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "dominion",
+  "role": "ops"
+ },
+ "ds9_civilian_01": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "human",
+  "role": "civilian"
+ },
+ "ds9_command_01": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "ds9_command_02": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "ds9_ops_01": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "ds9_ops_02": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "ferengi_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_24": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_25": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "ferengi_26": {
+  "era": "race",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "ops"
+ },
+ "garak": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "cardassian",
+  "role": "civilian"
+ },
+ "geordi": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "gorn": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "gorn_24": {
+  "era": "race",
+  "kind": "base",
+  "race": "gorn",
+  "role": "ops"
+ },
+ "guinan": {
+  "era": "tng",
+  "kind": "base",
+  "race": "elaurian",
+  "role": "civilian"
+ },
+ "hologram_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "hologram",
+  "role": "ops"
+ },
+ "hologram_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "hologram",
+  "role": "ops"
+ },
+ "hologram_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "hologram",
+  "role": "ops"
+ },
+ "hologram_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "hologram",
+  "role": "ops"
+ },
+ "horta_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "horta_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "horta",
+  "role": "ops"
+ },
+ "human_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "human_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "janeway": {
+  "era": "voy",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "jemhadar_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "jemhadar_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "jemhadar",
+  "role": "ops"
+ },
+ "kazon_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "kazon",
+  "role": "ops"
+ },
+ "kes": {
+  "era": "voy",
+  "kind": "base",
+  "race": "ocampa",
+  "role": "medical"
+ },
+ "kim": {
+  "era": "voy",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "kira": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "command"
+ },
+ "kira_alt": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "bajoran",
+  "role": "command"
+ },
+ "kirk": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "klingon_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_24": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_25": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_26": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "klingon_27": {
+  "era": "race",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "mccoy": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "medical"
+ },
+ "neelix": {
+  "era": "voy",
+  "kind": "base",
+  "race": "talaxian",
+  "role": "civilian"
+ },
+ "obrien": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "odo": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "changeling",
+  "role": "ops"
+ },
+ "orion_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "orion_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "orion",
+  "role": "ops"
+ },
+ "picard": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "picard_alt": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "q_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "q_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "q",
+  "role": "ops"
+ },
+ "quark": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "ferengi",
+  "role": "civilian"
+ },
+ "riker": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "riker_alt": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "romulan_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "romulan_24": {
+  "era": "race",
+  "kind": "base",
+  "race": "romulan",
+  "role": "ops"
+ },
+ "scotty": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "seven_of_nine": {
+  "era": "voy",
+  "kind": "base",
+  "race": "human",
+  "role": "science"
+ },
+ "sisko": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "sisko_alt": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "species8472_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "species8472",
+  "role": "ops"
+ },
+ "spock": {
+  "era": "tos",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "science"
+ },
+ "sulu": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tellarite_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "tellarite",
+  "role": "ops"
+ },
+ "the_doctor": {
+  "era": "voy",
+  "kind": "base",
+  "race": "hologram",
+  "role": "medical"
+ },
+ "tng_civilian_01": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "civilian"
+ },
+ "tng_civilian_02": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "civilian"
+ },
+ "tng_command_01": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_02": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_03": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_04": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_05": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_06": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_07": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_08": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_09": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_10": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_11": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_12": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_13": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_14": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_15": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_16": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_17": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_18": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_command_19": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tng_medical_01": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "medical"
+ },
+ "tng_ops_01": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tng_ops_02": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tng_ops_03": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tng_ops_04": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tng_ops_05": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tng_ops_06": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tng_ops_07": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tng_ops_08": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tng_ops_09": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tng_science_01": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "science"
+ },
+ "torres": {
+  "era": "voy",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "tos_command_01": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "tos_ops_01": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "tos_ops_02": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "trill_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_24": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_25": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "trill_26": {
+  "era": "race",
+  "kind": "base",
+  "race": "trill",
+  "role": "ops"
+ },
+ "troi": {
+  "era": "tng",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "science"
+ },
+ "troi_alt": {
+  "era": "tng",
+  "kind": "base",
+  "race": "betazoid",
+  "role": "science"
+ },
+ "tuvok": {
+  "era": "voy",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "uhura": {
+  "era": "tos",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "vorta_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "vorta_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "vorta",
+  "role": "ops"
+ },
+ "voy_maquis_01": {
+  "era": "voy",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "voy_maquis_02": {
+  "era": "voy",
+  "kind": "base",
+  "race": "human",
+  "role": "ops"
+ },
+ "vulcan_01": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_02": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_03": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_04": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_05": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_06": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_07": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_08": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_09": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_10": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_11": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_12": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_13": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_14": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_15": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_16": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_17": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_18": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_19": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_20": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_21": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_22": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_23": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "vulcan_24": {
+  "era": "race",
+  "kind": "base",
+  "race": "vulcan",
+  "role": "ops"
+ },
+ "wesley": {
+  "era": "tng",
+  "kind": "base",
+  "race": "human",
+  "role": "command"
+ },
+ "worf": {
+  "era": "tng",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ },
+ "worf_alt": {
+  "era": "ds9",
+  "kind": "base",
+  "race": "klingon",
+  "role": "ops"
+ }
+}

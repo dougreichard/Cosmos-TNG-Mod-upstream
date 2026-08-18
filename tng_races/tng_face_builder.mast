@@ -1,0 +1,182 @@
+#
+#  TNG character builder - pick a face, wear it.
+#
+#  A CHOOSER, not a feature-by-feature editor, and that is a deliberate consequence of
+#  the art. The stock races ship LAYERED sheets - separate eyes, mouth and hair cells
+#  that register against a shared head - which is what makes their slider-style editor
+#  possible. The TNG sheets are whole busts, one per cell.
+#
+#  Extracting parts from them was prototyped and measured (_tools/partextract.py) and it
+#  does not work: the panels are hand-composed, so the head lands in a different place
+#  and size in each one (47px of drift, 88px of scale), and while an eye-alignment pass
+#  closes that to about 5px it never reaches the 2-3px a part needs to look attached.
+#  Worse, the variants are not one-feature-changed - every panel is redrawn - so
+#  differencing returns 58-98% of the cell instead of a feature. So: choose a whole
+#  face, then stack OVERLAYS on it, which is the one kind of layering this art supports.
+#
+#  Reachable two ways. As a console tab (`gui_tab_enable("tng_face_builder")` from a
+#  `//gui/<console>` route - see the bottom of this file), or by jumping straight to
+#  `tng_face_builder` from a mission.
+#
+
+# ---- The tab ---------------------------------------------------------
+#
+# Registering the CONTENT here and letting each console opt in via `//gui/<name>` is
+# the per-console pattern. `gui_tab_add_top` would add it to every console in the game,
+# and dropped in a mission's story.mast it silently collapses the whole compile.
+//gui/tab/tng_face_builder
+    jump tng_face_builder
+
+
+=== tng_face_builder
+    # The registry is the source of truth for what exists - the same one random_face()
+    # reads - so this panel cannot drift from the shipped sheets.
+    default shared TNG_BUILDER_RACES = tng_builder_races()
+    default TNG_BUILDER_RACE = TNG_BUILDER_RACES[0] if TNG_BUILDER_RACES else "human"
+    default TNG_BUILDER_ROLE = "any"
+    default TNG_BUILDER_FACE = ""
+    default TNG_BUILDER_OVERLAYS = []
+    # Where "Back" goes. None when this is a console tab, which has its own tab-back.
+    default shared TNG_BUILDER_RETURN = None
+    # Keeps the clicked row in place across the repaint the click causes. One per
+    # list: a hint is a VIEW position, so it only means anything to the list it
+    # came from - sharing one between the species and face lists would scroll each
+    # to the other's slot.
+    default TNG_BUILDER_HINT = None
+    default TNG_BUILDER_RACE_HINT = None
+
+---repaint
+    # Only a console tab has a CONSOLE_SELECT to go back to. Entered directly - from a
+    # mission, or the face gallery - there is none, and calling gui_tab_back with an
+    # undefined name is a NameError that kills the panel before it draws. `default`
+    # leaves a real value alone, so the tab path is unaffected.
+    default CONSOLE_SELECT = None
+    if CONSOLE_SELECT is not None:
+        gui_tab_back(CONSOLE_SELECT)
+    # A role filter that matches nothing is the normal case, not an error: most
+    # species have no medical officer in the set. Fall back to the whole species
+    # rather than showing an empty panel - which is what shipped the first time,
+    # with an empty face preview and "species: ?" from describe() on a blank key.
+    face_keys = tng_builder_faces(TNG_BUILDER_RACE, TNG_BUILDER_ROLE)
+    if not face_keys:
+        face_keys = tng_builder_faces(TNG_BUILDER_RACE, "any")
+    # NOT `default` here. TNG_BUILDER_FACE was already given "" above, and `default`
+    # only assigns when a variable is UNSET - so the sensible first value never took
+    # and the panel opened with no face chosen at all.
+    if TNG_BUILDER_FACE not in face_keys:
+        TNG_BUILDER_FACE = face_keys[0] if face_keys else ""
+
+    # ---- left: who ----------------------------------------------------
+    gui_section(style="area:2,10,24,92;")
+    # reveal AND hint, for the same reason the face list has them: picking a species
+    # repaints the page, and a repaint restarts the view at the top. 22 species do
+    # not fit, so without these, clicking "vulcan" scrolled it out of sight and the
+    # panel looked like it had jumped to a random species.
+    race_lb = gui_list_box(TNG_BUILDER_RACES, "row-height: 2.2em;",
+                           item_template=tng_row_species,
+                           title_template=tng_row_title_species, select=True,
+                           reveal=True, hint=TNG_BUILDER_RACE_HINT)
+    race_lb.set_selected_index(TNG_BUILDER_RACES.index(TNG_BUILDER_RACE), False)
+    on change race_lb.value:
+        TNG_BUILDER_RACE = race_lb.get_value()
+        TNG_BUILDER_RACE_HINT = race_lb.get_selection_hint()
+        # A new species means a new face list, so the FACE hint no longer describes
+        # anything. Clearing it lets the face list open at the top rather than at
+        # whatever slot the previous species' selection happened to sit in.
+        TNG_BUILDER_HINT = None
+        # plain jump: `repaint` is inline to this label, and gui_task_jump would look
+        # it up on the console's gui task instead. See the gallery for the full note.
+        jump repaint
+
+    # ---- middle: which face -------------------------------------------
+    gui_section(style="area:26,10,58,92;")
+    # reveal AND hint. This page repaints BECAUSE of the selection, which is the case
+    # that wants both: `reveal` scrolls the selection into view after the rebuild, and
+    # `hint` keeps the clicked row in the same slot so it does not slide out from under
+    # the pointer (a repaint restarts at the top otherwise).
+    face_lb = gui_list_box(face_keys, "row-height: 2.2em;",
+                           item_template=tng_row_face,
+                           title_template=tng_row_title_faces,
+                           select=True, reveal=True, hint=TNG_BUILDER_HINT)
+    if TNG_BUILDER_FACE in face_keys:
+        face_lb.set_selected_index(face_keys.index(TNG_BUILDER_FACE), False)
+    on change face_lb.value:
+        TNG_BUILDER_FACE = face_lb.get_value()
+        TNG_BUILDER_HINT = face_lb.get_selection_hint()
+        # REPAINT, do not just poke the face widget. The description under the preview
+        # is built once too, so updating only `the_face.value` left the text describing
+        # the previous selection. Rebuilding keeps every part of the panel agreeing.
+        jump repaint
+
+    # ---- right: the face itself ---------------------------------------
+    gui_section(style="area:60,10,98,92;")
+    gui_row("row-height: 2.2em;")
+    gui_text("$text:`Preview`;font:gui-3;justify:center;")
+
+    gui_row("row-height: 46;")
+    # gui_face composites the string the same way the engine will in comms, so what is
+    # previewed here is exactly what a character wearing it looks like.
+    the_face = gui_face(tng_builder_compose(TNG_BUILDER_FACE, TNG_BUILDER_OVERLAYS))
+
+    gui_row("row-height: content;")
+    if TNG_BUILDER_FACE:
+        gui_text_area(tng_builder_describe(TNG_BUILDER_FACE, TNG_BUILDER_OVERLAYS))
+    else:
+        gui_text_area("No faces for this species yet.")
+
+    # ---- role filter ---------------------------------------------------
+    gui_row("row-height: 2.4em;")
+    role_dd = gui_drop_down("text: {TNG_BUILDER_ROLE}; list: any, command, ops, science, medical, civilian",
+                            var="TNG_BUILDER_ROLE")
+    on gui_message(role_dd):
+        jump repaint
+
+    # ---- overlays -------------------------------------------------------
+    # The one kind of layering the art supports: hardware that sits ON a face. Each
+    # button carries its overlay key in `data=`, because an `on gui_message` block
+    # registered in a for loop captures the loop variable at its LAST value - the
+    # closure trap - while `on_press=`/`data=` is the path that works in a loop.
+    gui_row("row-height: 2.4em;")
+    for ov in tng_builder_overlays():
+        gui_button(tng_builder_overlay_label(ov), on_press="tng_builder_toggle_overlay",
+                   data={"ov": ov})
+
+    gui_row("row-height: 2.6em;")
+    gui_button("Wear this face", on_press="tng_builder_wear")
+    gui_button("Clear overlays", on_press="tng_builder_clear")
+    if TNG_BUILDER_RETURN is not None:
+        gui_button("Back", on_press="tng_builder_return")
+
+    await gui()
+
+
+=== tng_builder_return
+    jump_to = TNG_BUILDER_RETURN
+    TNG_BUILDER_RETURN = None
+    gui_task_jump(jump_to)
+
+
+# ---- pressed -----------------------------------------------------------
+=== tng_builder_toggle_overlay
+    # `ov` arrives from the button's data dict.
+    TNG_BUILDER_OVERLAYS = tng_builder_toggle(TNG_BUILDER_OVERLAYS, ov)
+    # gui_task_jump with a TOP-LEVEL label name.
+    #
+    # A press handler runs on its own task, not the page's gui_task, and
+    # gui.py skips page.swap_gui_promise() when those differ - so a plain `jump`
+    # here rebuilds the page on a task the GUI never adopts, and the screen does not
+    # change. gui_task_jump redirects the real gui_task instead.
+    #
+    # It must be a TOP-LEVEL label: passing the inline "repaint" earlier failed with
+    # `Jump to label "repaint" command 0 not found`, because an inline label only
+    # resolves inside its own parent label's scope.
+    gui_task_jump("tng_face_builder")
+
+=== tng_builder_clear
+    TNG_BUILDER_OVERLAYS = []
+    gui_task_jump("tng_face_builder")
+
+=== tng_builder_wear
+    face = tng_builder_compose(TNG_BUILDER_FACE, TNG_BUILDER_OVERLAYS)
+    tng_builder_apply(face)
+    gui_task_jump("tng_face_builder")

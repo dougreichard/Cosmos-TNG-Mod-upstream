@@ -1,0 +1,49 @@
+ship: tng_fed_defiant
+layout: default
+size: 16x15
+legend:
+  C: COMPUTER
+  P: PRODUCTION
+  a: aft-shield
+  b: beam-aft
+  e: beam-fwd
+  m: beam-port
+  -: beam-starboard
+  r: brig
+  g: cargo
+  o: cargo_hatch
+  f: conference-room
+  w: crew-galley
+  s: crew-mess
+  u: crew-quarters
+  d: fwd-shield
+  i: impulse
+  M: maneuver
+  l: officers-galley
+  F: officers-mess
+  t: officers-quarters
+  p: physics-lab
+  R: rec-room
+  S: science-lab
+  E: sensors
+  h: shuttle-bay
+  k: sick-bay
+  T: torp-tube
+  W: warp
+  K: workshop
+---
+.......TT.......
+.......dd.......
+.......dd.......
+.....EEeeEE.....
+....TddCCddT....
+...KMuwffsuMK...
+...MumuRRu-uM...
+EWeMkmdSSd-kMeWE
+EWeSPPkhhkPPSeWE
+.WeiiplttFpiieW.
+.WeiirattariieW.
+.W..MgappagM..W.
+.....gaaaag.....
+......gbbg......
+......goog......

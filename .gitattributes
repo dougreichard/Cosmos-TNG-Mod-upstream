@@ -1,0 +1,21 @@
+*.mast linguist-language=Python
+*.amd linguist-language=markdown
+
+# THE SELF-PACKAGING TRIPLE. An addon a repo packages is named in three places and they
+# must agree - `sbs lint` checks it:
+#   __lib__.json   what gets BUILT into a .mastlib / .zip
+#   story.json     what a FETCHED copy loads out of __lib__
+#   this file      export-ignore, so a fetched copy has no source to load INSTEAD
+#
+# MAST prefers source over a declared lib ("source wins"), which is what lets a clone edit
+# tng_races/ in place and run the viewer immediately with no rebuild. A fetched copy has
+# no tng_races/ at all and therefore loads the built mastlib named in story.json. Both
+# work; they simply witness different things.
+#
+# maps/ is deliberately NOT here: it is the mission's own content and is not packaged.
+tng_races/      export-ignore
+media/          export-ignore
+
+# Dev-only: the art pipeline and its staging area. Never shipped, never fetched.
+_tools/         export-ignore
+new/            export-ignore

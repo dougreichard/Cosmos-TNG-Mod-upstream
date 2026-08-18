@@ -1,0 +1,105 @@
+#
+#  TNG face gallery - every face the add-on registers, by species.
+#
+#  Moved in from the standalone `tng_face_gallery` mission. Two things it needed there are
+#  gone, both artifacts of having no @map: the top-level sim_create/sim_resume block, and a
+#  bootstrap task that polled tng_builder_races() until the registry filled. A map body runs
+#  long after every add-on has loaded, so the registry is populated on entry and the race is
+#  gone with it.
+#
+#  It reads the SAME registry random_face() reads, so what is on screen is what a mission
+#  would actually get - it cannot drift from the shipped sheets.
+#
+
+=== tng_faces_page
+    # State on the label, not at story top level: a mission's story.mast compiles before
+    # its add-ons, so a top-level `shared X = tng_builder_races()` would run against an
+    # empty registry. `default shared` here is set once and left alone afterwards.
+    default shared GALLERY_RACE = "human"
+    default shared GALLERY_PAGE = 0
+    default shared GALLERY_RACE_HINT = None
+
+    GALLERY_RACES = tng_builder_races()
+    if GALLERY_RACE not in GALLERY_RACES:
+        GALLERY_RACE = GALLERY_RACES[0] if GALLERY_RACES else "human"
+
+---repaint
+    face_keys = tng_builder_faces(GALLERY_RACE)
+    per = 24
+    pages = max(1, (len(face_keys) + per - 1) // per)
+    if GALLERY_PAGE >= pages:
+        GALLERY_PAGE = 0
+    shown = face_keys[GALLERY_PAGE * per : GALLERY_PAGE * per + per]
+
+    # ---- header ----------------------------------------------------------
+    gui_section(style="area:2,2,98,9;")
+    gui_row("row-height:1fr;")
+    gui_text("color:#8cf;font:gui-3;$text:" + tng_gallery_heading(GALLERY_RACE, len(face_keys), GALLERY_PAGE + 1, pages) + ";")
+
+    # ---- species picker --------------------------------------------------
+    gui_section(style="area:2,10,20,92;")
+    # reveal AND hint. Selecting a species repaints the whole page, and a repaint restarts
+    # the view at the top - so with 28 species the one just clicked scrolled away and the
+    # row under the pointer became a different species. `hint` holds the slot, `reveal`
+    # guarantees the selection is on screen either way.
+    race_lb = gui_list_box(GALLERY_RACES, "row-height:2.2em;",
+                           item_template=tng_row_species, title_template=tng_row_title_species,
+                           select=True, reveal=True, hint=GALLERY_RACE_HINT)
+    race_lb.set_selected_index(GALLERY_RACES.index(GALLERY_RACE), False)
+    on change race_lb.value:
+        GALLERY_RACE = race_lb.get_value()
+        GALLERY_RACE_HINT = race_lb.get_selection_hint()
+        GALLERY_PAGE = 0
+        # A plain jump, NOT gui_task_jump. `repaint` is an INLINE label, so it only resolves
+        # inside its parent `==` label's scope, while gui_task_jump redirects the CONSOLE's
+        # gui task and would look it up there. An `on change` block already runs in the gui
+        # task, so a plain jump is both correct and sufficient.
+        jump repaint
+
+    # ---- the faces -------------------------------------------------------
+    # Six across, four down, drawn by gui_face from the very string tng_faces.json holds.
+    gui_section(style="area:21,10,98,86;")
+    for row in range(4):
+        gui_row("row-height:1fr;")
+        for col in range(6):
+            i = row * 6 + col
+            if i < len(shown):
+                gui_face(tng_builder_compose(shown[i], []))
+            else:
+                gui_blank()
+
+    # ---- paging ----------------------------------------------------------
+    gui_section(style="area:21,87,98,95;")
+    gui_row("row-height:1fr;")
+    gui_button("maps", on_press="tngview_picker")
+    gui_button("builder", on_press="tng_faces_open_builder")
+    gui_button("< prev", on_press="tng_faces_prev")
+    gui_text("font:gui-2;justify:center;$text:" + tng_gallery_names(shown) + ";")
+    gui_button("next >", on_press="tng_faces_next")
+
+    await gui()
+
+
+
+# ---- pressed -----------------------------------------------------------------
+# Every one of these uses gui_task_jump with a TOP-LEVEL label name, and both halves matter.
+# A press handler runs on its OWN task, not the page's gui_task, and gui.py skips
+# page.swap_gui_promise() when those differ - so a plain `jump` rebuilds the page on a task
+# the GUI never adopts and the screen does not change. And the target must be top-level:
+# passing the inline "repaint" fails with `Jump to label "repaint" command 0 not found`,
+# because an inline label only resolves inside its own parent label's scope.
+
+=== tng_faces_open_builder
+    # Tell the add-on's builder where Back should return to, then hand over.
+    TNG_BUILDER_RETURN = "tng_faces_page"
+    gui_task_jump("tng_face_builder")
+
+=== tng_faces_prev
+    GALLERY_PAGE = GALLERY_PAGE - 1
+    if GALLERY_PAGE < 0:
+        GALLERY_PAGE = 0
+    gui_task_jump("tng_faces_page")
+
+=== tng_faces_next
+    GALLERY_PAGE = GALLERY_PAGE + 1
+    gui_task_jump("tng_faces_page")

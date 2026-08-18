@@ -1,0 +1,87 @@
+# Kazon raiding fleets, by difficulty.
+#
+# Eleven tiers, five variants each; a variant is the ship keys making up one
+# fleet. Loaded when this faction is in the NPC_RACES setting.
+#
+# The escalation curve is LM's own races/pirate_fleets.yaml, which is built on
+# the same spread - three combat hulls plus a flagship. A shipped, played
+# curve beats an invented one.
+race: Kazon
+fleets:
+  # difficulty 0
+  -
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter]
+  # difficulty 1
+  -
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_fighter, tng_kaz_fighter]
+  # difficulty 2
+  -
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider]
+  # difficulty 3
+  -
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider]
+    - [tng_kaz_raider]
+  # difficulty 4
+  -
+    - [tng_kaz_fighter]
+    - [tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider]
+    - [tng_kaz_raider]
+    - [tng_kaz_raider]
+  # difficulty 5
+  -
+    - [tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider]
+    - [tng_kaz_raider, tng_kaz_fighter]
+    - [tng_kaz_raider, tng_kaz_fighter]
+    - [tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter]
+  # difficulty 6
+  -
+    - [tng_kaz_fighter, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_cruiser]
+  # difficulty 7
+  -
+    - [tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_cruiser, tng_kaz_fighter]
+    - [tng_kaz_cruiser, tng_kaz_fighter, tng_kaz_fighter]
+  # difficulty 8
+  -
+    - [tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_cruiser, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_cruiser, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_cruiser, tng_kaz_fighter, tng_kaz_fighter, tng_kaz_fighter]
+  # difficulty 9
+  -
+    - [tng_kaz_raider, tng_kaz_raider, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_cruiser, tng_kaz_fighter, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_raider, tng_kaz_cruiser, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_cruiser, tng_kaz_cruiser, tng_kaz_fighter, tng_kaz_fighter]
+    - [tng_kaz_carrier, tng_kaz_raider, tng_kaz_cruiser, tng_kaz_fighter, tng_kaz_fighter]
+  # difficulty 10
+  -
+    - [tng_kaz_carrier, tng_kaz_cruiser, tng_kaz_cruiser, tng_kaz_raider, tng_kaz_raider, tng_kaz_fighter]
+    - [tng_kaz_carrier, tng_kaz_cruiser, tng_kaz_cruiser, tng_kaz_raider, tng_kaz_raider, tng_kaz_fighter]
+    - [tng_kaz_carrier, tng_kaz_cruiser, tng_kaz_cruiser, tng_kaz_raider, tng_kaz_raider, tng_kaz_fighter]
+    - [tng_kaz_carrier, tng_kaz_cruiser, tng_kaz_cruiser, tng_kaz_raider, tng_kaz_raider, tng_kaz_fighter]
+    - [tng_kaz_carrier, tng_kaz_cruiser, tng_kaz_cruiser, tng_kaz_raider, tng_kaz_raider, tng_kaz_fighter]

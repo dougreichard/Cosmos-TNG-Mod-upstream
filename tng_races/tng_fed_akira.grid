@@ -1,0 +1,50 @@
+ship: tng_fed_akira
+layout: default
+size: 17x15
+legend:
+  a: aft-shield / shield,system,aft
+  s: astro-lab / lab,astro,room
+  b: beam-port-aft / weapon,system,beam
+  e: beam-port-fwd / weapon,system,beam
+  m: beam-starboard-aft / weapon,system,beam
+  -: beam-starboard-fwd / weapon,system,beam
+  r: brig / cabin,brig,room
+  c: cargo / bay,cargo,room
+  o: conference-room / cabin,conference,room
+  w: crew-galley / cabin,galley,room
+  R: crew-mess / cabin,mess,room
+  q: crew-quarters / cabin,quarters,room
+  f: fwd-shield / shield,system,fwd
+  y: gymnasium
+  i: impulse
+  u: maneuver / ENGINE,system,maneuver
+  t: observation-lounge / cabin,lounge,room
+  F: officer-quarters / cabin,quarters,room
+  l: officers-galley / cabin,galley,room
+  E: officers-mess / cabin,mess,room
+  p: physics-lab / lab,physics,room
+  A: recreation / cabin,rec,room
+  S: saloon
+  N: sensors / sensor,system
+  h: shuttle-bay / bay,shuttle,room
+  k: sick-bay / med,sickbay,room
+  T: torp-tube / weapon,system,torpedo
+  V: vip-quarters / cabin,vip,room
+  W: warp / ENGINE,system,warp
+  K: workshop
+---
+......Rhhh.R.....
+....Vw.eNf.-V....
+...uf.e.T.T.-u...
+..KqerkcNckr.-K..
+..yqeAFoNoFA.-y..
+...fNSFEtlFSNf...
+...uiihhthhiiu...
+.a...chh.hhc...a.
+.s...c.....c...s.
+WW...c..T.Tc...WW
+Wk....b.T.Tm...kW
+Wpbiii..N..iiimpW
+Wb.ai.......i.amW
+Wu.............uW
+.u.............u.

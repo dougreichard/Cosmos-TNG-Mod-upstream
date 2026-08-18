@@ -1,0 +1,21 @@
+#
+#  The TNG soundtrack, declared as a music bank.
+#
+#  A `@media/music` label names a BANK - a folder holding start/main/victory/failure.ogg
+#  plus low/ medium/ high/ - not a track. `music_get_list()` finds this, so it appears in
+#  the server console's Music dropdown for any mission that loads this add-on, and
+#  `MUSIC_SELECT: TNG_Music` (or the display name) selects it.
+#
+#  WHERE THE FILES ARE, and why this may play the stock music for now. The bank travels in
+#  this mod's shared-media pack at `media/music/TNG_Music`, beside the rest of the art,
+#  which is where sbs_utils looks. The ENGINE is the problem: `set_music_folder` accepts a
+#  bare name under `data/audio/music` and HANGS on anything else - not an error, the call
+#  never returns (measured in `missions/music_probe`, engine 1.3.6). So sbs_utils resolves
+#  the bank, declines to hand the engine a path, logs a warning naming the folder it found,
+#  and plays `default`.
+#
+#  Nothing here changes when that is fixed: flip MUSIC_ENGINE_ACCEPTS_PATHS and this bank
+#  plays from the pack. A player who wants it today copies the folder into
+#  `data/audio/music/TNG_Music`, which the resolver checks first.
+#
+@media/music/TNG_Music "TNG Music"

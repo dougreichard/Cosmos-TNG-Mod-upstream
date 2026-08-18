@@ -1,0 +1,27 @@
+ship: tng_fed_danube
+layout: default
+size: 8x9
+legend:
+  C: COMPUTER
+  a: aft-shield
+  b: beam
+  r: cargo
+  g: cargo_hatch
+  e: crews-mess
+  f: fwd-shield
+  l: galley
+  i: impulse
+  m: maneuver
+  s: science-lab
+  o: sensors
+  k: sick-bay
+---
+...oo...
+...ff...
+...ff...
+..mbbm..
+m.kCCk.m
+ilaooali
+ieaooaei
+i.rssr.i
+m.rggr.m

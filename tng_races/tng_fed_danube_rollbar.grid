@@ -1,0 +1,27 @@
+ship: tng_fed_danube_rollbar
+layout: default
+size: 8x9
+legend:
+  C: COMPUTER
+  a: aft-shield
+  b: beam
+  r: cargo
+  g: cargo_hatch
+  e: crews-mess
+  l: galley
+  i: impulse
+  m: maneuver
+  s: science-lab
+  o: sensors
+  k: sick-bay
+  t: torp-tube
+---
+...oo...
+...aa...
+...aa...
+..mbbm..
+m.kCCk.m
+ilaooali
+ieattaei
+i.rssr.i
+m.tggt.m

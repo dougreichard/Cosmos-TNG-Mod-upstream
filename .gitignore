@@ -1,0 +1,37 @@
+# DERIVED ART - never commit it.
+#
+# `.paxmesh` is BAKED for a location: it stores its texture paths as length-prefixed
+# strings (`ships/<root>_diffuse`), so a mesh baked in one folder looks for its textures
+# relative to where it was baked, not to where it ends up. Committing one means shipping a
+# mesh that points at somebody else's disk. It has to be rebuilt where the art is placed.
+#
+# The siblings below are generated from the same source `.obj` for the same reason.
+*.paxmesh
+*.pointcube
+*.rawbitmap
+*1024.png
+*256.png
+
+# Build output
+__pycache__/
+*.tmp
+mast.compile.log
+mast.runtime.log
+
+# ---- Art-pipeline working set -------------------------------------------------
+#
+# Everything here is REGENERABLE from `new/races/` plus the scripts in `_tools/`, and
+# together it is ~2.1 GB - an order of magnitude more than the mod itself. The two
+# .safetensors are also 218 MB EACH, over GitHub's 100 MB hard limit, so a push
+# containing them is rejected outright rather than merely slow.
+#
+# What is NOT ignored, deliberately: `new/races/` (the Gemini source sheets - those came
+# from a generator and cannot be reproduced) and `media/` (the built, shipped art).
+_tools/out/
+_tools/lora_out/
+_tools/lora_data/
+
+# Staging for the face work - intermediate crops, spikes and Blender scratch.
+new/gen/
+new/work/
+new/builder/

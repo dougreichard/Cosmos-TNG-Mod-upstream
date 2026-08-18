@@ -1,0 +1,87 @@
+# Orion raiding fleets, by difficulty.
+#
+# Eleven tiers, five variants each; a variant is the ship keys making up one
+# fleet. Loaded when this faction is in the NPC_RACES setting.
+#
+# The escalation curve is LM's own races/pirate_fleets.yaml, which is built on
+# the same spread - three combat hulls plus a flagship. A shipped, played
+# curve beats an invented one.
+race: Orion
+fleets:
+  # difficulty 0
+  -
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor]
+  # difficulty 1
+  -
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_interceptor, tng_orn_interceptor]
+  # difficulty 2
+  -
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette]
+  # difficulty 3
+  -
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette]
+    - [tng_orn_corvette]
+  # difficulty 4
+  -
+    - [tng_orn_interceptor]
+    - [tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette]
+    - [tng_orn_corvette]
+    - [tng_orn_corvette]
+  # difficulty 5
+  -
+    - [tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette]
+    - [tng_orn_corvette, tng_orn_interceptor]
+    - [tng_orn_corvette, tng_orn_interceptor]
+    - [tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor]
+  # difficulty 6
+  -
+    - [tng_orn_interceptor, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_brigand]
+  # difficulty 7
+  -
+    - [tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_brigand, tng_orn_interceptor]
+    - [tng_orn_brigand, tng_orn_interceptor, tng_orn_interceptor]
+  # difficulty 8
+  -
+    - [tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_brigand, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_brigand, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_brigand, tng_orn_interceptor, tng_orn_interceptor, tng_orn_interceptor]
+  # difficulty 9
+  -
+    - [tng_orn_corvette, tng_orn_corvette, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_brigand, tng_orn_interceptor, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corvette, tng_orn_brigand, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_brigand, tng_orn_brigand, tng_orn_interceptor, tng_orn_interceptor]
+    - [tng_orn_corsair, tng_orn_corvette, tng_orn_brigand, tng_orn_interceptor, tng_orn_interceptor]
+  # difficulty 10
+  -
+    - [tng_orn_corsair, tng_orn_brigand, tng_orn_brigand, tng_orn_corvette, tng_orn_corvette, tng_orn_interceptor]
+    - [tng_orn_corsair, tng_orn_brigand, tng_orn_brigand, tng_orn_corvette, tng_orn_corvette, tng_orn_interceptor]
+    - [tng_orn_corsair, tng_orn_brigand, tng_orn_brigand, tng_orn_corvette, tng_orn_corvette, tng_orn_interceptor]
+    - [tng_orn_corsair, tng_orn_brigand, tng_orn_brigand, tng_orn_corvette, tng_orn_corvette, tng_orn_interceptor]
+    - [tng_orn_corsair, tng_orn_brigand, tng_orn_brigand, tng_orn_corvette, tng_orn_corvette, tng_orn_interceptor]

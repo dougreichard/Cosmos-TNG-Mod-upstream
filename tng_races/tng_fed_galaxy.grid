@@ -1,0 +1,52 @@
+ship: tng_fed_galaxy
+layout: default
+size: 22x15
+legend:
+  C: COMPUTER
+  P: PRODUCTION
+  a: aft-shield
+  b: beam-port-aft
+  e: beam-port-fwd
+  m: beam-starboard-aft
+  -: beam-starboard-fwd
+  i: bio-lab
+  r: brig
+  g: cargo
+  o: conference-room
+  w: crew-galley
+  s: crew-mess
+  u: crew-quarters
+  f: fwd-shield
+  y: gymnasium
+  p: impulse
+  M: maneuver
+  t: observation-lounge
+  F: officer-quarters
+  l: officers-galley
+  E: officers-mess
+  h: physics-lab
+  R: rec-room
+  S: saloon
+  N: sensors
+  H: shuttle-bay
+  k: sick-bay
+  T: torp-tube
+  V: vip-quarters
+  W: warp
+  K: workshop
+---
+.....tisSissiSsit.....
+..MKVufkefVVf-kfuVKM..
+.SKffuewfNCCNfw-uffKS.
+RCRyeCus.FlEF.suC-yRCR
+VVeKPNPykFooFkyPNPK-VV
+.tkRFurgHgTTgHgruFRkt.
+..MCppKbaNTTNamKppCM..
+....ppigHppppHgipp....
+........HbNNmH........
+....hh..taNNat..hh....
+....WW..MgPPgM..WW....
+....WW...akka...WW....
+....WWaabyTTymaaWW....
+....WWbMNNTTNNMmWW....
+......................

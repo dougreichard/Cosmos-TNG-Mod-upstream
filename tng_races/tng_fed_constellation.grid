@@ -1,0 +1,49 @@
+ship: tng_fed_constellation
+layout: default
+size: 13x16
+legend:
+  C: COMPUTER
+  P: PRODUCTION
+  a: aft-shield
+  s: astro-lab
+  b: beam
+  i: bio-lab
+  r: brig
+  g: cargo_hatch
+  o: conference-room
+  e: crew-galley
+  w: crew-mess
+  -: crew-quarters
+  y: gymnasium
+  m: impulse
+  u: maneuver
+  f: officers-galley
+  F: officers-mess
+  t: officers-quarters
+  p: physics-lab
+  R: rec-room
+  l: saloon
+  S: science-lab
+  E: sensors
+  k: sick-bay
+  T: torp-tube
+  V: vip-quarters
+  W: warp
+  h: workshop
+---
+.usghelehgsu.
+iV-bbwlwbb-Vi
+Skb-yEEEy-bkS
+.uRR-CEC-RRu.
+.uhkaaaaakhu.
+..SmFoTotmS..
+...mfrTrtm...
+....W.T.W....
+....WpTpW....
+....WPPPW....
+....W...W....
+....W...W....
+....W...W....
+.............
+.............
+.............

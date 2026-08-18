@@ -1,0 +1,87 @@
+# Klingon raiding fleets, by difficulty.
+#
+# Eleven tiers, five variants each; a variant is the ship keys making up one
+# fleet. Loaded when this faction is in the NPC_RACES setting.
+#
+# The escalation curve is LM's own races/pirate_fleets.yaml, which is built on
+# the same spread - three combat hulls plus a flagship. A shipped, played
+# curve beats an invented one.
+race: Klingon
+fleets:
+  # difficulty 0
+  -
+    - [tng_klg_brel]
+    - [tng_klg_brel]
+    - [tng_klg_brel]
+    - [tng_klg_brel]
+    - [tng_klg_brel]
+  # difficulty 1
+  -
+    - [tng_klg_brel]
+    - [tng_klg_brel]
+    - [tng_klg_brel]
+    - [tng_klg_brel, tng_klg_brel]
+    - [tng_klg_brel, tng_klg_brel]
+  # difficulty 2
+  -
+    - [tng_klg_brel]
+    - [tng_klg_brel]
+    - [tng_klg_brel, tng_klg_brel]
+    - [tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga]
+  # difficulty 3
+  -
+    - [tng_klg_brel]
+    - [tng_klg_brel, tng_klg_brel]
+    - [tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga]
+    - [tng_klg_ktinga]
+  # difficulty 4
+  -
+    - [tng_klg_brel]
+    - [tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga]
+    - [tng_klg_ktinga]
+    - [tng_klg_ktinga]
+  # difficulty 5
+  -
+    - [tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga]
+    - [tng_klg_ktinga, tng_klg_brel]
+    - [tng_klg_ktinga, tng_klg_brel]
+    - [tng_klg_ktinga, tng_klg_brel, tng_klg_brel]
+  # difficulty 6
+  -
+    - [tng_klg_brel, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_vorcha]
+  # difficulty 7
+  -
+    - [tng_klg_ktinga, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_vorcha, tng_klg_brel]
+    - [tng_klg_vorcha, tng_klg_brel, tng_klg_brel]
+  # difficulty 8
+  -
+    - [tng_klg_ktinga, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga, tng_klg_brel, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_vorcha, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_vorcha, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_vorcha, tng_klg_brel, tng_klg_brel, tng_klg_brel]
+  # difficulty 9
+  -
+    - [tng_klg_ktinga, tng_klg_ktinga, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_vorcha, tng_klg_brel, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_ktinga, tng_klg_vorcha, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_vorcha, tng_klg_vorcha, tng_klg_brel, tng_klg_brel]
+    - [tng_klg_neghvar, tng_klg_ktinga, tng_klg_vorcha, tng_klg_brel, tng_klg_brel]
+  # difficulty 10
+  -
+    - [tng_klg_neghvar, tng_klg_vorcha, tng_klg_vorcha, tng_klg_ktinga, tng_klg_ktinga, tng_klg_brel]
+    - [tng_klg_neghvar, tng_klg_vorcha, tng_klg_vorcha, tng_klg_ktinga, tng_klg_ktinga, tng_klg_brel]
+    - [tng_klg_neghvar, tng_klg_vorcha, tng_klg_vorcha, tng_klg_ktinga, tng_klg_ktinga, tng_klg_brel]
+    - [tng_klg_neghvar, tng_klg_vorcha, tng_klg_vorcha, tng_klg_ktinga, tng_klg_ktinga, tng_klg_brel]
+    - [tng_klg_neghvar, tng_klg_vorcha, tng_klg_vorcha, tng_klg_ktinga, tng_klg_ktinga, tng_klg_brel]

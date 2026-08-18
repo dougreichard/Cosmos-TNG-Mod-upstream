@@ -1,0 +1,46 @@
+ship: tng_fed_centaur
+layout: default
+size: 13x16
+legend:
+  C: COMPUTER
+  P: PRODUCTION
+  a: aft-shield
+  b: beam
+  r: brig
+  g: cargo
+  o: conference-room
+  e: crew-galley
+  w: crew-mess
+  -: crew-quarters
+  f: fwd-shield
+  y: gymnasium
+  i: impulse
+  m: maneuver
+  s: observation-lounge
+  u: officers-quarters
+  p: physics-lab
+  R: rec-room
+  l: saloon
+  S: science-lab
+  E: sensors
+  k: sick-bay
+  t: torp-tube
+  W: warp
+  h: workshop
+---
+.............
+.............
+.............
+....slEls....
+..RhEfffEhR..
+..pbbkfkbbp..
+.mP--oCw--Pm.
+..SbueCwrbS..
+..SEytEtyES..
+m..ggtEtgg..m
+WaaiiiEiiiaaW
+W...........W
+W...........W
+W...........W
+W...........W
+m...........m

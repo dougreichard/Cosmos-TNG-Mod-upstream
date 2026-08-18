@@ -1,0 +1,55 @@
+ship: tng_fed_intrepid
+layout: default
+size: 15x17
+legend:
+  C: COMPUTER
+  P: PRODUCTION
+  a: aft-shield
+  s: astro-lab
+  b: beam-port-aft
+  e: beam-port-fwd
+  m: beam-starboard-aft
+  -: beam-starboard-fwd
+  i: bio-lab
+  r: brig
+  g: cargo
+  o: conference-room
+  w: crew-galley
+  R: crew-mess
+  u: crew-quarters
+  f: fwd-shield
+  y: gymnasium
+  p: impulse
+  M: maneuver
+  t: observation-lounge
+  l: officers-galley
+  F: officers-mess
+  E: officers-quarters
+  A: passenger-quarters
+  h: physics-lab
+  d: rec-room
+  S: saloon
+  N: sensors
+  H: shuttle-bay
+  k: sick-bay
+  T: torp-tube
+  W: warp
+  K: workshop
+---
+....SNNNNNS....
+...SfefNf-fS...
+..MrerwNRr-rM..
+.MKeugdNdgu-KM.
+.tsuigfyfgiust.
+.AusiCloFCisuA.
+.KdkgCEoECgkdK.
+..MggCAyACggM..
+...ukTpppTku...
+.....TpppT.....
+.....Ta.aT.....
+.h...ka.ak...h.
+WWhpstaPatsphWW
+WWhbpbPPPmpmhWW
+WW..MbHHHmM..WW
+......HHH......
+...............

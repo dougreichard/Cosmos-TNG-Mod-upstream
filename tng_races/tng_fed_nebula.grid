@@ -1,0 +1,51 @@
+ship: tng_fed_nebula
+layout: default
+size: 16x15
+legend:
+  C: COMPUTER
+  P: PRODUCTION
+  a: aft-shield
+  s: astro-lab
+  b: beam
+  e: beam-port-fwd
+  m: beam-starboard-fwd
+  i: bio-lab
+  r: brig
+  g: cargo
+  o: cargo_hatch
+  f: conference-room
+  w: crew-galley
+  -: crew-mess
+  u: crew-quarters
+  y: gymnasium
+  p: impulse
+  M: maneuver
+  t: observation-lounge
+  l: officers-galley
+  F: officers-mess
+  E: officers-quarters
+  h: physics-lab
+  R: rec-room
+  S: saloon
+  N: sensors
+  k: sick-bay
+  d: torpedo-tube
+  V: vip-quarters
+  W: warp
+  K: workshop
+---
+.iss--tSSt--ssi.
+gggueeaaaammuggg
+ogueyyNNNNyymugo
+.geukuwbbwukumg.
+.gMrRCbVVbCRrMg.
+..MWKCPffPCKWM..
+...WyEPFlPEyW...
+...WkddddddkW...
+...WkdaaaadkW...
+...WppNNNNppW...
+......KhhK......
+................
+................
+................
+................

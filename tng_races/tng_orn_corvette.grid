@@ -1,0 +1,47 @@
+ship: tng_orn_corvette
+layout: default
+size: 14x16
+legend:
+  C: COMPUTER
+  a: aft-shield
+  b: beam
+  i: bio-lab
+  r: brig
+  g: cargo
+  o: cargo_hatch
+  e: crew-galley
+  w: crew-mess
+  -: crew-quarters
+  f: fwd-shield
+  y: gymnasium
+  m: impulse
+  u: maneuver
+  s: officers-galley
+  F: officers-mess
+  p: passenger-quarters
+  A: reADY_ROOM
+  l: saloon
+  S: science-lab
+  E: sensors
+  k: sick-bay
+  t: torp-tube
+  V: vip-quarters
+  W: warp
+  h: workshop
+---
+..............
+.....EllE.....
+....bhtthb....
+..bE.VttV.Eb..
+.uyyrffffryyu.
+.gggrkttkrggg.
+.ogg-kpFk-ggo.
+.ggg.CAAC.ggg.
+..l-kweswk-l..
+..uW.EyyE.Wu..
+...W..yy..W...
+..uW..aa..Wu..
+...mm.aa.mm...
+....mWaaWm....
+.....WSSW.....
+......ii......

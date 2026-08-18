@@ -1,0 +1,50 @@
+ship: tng_klg_neghvar
+layout: default
+size: 19x19
+legend:
+  I: Impulse
+  J: JUMP-DRIVE
+  S: School
+  a: aft-shield
+  s: astro-lab
+  b: beam-aft
+  e: beam-fwd
+  m: beam-port-fwd
+  -: beam-starboard-fwd
+  i: bio-lab
+  r: brig
+  c: conference-room
+  w: crew-galley
+  R: crew-mess
+  q: crew-quarters
+  f: fighter-bay
+  d: fwd-shield
+  y: gymnasium
+  u: maneuvering
+  o: observation-lounge
+  A: reADY_ROOM
+  L: saloon
+  E: sensors
+  h: shuttle-bay
+  k: sick-bay
+  p: vip-quarters
+---
+.......q...q.......
+......qqoooqq......
+.....qq.ccc.qq.....
+....qq..cec..qq....
+.....ddpp.ppdd.....
+.m...ddpp.ppdd...-.
+q..Ly.RRwwwRR.ys..q
+qE.u..RRRRRRR..u.Eq
+qE.....kkkkk.....Eq
+qEf..JJJJJJJJJ..fEq
+q.fA.JJJJJJJJJ.Af.q
+..h....kkkkk....h..
+..huy..rrrrr..yuhS.
+.i.u..aarrraa..u.S.
+.S.II.aa...aa.II.S.
+...II.II...II.II...
+......IILbLII......
+...................
+...................

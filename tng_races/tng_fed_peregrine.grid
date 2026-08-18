@@ -1,0 +1,22 @@
+ship: tng_fed_peregrine
+layout: default
+size: 12x9
+legend:
+  A: Airlock
+  C: COMPUTER
+  a: aft-shield
+  b: beam
+  i: impulse
+  m: maneuver
+  s: sensors
+  t: torp-tube
+---
+............
+............
+.....bb.....
+...aabbaa...
+..mssbbssm..
+msAmCttCmAsm
+.mbaittiabm.
+...ai..ia...
+....i..i....

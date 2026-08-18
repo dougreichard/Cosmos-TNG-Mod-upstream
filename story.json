@@ -1,0 +1,11 @@
+{
+    "sbslib": [
+        "artemis-sbs.sbs_utils.v1.4.0.sbslib"
+    ],
+    "mastlib": [
+        "artemis-sbs.Cosmos-TNG-Mod.tng_races.v0.2.3.mastlib"
+    ],
+    "shared_media": [
+        "artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3.zip"
+    ]
+}

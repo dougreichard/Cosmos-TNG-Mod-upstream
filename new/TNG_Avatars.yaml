@@ -1,0 +1,18 @@
+generator_spec:
+  title: "Star Trek Character Generator - Sprite Sheet Mapping"
+  cell_resolution: "512x512"
+  format: "Layered PNG / Atlas Grid"
+layers:
+  - layer_id: 1
+    layer_name: "Base Species & Skin Tones"
+    elements:
+      - "Human / Bajoran (Tone 1, 2, 3)"
+      - "Vulcan / Romulan (Pale Green Tint)"
+      - "Klingon (Cranial Ridges)"
+      - "Cardassian (Neck Scales & Ridge)"
+  - layer_id: 4
+    layer_name: "Uniform Collars & Torso Base"
+    elements:
+      - "TOS Duty Uniform Collar"
+      - "TNG Season 3+ High Collar Tunics"
+      - "DS9 / VOY Shoulder-Tone Jumpsuit"

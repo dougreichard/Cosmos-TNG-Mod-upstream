@@ -1,0 +1,87 @@
+# Dominion raiding fleets, by difficulty.
+#
+# Eleven tiers, five variants each; a variant is the ship keys making up one
+# fleet. Loaded when this faction is in the NPC_RACES setting.
+#
+# The escalation curve is LM's own races/pirate_fleets.yaml, which is built on
+# the same spread - three combat hulls plus a flagship. A shipped, played
+# curve beats an invented one.
+race: Dominion
+fleets:
+  # difficulty 0
+  -
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship]
+  # difficulty 1
+  -
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_attack_ship, tng_jem_attack_ship]
+  # difficulty 2
+  -
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett]
+  # difficulty 3
+  -
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett]
+    - [tng_brn_chel_grett]
+  # difficulty 4
+  -
+    - [tng_jem_attack_ship]
+    - [tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett]
+    - [tng_brn_chel_grett]
+    - [tng_brn_chel_grett]
+  # difficulty 5
+  -
+    - [tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett]
+    - [tng_brn_chel_grett, tng_jem_attack_ship]
+    - [tng_brn_chel_grett, tng_jem_attack_ship]
+    - [tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship]
+  # difficulty 6
+  -
+    - [tng_jem_attack_ship, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser]
+  # difficulty 7
+  -
+    - [tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_attack_ship, tng_jem_attack_ship]
+  # difficulty 8
+  -
+    - [tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_attack_ship, tng_jem_attack_ship, tng_jem_attack_ship]
+  # difficulty 9
+  -
+    - [tng_brn_chel_grett, tng_brn_chel_grett, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_attack_ship, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_brn_chel_grett, tng_jem_battlecruiser, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_battlecruiser, tng_jem_attack_ship, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_brn_chel_grett, tng_jem_battlecruiser, tng_jem_attack_ship, tng_jem_attack_ship]
+  # difficulty 10
+  -
+    - [tng_jem_battlecruiser, tng_jem_battlecruiser, tng_jem_battlecruiser, tng_brn_chel_grett, tng_brn_chel_grett, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_battlecruiser, tng_jem_battlecruiser, tng_brn_chel_grett, tng_brn_chel_grett, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_battlecruiser, tng_jem_battlecruiser, tng_brn_chel_grett, tng_brn_chel_grett, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_battlecruiser, tng_jem_battlecruiser, tng_brn_chel_grett, tng_brn_chel_grett, tng_jem_attack_ship]
+    - [tng_jem_battlecruiser, tng_jem_battlecruiser, tng_jem_battlecruiser, tng_brn_chel_grett, tng_brn_chel_grett, tng_jem_attack_ship]
