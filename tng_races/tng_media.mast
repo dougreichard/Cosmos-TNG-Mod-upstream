@@ -19,3 +19,33 @@
 #  `data/audio/music/TNG_Music`, which the resolver checks first.
 #
 @media/music/TNG_Music "TNG Music"
+
+
+#
+#  The TNG skyboxes.
+#
+#  A `@media/skybox` label only REGISTERS a name at compile time; something has to schedule
+#  it. LegendaryMissions' server console does that once at the lobby with
+#  `skybox_schedule_random()`, so every label here joins that random pick, and a map or a
+#  console can override per ship or per client via the `skybox` inventory value.
+#
+#  UNLIKE MUSIC, THE SKYBOX PATH IS UNRESTRICTED. `set_sky_box` takes a real path in any
+#  spelling, so these load straight out of this mod's shared-media pack at
+#  `media/skybox/<name>.png` with nothing copied into `data/graphics`. The segfault-on-a-
+#  path trap is music's alone.
+#
+#  THE ONE SILENT FAILURE: a label whose PNG is missing is dropped from the random pick
+#  without a word - the symptom is "the new skies never come up". That happens if a
+#  consuming mission forgets the `shared_media` line in its story.json, so check that first
+#  if these never appear.
+#
+#  The art is generated, not painted - `_tools/gen_skybox_tng.py` builds each one as a 4x3
+#  cube cross where every pixel is a pure function of its 3D direction, which is what makes
+#  the twelve cube edges seamless by construction rather than by repair.
+#
+@media/skybox/tng_deep "TNG Deep Space"
+@media/skybox/tng_klingon_border "Klingon Border"
+@media/skybox/tng_bajor "Bajoran System"
+@media/skybox/tng_neutral_zone "Romulan Neutral Zone"
+@media/skybox/tng_delta "Delta Quadrant"
+@media/skybox/tng_wolf359 "Wolf 359"
