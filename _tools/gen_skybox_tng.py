@@ -14,12 +14,18 @@ defect nobody can unsee once the ship turns. Here every pixel is a pure function
 direction, so two faces sharing an edge sample the same directions and produce the same
 pixels. Continuity is not repaired afterwards - it cannot fail.
 
-THE LOOK IS DELIBERATELY SPARSE. Real TNG space is close to black: a fine, cold starfield,
-and at most a faint wash of colour somewhere off-axis. The temptation with a nebula
-generator is to fill the sky, and a filled sky reads as a 90s screensaver, drowns the ship
-models, and makes every trial look the same. So `neb_amp` is low everywhere, the nebula is
-MASKED to one region of sky rather than spread evenly, and the default variant has almost
-none at all. If a sky looks impressive on its own it is probably too loud to fly in.
+HOW BRIGHT, AND WHY IT WAS MEASURED RATHER THAN ASSUMED. The first pass argued from the
+show - real TNG space is nearly black - and produced skies with a mean luminance around 7
+against stock `sky1.png` at 21.6 and `sky1-ds9.png` at 50.9. Three to seven times darker
+than anything the engine ships. Defensible on canon and wrong in practice: they read as
+empty beside stock content, and on a lit television in a room full of people a near-black
+sky reads as a fault rather than as restraint.
+
+So the target is the HOUSE style, checked with `--stats`: themed skies land near stock
+`sky1` (mean ~18-26), and `tng_deep` stays deliberately quieter (~11-14) as the one for
+crews who should be looking at ships instead of scenery. The nebula is still MASKED to a
+region rather than spread evenly - a uniform fog is what makes every map look alike - but
+the masked region is now genuinely lit.
 
 GEOMETRY IS ASSERTED AT IMPORT, not trusted. `_assert_geometry()` checks the handedness
 invariant per face and walks all twelve cube edges numerically. The 4x3 cross only exposes
@@ -270,6 +276,17 @@ DEFAULTS = dict(
 )
 
 
+# Where each sky should land on mean luminance. Stock: sky1 21.6, sky1-ds9 50.9.
+TARGET_MEAN = {
+    "tng_deep": 13.0,          # the restrained one - ships should out-read the scenery
+    "tng_klingon_border": 21.0,
+    "tng_bajor": 23.0,
+    "tng_neutral_zone": 16.0,  # still the emptiest sky in the set, but no longer black
+    "tng_delta": 24.0,         # the loud one
+    "tng_wolf359": 17.0,
+}
+
+
 def _v(**kw):
     p = dict(DEFAULTS)
     p.update(kw)
@@ -281,9 +298,9 @@ VARIANTS = {
     # The house sky. Almost nothing but stars - this is what TNG actually looks like, and
     # it is the one that should come up most often.
     "tng_deep": ("TNG Deep Space", _v(
-        seed=11, neb_amp=0.16, band_amp=0.07,
-        neb_lo=(0.06, 0.09, 0.20), neb_hi=(0.16, 0.22, 0.42),
-        neb_mask_lo=0.62, neb_mask_hi=0.86,
+        seed=11, neb_amp=2.11, band_amp=0.16, neb_floor=0.34,
+        neb_lo=(0.09, 0.12, 0.26), neb_hi=(0.26, 0.34, 0.62),
+        neb_mask_lo=0.30, neb_mask_hi=0.66, neb_gamma=1.30,
     )),
 
     # Klingon border. Cold iron with a low red wash - used for the Kobayashi Maru and the
@@ -291,9 +308,9 @@ VARIANTS = {
     "tng_klingon_border": ("Klingon Border", _v(
         seed=23, base=(0.017, 0.011, 0.012),
         band_axis=(0.4, 1.0, -0.2), band_amp=0.09, band_color=(0.50, 0.36, 0.34),
-        neb_amp=0.50, neb_scale=1.8, neb_gamma=1.8,
-        neb_lo=(0.20, 0.05, 0.05), neb_hi=(0.62, 0.20, 0.14),
-        neb_mask_lo=0.54, neb_mask_hi=0.80,
+        neb_amp=2.07, neb_scale=1.8, neb_gamma=1.25, neb_floor=0.26,
+        neb_lo=(0.30, 0.07, 0.08), neb_hi=(0.82, 0.26, 0.20),
+        neb_mask_lo=0.26, neb_mask_hi=0.62,
         star_warm=0.55,
     )),
 
@@ -301,9 +318,9 @@ VARIANTS = {
     "tng_bajor": ("Bajoran System", _v(
         seed=37, base=(0.014, 0.014, 0.019),
         band_axis=(-0.3, 1.0, 0.5), band_amp=0.11, band_color=(0.52, 0.46, 0.40),
-        neb_amp=0.44, neb_scale=1.6,
-        neb_lo=(0.24, 0.14, 0.05), neb_hi=(0.66, 0.44, 0.16),
-        neb_mask_lo=0.52, neb_mask_hi=0.78,
+        neb_amp=1.92, neb_scale=1.6, neb_gamma=1.25, neb_floor=0.26,
+        neb_lo=(0.30, 0.18, 0.07), neb_hi=(0.84, 0.58, 0.24),
+        neb_mask_lo=0.26, neb_mask_hi=0.64,
         sun_amp=0.55, sun_dir=(-0.6, 0.25, 0.5), sun_tight=70.0,
         sun_color=(1.0, 0.90, 0.72),
         star_warm=0.40,
@@ -314,9 +331,9 @@ VARIANTS = {
     "tng_neutral_zone": ("Romulan Neutral Zone", _v(
         seed=53, base=(0.010, 0.015, 0.016),
         band_axis=(0.1, 1.0, 0.7), band_amp=0.06, band_color=(0.33, 0.50, 0.46),
-        neb_amp=0.26, neb_scale=1.4, neb_gamma=2.1,
-        neb_lo=(0.05, 0.16, 0.13), neb_hi=(0.14, 0.42, 0.34),
-        neb_mask_lo=0.60, neb_mask_hi=0.88,
+        neb_amp=1.72, neb_scale=1.4, neb_gamma=1.30, neb_floor=0.27,
+        neb_lo=(0.06, 0.20, 0.17), neb_hi=(0.20, 0.52, 0.44),
+        neb_mask_lo=0.30, neb_mask_hi=0.68,
         star_big_gain=0.95, star_warm=0.10,
     )),
 
@@ -324,9 +341,9 @@ VARIANTS = {
     "tng_delta": ("Delta Quadrant", _v(
         seed=71, base=(0.012, 0.017, 0.018),
         band_axis=(0.8, 1.0, 0.1), band_amp=0.13, band_color=(0.36, 0.54, 0.50),
-        neb_amp=0.72, neb_scale=2.6, neb_warp=0.75, neb_gamma=1.4,
-        neb_lo=(0.06, 0.22, 0.20), neb_hi=(0.30, 0.66, 0.52),
-        neb_mask_lo=0.44, neb_mask_hi=0.72,
+        neb_amp=1.81, neb_scale=2.6, neb_warp=0.75, neb_gamma=1.2, neb_floor=0.28,
+        neb_lo=(0.08, 0.28, 0.26), neb_hi=(0.36, 0.80, 0.64),
+        neb_mask_lo=0.28, neb_mask_hi=0.62,
         star_warm=0.20,
     )),
 
@@ -334,9 +351,9 @@ VARIANTS = {
     "tng_wolf359": ("Wolf 359", _v(
         seed=97, base=(0.011, 0.013, 0.020),
         band_axis=(-0.5, 1.0, -0.3), band_amp=0.08, band_color=(0.34, 0.42, 0.60),
-        neb_amp=0.22, neb_scale=1.9, neb_gamma=2.2,
-        neb_lo=(0.05, 0.08, 0.18), neb_hi=(0.14, 0.20, 0.40),
-        neb_mask_lo=0.62, neb_mask_hi=0.90,
+        neb_amp=3.35, neb_scale=1.9, neb_gamma=1.30, neb_floor=0.27,
+        neb_lo=(0.06, 0.10, 0.24), neb_hi=(0.20, 0.30, 0.58),
+        neb_mask_lo=0.30, neb_mask_hi=0.66,
         sun_amp=0.30, sun_dir=(0.3, -0.15, 0.9), sun_tight=140.0,
         sun_color=(0.78, 0.86, 1.0),
         star_warm=0.05,
@@ -353,7 +370,40 @@ def main():
     ap.add_argument("--equirect", action="store_true", help="also write a flat preview")
     ap.add_argument("--equirect-only", action="store_true", help="preview only, no cross")
     ap.add_argument("--list", action="store_true")
+    ap.add_argument("--stats", action="store_true", help="mean luminance vs the stock skies")
+    ap.add_argument("--solve", action="store_true", help="bisect neb_amp to hit TARGET_MEAN")
     a = ap.parse_args()
+
+    if a.solve:
+        # Brightness is the one parameter worth SOLVING rather than dialling: the mask and
+        # gamma set the character of a sky, and amplitude is then just the volume knob.
+        # Targets are relative to the stock art (sky1 = 21.6) - tng_deep sits below it on
+        # purpose, the themed skies sit with it.
+        for k in ([a.only] if a.only else list(VARIANTS)):
+            title, p = dict(VARIANTS)[k][0], dict(VARIANTS)[k][1]
+            want = TARGET_MEAN.get(k, 20.0)
+            lo, hi = 0.0, 4.0
+            for _ in range(10):
+                mid = (lo + hi) / 2.0
+                q = dict(p); q["neb_amp"] = mid
+                got = np.asarray(build_equirect(q, width=384), np.float32).mean()
+                if got < want:
+                    lo = mid
+                else:
+                    hi = mid
+            print("%-22s neb_amp=%.2f  -> mean %.1f (target %.0f)" % (k, (lo + hi) / 2.0, got, want))
+        return
+
+    if a.stats:
+        # Mean luminance is the fastest honest read on "does this sit with the stock art".
+        # Stock references, measured from data/graphics: sky1 21.6, sky1-ds9 50.9.
+        for k in ([a.only] if a.only else list(VARIANTS)):
+            title, p = VARIANTS[k]
+            px = np.asarray(build_equirect(p, width=512), np.float32)
+            lum = px.mean(-1)
+            print("%-22s mean %5.1f   >40 %5.2f%%   %s" % (
+                k, lum.mean(), (lum > 40).mean() * 100.0, title))
+        return
 
     if a.list:
         for k, (title, _p) in VARIANTS.items():
