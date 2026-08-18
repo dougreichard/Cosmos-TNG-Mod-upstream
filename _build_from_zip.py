@@ -28,6 +28,7 @@ Run:  python _build_from_zip.py            (from the Cosmos-TNG-Mod folder)
 
 import collections
 import json
+import re
 import os
 import sys
 import zipfile
@@ -698,6 +699,42 @@ def copy_media(z, report):
         report.append(f"  skipped      {n:>4} {why}")
 
 
+# Numeric fields the zip wrote as HJSON bare words with the separator glued on - `.86,` -
+# which any JSON/HJSON reader hands back as the STRING ".86,". They reach the engine as
+# text, and `mod_ship_data_process` does `float(val)` on them, so the hull dies with
+# `could not convert string to float: '.86,'` the moment a player ship is created from it.
+# Measured: 9 values across 6 hulls (turn_rate, ship_energy_cost, warp_energy_cost,
+# radarscale). Repaired rather than left alone, because unlike the extra torpedo rooms
+# this is not an authoring opinion - it is a value that cannot be read.
+_NUM_JUNK = re.compile(r"^\s*(-?\d*\.?\d+)\s*,?\s*$")
+
+
+def repair_numeric_strings(entry, report):
+    """Coerce '.86,' -> 0.86 anywhere in one entry. Returns how many it fixed."""
+    fixed = 0
+
+    def walk(node, key, path):
+        nonlocal fixed
+        if isinstance(node, dict):
+            for k in list(node):
+                v = node[k]
+                if isinstance(v, str):
+                    m = _NUM_JUNK.match(v)
+                    if m and ("," in v or v.strip().startswith(".")):
+                        num = float(m.group(1))
+                        node[k] = int(num) if num.is_integer() and "." not in m.group(1) else num
+                        report.append(f"  REPAIR {path}/{k}: {v!r} -> {node[k]}")
+                        fixed += 1
+                else:
+                    walk(v, k, path + "/" + str(k))
+        elif isinstance(node, list):
+            for i, v in enumerate(node):
+                walk(v, key, path + "[" + str(i) + "]")
+
+    walk(entry, "", str(entry.get("key", "?")))
+    return fixed
+
+
 def main():
     os.makedirs(ADDON, exist_ok=True)
     for stale in os.listdir(ADDON):
@@ -738,12 +775,15 @@ def main():
     # the EXE, and where the pack unpacks depends on the install - so the add-on patches it
     # in at load time. See tng_setup.py.
     version = mod_version()
+    numeric_fixed = 0
     for entry in entries:
         # artfileroot IS the path now, and artfilepath is gone from the engine's data.
         entry.pop("artfilepath", None)
+        numeric_fixed += repair_numeric_strings(entry, report)
         root = str(entry.get("artfileroot", "") or "")
         if root and "/" not in root:
             entry["artfileroot"] = art_path(version) + "/" + root
+    report.append(f"  numeric repairs  {numeric_fixed} unreadable value(s) coerced")
     os.makedirs(MEDIA, exist_ok=True)
     with open(os.path.join(MEDIA, "tng_ships.yaml"), "w", encoding="utf-8") as f:
         f.write(header)
