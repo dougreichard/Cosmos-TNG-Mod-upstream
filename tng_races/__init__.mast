@@ -70,7 +70,12 @@ log("tng_races: " + tng_manifest.get("mod") + " " + tng_version, "tng_races")
 # .json, so the format is the mod's choice - and YAML has real comments.
 tng_ships_file = media_shared("tng_ships.yaml")
 tng_declared = tng_declare_ships(tng_ships_file)
-log("tng_races: 51 hulls, " + tng_declared, "tng_races")
+# print, NOT log. log() is Python logging with no handler attached and is invisible in
+# the engine - and this line is the ONLY report of whether the engine accepted the
+# mod's ships at all, which is the first question asked whenever a hull does not
+# appear. It names the format too, so "did it read the JSON or the YAML" is answerable
+# without instrumenting anything.
+print("tng_races: 51 hulls, " + tng_declared)
 
 
 # ---- Interiors and fleets ------------------------------------------

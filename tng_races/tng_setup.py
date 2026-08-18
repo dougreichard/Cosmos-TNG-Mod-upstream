@@ -154,9 +154,37 @@ def tng_declare_ships(ships_file):
     from sbs_utils.fs import get_mission_dir
     if not os.path.isabs(ships_file):
         ships_file = os.path.abspath(os.path.join(get_mission_dir(), ships_file))
-    # The engine wants the FOLDER plus a name with no extension; it tries .yaml then .json
-    # itself, so a mod can change format without the caller changing.
     pack_dir = os.path.dirname(ships_file)
+
+    # THE ENGINE GETS JSON, THE AUTHOR KEEPS YAML.
+    #
+    # YAML is the preferred authoring format and media/tng_ships.yaml stays the source of
+    # truth - it is what a person edits and what a diff is readable in. But the ENGINE's own
+    # YAML reader currently has problems, and `add_extra_ship_data` takes either, so it is
+    # handed the generated .json sitting beside it (`_tools/ships_to_json.py`).
+    #
+    # This is not a speed change. On the script side ryaml parses this file in 7ms against
+    # json's 1ms; the reason is the engine reader, not the clock.
+    #
+    # STALENESS IS THE FAILURE MODE and it is silent: both files parse, both look right, and
+    # only the hulls disagree - the engine reading yesterday's while the library reads
+    # today's. So an out-of-date .json is REPORTED rather than quietly preferred.
+    engine_file = ships_file
+    stale = ""
+    _json_file = os.path.splitext(ships_file)[0] + ".json"
+    if os.path.exists(_json_file):
+        engine_file = _json_file
+        # A DEV-TIME check only. Inside an unpacked media pack both files carry their
+        # EXTRACTION time, not their authoring time, so comparing them there reports a
+        # stale JSON whenever the zip happened to write the YAML second - which is exactly
+        # what it did the first time this ran. The pack was built from whatever was on
+        # disk, so there is nothing to catch at that end anyway.
+        if "__lib__" not in _json_file.replace("\\", "/"):
+            try:
+                if os.path.getmtime(_json_file) < os.path.getmtime(ships_file):
+                    stale = " JSON-STALE(re-run _tools/ships_to_json.py)"
+            except OSError:
+                pass
 
     # Point the entries at where the art really is BEFORE the engine opens the file.
     art = tng_resolve_art_path(ships_file)
@@ -168,7 +196,7 @@ def tng_declare_ships(ships_file):
         # `add_extra_ship_data(fully_pathed_file)`; the old `(name, folder)` form is a
         # TypeError, caught below as "failed:" and otherwise silent - the library merge
         # still runs, so the hulls have every stat and simply do not exist in the engine.
-        sbs.add_extra_ship_data(ships_file)
+        sbs.add_extra_ship_data(engine_file)
         told_engine = True
     except AttributeError:
         # An older engine or sbslib without the call. Not fatal: the library merge below
@@ -180,7 +208,7 @@ def tng_declare_ships(ships_file):
     merged = 0
     if get_ship_data_for("tng_fed_saber") is None:
         try:
-            with open(ships_file, encoding="utf-8") as f:
+            with open(engine_file, encoding="utf-8") as f:
                 text = f.read()
         except OSError as e:
             return tng_safe_status("engine=" + str(told_engine) + " library=unreadable "
@@ -188,7 +216,8 @@ def tng_declare_ships(ships_file):
         import re
         merge_mod_ship_yaml(re.sub(r"^[ \t]*//.*$", "", text, flags=re.M), "tng_races")
         merged = 1
-    return ("engine=" + str(told_engine)
+    return ("engine=" + str(told_engine) + stale
+            + " fmt=" + os.path.splitext(engine_file)[1].lstrip(".")
             + " library=" + ("merged" if merged else "already present"))
 
 
