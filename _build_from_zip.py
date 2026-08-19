@@ -781,33 +781,32 @@ def main():
             entry["artfileroot"] = art_path(version) + "/" + root
     report.append(f"  numeric repairs  {numeric_fixed} unreadable value(s) coerced")
     os.makedirs(MEDIA, exist_ok=True)
-    with open(os.path.join(MEDIA, "tng_ships.yaml"), "w", encoding="utf-8") as f:
-        f.write(header)
-        f.write("# VERSION " + REPO + " " + version + "\n")
-        f.write("# artfilepath baked at build time: " + art_path(version) + "\n#\n")
-        # HJSON, NOT BLOCK YAML. The engine parses extra ship data as HJSON
-        # (data/shipData.yaml says so in its own header): no block sequences, no
-        # whitespace in a key. safe_dump writes exactly those, so the file was
-        # REJECTED WHOLE by the engine - `RuntimeError: Found whitespace in your key
-        # name ... >>> - 2000` - and not one hull in it ever existed there. Nothing
-        # reported it, because the add-on merges library-side too, so the test range,
-        # every headless run and every name lookup passed regardless. Measured on
-        # engine 1.3.6, 2026-08-15.
-        #
-        # The .yaml EXTENSION stays: that is the engine's own convention
-        # (data/shipData.yaml is HJSON). It is the CONTENT that has to be brace-style.
-        # JSON is a subset of HJSON, and `#` header comments above are valid HJSON.
+    # WRITE JSON, AND ONLY JSON.
+    #
+    # THE ENGINE SEARCHES FOR .yaml FIRST. With both files present it takes the .yaml -
+    # the one format it does not read properly yet - so shipping a .yaml beside the .json
+    # meant the good file was never opened. That is a silent whole-file rejection: the
+    # add-on merges library-side too, so the test range, every headless run and every name
+    # lookup pass regardless, and only the ENGINE has no hulls.
+    #
+    # This used to be backwards: it wrote tng_ships.yaml (containing JSON) and then DELETED
+    # tng_ships.json, leaving `_tools/ships_to_json.py` to convert one into the other.
+    # There is no intermediate now - one generated file, in the format the engine reads.
+    #
+    # NO `#` HEADER COMMENTS. They are valid HJSON and NOT valid JSON, and the point of the
+    # .json extension is that a strict reader can open it. Provenance lives in
+    # tng_manifest.json, which carries mod and version.
+    with open(os.path.join(MEDIA, "tng_ships.json"), "w", encoding="utf-8") as f:
         f.write(json.dumps({"#ship-list": entries}, indent=2,
                            ensure_ascii=True) + chr(10))
-                           # moment the value holds a `:` or `,`, which ship long_desc
-                           # text routinely does - and the engine, not this script, is
-                           # where that surfaces.
-    for stale in ("tng_ships.json",):
+
+    # And remove the .yaml, or the engine finds it again on the next run.
+    for stale in ("tng_ships.yaml",):
         if os.path.exists(os.path.join(MEDIA, stale)):
             os.remove(os.path.join(MEDIA, stale))
 
-    n = verify_yaml_roundtrip(os.path.join(MEDIA, "tng_ships.yaml"), entries)
-    report.insert(0, f"  ship entries     {n} (into media/, read by the engine; round-trips)")
+    n = verify_yaml_roundtrip(os.path.join(MEDIA, "tng_ships.json"), entries)
+    report.insert(0, f"  ship entries     {n} (media/tng_ships.json, the ONLY ship file; round-trips)")
 
     build_ladders(report)
     build_taunts(zd["taunts"], zd["taunts_base"], report)

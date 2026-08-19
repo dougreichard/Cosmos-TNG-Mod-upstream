@@ -34,7 +34,11 @@ a real disk) versus **what MAST reads** (perfectly happy inside a zip).
 Cosmos-TNG-Mod/
   __lib__.json          {"version":"v0.2.3","mastlib":["tng_races"],"zip":["media"]}
   media/                -> artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3.zip
-    tng_ships.yaml         51 hulls: the ENGINE opens this one itself
+    tng_ships.json         51 hulls: the ENGINE opens this one itself.
+                           JSON, and the ONLY ship file - the engine searches for
+                           .yaml FIRST, so a .yaml sitting beside it is opened
+                           instead and silently rejected whole (the add-on still
+                           merges library-side, so nothing else notices).
     ships/  audio/  fonts/  faces/
   tng_races/            -> artemis-sbs.Cosmos-TNG-Mod.tng_races.v0.2.3.mastlib  (FLAT)
     __init__.mast  tng_setup.py  tng_manifest.json

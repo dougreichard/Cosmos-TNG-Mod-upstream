@@ -68,7 +68,12 @@ log("tng_races: " + tng_manifest.get("mod") + " " + tng_version, "tng_races")
 #
 # YAML: `add_extra_ship_data` takes the name WITHOUT an extension and tries .yaml then
 # .json, so the format is the mod's choice - and YAML has real comments.
-tng_ships_file = media_shared("tng_ships.yaml")
+# THE JSON IS THE ARTIFACT. The engine does not read YAML properly yet, and this is the
+# file it is handed - so it is also the file the library merges from, and the only one that
+# ships. There is no .yaml beside it any more: carrying both put 119KB of unreadable
+# duplicate in every install and made "which one is stale" a silent failure with nothing
+# but a dev-time mtime check between them.
+tng_ships_file = media_shared("tng_ships.json")
 tng_declared = tng_declare_ships(tng_ships_file)
 # print, NOT log. log() is Python logging with no handler attached and is invisible in
 # the engine - and this line is the ONLY report of whether the engine accepted the

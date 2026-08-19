@@ -63,7 +63,7 @@ def tng_safe_status(text):
 # So there is nothing left to patch, and the mod no longer writes a file during startup at
 # all - which also removes the only reason this add-on ever touched the disk.
 #
-# If ship art ever goes missing, the suspect is the baked prefix in media/tng_ships.yaml,
+# If ship art ever goes missing, the suspect is the baked prefix in media/tng_ships.json,
 # not this.
 
 
@@ -110,35 +110,17 @@ def tng_declare_ships(ships_file):
         ships_file = os.path.abspath(os.path.join(get_mission_dir(), ships_file))
     pack_dir = os.path.dirname(ships_file)
 
-    # THE ENGINE GETS JSON, THE AUTHOR KEEPS YAML.
+    # ONE FILE, AND IT IS THE JSON.
     #
-    # YAML is the preferred authoring format and media/tng_ships.yaml stays the source of
-    # truth - it is what a person edits and what a diff is readable in. But the ENGINE's own
-    # YAML reader currently has problems, and `add_extra_ship_data` takes either, so it is
-    # handed the generated .json sitting beside it (`_tools/ships_to_json.py`).
+    # The engine does not read YAML properly yet, so the JSON is what `add_extra_ship_data`
+    # is handed - and therefore what the library merges from too, so both consumers read
+    # the same bytes and cannot disagree.
     #
-    # This is not a speed change. On the script side ryaml parses this file in 7ms against
-    # json's 1ms; the reason is the engine reader, not the clock.
-    #
-    # STALENESS IS THE FAILURE MODE and it is silent: both files parse, both look right, and
-    # only the hulls disagree - the engine reading yesterday's while the library reads
-    # today's. So an out-of-date .json is REPORTED rather than quietly preferred.
+    # This used to take the .yaml and derive the .json beside it, which meant the pack
+    # shipped BOTH: 119KB of duplicate the engine could not read, and a divergence whose
+    # only guard was comparing mtimes at dev time. `_build_from_zip.py` now writes the JSON
+    # directly and there is no intermediate to go stale.
     engine_file = ships_file
-    stale = ""
-    _json_file = os.path.splitext(ships_file)[0] + ".json"
-    if os.path.exists(_json_file):
-        engine_file = _json_file
-        # A DEV-TIME check only. Inside an unpacked media pack both files carry their
-        # EXTRACTION time, not their authoring time, so comparing them there reports a
-        # stale JSON whenever the zip happened to write the YAML second - which is exactly
-        # what it did the first time this ran. The pack was built from whatever was on
-        # disk, so there is nothing to catch at that end anyway.
-        if "__lib__" not in _json_file.replace("\\", "/"):
-            try:
-                if os.path.getmtime(_json_file) < os.path.getmtime(ships_file):
-                    stale = " JSON-STALE(re-run _tools/ships_to_json.py)"
-            except OSError:
-                pass
 
     # No art-path patching here any more: artfileroot is baked exe-relative at build time
     # and artfilepath is obsolete as of engine v1.3.6. See the note above.
@@ -171,7 +153,7 @@ def tng_declare_ships(ships_file):
         import re
         merge_mod_ship_yaml(re.sub(r"^[ \t]*//.*$", "", text, flags=re.M), "tng_races")
         merged = 1
-    return ("engine=" + str(told_engine) + stale
+    return ("engine=" + str(told_engine)
             + " fmt=" + os.path.splitext(engine_file)[1].lstrip(".")
             + " library=" + ("merged" if merged else "already present"))
 

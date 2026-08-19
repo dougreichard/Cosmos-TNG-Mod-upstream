@@ -6,7 +6,7 @@ with - or silently overwrite - a library or add-on function of the same name. `t
 the add-on's prefix and must not be shadowed; a leading underscore marks a real private
 that is never exported.
 
-The list is built from the merged ship table rather than from the mod's own tng_ships.yaml
+The list is built from the merged ship table rather than from the mod's own tng_ships.json
 on purpose: the table is what the game actually resolves a hull against, so a hull that
 failed to merge simply is not here, and the browser shows the truth rather than the intent.
 """
