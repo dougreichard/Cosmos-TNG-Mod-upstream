@@ -21,14 +21,14 @@
 # [Federation](federation)
 ---
 Color: #07F
-Enemies: klingon, romulan, cardassian, kazon, orion, dominion, breen
+Enemies: players, *
 ---
 The United Federation of Planets.
 
 # [Klingon](klingon)
 ---
 Color: #C30
-Enemies: federation
+Enemies: players, *
 ---
 The Klingon Empire. Hostile here because the mod fields them as a raiding faction; a
 mission that wants the TNG-era alliance can flip it with side_set_relations.
@@ -36,41 +36,44 @@ mission that wants the TNG-era alliance can flip it with side_set_relations.
 # [Romulan](romulan)
 ---
 Color: #0A6
-Enemies: federation
+Enemies: players, *
 ---
 The Romulan Star Empire.
 
 # [Cardassian](cardassian)
 ---
 Color: #B93
-Enemies: federation
+Allies: dominion, breen
+Enemies: players, *
 ---
 The Cardassian Union.
 
 # [Kazon](kazon)
 ---
 Color: #A63
-Enemies: federation
+Enemies: players, *
 ---
 The Kazon sects.
 
 # [Orion](orion)
 ---
 Color: #9C3
-Enemies: federation
+Enemies: players, *
 ---
 The Orion Syndicate.
 
 # [Dominion](dominion)
 ---
 Color: #96C
-Enemies: federation
+Allies: cardassian, breen
+Enemies: players, *
 ---
 The Dominion.
 
 # [Breen](breen)
 ---
 Color: #6AC
-Enemies: federation
+Allies: dominion, cardassian
+Enemies: players, *
 ---
 The Breen Confederacy, fighting alongside the Dominion.
