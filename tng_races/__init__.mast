@@ -162,6 +162,18 @@ else:
     tng_sides_doc = amd_document(media_read_relative_file("tng_sides.amd"), data_parser=amd_side_data)
     sides_declare_amd(tng_sides_doc)
 
+    # DIPLOMACY COLOURS, which nothing else sets for a mission built on this mod.
+    #
+    # These are the GLOBAL relation colours the 2D map paints contacts with - separate from
+    # the per-faction `Color:` in tng_sides.amd, which is the side's own icon colour. LM sets
+    # them in ITS create_sides route (maps/watch_for_end.mast), but that file is LM's own
+    # mission content and is not in any mastlib - so a mission that loads the LM addons and
+    # this mod, as the TNG suite does, declares eight factions and never sets a single
+    # relation colour. Set here, on the route that already owns this mod's diplomacy.
+    sim.set_diplomacy_color(sbs.DIPLOMACY.HOSTILE, "#F00")
+    sim.set_diplomacy_color(sbs.DIPLOMACY.NEUTRAL, "#077")
+    sim.set_diplomacy_color(sbs.DIPLOMACY.ALLIED, "#0F0")
+
 
 # ART IS THE UNRESOLVED PART, and it is the only reason anyone would still be told to unzip
 # over their game folder. The meshes travel in this mod's shared-media pack, but the engine
