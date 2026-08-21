@@ -71,6 +71,14 @@ log("tng_races: " + tng_manifest.get("mod") + " " + tng_version, "tng_races")
 # files as HJSON, not YAML, and when a .yaml sits beside a .json it opens the .yaml and
 # rejects it whole - so the pack ships exactly one file. Carrying both also put 119KB of
 # unreadable duplicate in every install and made "which one is stale" a silent failure.
+# BREADCRUMB, and it earns its place. When the hulls do not arrive there is exactly one
+# line in debug.log to go on - the one ship_data_add_extra writes - and its ABSENCE is
+# ambiguous: it means either that this file never executed at all, or that it did and
+# never reached this section. Those need different fixes and looked identical for a whole
+# session. One line before the call separates them for good.
+#
+# DEBUG, not print or log: debug.log is the only channel that survives an engine session.
+tng_breadcrumb("tng_races: __init__.mast reached the Ships section")
 tng_declared = tng_declare_ships()
 # print, NOT log. log() is Python logging with no handler attached and is invisible in
 # the engine - and this line is the ONLY report of whether the engine accepted the

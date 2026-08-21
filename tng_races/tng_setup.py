@@ -515,3 +515,17 @@ def tng_set_default_music():
         return MUSIC_BANK
     return (f"{settings_get_defaults().get('MUSIC_SELECT')} "
             f"(the mission asked for it; {MUSIC_BANK} is still selectable)")
+
+def tng_breadcrumb(message):
+    """Write one line to debug.log - the only channel that survives an engine session.
+
+    print() lands on the server console and is gone when the window scrolls; log() is
+    Python logging with no handler attached and is invisible in the engine. Neither can
+    be read after the fact, which is when the question is always asked.
+    """
+    try:
+        from sbs_utils.mast.mast import DEBUG
+        DEBUG(str(message))
+    except Exception:                                       # noqa: BLE001
+        pass
+    return message
