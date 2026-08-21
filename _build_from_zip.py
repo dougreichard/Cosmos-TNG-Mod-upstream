@@ -796,7 +796,14 @@ def main():
     # NO `#` HEADER COMMENTS. They are valid HJSON and NOT valid JSON, and the point of the
     # .json extension is that a strict reader can open it. Provenance lives in
     # tng_manifest.json, which carries mod and version.
-    with open(os.path.join(MEDIA, "tng_ships.json"), "w", encoding="utf-8") as f:
+    # newline="\n" IS LOAD-BEARING. Without it Windows text mode turns every
+    # newline into a CRLF pair, and this was the ONLY ship-data file in the install with
+    # CRLF endings - LM's two and the engine team's own BeamArcTest/extraShipDataAAA.json
+    # are all bare LF. Whether the engine's HJSON reader is what chokes on that is being
+    # measured separately (probes tng_probe_lf / tng_probe_crlf_small); LF is what every
+    # file the engine DOES accept uses, so match them regardless.
+    with open(os.path.join(MEDIA, "tng_ships.json"), "w", encoding="utf-8",
+              newline="\n") as f:
         f.write(json.dumps({"#ship-list": entries}, indent=2,
                            ensure_ascii=True) + chr(10))
 

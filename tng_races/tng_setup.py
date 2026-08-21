@@ -67,95 +67,61 @@ def tng_safe_status(text):
 # not this.
 
 
-def tng_declare_ships(ships_file):
+def tng_declare_ships(ships_file=None):
     """Give the 51 hulls to the ENGINE and to the library, without writing a file.
 
-    TWO CONSUMERS, and they are not the same thing:
+    THROUGH `ship_data.add_extra`, NEVER `sbs.add_extra_ship_data` DIRECTLY, and that is
+    the whole point of this function.
 
-      * the ENGINE needs them to build hulls, and learns them from a real file on disk.
-        `sbs.add_extra_ship_data(name, path)` (engine 1.3.5) points it straight at the
-        mod's own copy - no extension on the name, the engine tries .yaml then .json.
-      * the LIBRARY needs them for its own queries: `filter_ship_data_by_side` is how a
-        prefab finds "a Klingon warship", and `get_ship_name` is what a console displays.
-        The engine call does not populate that, so it is merged here too.
+    `create_new_sim()` REBUILDS the engine's ship table and drops everything registered
+    before it. `sim_create()` compensates by replaying afterwards - but `extra_replay()`
+    can only replay files it has a RECORD of, and the only thing that records one is
+    `add_extra`. This add-on declares at story load, which is always before the first map
+    calls `sim_create()`, so calling the engine raw meant the hulls were registered, then
+    thrown away, and nothing said so: the LIBRARY still had every stat, so every headless
+    run, name lookup, picker and lint reported them present while the engine had none of
+    them. The bill arrived as a spawn dying inside the engine with `bad allocation`,
+    minutes later, against a line that never mentions ship data. Measured on engine
+    1.3.6-A, 2026-08-21; the discriminator was LM's monsters working (they go through
+    `add_extra`) while these did not.
 
-    WHY NOT `ship_data_merge_mod`: it is the BROKEN route, not merely the older one.
-    It reaches the engine by GENERATING `extraShipData.json` in the mission folder during
-    sim_create(). That file stays on disk, and on the next run `get_ship_data()` prepends
-    it whole - `#mod` entries and all - while the add-on declares the same entries again.
-    This mod is where it was measured: 51 hulls became 102 from run 2 onward. The file the
-    feature generates is the input that breaks it. Writing nothing avoids the class.
+    `add_extra` also does the things that were open-coded here, and does them better:
+
+      * finds the file itself - `media_roots()` (this mission, then each pinned pack) and
+        it PREFERS the unpacked `__lib__/media` copy, which is the only one the engine can
+        open. A mod developed in place has the same file twice and the source folder is
+        the wrong answer.
+      * takes the name WITHOUT an extension, tries `.yaml` then `.json`, and hands the
+        engine the exact file it read - one decision instead of two that can disagree.
+      * merges library-side, so `filter_ship_data_by_side` (how a prefab finds "a Klingon
+        warship") and `get_ship_name` work.
+      * warns if the file is block YAML the engine will reject, or names art that is not
+        there, and writes one line to `debug.log` saying whether the engine took it.
+
+    WHY NOT `ship_data_merge_mod`: it is the BROKEN route, not merely the older one. It
+    reaches the engine by GENERATING `extraShipData.json` during sim_create(), a file that
+    stays on disk and gets read back next run while the add-on declares the same entries
+    again - this mod is where 51 hulls became 102. On engine 1.3.6 that route is dead
+    outright: the binary no longer contains the string `extraShipData` at all.
+
+    `ships_file` is accepted and ignored, so an older call site still works.
 
     Returns a short STATUS STRING rather than a dict - MAST re-runs an assigned string
     through f-string formatting, so a dict's braces reaching `log(f"...{result}")` die with
     "FORMAT String error" reported against the caller.
-
-    The presence guard is what makes this safe to call twice: the MOCK's
-    `add_extra_ship_data` already merges library-side (so headless behaves like the engine),
-    the real engine does not, and one guard covers both without either knowing about the
-    other.
     """
-    from sbs_utils.helpers import FrameContext
-    from sbs_utils.procedural.ship_data import get_ship_data_for, merge_mod_ship_yaml
-    import os
+    from sbs_utils.procedural.ship_data import add_extra, get_ship_data_for
 
-    if not ships_file:
-        return "NOT DECLARED - the media pack was not found"
+    # The name carries no extension: add_extra decides the format by which file opens, and
+    # the pack ships only the JSON (the engine reads these as HJSON, not YAML, and prefers
+    # a .yaml sitting beside it - so shipping both is how the engine ends up with neither).
+    reached = add_extra("tng_ships", mod="tng_races")
 
-    # media_shared answers RELATIVE TO THE MISSION - that is what gui_image_add_atlas and
-    # friends want, and it reads better in a stack trace. Neither `open()` nor the engine
-    # is standing in the mission folder, so resolve it before using it either way.
-    from sbs_utils.fs import get_mission_dir
-    if not os.path.isabs(ships_file):
-        ships_file = os.path.abspath(os.path.join(get_mission_dir(), ships_file))
-    pack_dir = os.path.dirname(ships_file)
-
-    # ONE FILE, AND IT IS THE JSON.
-    #
-    # The engine does not read YAML properly yet, so the JSON is what `add_extra_ship_data`
-    # is handed - and therefore what the library merges from too, so both consumers read
-    # the same bytes and cannot disagree.
-    #
-    # This used to take the .yaml and derive the .json beside it, which meant the pack
-    # shipped BOTH: 119KB of duplicate the engine could not read, and a divergence whose
-    # only guard was comparing mtimes at dev time. `_build_from_zip.py` now writes the JSON
-    # directly and there is no intermediate to go stale.
-    engine_file = ships_file
-
-    # No art-path patching here any more: artfileroot is baked exe-relative at build time
-    # and artfilepath is obsolete as of engine v1.3.6. See the note above.
-    art = "baked"
-
-    told_engine = None
-    try:
-        sbs = FrameContext.context.sbs
-        # ONE argument, the whole file. The 2026-08-15 engine takes
-        # `add_extra_ship_data(fully_pathed_file)`; the old `(name, folder)` form is a
-        # TypeError, caught below as "failed:" and otherwise silent - the library merge
-        # still runs, so the hulls have every stat and simply do not exist in the engine.
-        sbs.add_extra_ship_data(engine_file)
-        told_engine = True
-    except AttributeError:
-        # An older engine or sbslib without the call. Not fatal: the library merge below
-        # still gives the mission its ships, they just have no engine-side hull.
-        told_engine = False
-    except Exception as e:
-        told_engine = "failed: " + str(e)
-
-    merged = 0
-    if get_ship_data_for("tng_fed_saber") is None:
-        try:
-            with open(engine_file, encoding="utf-8") as f:
-                text = f.read()
-        except OSError as e:
-            return tng_safe_status("engine=" + str(told_engine) + " library=unreadable "
-                    + str(e) + " art=" + art)
-        import re
-        merge_mod_ship_yaml(re.sub(r"^[ \t]*//.*$", "", text, flags=re.M), "tng_races")
-        merged = 1
-    return ("engine=" + str(told_engine)
-            + " fmt=" + os.path.splitext(engine_file)[1].lstrip(".")
-            + " library=" + ("merged" if merged else "already present"))
+    # A verification, NOT a merge gate. add_extra has already merged library-side; asking
+    # for a known key afterwards is how we can say "library=ok" and mean it.
+    have = get_ship_data_for("tng_fed_saber") is not None
+    return tng_safe_status("engine=" + str(reached)
+                           + " library=" + ("ok" if have else "MISSING - file not found"))
 
 
 def _tng_enabled(manifest, test):

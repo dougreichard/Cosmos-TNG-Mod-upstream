@@ -62,24 +62,21 @@ log("tng_races: " + tng_manifest.get("mod") + " " + tng_version, "tng_races")
 # turning the whole Cardassian race on.
 #
 # The ship list lives in the MEDIA PACK, not in this mastlib, because the ENGINE opens it
-# itself and a mastlib is a zip. `media_shared` resolves it out of the unpacked pack in
-# __lib__, so the path is the same in a clone and in a fetched copy - which is why a
-# mission has to declare the pack in `shared_media` alongside this mastlib.
+# itself and a mastlib is a zip - which is why a mission has to declare the pack in
+# `shared_media` alongside this mastlib. `tng_declare_ships` finds it through
+# `ship_data_add_extra`, which searches the mission and then each pinned pack and PREFERS
+# the unpacked `__lib__/media` copy: the only one the engine can open.
 #
-# YAML: `add_extra_ship_data` takes the name WITHOUT an extension and tries .yaml then
-# .json, so the format is the mod's choice - and YAML has real comments.
-# THE JSON IS THE ARTIFACT. The engine does not read YAML properly yet, and this is the
-# file it is handed - so it is also the file the library merges from, and the only one that
-# ships. There is no .yaml beside it any more: carrying both put 119KB of unreadable
-# duplicate in every install and made "which one is stale" a silent failure with nothing
-# but a dev-time mtime check between them.
-tng_ships_file = media_shared("tng_ships.json")
-tng_declared = tng_declare_ships(tng_ships_file)
+# THE JSON IS THE ARTIFACT and the name here carries no extension. The engine reads these
+# files as HJSON, not YAML, and when a .yaml sits beside a .json it opens the .yaml and
+# rejects it whole - so the pack ships exactly one file. Carrying both also put 119KB of
+# unreadable duplicate in every install and made "which one is stale" a silent failure.
+tng_declared = tng_declare_ships()
 # print, NOT log. log() is Python logging with no handler attached and is invisible in
 # the engine - and this line is the ONLY report of whether the engine accepted the
 # mod's ships at all, which is the first question asked whenever a hull does not
-# appear. It names the format too, so "did it read the JSON or the YAML" is answerable
-# without instrumenting anything.
+# appear. `debug.log` carries the detail - which file was found, what path the engine was
+# handed, and whether it took it - written by ship_data_add_extra itself.
 print("tng_races: 51 hulls, " + tng_declared)
 
 
