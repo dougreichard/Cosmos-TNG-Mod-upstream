@@ -1,7 +1,8 @@
 {
     "version": "v0.2.3",
     "mastlib": [
-        "tng_races"
+        "tng_races",
+        "tng_reskin"
     ],
     "zip": [
         "media"
