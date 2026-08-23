@@ -48,6 +48,14 @@ sim_resume()
 # alive. Do not move it to an imported file: main only falls through into a label in its OWN
 # file, and a dead gui_task makes every gui_task_jump a silent no-op.
 === tngview_picker
+    # `map=<name>` skips the picker, the same launch argument LM's server console honors.
+    # maps_find takes an index, a path, a display name or a unique substring, and answers
+    # None for "no argument" and for an AMBIGUOUS one alike - so an unusable value falls
+    # through to the picker rather than starting the wrong map.
+    tngview_auto_map = maps_find(command_line_get("map"))
+    if tngview_auto_map is not None:
+        map_start(tngview_auto_map)
+        jump running
 ---pick
     chosen = await gui_map_picker()
     map_start(chosen)

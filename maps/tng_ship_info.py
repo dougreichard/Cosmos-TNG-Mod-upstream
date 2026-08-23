@@ -13,7 +13,8 @@ failed to merge simply is not here, and the browser shows the truth rather than 
 from sbs_utils.mast.mast_node import MastDataObject
 from sbs_utils.pages.widgets.layout_listbox import LayoutListBoxHeader
 from sbs_utils.procedural.gui import gui_row, gui_text
-from sbs_utils.procedural.ship_data import filter_ship_data_by_side, get_ship_data_for
+from sbs_utils.procedural.ship_data import (filter_ship_data_by_side, get_ship_data_for,
+                                            get_ship_index)
 
 # Every hull the mod declares is keyed `tng_<faction>_<class>`, so one substring selects
 # the mod's own hulls out of a table that also holds every stock and LM hull.
@@ -130,3 +131,116 @@ def tngview_row_key(item):
     if item is None or isinstance(item, LayoutListBoxHeader):
         return None
     return getattr(item, "key", None)
+
+
+# ---------------------------------------------------------------------------
+# Bake walk
+# ---------------------------------------------------------------------------
+#
+# A hull's `.paxmesh` is derived art the engine bakes the FIRST TIME something draws the
+# hull. Until then the client loads the raw `.obj` and bakes it mid-session - and a client
+# that dies during a session dies in front of guests.
+#
+# The bake is worth forcing ahead of time for its own sake, and it is also the A/B for a
+# crash we are chasing: `elementCount is zero for DX11PaxGraphicsClass::CreateIndexList`,
+# an assert whose only callers are the engine's two mesh loaders, so it fires at LOAD time.
+# Bake everything up front and either the crash stops - which names the bake path - or it
+# does not, which clears it.
+#
+# This only does anything in the REAL engine. The browser mock draws gui_ship without ever
+# writing a .paxmesh, so a walk under cosmos_dev proves nothing. Check the result on disk
+# with _tools/check_art.py.
+
+
+def tngview_bake_keys(scope=None):
+    """One ship key per distinct artfileroot, in a stable order.
+
+    De-duplicated by artfileroot because baking is per ART FILE, not per ship key: the mod
+    reskins stock keys onto its own hulls, so `tng_crd_damar` and `arvonian_carrier` are one
+    mesh and drawing both bakes nothing twice but costs twice the wall clock.
+
+    scope "all" walks every key in the merged ship table - stock and LM art included, which
+    is what the party missions actually spawn. Anything else walks the mod's own hulls only.
+    """
+    if scope == "all":
+        entries = list(get_ship_index().values())
+    else:
+        entries = tngview_ships()
+    seen = set()
+    keys = []
+    for entry in sorted(entries, key=lambda e: (e.get("artfileroot") or "")):
+        root = entry.get("artfileroot")
+        key = entry.get("key")
+        if not root or not key or root in seen:
+            continue
+        seen.add(root)
+        keys.append(key)
+    return keys
+
+
+def tngview_bake_at(keys, index):
+    """The key at `index`, or None once the walk has run off the end.
+
+    The bounds test lives here so the .mast never indexes a list: an IndexError inside a
+    MAST expression stops the command that contains it, so the walker would end silently
+    partway through and look like it had simply finished.
+    """
+    if not keys or index is None or index < 0 or index >= len(keys):
+        return None
+    return keys[index]
+
+
+def tngview_status(keys, index, ship):
+    """Header text: bake progress while walking, the normal heading otherwise.
+
+    Kept free of `:` and `;` because the caller embeds it in a style string, and free of
+    braces because MAST re-runs an assigned string through f-string formatting.
+    """
+    if not keys:
+        return tngview_heading()
+    done = index + 1 if index is not None else 1
+    if done > len(keys):
+        done = len(keys)
+    return ("baking " + str(done) + " of " + str(len(keys)) + " - "
+            + _clean(ship or "").replace(":", " ").replace(";", " "))
+
+
+def tngview_status_style(keys, index, ship):
+    """The header's full style string.
+
+    Text.update() replaces the WHOLE style, not just the text in it, so the color and font
+    have to travel with every update or the header goes plain the moment a walk starts.
+    Building it here keeps the build and the update reading from one place.
+    """
+    return "color:#8cf;font:gui-3;$text:" + tngview_status(keys, index, ship) + ";"
+
+
+def tngview_bake_show(ship_widget, status_widget, keys, index, key):
+    """Swap the model and the header IN PLACE - deliberately without a page rebuild.
+
+    Rebuilding is the obvious way to do this and it is the wrong one: a repaint ends the
+    tasks hosted on the GUI task, and the walker asks for a change once a second, so a
+    rebuilding walker kills itself on its own first step. MEASURED - it baked exactly one
+    hull and stopped, as a sub-task and as an independent task alike.
+
+    Updating the two widgets directly leaves the page alone, so nothing ends the walker,
+    and it is cheaper than a rebuild besides.
+
+    The widgets arrive as arguments rather than being looked up because the page reassigns
+    them on every repaint; the walker reads the shared refs fresh each step, so an operator
+    clicking a row mid-walk cannot leave it writing to a dead widget.
+
+    Returns True when a hull was really shown, False when the page is not built yet.
+    """
+    if ship_widget is None:
+        # The page has not built yet - `bake=` starts the walk at map entry, ahead of the
+        # first repaint. Report nothing shown so the caller waits rather than burning a hull.
+        return False
+    text = tngview_status(keys, index, key)
+    # print, not log - log() is Python logging with no handler under the engine, so it is
+    # invisible. The operator is watching this run; give them progress they can read.
+    print(text)
+    ship_widget.update(key)
+    if status_widget is not None:
+        status_widget.update(tngview_status_style(keys, index, key))
+    return True

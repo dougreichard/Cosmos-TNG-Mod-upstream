@@ -15,16 +15,42 @@
 === tng_ships_page
     default shared TNGVIEW_SHIP = None
     default shared TNGVIEW_HINT = None
+    # Bake-walk state. TNGVIEW_BAKE_LIST is None when idle, which is also what the buttons
+    # below switch on, so there is one source of truth for "am I baking".
+    default shared TNGVIEW_BAKE_LIST = None
+    default shared TNGVIEW_BAKE_AT = 0
+    default shared TNGVIEW_BAKE_SECONDS = 1.5
+    # The two widgets the walker writes to, declared HERE and not only where they are built.
+    # `bake=` schedules the walker at map entry, before the first repaint has created them,
+    # and reading a shared that was never assigned is a NameError - which STOPS the command
+    # and ends the task. MEASURED in the engine: `name 'TNGVIEW_SHIP_WIDGET' is not defined`
+    # in mast.runtime.log, walk dead, zero hulls baked. The mock never showed it, because a
+    # click can only happen after a repaint has already built them.
+    default shared TNGVIEW_SHIP_WIDGET = None
+    default shared TNGVIEW_STATUS_WIDGET = None
 
     ship_rows = tngview_ship_rows()
     if TNGVIEW_SHIP is None:
         TNGVIEW_SHIP = tngview_first_ship(ship_rows)
 
+    # `bake=tng` / `bake=all` starts the walk with no click, so the whole pre-session bake
+    # is one command line. The engine hands any unrecognized key=value straight to script,
+    # which is what makes a launch argument cheaper than automating a button:
+    #
+    #   Artemis3-x64-release.exe autostartserver defaultmission=Cosmos-TNG-Mod     #                            map=tng_ships bake=tng
+    tngview_bake_arg = command_line_get("bake")
+    if tngview_bake_arg is not None and TNGVIEW_BAKE_LIST is None:
+        TNGVIEW_BAKE_LIST = tngview_bake_keys(tngview_bake_arg)
+        TNGVIEW_BAKE_AT = 0
+        task_schedule(tngview_bake_run)
+
 ---repaint
     # ---- header ----------------------------------------------------------
     gui_section(style="area:2,2,98,9;")
     gui_row("row-height:1fr;")
-    gui_text("color:#8cf;font:gui-3;$text:" + tngview_heading() + ";")
+    # Held in a shared, and reassigned on every repaint, so the bake walker always writes
+    # to the widget that is currently on screen.
+    shared TNGVIEW_STATUS_WIDGET = gui_text(tngview_status_style(TNGVIEW_BAKE_LIST, TNGVIEW_BAKE_AT, TNGVIEW_SHIP))
 
     # ---- hull picker -----------------------------------------------------
     gui_section(style="area:2,10,32,95;")
@@ -59,7 +85,7 @@
     gui_row("row-height:1fr;")
     # col-width: square is REQUIRED. gui_face and gui_icon are square already; gui_ship and
     # the image widgets are not, so beside anything else they flex and take half the row.
-    gui_ship(TNGVIEW_SHIP, style="col-width: square;")
+    shared TNGVIEW_SHIP_WIDGET = gui_ship(TNGVIEW_SHIP, style="col-width: square;")
 
     # ---- its stats -------------------------------------------------------
     gui_section(style="area:33,69,98,89;")
@@ -69,6 +95,67 @@
     gui_section(style="area:33,90,98,97;")
     gui_row("row-height:1fr;")
     gui_button("maps", on_press="tngview_picker")
+    # Inline `on gui_message` handlers rather than on_press labels on purpose: an inline
+    # handler runs ON the GUI task, so its `jump repaint` moves the page the operator is
+    # looking at. The listbox above already relies on exactly that.
+    if TNGVIEW_BAKE_LIST is None:
+        bake_tng = gui_button("bake TNG art")
+        on gui_message(bake_tng):
+            TNGVIEW_BAKE_LIST = tngview_bake_keys("tng")
+            TNGVIEW_BAKE_AT = 0
+            # task_schedule, NOT sub_task_schedule: a repaint ends the tasks hosted on the
+            # GUI task, and this handler asks for one on the next line.
+            task_schedule(tngview_bake_run)
+            # The one repaint of the whole walk. It swaps these buttons for "stop baking",
+            # which also stops a second walker being started on top of this one.
+            jump repaint
+        bake_all = gui_button("bake every hull")
+        on gui_message(bake_all):
+            TNGVIEW_BAKE_LIST = tngview_bake_keys("all")
+            TNGVIEW_BAKE_AT = 0
+            task_schedule(tngview_bake_run)
+            jump repaint
+    else:
+        bake_stop = gui_button("stop baking")
+        on gui_message(bake_stop):
+            TNGVIEW_BAKE_LIST = None
+            TNGVIEW_BAKE_AT = 0
+            jump repaint
 
     await gui()
+    # Explicit, because a top-level label follows. Labels fall through, so the adjacency of
+    # two labels is an interface even when nothing in the file says so.
+    ->END
+
+
+#  Walk every distinct piece of hull art once so the engine bakes its .paxmesh now, rather
+#  than mid-session in front of guests. See the Bake walk note in tng_ship_info.py for why
+#  this exists and why it does nothing under the browser mock.
+#
+#  ONE walker task drives the whole list. Scheduling a stepper from the repaint instead
+#  would spawn a second one every time the operator clicked a row mid-walk.
+=== tngview_bake_run
+---step
+    ->END if TNGVIEW_BAKE_LIST is None
+    next_key = tngview_bake_at(TNGVIEW_BAKE_LIST, TNGVIEW_BAKE_AT)
+    if next_key is None:
+        TNGVIEW_BAKE_LIST = None
+        TNGVIEW_BAKE_AT = 0
+        gui_task_jump("repaint")
+        ->END
+    TNGVIEW_SHIP = next_key
+    # Swap the model in place. NOT a repaint - see tngview_bake_show for what a repainting
+    # walker does to itself.
+    # Returns False until the page has actually built its widgets - which matters when the
+    # walk is started by `bake=` at map entry, before the first repaint has run. Advancing
+    # anyway would silently skip hull 1, the one case nobody would notice.
+    tngview_shown = tngview_bake_show(TNGVIEW_SHIP_WIDGET, TNGVIEW_STATUS_WIDGET, TNGVIEW_BAKE_LIST, TNGVIEW_BAKE_AT, next_key)
+    # delay_app (REAL seconds), NOT delay_sim. MEASURED: with delay_sim the walker printed
+    # its first hull and never came back - this is a viewer, it runs with the sim paused,
+    # and a paused sim never advances sim time, so the delay simply never resolves. Wall
+    # clock is the right clock for this anyway: baking is disk work, not game time.
+    await delay_app(TNGVIEW_BAKE_SECONDS)
+    if tngview_shown:
+        TNGVIEW_BAKE_AT = TNGVIEW_BAKE_AT + 1
+    jump step
 
