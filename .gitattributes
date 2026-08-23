@@ -1,3 +1,27 @@
+# LINE ENDINGS - LF, everywhere, always.
+#
+# `git clone` on Windows with core.autocrlf=true rewrites every LF to CRLF on checkout,
+# and this repo hands two of its files to the ENGINE, which reads them itself. A CRLF
+# terminating the final closing brace of media/tng_ships.json is enough for the engine's
+# line-oriented reader to reject the WHOLE file: all 51 hulls are then absent from the
+# engine while sbs_utils still has every stat, so every headless run, picker and lint
+# reports them present. The bill arrives minutes later as
+#     MemoryError: bad allocation
+# inside sim.create_space_object(), against a line that never mentions ship data.
+#
+# Measured 2026-08-22: a fresh clone of this repo failed that way and the dev tree
+# worked, and LINE ENDINGS WERE THE ONLY BYTE DIFFERENCE between the two installs -
+# every packaged file was identical once CRLF was normalized. Autocrlf had also
+# rewritten all 41 ships/*.obj meshes, which the engine bakes .paxmesh from.
+#
+# The engine team's own data/missions/BeamArcTest/extraShipDataAAA.json is LF, and so is
+# every ship-data file the engine accepts. text=auto still leaves real binaries alone.
+#
+# This governs CHECKOUT only. An existing CRLF clone keeps its files until it is
+# renormalized: set core.autocrlf=false, delete the tracked files, and check them out
+# again. Re-cloning is the same thing with fewer steps.
+* text=auto eol=lf
+
 *.mast linguist-language=Python
 *.amd linguist-language=markdown
 
