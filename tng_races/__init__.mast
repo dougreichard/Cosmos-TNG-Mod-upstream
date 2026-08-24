@@ -43,6 +43,23 @@ tng_music_applied = tng_set_default_music()
 log("tng_races: soundtrack -> " + tng_music_applied, "tng_races")
 
 
+# ---- Theaters ------------------------------------------------------
+#
+# WHO a mission fights, as data. A theater rosters races in the MISSION'S vocabulary and an
+# `Art:` map says how those races are drawn - LM branches on the race NAME to pick an enemy
+# station type, so a roster of Trek faction names would make those branches fall through and
+# spawn no stations at all.
+#
+# Declaring them costs nothing: a theater only takes effect when THEATER names it, and with
+# THEATER unset every consumer keeps its own literal list. So this is safe to load
+# unconditionally, and a mission that has never heard of theaters is unaffected.
+#
+# media_read_relative_file, not theater_load_amd: it reads from the addon folder OR from
+# inside the packaged .mastlib, and get_mission_dir_filename cannot reach into a zip.
+tng_theaters = theater_declare_text(media_read_relative_file("theaters.amd"))
+log("tng_races: theaters -> " + ", ".join(sorted(tng_theaters)), "tng_races")
+
+
 # ---- Version -------------------------------------------------------
 #
 # Logged and published as a shared variable, so a running game can say which build of the

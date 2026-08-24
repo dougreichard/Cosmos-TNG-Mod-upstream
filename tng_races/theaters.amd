@@ -1,0 +1,65 @@
+// TNG THEATERS - who a mission fights, and what they look like.
+//
+// A theater rosters races in the MISSION'S OWN vocabulary (kralien, torgoth, ...) because
+// LegendaryMissions BRANCHES on those names: borderwar and deepstrike both run
+// `if enemy1 == "Kralien":` to choose an enemy station type. A roster naming Trek factions
+// directly would make every one of those branches fall through and the map would spawn no
+// enemy stations at all, silently. `Art:` is what says how those races are DRAWN.
+//
+// ORDER IS DOMINANCE. The map keeps its own weight curve - siege runs [70, 10, 10, 10] at
+// difficulty 5 and [10, 30, 30, 30] at 11 - and applies it to this list in order. So the
+// FIRST race listed is the one you will mostly be shooting at.
+//
+// FACTION DEPTH DECIDES WHAT CAN LEAD. The pack ships four hulls each for Cardassian,
+// Klingon, Romulan, Kazon and Orion; two for Dominion; and exactly ONE for Breen. A faction
+// in the 70% slot with one hull means every enemy that night is the same model, so Breen
+// and Dominion only ever appear in the 10% slots below. `theater_depth_report()` enforces
+// this and will name the faction if it is ever got wrong.
+//
+// `usfp`, `tsn` and `civ` are in every `Art:` map even though they are not enemies - they
+// re-skin the FRIENDLY side. `usfp` is the one that matters and the one that is easy to miss:
+// stock starbases and civilian freighters are side `USFP` in shipData, NOT `tsn`, so a map
+// naming only tsn/civ leaves every station and freighter stock. `skaraan` is mapped too even
+// though no map rosters it - it still spawns from other paths.
+
+# [Dominion War](dominion_war)
+---
+Races: kralien, torgoth, arvonian, ximni
+Art:   kralien=Cardassian, torgoth=Dominion, arvonian=Breen, ximni=Klingon, skaraan=Dominion, usfp=Federation, tsn=Federation, civ=Federation
+Faces: kralien=cardassian, torgoth=jemhadar, arvonian=vorta, ximni=klingon, tsn=human, civ=human
+Music: TNG_Music
+---
+The Alpha Quadrant at war. Cardassian space is the front line, the Dominion holds the
+wormhole, and a Breen raid is the thing nobody is ready for. Matches the Chin'toka and DS9
+trials, so it is the theater to run alongside them.
+
+# [Klingon War](klingon_war)
+---
+Races: kralien, torgoth, arvonian, ximni
+Art:   kralien=Klingon, torgoth=Romulan, arvonian=Orion, ximni=Kazon, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
+Faces: kralien=klingon, torgoth=romulan, arvonian=orion, ximni=kazon, tsn=human, civ=human
+Music: TNG_Music
+---
+The alliance has broken. Every faction here has four hulls, which makes this the most varied
+theater in the pack - the one to pick if a night should not feel repetitive.
+
+# [Romulan Cold War](romulan_cold_war)
+---
+Races: kralien, torgoth, arvonian, ximni
+Art:   kralien=Romulan, torgoth=Klingon, arvonian=Cardassian, ximni=Orion, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
+Faces: kralien=romulan, torgoth=klingon, arvonian=cardassian, ximni=orion, tsn=human, civ=human
+Music: TNG_Music
+---
+Warbirds decloaking on the Neutral Zone. Klingons and Cardassians circle the edges, and the
+Orions take what is left unattended.
+
+# [Delta Quadrant](delta_quadrant)
+---
+Races: kralien, torgoth, arvonian, ximni
+Art:   kralien=Kazon, torgoth=Romulan, arvonian=Cardassian, ximni=Klingon, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
+Faces: kralien=kazon, torgoth=romulan, arvonian=cardassian, ximni=klingon, tsn=human, civ=human
+Music: TNG_Music
+---
+Kazon sects everywhere and a long way from home. This is what the conversion produced by
+ACCIDENT before theaters existed - the hull pairing put Kazon in the 70% slot - so it is
+kept, and named, because it is a perfectly good theater once it is a choice.
