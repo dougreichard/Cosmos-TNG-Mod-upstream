@@ -27,6 +27,7 @@
 Races: kralien, torgoth, arvonian, ximni
 Art:   kralien=Cardassian, torgoth=Dominion, arvonian=Breen, ximni=Klingon, skaraan=Dominion, usfp=Federation, tsn=Federation, civ=Federation
 Faces: kralien=cardassian, torgoth=jemhadar, arvonian=vorta, ximni=klingon, tsn=human, civ=human
+Player Faction: Federation
 Music: TNG_Music
 ---
 The Alpha Quadrant at war. Cardassian space is the front line, the Dominion holds the
@@ -38,6 +39,7 @@ trials, so it is the theater to run alongside them.
 Races: kralien, torgoth, arvonian, ximni
 Art:   kralien=Klingon, torgoth=Romulan, arvonian=Orion, ximni=Kazon, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
 Faces: kralien=klingon, torgoth=romulan, arvonian=orion, ximni=kazon, tsn=human, civ=human
+Player Faction: Federation
 Music: TNG_Music
 ---
 The alliance has broken. Every faction here has four hulls, which makes this the most varied
@@ -48,6 +50,7 @@ theater in the pack - the one to pick if a night should not feel repetitive.
 Races: kralien, torgoth, arvonian, ximni
 Art:   kralien=Romulan, torgoth=Klingon, arvonian=Cardassian, ximni=Orion, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
 Faces: kralien=romulan, torgoth=klingon, arvonian=cardassian, ximni=orion, tsn=human, civ=human
+Player Faction: Federation
 Music: TNG_Music
 ---
 Warbirds decloaking on the Neutral Zone. Klingons and Cardassians circle the edges, and the
@@ -58,8 +61,29 @@ Orions take what is left unattended.
 Races: kralien, torgoth, arvonian, ximni
 Art:   kralien=Kazon, torgoth=Romulan, arvonian=Cardassian, ximni=Klingon, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
 Faces: kralien=kazon, torgoth=romulan, arvonian=cardassian, ximni=klingon, tsn=human, civ=human
+Player Faction: Federation
 Music: TNG_Music
 ---
 Kazon sects everywhere and a long way from home. This is what the conversion produced by
 ACCIDENT before theaters existed - the hull pairing put Kazon in the 70% slot - so it is
 kept, and named, because it is a perfectly good theater once it is a choice.
+
+# [Orion Syndicate](orion_syndicate)
+---
+Races: kralien, torgoth, arvonian, ximni
+Art:   kralien=Klingon, torgoth=Cardassian, arvonian=Breen, ximni=Romulan, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
+Faces: kralien=klingon, torgoth=cardassian, arvonian=vorta, ximni=romulan, tsn=orion, civ=human
+Music: TNG_Music
+Player Faction: Orion
+Player Side Name: Orion Syndicate
+Player Side Color: #fa0
+Player Side Icon: 7
+---
+The crew are pirates. This is the theater that shows what the player fields are for: the
+crew fly Orion hulls under Orion colors with Orion faces, while their `tsn` ALLIES stay
+Federation - two different things the one word "tsn" used to decide.
+
+Nothing here moves a side KEY. The crew are still side `tsn` to the engine, so every
+relation, every `//comms` gate and every friendly starbase behaves exactly as the mission
+wrote it. Only the costume changed. `Player Side Key:` would make them genuinely hostile
+and is refused, loudly, until the missions stop hardcoding `tsn`.
