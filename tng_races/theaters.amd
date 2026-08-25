@@ -1,32 +1,48 @@
-// TNG THEATERS - who a mission fights, and what they look like.
+// TNG THEATERS - who a mission fights, and in what proportion.
 //
-// A theater rosters races in the MISSION'S OWN vocabulary (kralien, torgoth, ...) because
-// LegendaryMissions BRANCHES on those names: borderwar and deepstrike both run
-// `if enemy1 == "Kralien":` to choose an enemy station type. A roster naming Trek factions
-// directly would make every one of those branches fall through and the map would spawn no
-// enemy stations at all, silently. `Art:` is what says how those races are DRAWN.
+// THESE USED TO BE ALIASES. Every theater in this file rostered the same four stock names -
+// `kralien, torgoth, arvonian, ximni` - and differed only in an `Art:` map saying what those
+// races should LOOK like. It had to: LegendaryMissions branched on the race name to pick an
+// enemy station type, so a roster naming Trek factions made every branch fall through and
+// the map spawned no enemy stations at all, silently.
 //
-// ORDER IS DOMINANCE. The map keeps its own weight curve - siege runs [70, 10, 10, 10] at
-// difficulty 5 and [10, 30, 30, 30] at 11 - and applies it to this list in order. So the
-// FIRST race listed is the one you will mostly be shooting at.
+// It does not any more. A race is a shipData `origin`, so the seven factions this pack
+// already ships ARE races the moment their hulls load - `race_station_hull("cardassian")`
+// answers `tng_crd_terok_nor` because that is the Cardassian hull carrying the `station`
+// role. So these roster Trek factions outright, and the consequences are worth naming:
 //
-// FACTION DEPTH DECIDES WHAT CAN LEAD. The pack ships four hulls each for Cardassian,
-// Klingon, Romulan, Kazon and Orion; two for Dominion; and exactly ONE for Breen. A faction
-// in the 70% slot with one hull means every enemy that night is the same model, so Breen
-// and Dominion only ever appear in the 10% slots below. `theater_depth_report()` enforces
-// this and will name the faction if it is ever got wrong.
+//   * A THEATER IS NO LONGER FOUR LONG. The old weight table was four columns wide, so a
+//     roster was four long. Weights are keyed by race now, so a theater fields as many
+//     factions as it likes - and CAN MIX, which was previously unspellable because
+//     `kralien` was simultaneously a slot name and a real race.
+//   * `Art:` KEEPS ONLY THE FRIENDLY RE-SKIN. The enemy entries are gone because there is
+//     nothing left to re-skin: a Cardassian spawns a Cardassian hull directly. What remains
+//     is `usfp`, `tsn` and `civ`, which are not enemies - they dress the friendly side, and
+//     `usfp` is the one that is easy to miss, because stock starbases and civilian
+//     freighters are side `USFP` and NOT `tsn`.
+//   * KLINGONS AND ORIONS HAVE NO STARBASE in this pack, and neither does the Breen. The
+//     maps that build enemy stations filter on `race_has_station`, so those factions simply
+//     do not turn up as station-holders in borderwar and deepstrike while still raiding
+//     everywhere else. Nothing needs saying here for that to work.
 //
-// `usfp`, `tsn` and `civ` are in every `Art:` map even though they are not enemies - they
-// re-skin the FRIENDLY side. `usfp` is the one that matters and the one that is easy to miss:
-// stock starbases and civilian freighters are side `USFP` in shipData, NOT `tsn`, so a map
-// naming only tsn/civ leaves every station and freighter stock. `skaraan` is mapped too even
-// though no map rosters it - it still spawns from other paths.
+// WHAT THE LADDER MEANS. One faction dominates at low difficulty and the mix diversifies as
+// it hardens. Whoever is written at the top weight is the faction a low-difficulty night is
+// mostly about - which used to be decided by whichever race the hull pairing happened to put
+// in the 70% slot, i.e. by nobody.
+//
+// FACTION DEPTH STILL DECIDES WHAT CAN LEAD. Cardassian, Klingon, Romulan, Kazon and Orion
+// field four hulls each; Dominion two; Breen exactly ONE. A faction leading with one hull
+// means every enemy that night is the same model, so Breen and Dominion are only ever given
+// small shares. `theater_depth_report()` enforces this and names the faction if it is got
+// wrong.
 
 # [Dominion War](dominion_war)
 ---
-Races: kralien, torgoth, arvonian, ximni
-Art:   kralien=Cardassian, torgoth=Dominion, arvonian=Breen, ximni=Klingon, skaraan=Dominion, usfp=Federation, tsn=Federation, civ=Federation
-Faces: kralien=cardassian, torgoth=jemhadar, arvonian=vorta, ximni=klingon, tsn=human, civ=human
+Weights 1:  cardassian:85, dominion:5,  breen:4,  klingon:6
+Weights 5:  cardassian:70, dominion:10, breen:8,  klingon:12
+Weights 11: cardassian:34, dominion:22, breen:14, klingon:30
+Art:   usfp=Federation, tsn=Federation, civ=Federation
+Faces: dominion=jemhadar, breen=vorta, tsn=human, civ=human
 Player Faction: Federation
 Music: TNG_Music
 ---
@@ -36,9 +52,11 @@ trials, so it is the theater to run alongside them.
 
 # [Klingon War](klingon_war)
 ---
-Races: kralien, torgoth, arvonian, ximni
-Art:   kralien=Klingon, torgoth=Romulan, arvonian=Orion, ximni=Kazon, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
-Faces: kralien=klingon, torgoth=romulan, arvonian=orion, ximni=kazon, tsn=human, civ=human
+Weights 1:  klingon:85, romulan:5,  orion:5,  kazon:5
+Weights 5:  klingon:70, romulan:10, orion:10, kazon:10
+Weights 11: klingon:10, romulan:30, orion:30, kazon:30
+Art:   usfp=Federation, tsn=Federation, civ=Federation
+Faces: tsn=human, civ=human
 Player Faction: Federation
 Music: TNG_Music
 ---
@@ -47,9 +65,11 @@ theater in the pack - the one to pick if a night should not feel repetitive.
 
 # [Romulan Cold War](romulan_cold_war)
 ---
-Races: kralien, torgoth, arvonian, ximni
-Art:   kralien=Romulan, torgoth=Klingon, arvonian=Cardassian, ximni=Orion, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
-Faces: kralien=romulan, torgoth=klingon, arvonian=cardassian, ximni=orion, tsn=human, civ=human
+Weights 1:  romulan:85, klingon:5,  cardassian:5,  orion:5
+Weights 5:  romulan:70, klingon:10, cardassian:10, orion:10
+Weights 11: romulan:10, klingon:30, cardassian:30, orion:30
+Art:   usfp=Federation, tsn=Federation, civ=Federation
+Faces: tsn=human, civ=human
 Player Faction: Federation
 Music: TNG_Music
 ---
@@ -58,9 +78,11 @@ Orions take what is left unattended.
 
 # [Delta Quadrant](delta_quadrant)
 ---
-Races: kralien, torgoth, arvonian, ximni
-Art:   kralien=Kazon, torgoth=Romulan, arvonian=Cardassian, ximni=Klingon, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
-Faces: kralien=kazon, torgoth=romulan, arvonian=cardassian, ximni=klingon, tsn=human, civ=human
+Weights 1:  kazon:85, romulan:5,  cardassian:5,  klingon:5
+Weights 5:  kazon:70, romulan:10, cardassian:10, klingon:10
+Weights 11: kazon:10, romulan:30, cardassian:30, klingon:30
+Art:   usfp=Federation, tsn=Federation, civ=Federation
+Faces: tsn=human, civ=human
 Player Faction: Federation
 Music: TNG_Music
 ---
@@ -70,9 +92,11 @@ kept, and named, because it is a perfectly good theater once it is a choice.
 
 # [Orion Syndicate](orion_syndicate)
 ---
-Races: kralien, torgoth, arvonian, ximni
-Art:   kralien=Klingon, torgoth=Cardassian, arvonian=Breen, ximni=Romulan, skaraan=Breen, usfp=Federation, tsn=Federation, civ=Federation
-Faces: kralien=klingon, torgoth=cardassian, arvonian=vorta, ximni=romulan, tsn=orion, civ=human
+Weights 1:  klingon:85, cardassian:5,  breen:5,  romulan:5
+Weights 5:  klingon:70, cardassian:10, breen:8,  romulan:12
+Weights 11: klingon:10, cardassian:30, breen:20, romulan:40
+Art:   usfp=Federation, tsn=Federation, civ=Federation
+Faces: breen=vorta, tsn=orion, civ=human
 Music: TNG_Music
 Player Faction: Orion
 Player Side Name: Orion Syndicate
@@ -87,3 +111,21 @@ Nothing here moves a side KEY. The crew are still side `tsn` to the engine, so e
 relation, every `//comms` gate and every friendly starbase behaves exactly as the mission
 wrote it. Only the costume changed. `Player Side Key:` would make them genuinely hostile
 and is refused, loudly, until the missions stop hardcoding `tsn`.
+
+# [Border Skirmish](border_skirmish)
+---
+Weights 1:  cardassian:60, kralien:20, klingon:10, torgoth:10
+Weights 5:  cardassian:40, kralien:25, klingon:20, torgoth:15
+Weights 11: cardassian:25, kralien:25, klingon:25, torgoth:25
+Art:   usfp=Federation, tsn=Federation, civ=Federation
+Faces: tsn=human, civ=human
+Player Faction: Federation
+Music: TNG_Music
+---
+THE ONE THAT WAS IMPOSSIBLE BEFORE. Trek factions and stock Artemis factions in the same
+roster, each flying its own hulls with its own fleet ladder and its own faces - Cardassians
+and Klingons alongside Kraliens and Torgoth.
+
+It could not be written under the old scheme for a reason worth keeping: the roster had to
+be spelled in the mission's four stock names, so `kralien` was the NAME OF A SLOT that some
+Trek faction was wearing. There was no way left to say "and also, actually, Kraliens".
