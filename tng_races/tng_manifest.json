@@ -70,6 +70,7 @@
         ]
     },
     "fleets": {
+        "Breen": "tng_breen_fleets.yaml",
         "Cardassian": "tng_cardassian_fleets.yaml",
         "Dominion": "tng_dominion_fleets.yaml",
         "Kazon": "tng_kazon_fleets.yaml",
