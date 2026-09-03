@@ -20,6 +20,7 @@ import tng_setup.py
 import tng_media.mast
 import tng_face_builder.mast
 import tng_ordnance.py
+import tng_stations.py
 import tng_torpedoes.mast
 
 

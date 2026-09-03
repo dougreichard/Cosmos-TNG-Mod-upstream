@@ -178,3 +178,24 @@ build_times:
 //spawn if has_role(SPAWNED_ID, "__player__")
     tng_torp_grant(SPAWNED_ID)
     ->END
+
+# ---------------------------------------------------------------------------
+# A TNG YARD MAKES TNG ROUNDS, and makes them fast enough to matter.
+#
+# LegendaryMissions' own station route sets every registered type on every station and
+# does it after `await delay_sim(1)`, so this waits LONGER on purpose - landing after it
+# rather than racing it. Two `//spawn` routes have no ordering between them; a delay is
+# the only thing that makes 'after' mean after.
+#
+# Gated twice: `station`, and the mod's own sides (inside tng_station_setup_torpedoes).
+# A TSN starbase in a stock mission is untouched however many TNG addons are loaded -
+# which is the playtest's own condition, 'do not break the base game doing this'.
+# ---------------------------------------------------------------------------
+//spawn if has_role(SPAWNED_ID, "station")
+    await delay_sim(2)
+    tng_station_status = tng_station_setup_torpedoes(SPAWNED_ID)
+    # print, NOT log: log() is Python logging with no handler attached and is invisible
+    # in the engine, and this line is how an operator sees a yard was reshaped at all.
+    if tng_station_status:
+        print(tng_station_status)
+    ->END
