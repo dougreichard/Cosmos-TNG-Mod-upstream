@@ -625,7 +625,7 @@
    "tubecount": 0,
    "torpedostart": [
     {
-     "Homing": 0
+     "Photon": 0
     },
     {
      "Nuke": 0
@@ -1561,7 +1561,7 @@
    "tubecount": 0,
    "torpedostart": [
     {
-     "Homing": 0
+     "Photon": 0
     },
     {
      "Nuke": 0
@@ -2187,7 +2187,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -2201,7 +2201,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 210
@@ -2215,7 +2215,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -2229,7 +2229,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 210
@@ -2243,7 +2243,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -2257,7 +2257,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 150
@@ -2271,7 +2271,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -2285,7 +2285,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 150
@@ -2299,7 +2299,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -2313,7 +2313,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -2327,7 +2327,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -2341,7 +2341,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 12.22,
-      "damage_coeff": 2.5,
+      "damage_coeff": 3.0,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -2378,7 +2378,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 10.5,
-      "damage_coeff": 3,
+      "damage_coeff": 3.6,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 165
@@ -2392,7 +2392,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 10.5,
-      "damage_coeff": 3,
+      "damage_coeff": 3.6,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 195
@@ -2406,7 +2406,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 10.5,
-      "damage_coeff": 3,
+      "damage_coeff": 3.6,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 285
@@ -2420,7 +2420,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 10.5,
-      "damage_coeff": 3,
+      "damage_coeff": 3.6,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 315
@@ -2434,7 +2434,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 10.5,
-      "damage_coeff": 3,
+      "damage_coeff": 3.6,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 45
@@ -2448,7 +2448,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 10.5,
-      "damage_coeff": 3,
+      "damage_coeff": 3.6,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 75
@@ -2462,7 +2462,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 165
@@ -2476,7 +2476,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 195
@@ -2490,7 +2490,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 285
@@ -2504,7 +2504,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 315
@@ -2518,7 +2518,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 45
@@ -2532,7 +2532,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 75
@@ -2546,7 +2546,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 165
@@ -2560,7 +2560,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 195
@@ -2574,7 +2574,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 285
@@ -2588,7 +2588,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 315
@@ -2602,7 +2602,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 45
@@ -2616,7 +2616,7 @@
       "color": "orange",
       "arccolor": "#090",
       "cycle_time": 16.1,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 75
@@ -3634,7 +3634,7 @@
    "tubecount": 0,
    "torpedostart": [
     {
-     "Homing": 0
+     "Photon": 0
     },
     {
      "Nuke": 0
@@ -3679,7 +3679,7 @@
    "tubecount": 4,
    "torpedostart": [
     {
-     "Homing": 36
+     "Photon": 36
     },
     {
      "Nuke": 0
@@ -3718,7 +3718,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 340
@@ -3732,7 +3732,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 20
@@ -3746,7 +3746,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 350
@@ -3760,7 +3760,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 10
@@ -3774,7 +3774,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -3788,7 +3788,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -3802,7 +3802,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -3816,7 +3816,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -3830,7 +3830,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 200
@@ -3844,7 +3844,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 160
@@ -3858,7 +3858,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 210
@@ -3872,7 +3872,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 150
@@ -3895,7 +3895,7 @@
    "tubecount": 4,
    "torpedostart": [
     {
-     "Homing": 40
+     "Photon": 40
     },
     {
      "Nuke": 0
@@ -3934,7 +3934,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -3948,7 +3948,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -3962,7 +3962,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 315
@@ -3976,7 +3976,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 45
@@ -3990,7 +3990,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 225
@@ -4004,7 +4004,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 135
@@ -4018,7 +4018,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -4032,7 +4032,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -4046,7 +4046,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 210
@@ -4060,7 +4060,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.72,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 150
@@ -4074,7 +4074,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 150,
       "barrel_angle": 270
@@ -4088,7 +4088,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 150,
       "barrel_angle": 90
@@ -4102,7 +4102,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 90,
       "barrel_angle": 240
@@ -4116,7 +4116,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 90,
       "barrel_angle": 120
@@ -4130,7 +4130,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 90,
       "barrel_angle": 195
@@ -4144,7 +4144,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 90,
       "barrel_angle": 165
@@ -4167,7 +4167,7 @@
    "tubecount": 1,
    "torpedostart": [
     {
-     "Homing": 8
+     "Photon": 8
     },
     {
      "Nuke": 0
@@ -4206,7 +4206,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 2.13,
-      "damage_coeff": 0.72,
+      "damage_coeff": 0.864,
       "range": 1260,
       "arcwidth": 144,
       "barrel_angle": 0
@@ -4228,7 +4228,7 @@
    "tubecount": 4,
    "torpedostart": [
     {
-     "Homing": 40
+     "Photon": 40
     },
     {
      "Nuke": 0
@@ -4268,7 +4268,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 345
@@ -4282,7 +4282,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 15
@@ -4296,7 +4296,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -4310,7 +4310,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -4324,7 +4324,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -4338,7 +4338,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -4352,7 +4352,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 240
@@ -4366,7 +4366,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 120
@@ -4380,7 +4380,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 300
@@ -4394,7 +4394,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 60
@@ -4408,7 +4408,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 210
@@ -4422,7 +4422,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 150
@@ -4444,7 +4444,7 @@
    "tubecount": 2,
    "torpedostart": [
     {
-     "Homing": 24
+     "Photon": 24
     },
     {
      "Nuke": 0
@@ -4483,7 +4483,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 0.98,
-      "damage_coeff": 0.56,
+      "damage_coeff": 0.672,
       "range": 1260,
       "arcwidth": 30,
       "barrel_angle": 345
@@ -4497,7 +4497,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 0.98,
-      "damage_coeff": 0.56,
+      "damage_coeff": 0.672,
       "range": 1260,
       "arcwidth": 30,
       "barrel_angle": 15
@@ -4511,7 +4511,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 0.98,
-      "damage_coeff": 0.56,
+      "damage_coeff": 0.672,
       "range": 1260,
       "arcwidth": 30,
       "barrel_angle": 350
@@ -4525,7 +4525,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 0.98,
-      "damage_coeff": 0.56,
+      "damage_coeff": 0.672,
       "range": 1260,
       "arcwidth": 30,
       "barrel_angle": 10
@@ -4539,7 +4539,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.85,
-      "damage_coeff": 1.67,
+      "damage_coeff": 2.004,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 0
@@ -4553,7 +4553,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.85,
-      "damage_coeff": 1.67,
+      "damage_coeff": 2.004,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -4567,7 +4567,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.85,
-      "damage_coeff": 1.67,
+      "damage_coeff": 2.004,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -4581,7 +4581,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.85,
-      "damage_coeff": 1.67,
+      "damage_coeff": 2.004,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 180
@@ -4604,7 +4604,7 @@
    "tubecount": 4,
    "torpedostart": [
     {
-     "Homing": 40
+     "Photon": 40
     },
     {
      "Nuke": 0
@@ -4644,7 +4644,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 60,
       "barrel_angle": 345
@@ -4658,7 +4658,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 60,
       "barrel_angle": 15
@@ -4672,7 +4672,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 60,
       "barrel_angle": 330
@@ -4686,7 +4686,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 60,
       "barrel_angle": 30
@@ -4700,7 +4700,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 60,
       "barrel_angle": 305
@@ -4714,7 +4714,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 60,
       "barrel_angle": 55
@@ -4728,7 +4728,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 300
@@ -4742,7 +4742,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 60
@@ -4756,7 +4756,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -4770,7 +4770,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -4784,7 +4784,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 240
@@ -4798,7 +4798,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 120
@@ -4812,7 +4812,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 180,
       "barrel_angle": 270
@@ -4826,7 +4826,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 180,
       "barrel_angle": 90
@@ -4840,7 +4840,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 195
@@ -4854,7 +4854,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14.82,
-      "damage_coeff": 2.0,
+      "damage_coeff": 2.4,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 165
@@ -4876,7 +4876,7 @@
    "tubecount": 3,
    "torpedostart": [
     {
-     "Homing": 24
+     "Photon": 24
     },
     {
      "Nuke": 0
@@ -4915,7 +4915,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.7,
-      "damage_coeff": 1.5,
+      "damage_coeff": 1.8,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -4929,7 +4929,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.7,
-      "damage_coeff": 1.5,
+      "damage_coeff": 1.8,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -4943,7 +4943,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.7,
-      "damage_coeff": 1.5,
+      "damage_coeff": 1.8,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 300
@@ -4957,7 +4957,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.7,
-      "damage_coeff": 1.5,
+      "damage_coeff": 1.8,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 60
@@ -4971,7 +4971,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.7,
-      "damage_coeff": 1.5,
+      "damage_coeff": 1.8,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -4985,7 +4985,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.7,
-      "damage_coeff": 1.5,
+      "damage_coeff": 1.8,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -4999,7 +4999,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.7,
-      "damage_coeff": 1.5,
+      "damage_coeff": 1.8,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 150
@@ -5013,7 +5013,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.7,
-      "damage_coeff": 1.5,
+      "damage_coeff": 1.8,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 210
@@ -5035,7 +5035,7 @@
    "tubecount": 1,
    "torpedostart": [
     {
-     "Homing": 4
+     "Photon": 4
     },
     {
      "Nuke": 0
@@ -5074,7 +5074,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 2.1,
-      "damage_coeff": 0.76,
+      "damage_coeff": 0.912,
       "range": 1470,
       "arcwidth": 144,
       "barrel_angle": 355
@@ -5088,7 +5088,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 2.1,
-      "damage_coeff": 0.76,
+      "damage_coeff": 0.912,
       "range": 1470,
       "arcwidth": 144,
       "barrel_angle": 5
@@ -5110,7 +5110,7 @@
    "tubecount": 4,
    "torpedostart": [
     {
-     "Homing": 40
+     "Photon": 40
     },
     {
      "Nuke": 0
@@ -5149,7 +5149,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -5163,7 +5163,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -5177,7 +5177,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 345
@@ -5191,7 +5191,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 15
@@ -5205,7 +5205,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -5219,7 +5219,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 14,
-      "damage_coeff": 1.8,
+      "damage_coeff": 2.16,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -5233,7 +5233,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 315
@@ -5247,7 +5247,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 45
@@ -5261,7 +5261,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 300
@@ -5275,7 +5275,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 60
@@ -5289,7 +5289,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 275
@@ -5303,7 +5303,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 75
@@ -5317,7 +5317,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 225
@@ -5331,7 +5331,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 135
@@ -5345,7 +5345,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -5359,7 +5359,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.57,
-      "damage_coeff": 1.92,
+      "damage_coeff": 2.304,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -5381,7 +5381,7 @@
    "tubecount": 4,
    "torpedostart": [
     {
-     "Homing": 60
+     "Photon": 60
     },
     {
      "Nuke": 0
@@ -5421,7 +5421,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 15.22,
-      "damage_coeff": 8.0,
+      "damage_coeff": 9.6,
       "range": 1680,
       "arcwidth": 15,
       "barrel_angle": 0
@@ -5435,7 +5435,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 15.22,
-      "damage_coeff": 8.0,
+      "damage_coeff": 9.6,
       "range": 1680,
       "arcwidth": 15,
       "barrel_angle": 0
@@ -5449,7 +5449,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 15.22,
-      "damage_coeff": 8.0,
+      "damage_coeff": 9.6,
       "range": 1680,
       "arcwidth": 15,
       "barrel_angle": 0
@@ -5463,7 +5463,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 15.22,
-      "damage_coeff": 8.0,
+      "damage_coeff": 9.6,
       "range": 1680,
       "arcwidth": 15,
       "barrel_angle": 0
@@ -5477,7 +5477,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 0.79,
-      "damage_coeff": 0.56,
+      "damage_coeff": 0.672,
       "range": 1260,
       "arcwidth": 30,
       "barrel_angle": 345
@@ -5491,7 +5491,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 0.79,
-      "damage_coeff": 0.56,
+      "damage_coeff": 0.672,
       "range": 1260,
       "arcwidth": 30,
       "barrel_angle": 15
@@ -5505,7 +5505,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -5519,7 +5519,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -5533,7 +5533,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 315
@@ -5547,7 +5547,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 45
@@ -5561,7 +5561,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 225
@@ -5575,7 +5575,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 135
@@ -5589,7 +5589,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -5603,7 +5603,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -5617,7 +5617,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 210
@@ -5631,7 +5631,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.71,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 150
@@ -5645,7 +5645,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 90,
       "barrel_angle": 240
@@ -5659,7 +5659,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 90,
       "barrel_angle": 120
@@ -5673,7 +5673,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 150,
       "barrel_angle": 270
@@ -5687,7 +5687,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 17.4,
-      "damage_coeff": 1.82,
+      "damage_coeff": 2.184,
       "range": 1540,
       "arcwidth": 150,
       "barrel_angle": 90
@@ -5709,7 +5709,7 @@
    "tubecount": 2,
    "torpedostart": [
     {
-     "Homing": 24
+     "Photon": 24
     },
     {
      "Nuke": 0
@@ -5748,7 +5748,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.0,
-      "damage_coeff": 1.33,
+      "damage_coeff": 1.596,
       "range": 1260,
       "arcwidth": 90,
       "barrel_angle": 0
@@ -5762,7 +5762,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.0,
-      "damage_coeff": 1.33,
+      "damage_coeff": 1.596,
       "range": 1260,
       "arcwidth": 90,
       "barrel_angle": 0
@@ -5776,7 +5776,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.0,
-      "damage_coeff": 1.33,
+      "damage_coeff": 1.596,
       "range": 1260,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -5790,7 +5790,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.0,
-      "damage_coeff": 1.33,
+      "damage_coeff": 1.596,
       "range": 1260,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -5804,7 +5804,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.0,
-      "damage_coeff": 1.33,
+      "damage_coeff": 1.596,
       "range": 1260,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -5818,7 +5818,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.0,
-      "damage_coeff": 1.33,
+      "damage_coeff": 1.596,
       "range": 1260,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -5832,7 +5832,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.0,
-      "damage_coeff": 1.33,
+      "damage_coeff": 1.596,
       "range": 1260,
       "arcwidth": 90,
       "barrel_angle": 315
@@ -5846,7 +5846,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 6.0,
-      "damage_coeff": 1.33,
+      "damage_coeff": 1.596,
       "range": 1260,
       "arcwidth": 90,
       "barrel_angle": 45
@@ -5868,7 +5868,7 @@
    "tubecount": 3,
    "torpedostart": [
     {
-     "Homing": 24
+     "Photon": 24
     },
     {
      "Nuke": 0
@@ -5907,7 +5907,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.55,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -5921,7 +5921,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.55,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -5935,7 +5935,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.55,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 15
@@ -5949,7 +5949,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.55,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 345
@@ -5963,7 +5963,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.55,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 300
@@ -5977,7 +5977,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.55,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 60
@@ -5991,7 +5991,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.55,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -6005,7 +6005,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 7.55,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -6027,7 +6027,7 @@
    "tubecount": 4,
    "torpedostart": [
     {
-     "Homing": 24
+     "Photon": 24
     },
     {
      "Nuke": 0
@@ -6066,7 +6066,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.03,
-      "damage_coeff": 1.4,
+      "damage_coeff": 1.68,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 0
@@ -6080,7 +6080,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.03,
-      "damage_coeff": 1.4,
+      "damage_coeff": 1.68,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 0
@@ -6094,7 +6094,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.03,
-      "damage_coeff": 1.4,
+      "damage_coeff": 1.68,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -6108,7 +6108,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.03,
-      "damage_coeff": 1.4,
+      "damage_coeff": 1.68,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -6122,7 +6122,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.03,
-      "damage_coeff": 1.4,
+      "damage_coeff": 1.68,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 60
@@ -6136,7 +6136,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.03,
-      "damage_coeff": 1.4,
+      "damage_coeff": 1.68,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 300
@@ -6150,7 +6150,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.03,
-      "damage_coeff": 1.4,
+      "damage_coeff": 1.68,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 210
@@ -6164,7 +6164,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.03,
-      "damage_coeff": 1.4,
+      "damage_coeff": 1.68,
       "range": 1400,
       "arcwidth": 90,
       "barrel_angle": 150
@@ -6186,7 +6186,7 @@
    "tubecount": 4,
    "torpedostart": [
     {
-     "Homing": 60
+     "Photon": 60
     },
     {
      "Nuke": 0
@@ -6225,7 +6225,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -6239,7 +6239,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -6253,7 +6253,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 300
@@ -6267,7 +6267,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 60
@@ -6281,7 +6281,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -6295,7 +6295,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -6309,7 +6309,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -6323,7 +6323,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -6337,7 +6337,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 300
@@ -6351,7 +6351,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 60
@@ -6365,7 +6365,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -6379,7 +6379,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 11.28,
-      "damage_coeff": 1.52,
+      "damage_coeff": 1.824,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -6393,7 +6393,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 210
@@ -6407,7 +6407,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 13.56,
-      "damage_coeff": 1.62,
+      "damage_coeff": 1.944,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 150
@@ -6429,7 +6429,7 @@
    "tubecount": 4,
    "torpedostart": [
     {
-     "Homing": 16
+     "Photon": 16
     },
     {
      "Nuke": 0
@@ -6468,7 +6468,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 8.11,
-      "damage_coeff": 1.17,
+      "damage_coeff": 1.404,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 315
@@ -6482,7 +6482,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 8.11,
-      "damage_coeff": 1.17,
+      "damage_coeff": 1.404,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 45
@@ -6496,7 +6496,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 8.11,
-      "damage_coeff": 1.17,
+      "damage_coeff": 1.404,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 225
@@ -6510,7 +6510,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 8.11,
-      "damage_coeff": 1.17,
+      "damage_coeff": 1.404,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 135
@@ -6524,7 +6524,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 8.11,
-      "damage_coeff": 1.17,
+      "damage_coeff": 1.404,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 0
@@ -6538,7 +6538,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 8.11,
-      "damage_coeff": 1.17,
+      "damage_coeff": 1.404,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -6552,7 +6552,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 8.11,
-      "damage_coeff": 1.17,
+      "damage_coeff": 1.404,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 90
@@ -6566,7 +6566,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 8.11,
-      "damage_coeff": 1.17,
+      "damage_coeff": 1.404,
       "range": 1470,
       "arcwidth": 90,
       "barrel_angle": 180
@@ -6589,7 +6589,7 @@
    "tubecount": 0,
    "torpedostart": [
     {
-     "Homing": 0
+     "Photon": 0
     },
     {
      "Nuke": 0
@@ -6634,7 +6634,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 2.33,
-      "damage_coeff": 0.76,
+      "damage_coeff": 0.912,
       "range": 1470,
       "arcwidth": 144,
       "barrel_angle": 0
@@ -6656,7 +6656,7 @@
    "tubecount": 2,
    "torpedostart": [
     {
-     "Homing": 24
+     "Photon": 24
     },
     {
      "Nuke": 0
@@ -6695,7 +6695,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 4.82,
-      "damage_coeff": 0.83,
+      "damage_coeff": 0.996,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 330
@@ -6709,7 +6709,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 4.82,
-      "damage_coeff": 0.83,
+      "damage_coeff": 0.996,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 30
@@ -6723,7 +6723,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 4.82,
-      "damage_coeff": 0.83,
+      "damage_coeff": 0.996,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 300
@@ -6737,7 +6737,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 4.82,
-      "damage_coeff": 0.83,
+      "damage_coeff": 0.996,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 60
@@ -6751,7 +6751,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 4.82,
-      "damage_coeff": 0.83,
+      "damage_coeff": 0.996,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 270
@@ -6765,7 +6765,7 @@
       "color": "red",
       "arccolor": "#090",
       "cycle_time": 4.82,
-      "damage_coeff": 0.83,
+      "damage_coeff": 0.996,
       "range": 1680,
       "arcwidth": 90,
       "barrel_angle": 90

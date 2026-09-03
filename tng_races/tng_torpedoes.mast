@@ -1,0 +1,148 @@
+# Federation ordnance.
+#
+# The mod registered ZERO torpedo types of its own, so every armed Federation hull listed
+# `Homing` and nothing else - a Galaxy and a Defiant fired the same generic round as a
+# TSN light cruiser. Reported from the playtest: "The Federation should have Photon
+# Torpedoes instead of homing. They should be stronger than homing."
+#
+# A type is nothing but a shared string keyed by an arbitrary name, and the type set is
+# not fixed by the engine - `Tag`, `PShock` and `Beacon` are themselves mod-added types
+# that did not exist in stock, which is the existence proof that this is allowed.
+#
+# `player_ship_roles: federation`, NOT `tsn`. LegendaryMissions gates every one of its own
+# types on `tsn`, and a ship's SIDE is a role - so TNG crews, who are side `federation`,
+# were never granted PShock, Tag or Beacon either. These three are granted to the side
+# this mod's players actually fly.
+#
+# The scale they sit on, from LM: Homing 35 standard, EMP 50 blast+reduce_shields,
+# Nuke 5 blast. Photon is the new baseline; the other two are meant to be scarce.
+
+=== tng_prefab_photon_torpedo
+metadata: ```
+key: Photon
+gui_name: Photon
+sort_order: 0
+speed: 12
+lifetime: 25
+flare_color: red
+trail_color: #f84
+warhead: standard
+blast_radius: 1000
+damage: 50
+explosion_size: 12
+explosion_color: fire
+behavior: homing
+energy_conversion_value: 100
+default_max_count: 10
+player_ship_roles: federation
+build_times:
+    command: 2
+    civil: 6
+    industry: 1
+    science: 6
+    default: 3
+```
+    jump prefab_torpedo_type
+
+
+=== tng_prefab_quantum_torpedo
+metadata: ```
+key: Quantum
+gui_name: Quantum
+sort_order: 1
+speed: 12
+lifetime: 25
+flare_color: #9cf
+trail_color: #48f
+warhead: blast,reduce_shields
+blast_radius: 1200
+damage: 75
+explosion_size: 18
+explosion_color: #9cf
+behavior: homing
+energy_conversion_value: 200
+default_max_count: 4
+player_ship_roles: quantum_armed
+build_times:
+    command: 4
+    civil: 12
+    industry: 3
+    science: 12
+    default: 6
+```
+    # "Like a nuke with EMP built in" - and that is expressible natively, with no script
+    # at all: `warhead` is comma-combinable, so `blast,reduce_shields` IS a blast that
+    # also strips shields. LM's own EMP already uses that warhead but with 50 damage
+    # instead of real damage; this one hits like a torpedo AND takes the shields down.
+    #
+    # FOUR ROUNDS, not ten. A weapon that does both jobs at once stops being a decision
+    # if you have a magazine full of them.
+    #
+    # AND NOT ON EVERY HULL. `quantum_armed` rather than `federation`: quantum torpedoes
+    # were late-era and never general issue, so the //spawn route below puts them on the
+    # Sovereign, the Defiant and the Galaxy refit. Gated on the SIDE they would have been
+    # standard on a Constellation, which is the wrong century.
+    jump prefab_torpedo_type
+
+
+=== tng_prefab_tricobalt_device
+metadata: ```
+key: Tricobalt
+gui_name: Tricobalt
+sort_order: 2
+speed: 6
+lifetime: 30
+flare_color: #dd4
+trail_color: #aa2
+warhead: blast
+blast_radius: 2500
+damage: 120
+explosion_size: 40
+explosion_color: #ee6
+behavior: homing
+energy_conversion_value: 400
+default_max_count: 2
+player_ship_roles: tricobalt_armed
+build_times:
+    command: 8
+    civil: 20
+    industry: 6
+    science: 20
+    default: 12
+```
+    # VOYAGER ONLY, which is why this one is gated on a role rather than on the side. A
+    # tricobalt device is not standard Federation ordnance - it is the thing a ship
+    # seventy thousand light years from home uses when it has run out of better ideas -
+    # so the //spawn route at the end of this file puts `tricobalt_armed` on the
+    # Intrepid hull and on nothing else.
+    #
+    # Slow, enormous, and two rounds. The blast radius is 2.5x a photon's, so it is as
+    # dangerous to a careless helm as it is to the target.
+    jump prefab_torpedo_type
+
+
+# ---------------------------------------------------------------------------
+# Voyager gets the tricobalt, and nobody else does.
+#
+# The role has to be ON the ship before LegendaryMissions' own //spawn route walks the
+# registered types and grants the ones whose `player_ship_roles` match. Two spawn routes
+# racing over one ship is not something to rely on, so this does not rely on it: it adds
+# the role AND grants the rounds itself, which is idempotent either way -
+# `torpedo_make_available` is what LM's loop calls too.
+# ---------------------------------------------------------------------------
+# AND AGAIN WHEN THE HULL CHANGES. A spawn-time check alone is wrong for any mission that
+# re-hulls: Gamma with a Q seats every crew in a story ship MINUTES after spawn, so a crew
+# that ends up in a Defiant spawned as an Excelsior and would never have been given the
+# quantum rounds - measured, not guessed, by printing the loadout and finding the hull was
+# still the roster's.
+#
+# `ship_hull_changed` is the library's own notification, emitted from `set_ship_data_key`,
+# which is the single funnel every hull change passes through.
+//shared/signal/ship_hull_changed
+    tng_torp_grant(SHIP_ID)
+    ->END
+
+
+//spawn if has_role(SPAWNED_ID, "__player__")
+    tng_torp_grant(SPAWNED_ID)
+    ->END
