@@ -6262,6 +6262,9 @@
       "tubecount": 4,
       "torpedostart": [
         {
+          "Homing": 24
+        },
+        {
           "Disruptor": 12
         }
       ],
@@ -6398,6 +6401,9 @@
       "tubecount": 2,
       "torpedostart": [
         {
+          "Homing": 12
+        },
+        {
           "Disruptor": 6
         }
       ],
@@ -6491,6 +6497,9 @@
       "long_desc": "K'Tinga Class Cruiser^Commander Grade^An older but serviceable cruiser^4 disruptors, 2 torpedo tubes.",
       "tubecount": 2,
       "torpedostart": [
+        {
+          "Homing": 16
+        },
         {
           "Disruptor": 8
         }
@@ -6614,6 +6623,9 @@
       "baycount": 4,
       "tubecount": 4,
       "torpedostart": [
+        {
+          "Homing": 32
+        },
         {
           "Disruptor": 16
         }

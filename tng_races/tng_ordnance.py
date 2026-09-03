@@ -87,3 +87,34 @@ def tng_torp_grant(ship_id):
         torpedo_make_available(ship_id, "Tricobalt", 2)
         granted.append("Tricobalt")
     return ",".join(granted)
+
+
+def tng_has_label(name):
+    """True when some loaded add-on defines a top-level MAST label of this name.
+
+    WHY THIS EXISTS. The three torpedo types below are declared by this mod but
+    REGISTERED by LegendaryMissions: each one ends in `jump prefab_torpedo_type`, and
+    that label lives in LM's prefabs/torpedo_prefabs.mast. A jump to a label nothing
+    defines is not a compile error - it compiles clean and only fails if it ever runs -
+    so the mod's own viewer, which loads sbs_utils and this add-on and nothing else,
+    reported three runtime errors and a FAIL verdict on every headless run.
+
+    This is the runtime half of an OPTIONAL dependency. A hard `requires` would be
+    wrong here: it would take every mission that loads tng_races without LM straight to
+    zero labels, which is the failure mode LM's own hangar add-on caused across 22
+    missions. Asking whether the label is there is cheaper and degrades to "no custom
+    torpedoes" instead of "no mission".
+
+    Labels live in the story's own table keyed by name, which is what makes this a
+    dict lookup rather than a guess.
+    """
+    from sbs_utils.helpers import FrameContext
+
+    page = FrameContext.page
+    story = getattr(page, "story", None) if page is not None else None
+    if story is None:
+        story = FrameContext.mast
+    labels = getattr(story, "labels", None)
+    if not labels:
+        return False
+    return name in labels

@@ -184,7 +184,24 @@ def retune(entry, target, bands, factions, rear_ratio, canon, log):
     if target.get("tubes"):
         entry["tubecount"] = target["tubes"]
         if target.get("torps"):
-            entry["torpedostart"] = [{k: v} for k, v in target["torps"].items()]
+            # MERGE, never replace. An entry is meant to be the CURRENT game entry plus
+            # the author's deltas, and the stock six types (Homing, Nuke, EMP, Mine,
+            # PShock, Tag) travel in `torpedostart` as zero-count slots. Overwriting the
+            # list dropped all of them - TNG_TestRange caught it with "torpedo types kept
+            # current: got ['Homing']". The counts here win for the types they name; every
+            # other slot keeps whatever it had.
+            slots = entry.get("torpedostart") or []
+            existing = {k for slot in slots if isinstance(slot, dict) for k in slot}
+            for slot in slots:
+                if not isinstance(slot, dict):
+                    continue
+                for name in list(slot):
+                    if name in target["torps"]:
+                        slot[name] = target["torps"][name]
+            for name, count in target["torps"].items():
+                if name not in existing:
+                    slots.append({name: count})
+            entry["torpedostart"] = slots
 
 
 

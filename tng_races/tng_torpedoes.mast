@@ -27,9 +27,26 @@
 # `prefab_torpedo_type` grants the type to every player ship that ALREADY exists, and
 # LM's `//spawn` route grants every registered type to ships that arrive LATER. Whichever
 # way round the two happen, a ship ends up with its rounds.
-prefab_spawn(tng_prefab_photon_torpedo)
-prefab_spawn(tng_prefab_quantum_torpedo)
-prefab_spawn(tng_prefab_tricobalt_device)
+# ONLY IF THE REGISTRAR IS LOADED. Each type below ends in `jump prefab_torpedo_type`,
+# and that label belongs to LegendaryMissions, not to this add-on. A jump to a label
+# nothing defines is NOT a compile error - it compiles clean and fails only when it runs
+# - so without this guard the mod's own viewer, which loads sbs_utils and tng_races and
+# nothing else, threw three runtime errors and reported FAIL on every headless run.
+#
+# Deliberately NOT a `requires`. A hard dependency here would take every mission that
+# loads tng_races without LM to zero labels, which is the exact failure LM's hangar
+# add-on caused across 22 missions. Optional, guarded, and it says so out loud.
+tng_torpedo_registrar = tng_has_label("prefab_torpedo_type")
+if tng_torpedo_registrar:
+    prefab_spawn(tng_prefab_photon_torpedo)
+    prefab_spawn(tng_prefab_quantum_torpedo)
+    prefab_spawn(tng_prefab_tricobalt_device)
+else:
+    # print, not log: log() is Python logging with no handler attached and is invisible
+    # in the engine, and this is the only report that the Federation is flying without
+    # its own ordnance.
+    print("tng_races: prefab_torpedo_type not loaded - Photon, Quantum and Tricobalt "
+          "NOT registered. Load the LegendaryMissions prefabs add-on to get them.")
 
 
 === tng_prefab_photon_torpedo
