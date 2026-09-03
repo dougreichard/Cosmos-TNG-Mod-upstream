@@ -77,3 +77,12 @@ Allies: dominion, cardassian
 Enemies: players, *
 ---
 The Breen Confederacy, fighting alongside the Dominion.
+
+# [Borg](borg)
+---
+Color: #0D4
+Enemies: players, *
+---
+The Borg Collective. Hostile to everyone including the other TNG factions - there is no
+`Allies:` line here and that is the point. The Dominion and the Cardassians have a
+relationship; the Borg have a shipping manifest.

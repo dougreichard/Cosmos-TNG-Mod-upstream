@@ -1,84 +1,87 @@
 {
-    "mod": "Cosmos-TNG-Mod",
-    "version": "v0.2.3",
-    "interiors": {
-        "Breen": [
-            "tng_brn_chel_grett.grid"
-        ],
-        "Cardassian": [
-            "tng_crd_damar.grid",
-            "tng_crd_galor.grid",
-            "tng_crd_heideki.grid",
-            "tng_crd_keldon.grid",
-            "tng_crd_terok_nor.grid"
-        ],
-        "Dominion": [
-            "tng_jem_attack_ship.grid",
-            "tng_jem_base.grid",
-            "tng_jem_battlecruiser.grid"
-        ],
-        "Federation": [
-            "tng_fed_akira.grid",
-            "tng_fed_ambassador.grid",
-            "tng_fed_california.grid",
-            "tng_fed_centaur.grid",
-            "tng_fed_comms_base.grid",
-            "tng_fed_constellation.grid",
-            "tng_fed_danube.grid",
-            "tng_fed_danube_rollbar.grid",
-            "tng_fed_defiant.grid",
-            "tng_fed_ds9.grid",
-            "tng_fed_excelsior_refit.grid",
-            "tng_fed_freighter.grid",
-            "tng_fed_galaxy.grid",
-            "tng_fed_galaxy_x.grid",
-            "tng_fed_intrepid.grid",
-            "tng_fed_luna.grid",
-            "tng_fed_nebula.grid",
-            "tng_fed_nova.grid",
-            "tng_fed_olympic.grid",
-            "tng_fed_peregrine.grid",
-            "tng_fed_saber.grid",
-            "tng_fed_sovereign.grid",
-            "tng_fed_starbase.grid",
-            "tng_fed_station.grid"
-        ],
-        "Kazon": [
-            "tng_kaz_base.grid",
-            "tng_kaz_carrier.grid",
-            "tng_kaz_cruiser.grid",
-            "tng_kaz_raider.grid"
-        ],
-        "Klingon": [
-            "tng_klg_brel.grid",
-            "tng_klg_ktinga.grid",
-            "tng_klg_neghvar.grid",
-            "tng_klg_vorcha.grid"
-        ],
-        "Orion": [
-            "tng_orn_brigand.grid",
-            "tng_orn_corsair.grid",
-            "tng_orn_corvette.grid",
-            "tng_orn_interceptor.grid"
-        ],
-        "Romulan": [
-            "tng_rmn_base.grid",
-            "tng_rmn_dderidex.grid",
-            "tng_rmn_mogai.grid",
-            "tng_rmn_scimitar.grid",
-            "tng_rmn_tvaro.grid"
-        ]
-    },
-    "fleets": {
-        "Breen": "tng_breen_fleets.yaml",
-        "Cardassian": "tng_cardassian_fleets.yaml",
-        "Dominion": "tng_dominion_fleets.yaml",
-        "Kazon": "tng_kazon_fleets.yaml",
-        "Klingon": "tng_klingon_fleets.yaml",
-        "Orion": "tng_orion_fleets.yaml",
-        "Romulan": "tng_romulan_fleets.yaml"
-    },
-    "serves": {
-        "Breen": "Dominion"
-    }
+ "mod": "Cosmos-TNG-Mod",
+ "version": "v0.2.3",
+ "interiors": {
+  "Breen": [
+   "tng_brn_chel_grett.grid"
+  ],
+  "Borg": [
+   "tng_brg_cube.grid"
+  ],
+  "Cardassian": [
+   "tng_crd_damar.grid",
+   "tng_crd_galor.grid",
+   "tng_crd_heideki.grid",
+   "tng_crd_keldon.grid",
+   "tng_crd_terok_nor.grid"
+  ],
+  "Dominion": [
+   "tng_jem_attack_ship.grid",
+   "tng_jem_base.grid",
+   "tng_jem_battlecruiser.grid"
+  ],
+  "Federation": [
+   "tng_fed_akira.grid",
+   "tng_fed_ambassador.grid",
+   "tng_fed_california.grid",
+   "tng_fed_centaur.grid",
+   "tng_fed_comms_base.grid",
+   "tng_fed_constellation.grid",
+   "tng_fed_danube.grid",
+   "tng_fed_danube_rollbar.grid",
+   "tng_fed_defiant.grid",
+   "tng_fed_ds9.grid",
+   "tng_fed_excelsior_refit.grid",
+   "tng_fed_freighter.grid",
+   "tng_fed_galaxy.grid",
+   "tng_fed_galaxy_x.grid",
+   "tng_fed_intrepid.grid",
+   "tng_fed_luna.grid",
+   "tng_fed_nebula.grid",
+   "tng_fed_nova.grid",
+   "tng_fed_olympic.grid",
+   "tng_fed_peregrine.grid",
+   "tng_fed_saber.grid",
+   "tng_fed_sovereign.grid",
+   "tng_fed_starbase.grid",
+   "tng_fed_station.grid"
+  ],
+  "Kazon": [
+   "tng_kaz_base.grid",
+   "tng_kaz_carrier.grid",
+   "tng_kaz_cruiser.grid",
+   "tng_kaz_raider.grid"
+  ],
+  "Klingon": [
+   "tng_klg_brel.grid",
+   "tng_klg_ktinga.grid",
+   "tng_klg_neghvar.grid",
+   "tng_klg_vorcha.grid"
+  ],
+  "Orion": [
+   "tng_orn_brigand.grid",
+   "tng_orn_corsair.grid",
+   "tng_orn_corvette.grid",
+   "tng_orn_interceptor.grid"
+  ],
+  "Romulan": [
+   "tng_rmn_base.grid",
+   "tng_rmn_dderidex.grid",
+   "tng_rmn_mogai.grid",
+   "tng_rmn_scimitar.grid",
+   "tng_rmn_tvaro.grid"
+  ]
+ },
+ "fleets": {
+  "Breen": "tng_breen_fleets.yaml",
+  "Cardassian": "tng_cardassian_fleets.yaml",
+  "Dominion": "tng_dominion_fleets.yaml",
+  "Kazon": "tng_kazon_fleets.yaml",
+  "Klingon": "tng_klingon_fleets.yaml",
+  "Orion": "tng_orion_fleets.yaml",
+  "Romulan": "tng_romulan_fleets.yaml"
+ },
+ "serves": {
+  "Breen": "Dominion"
+ }
 }

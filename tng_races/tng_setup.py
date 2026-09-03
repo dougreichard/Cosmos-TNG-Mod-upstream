@@ -6,6 +6,14 @@
 
 FACTIONS = ("Federation", "Klingon", "Romulan", "Cardassian", "Kazon", "Orion", "Dominion")
 
+#: Playable, but never a raiding ladder. The Borg own one hull, and a cube is a set-piece
+#: encounter rather than a wave that scales across eleven difficulty tiers - the ladder
+#: curve starts at 340 power and a single cube is 1265, so tiers 0-6 could not be
+#: expressed at all. A mission spawns it by key. Kept OUT of NPC_RACES for that reason:
+#: that setting is the fleet-ladder gate, and a faction in it with no ladder file used to
+#: be a KeyError.
+FACTIONS_NO_LADDER = ("Borg",)
+
 
 def tng_register_races():
     """Add the TNG factions to PLAYABLE_RACES / NPC_RACES, keeping what is already there.
@@ -28,7 +36,7 @@ def tng_register_races():
     # of its races, a Galor has an interior in this pack, and someone will want to fly one.
     # Only the six raiding factions get NPC_RACES - that gate is about fleet ladders, and
     # the Federation has none.
-    for key, wanted in (("PLAYABLE_RACES", FACTIONS),
+    for key, wanted in (("PLAYABLE_RACES", FACTIONS + FACTIONS_NO_LADDER),
                         ("NPC_RACES", FACTIONS[1:])):
         raw = settings.get(key) or ""
         if not isinstance(raw, str):
@@ -152,8 +160,13 @@ def tng_interiors_enabled(manifest):
 
 
 def tng_fleets_enabled(manifest):
-    """Ladder filenames for every faction that may raid."""
-    return [manifest["fleets"][f] for f in _tng_enabled(manifest, "npc")]
+    """Ladder filenames for every faction that may raid.
+
+    `.get`, not `[]`: a faction can legitimately be enabled and own no ladder - the Borg
+    are playable with a single set-piece hull - and a missing file should mean "no waves
+    from them", not a KeyError that takes the whole add-on down at load.
+    """
+    return [f for f in (manifest["fleets"].get(x) for x in _tng_enabled(manifest, "npc")) if f]
 
 
 def tng_register_portraits(sheet, names):
