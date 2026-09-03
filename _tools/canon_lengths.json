@@ -1,0 +1,246 @@
+{
+  "#comment": [
+    "Canonical overall length in METERS for each TNG hull, and the scale convention",
+    "the roster is held to.",
+    "",
+    "UNITS_PER_METER is not invented here. It was MEASURED off the shipped meshes:",
+    "bounding box of media/ships/<root>.obj times that hull's meshscale is the size the",
+    "engine actually draws, and 14 of the 36 checkable hulls already land within 1% of",
+    "0.400 u/m. So this is the convention the pack already holds, written down - not a",
+    "new one imposed on it.",
+    "",
+    "'source' says how much weight a figure carries:",
+    "  onscreen  - an official figure (Memory Alpha / a Tech Manual / an okudagram).",
+    "              Treat as fixed.",
+    "  approx    - licensed or fan-consensus, no official number exists. Fine to adjust,",
+    "              but adjust it HERE so the checker and the ship data cannot disagree.",
+    "  by_class  - deliberately absent. An original or STO design with no length to",
+    "              check against, or a station whose true size would dwarf the play",
+    "              area. scale_report skips these; they are sized from their weight",
+    "              class instead. Do NOT invent a number to fill one of these in."
+  ],
+  "units_per_meter": 0.4,
+  "tolerance": {
+    "scale_lo": 0.38,
+    "scale_hi": 0.42,
+    "excl_lo": 0.45,
+    "excl_hi": 0.6
+  },
+  "exclusion_ratio": 0.52,
+  "lengths": {
+    "tng_fed_galaxy": {
+      "m": 642.51,
+      "source": "onscreen"
+    },
+    "tng_fed_galaxy_x": {
+      "m": 642.51,
+      "source": "onscreen",
+      "note": "same spaceframe as the Galaxy"
+    },
+    "tng_fed_sovereign": {
+      "m": 685.0,
+      "source": "onscreen"
+    },
+    "tng_fed_ambassador": {
+      "m": 526.0,
+      "source": "onscreen"
+    },
+    "tng_fed_nebula": {
+      "m": 442.23,
+      "source": "onscreen"
+    },
+    "tng_fed_akira": {
+      "m": 464.43,
+      "source": "onscreen"
+    },
+    "tng_fed_excelsior_refit": {
+      "m": 467.0,
+      "source": "onscreen"
+    },
+    "tng_fed_constellation": {
+      "m": 305.0,
+      "source": "onscreen"
+    },
+    "tng_fed_intrepid": {
+      "m": 343.87,
+      "source": "onscreen"
+    },
+    "tng_fed_defiant": {
+      "m": 170.68,
+      "source": "onscreen"
+    },
+    "tng_fed_danube": {
+      "m": 23.1,
+      "source": "onscreen"
+    },
+    "tng_fed_danube_rollbar": {
+      "m": 23.1,
+      "source": "onscreen"
+    },
+    "tng_fed_luna": {
+      "m": 450.0,
+      "source": "approx"
+    },
+    "tng_fed_saber": {
+      "m": 190.0,
+      "source": "approx"
+    },
+    "tng_fed_nova": {
+      "m": 165.0,
+      "source": "approx"
+    },
+    "tng_fed_olympic": {
+      "m": 240.0,
+      "source": "approx"
+    },
+    "tng_fed_centaur": {
+      "m": 361.0,
+      "source": "approx"
+    },
+    "tng_fed_california": {
+      "m": 340.0,
+      "source": "approx"
+    },
+    "tng_fed_peregrine": {
+      "m": 30.0,
+      "source": "approx"
+    },
+    "tng_klg_brel": {
+      "m": 109.28,
+      "source": "onscreen"
+    },
+    "tng_klg_ktinga": {
+      "m": 214.34,
+      "source": "onscreen"
+    },
+    "tng_klg_vorcha": {
+      "m": 481.32,
+      "source": "onscreen"
+    },
+    "tng_klg_neghvar": {
+      "m": 682.32,
+      "source": "onscreen"
+    },
+    "tng_rmn_dderidex": {
+      "m": 1041.65,
+      "source": "onscreen",
+      "note": "the longest warship in the mod"
+    },
+    "tng_rmn_scimitar": {
+      "m": 894.73,
+      "source": "onscreen"
+    },
+    "tng_rmn_mogai": {
+      "m": 356.0,
+      "source": "approx"
+    },
+    "tng_rmn_tvaro": {
+      "m": 130.0,
+      "source": "approx"
+    },
+    "tng_crd_galor": {
+      "m": 371.88,
+      "source": "onscreen"
+    },
+    "tng_crd_keldon": {
+      "m": 400.0,
+      "source": "approx",
+      "note": "~8% longer than a Galor; they currently share one mesh AND one meshscale"
+    },
+    "tng_crd_heideki": {
+      "m": 60.0,
+      "source": "approx"
+    },
+    "tng_crd_terok_nor": {
+      "m": 1451.82,
+      "source": "onscreen",
+      "note": "outer docking-ring diameter"
+    },
+    "tng_fed_ds9": {
+      "m": 1451.82,
+      "source": "onscreen",
+      "note": "the same station, after the Starfleet refit"
+    },
+    "tng_jem_attack_ship": {
+      "m": 68.32,
+      "source": "onscreen"
+    },
+    "tng_jem_battlecruiser": {
+      "m": 590.0,
+      "source": "approx"
+    },
+    "tng_kaz_carrier": {
+      "m": 250.0,
+      "source": "approx",
+      "note": "Predator-class"
+    },
+    "tng_kaz_raider": {
+      "m": 65.0,
+      "source": "approx"
+    },
+    "tng_kaz_cruiser": {
+      "source": "by_class",
+      "note": "no on-screen designation; the Predator is the carrier"
+    },
+    "tng_kaz_fighter": {
+      "m": 30.0,
+      "source": "approx"
+    },
+    "tng_brn_chel_grett": {
+      "source": "by_class",
+      "note": "STO design, no canonical length"
+    },
+    "tng_crd_damar": {
+      "source": "by_class",
+      "note": "STO design, no canonical length"
+    },
+    "tng_orn_corsair": {
+      "source": "by_class"
+    },
+    "tng_orn_brigand": {
+      "source": "by_class"
+    },
+    "tng_orn_corvette": {
+      "source": "by_class"
+    },
+    "tng_orn_interceptor": {
+      "source": "by_class"
+    },
+    "tng_fed_freighter": {
+      "source": "by_class"
+    },
+    "tng_fed_station": {
+      "source": "by_class"
+    },
+    "tng_fed_starbase": {
+      "source": "by_class",
+      "note": "Spacedock is 3810 m; at true scale it would be 1524 units and dwarf the play area"
+    },
+    "tng_fed_comms_base": {
+      "source": "by_class"
+    },
+    "tng_kaz_base": {
+      "source": "by_class",
+      "note": "borrows stock art, ships no .obj"
+    },
+    "tng_jem_base": {
+      "source": "by_class",
+      "note": "borrows stock art, ships no .obj"
+    },
+    "tng_rmn_base": {
+      "source": "by_class",
+      "note": "borrows stock art, ships no .obj"
+    }
+  },
+  "exclusion_min": 25.0,
+  "#exclusion_note": [
+    "exclusionradius = max(exclusion_min, exclusion_ratio x drawn size).",
+    "",
+    "The FLOOR is stock's own convention, not a concession: data/shipData.yaml gives",
+    "tsn_fighter, tsn_bomber and tsn_shuttle a flat 25 regardless of how small the hull",
+    "is. So a bubble larger than the craft is correct for cockpit-class ships, and the",
+    "TNG Danube and Peregrine were never wrong. What IS wrong is the other direction -",
+    "the Scimitar, the Mogai and the Command Starbase carry a bubble around a third of",
+    "their length, so ships fly into the model."
+  ]
+}

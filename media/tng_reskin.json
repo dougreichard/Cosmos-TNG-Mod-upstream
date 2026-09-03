@@ -6,37 +6,17 @@
       "origin": "Cardassian",
       "side": "Arvonian",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Damar",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 120.0,
+      "meshscale": 0.458468,
+      "radarscale": 1.1,
+      "exclusionradius": 141.9,
       "meshrotate": 0,
       "shields": [
-        2000,
-        2000
+        355,
+        248
       ],
-      "hullpoints": 12,
+      "hullpoints": 9,
       "long_desc": "Displacement: 4,156 kT. Post-war developments have led Cardassians to lethal new ships.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 4,
       "baycount": 6,
       "internalmapscale": 1.0,
       "internalmapw": 20,
@@ -59,8 +39,8 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 25,
-            "damage_coeff": 3.2,
+            "cycle_time": 9.0,
+            "damage_coeff": 1.284,
             "range": 1680,
             "arcwidth": 30,
             "barrel_angle": 350
@@ -73,8 +53,8 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 25,
-            "damage_coeff": 3.2,
+            "cycle_time": 9.0,
+            "damage_coeff": 1.284,
             "range": 1680,
             "arcwidth": 30,
             "barrel_angle": 10
@@ -87,10 +67,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 12.42,
-            "damage_coeff": 1.62,
+            "cycle_time": 4.47,
+            "damage_coeff": 0.651,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 330
           },
           {
@@ -101,10 +81,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 12.42,
-            "damage_coeff": 1.62,
+            "cycle_time": 4.47,
+            "damage_coeff": 0.651,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 30
           },
           {
@@ -115,10 +95,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 12.42,
-            "damage_coeff": 1.62,
+            "cycle_time": 4.47,
+            "damage_coeff": 0.651,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 300
           },
           {
@@ -129,10 +109,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 12.42,
-            "damage_coeff": 1.62,
+            "cycle_time": 4.47,
+            "damage_coeff": 0.651,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 60
           },
           {
@@ -143,10 +123,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 12.42,
-            "damage_coeff": 1.62,
+            "cycle_time": 4.47,
+            "damage_coeff": 0.651,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 270
           },
           {
@@ -157,10 +137,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 12.42,
-            "damage_coeff": 1.62,
+            "cycle_time": 4.47,
+            "damage_coeff": 0.651,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 90
           },
           {
@@ -171,10 +151,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 12.42,
-            "damage_coeff": 1.62,
+            "cycle_time": 4.47,
+            "damage_coeff": 0.651,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 180
           },
           {
@@ -185,14 +165,19 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 12.42,
-            "damage_coeff": 1.62,
+            "cycle_time": 4.47,
+            "damage_coeff": 0.651,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 180
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Homing": 16
+        }
+      ]
     },
     {
       "key": "arvonian_destroyer",
@@ -200,37 +185,17 @@
       "origin": "Cardassian",
       "side": "Arvonian",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Galor",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 100.0,
+      "meshscale": 0.309663,
+      "radarscale": 0.75,
+      "exclusionradius": 77.4,
       "meshrotate": 0,
       "shields": [
-        1280,
-        1280
+        190,
+        152
       ],
-      "hullpoints": 6,
+      "hullpoints": 5,
       "long_desc": "Displacement: 1,297 kT. The mainstay of the Cardassian fleet, comparable to the Excelsior or Cheyenne class.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 2,
       "internalmapscale": 1.0,
       "internalmapw": 12,
       "internalmaph": 12,
@@ -252,10 +217,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 11.12,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.88,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 300
           },
           {
@@ -266,10 +231,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 11.12,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.88,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 60
           },
           {
@@ -280,10 +245,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 11.12,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.88,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 270
           },
           {
@@ -294,10 +259,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 11.12,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.88,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 90
           },
           {
@@ -308,10 +273,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 11.12,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.88,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 0
           },
           {
@@ -322,10 +287,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 11.12,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.88,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 330
           },
           {
@@ -336,14 +301,19 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 11.12,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.88,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 30
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Homing": 8
+        }
+      ]
     },
     {
       "key": "arvonian_fighter",
@@ -351,32 +321,12 @@
       "origin": "Cardassian",
       "side": "Arvonian",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Heideki",
-      "meshscale": 0.4,
+      "meshscale": 0.252523,
       "radarscale": 0.3,
       "exclusionradius": 25.0,
       "meshrotate": 0,
       "long_desc": "Displacement: 85.0 kT.  Armament: 4 CBD-1 spiral wave disruptors.  A small patrol ship, dangerous in packs.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 1,
       "internalmapscale": 1.0,
       "internalmapw": 10,
       "internalmaph": 7,
@@ -389,8 +339,8 @@
       "jump_energy_cost": 1,
       "roles": "cockpit,fighter",
       "shields": [
-        180,
-        180
+        50,
+        50
       ],
       "hullpoints": 1,
       "hull_port_sets": {
@@ -404,9 +354,9 @@
             "color": "orange",
             "arccolor": "#500",
             "cycle_time": 2.13,
-            "damage_coeff": 0.72,
-            "range": 1260,
-            "arcwidth": 90,
+            "damage_coeff": 0.447,
+            "range": 1000,
+            "arcwidth": 120,
             "barrel_angle": 345
           },
           {
@@ -418,13 +368,18 @@
             "color": "orange",
             "arccolor": "#500",
             "cycle_time": 2.13,
-            "damage_coeff": 0.72,
-            "range": 1260,
-            "arcwidth": 90,
+            "damage_coeff": 0.447,
+            "range": 1000,
+            "arcwidth": 120,
             "barrel_angle": 15
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Homing": 4
+        }
+      ]
     },
     {
       "key": "arvonian_light_carrier",
@@ -432,37 +387,17 @@
       "side": "Arvonian",
       "origin": "Cardassian",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Keldon",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 100.0,
+      "meshscale": 0.333079,
+      "radarscale": 0.9,
+      "exclusionradius": 83.2,
       "meshrotate": 0,
       "shields": [
-        1600,
-        1600
+        250,
+        200
       ],
-      "hullpoints": 8,
+      "hullpoints": 7,
       "long_desc": "Displacement: 1,585 kT. A major refit of the Galor class, upping their lethality immensely.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 3,
       "baycount": 4,
       "internalmapscale": 1.0,
       "internalmapw": 16,
@@ -485,10 +420,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 10.81,
-            "damage_coeff": 1.43,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.039,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 300
           },
           {
@@ -499,10 +434,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 10.81,
-            "damage_coeff": 1.43,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.039,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 60
           },
           {
@@ -513,10 +448,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 10.81,
-            "damage_coeff": 1.43,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.039,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 270
           },
           {
@@ -527,10 +462,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 10.81,
-            "damage_coeff": 1.43,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.039,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 90
           },
           {
@@ -541,10 +476,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 10.81,
-            "damage_coeff": 1.43,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.039,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 0
           },
           {
@@ -555,10 +490,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 10.81,
-            "damage_coeff": 1.43,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.039,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 330
           },
           {
@@ -569,10 +504,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 10.81,
-            "damage_coeff": 1.43,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.039,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 120,
             "barrel_angle": 30
           },
           {
@@ -583,10 +518,10 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 10.81,
-            "damage_coeff": 1.43,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.039,
             "range": 1470,
-            "arcwidth": 60,
+            "arcwidth": 120,
             "barrel_angle": 330
           },
           {
@@ -597,14 +532,19 @@
             ],
             "color": "orange",
             "arccolor": "#500",
-            "cycle_time": 10.81,
-            "damage_coeff": 1.43,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.039,
             "range": 1470,
-            "arcwidth": 60,
+            "arcwidth": 120,
             "barrel_angle": 30
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Homing": 12
+        }
+      ]
     },
     {
       "key": "cargo_ship",
@@ -612,37 +552,17 @@
       "origin": "Federation",
       "side": "USFP",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/GNR_Freighter",
-      "meshscale": 0.255,
-      "radarscale": 0.819,
-      "exclusionradius": 90.0,
+      "meshscale": 0.14882,
+      "radarscale": 0.7,
+      "exclusionradius": 49.9,
       "meshrotate": 0,
       "shields": [
-        70,
-        70
+        65,
+        65
       ],
       "hullpoints": 2,
       "long_desc": "An unarmed bulk freighter, slowly moving cheap cargo between the stars. Displacement: 429.8 kt. ",
       "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
       "internalmapscale": 1.0,
       "internalmapw": 20,
       "internalmaph": 20,
@@ -662,37 +582,17 @@
       "origin": "Kazon",
       "side": "Kralien",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Cruiser",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 90.0,
+      "meshscale": 0.33285,
+      "radarscale": 0.75,
+      "exclusionradius": 71.5,
       "meshrotate": 0,
       "shields": [
-        1280,
-        1280
+        145,
+        116
       ],
-      "hullpoints": 6,
+      "hullpoints": 4,
       "long_desc": "Kazon Cruiser, 4,528 kT.  A decently powerful battle cruiser, often leads swarms of Raiders.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 2,
       "internalmapscale": 1.0,
       "internalmapw": 16,
       "internalmaph": 19,
@@ -714,10 +614,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 13.88,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 8.05,
+            "damage_coeff": 0.832,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -728,10 +628,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 13.88,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 8.05,
+            "damage_coeff": 0.832,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -742,10 +642,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 13.88,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 8.05,
+            "damage_coeff": 0.832,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -756,10 +656,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 13.88,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 8.05,
+            "damage_coeff": 0.832,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -770,10 +670,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 13.88,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 60,
+            "cycle_time": 8.05,
+            "damage_coeff": 0.832,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -784,14 +684,19 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 13.88,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 60,
+            "cycle_time": 8.05,
+            "damage_coeff": 0.832,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 90
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Homing": 6
+        }
+      ]
     },
     {
       "key": "kralien_cruiser",
@@ -799,37 +704,17 @@
       "origin": "Kazon",
       "side": "Kralien",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Raider",
-      "meshscale": 0.1,
-      "radarscale": 0.75,
-      "exclusionradius": 50.0,
+      "meshscale": 0.054165,
+      "radarscale": 0.6,
+      "exclusionradius": 25.0,
       "meshrotate": 0,
       "shields": [
-        180,
-        180
+        85,
+        72
       ],
       "hullpoints": 2,
       "long_desc": "Kazon Raider, 14.4 kT.  Numerous and perhaps dangerous in swarms.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 1,
       "internalmapscale": 1.0,
       "internalmapw": 17,
       "internalmaph": 16,
@@ -851,10 +736,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 8.78,
-            "damage_coeff": 1.4,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 6.9,
+            "damage_coeff": 1.311,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -865,14 +750,19 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 8.78,
-            "damage_coeff": 1.4,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 6.9,
+            "damage_coeff": 1.311,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 60
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Homing": 4
+        }
+      ]
     },
     {
       "key": "kralien_dreadnought",
@@ -880,9 +770,9 @@
       "origin": "Kazon",
       "side": "Kralien",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Carrier",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 180.0,
+      "meshscale": 0.111072,
+      "radarscale": 0.9,
+      "exclusionradius": 52.0,
       "meshrotate": 0,
       "internalmapscale": 1.0,
       "internalmapw": 19,
@@ -892,36 +782,16 @@
       "speed_coeff": 1.33,
       "scan_strength_coeff": 1,
       "ship_energy_cost": 1.13,
-      "warp_energy_cost": 131,
+      "warp_energy_cost": 1.31,
       "jump_energy_cost": 1,
       "roles": "ship,warship,heavy",
       "shields": [
-        1440,
-        1440
+        215,
+        172
       ],
-      "hullpoints": 25,
+      "hullpoints": 6,
       "long_desc": "Kazon Carrier, 175,394 kT.  Command and control ship, plus a large complement of fighter craft.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 2,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -932,10 +802,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 10.9,
-            "damage_coeff": 3.56,
+            "cycle_time": 9.77,
+            "damage_coeff": 1.16,
             "range": 1260,
-            "arcwidth": 60,
+            "arcwidth": 144,
             "barrel_angle": 0
           },
           {
@@ -946,10 +816,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 10.9,
-            "damage_coeff": 3.56,
+            "cycle_time": 9.77,
+            "damage_coeff": 1.16,
             "range": 1260,
-            "arcwidth": 60,
+            "arcwidth": 144,
             "barrel_angle": 0
           },
           {
@@ -960,10 +830,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 10.9,
-            "damage_coeff": 3.56,
+            "cycle_time": 9.77,
+            "damage_coeff": 1.16,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -974,10 +844,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 10.9,
-            "damage_coeff": 3.56,
+            "cycle_time": 9.77,
+            "damage_coeff": 1.16,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -988,10 +858,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 10.9,
-            "damage_coeff": 3.56,
+            "cycle_time": 9.77,
+            "damage_coeff": 1.16,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 240
           },
           {
@@ -1002,10 +872,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 10.9,
-            "damage_coeff": 3.56,
+            "cycle_time": 9.77,
+            "damage_coeff": 1.16,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 120
           },
           {
@@ -1016,10 +886,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 10.9,
-            "damage_coeff": 3.56,
+            "cycle_time": 9.77,
+            "damage_coeff": 1.16,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -1030,15 +900,20 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 10.9,
-            "damage_coeff": 3.56,
+            "cycle_time": 9.77,
+            "damage_coeff": 1.16,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           }
         ]
       },
-      "baycount": 8
+      "baycount": 8,
+      "torpedostart": [
+        {
+          "Homing": 8
+        }
+      ]
     },
     {
       "key": "pirate_brigantine",
@@ -1046,29 +921,20 @@
       "origin": "Orion",
       "side": "Pirate",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Corsair",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 110.0,
+      "meshscale": 0.363177,
+      "radarscale": 0.9,
+      "exclusionradius": 97.1,
       "meshrotate": 0,
       "shields": [
-        1440,
-        1440
+        210,
+        168
       ],
-      "hullpoints": 5,
+      "hullpoints": 6,
       "long_desc": "Orion Corsair Carrier, 6,835 kT.^4 forward beams, 2 rear beams^2 Torpedo tubes^Stores for 12 homing, 4 Mines, 12 EMP.",
       "tubecount": 2,
       "torpedostart": [
         {
-          "Homing": 24
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Homing": 10
         }
       ],
       "baycount": 6,
@@ -1093,10 +959,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.88,
-            "damage_coeff": 1.3,
+            "cycle_time": 8.93,
+            "damage_coeff": 1.339,
             "range": 1400,
-            "arcwidth": 72,
+            "arcwidth": 120,
             "barrel_angle": 12
           },
           {
@@ -1107,10 +973,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.88,
-            "damage_coeff": 1.3,
+            "cycle_time": 8.93,
+            "damage_coeff": 1.339,
             "range": 1400,
-            "arcwidth": 72,
+            "arcwidth": 120,
             "barrel_angle": 348
           },
           {
@@ -1121,10 +987,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.88,
-            "damage_coeff": 1.3,
+            "cycle_time": 8.93,
+            "damage_coeff": 1.339,
             "range": 1400,
-            "arcwidth": 144,
+            "arcwidth": 120,
             "barrel_angle": 12
           },
           {
@@ -1135,10 +1001,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.88,
-            "damage_coeff": 1.3,
+            "cycle_time": 8.93,
+            "damage_coeff": 1.339,
             "range": 1400,
-            "arcwidth": 144,
+            "arcwidth": 120,
             "barrel_angle": 348
           },
           {
@@ -1149,10 +1015,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.88,
-            "damage_coeff": 1.3,
+            "cycle_time": 8.93,
+            "damage_coeff": 1.339,
             "range": 1400,
-            "arcwidth": 72,
+            "arcwidth": 120,
             "barrel_angle": 192
           },
           {
@@ -1163,10 +1029,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.88,
-            "damage_coeff": 1.3,
+            "cycle_time": 8.93,
+            "damage_coeff": 1.339,
             "range": 1400,
-            "arcwidth": 72,
+            "arcwidth": 120,
             "barrel_angle": 168
           }
         ]
@@ -1178,13 +1044,13 @@
       "origin": "Orion",
       "side": "Pirate",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Interceptor",
-      "meshscale": 0.1,
-      "radarscale": 0.75,
+      "meshscale": 0.019927,
+      "radarscale": 0.3,
       "exclusionradius": 25.0,
       "meshrotate": 0,
       "shields": [
-        210,
-        210
+        42,
+        42
       ],
       "hullpoints": 1,
       "long_desc": "Orion Interceptor Fighter, 16 kT.",
@@ -1192,15 +1058,6 @@
       "torpedostart": [
         {
           "Homing": 4
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
         }
       ],
       "internalmapscale": 1.0,
@@ -1225,9 +1082,9 @@
             "color": "green",
             "arccolor": "#500",
             "cycle_time": 2.1,
-            "damage_coeff": 0.76,
-            "range": 1200,
-            "arcwidth": 90,
+            "damage_coeff": 0.473,
+            "range": 1000,
+            "arcwidth": 120,
             "barrel_angle": 0
           },
           {
@@ -1239,9 +1096,9 @@
             "color": "green",
             "arccolor": "#500",
             "cycle_time": 2.1,
-            "damage_coeff": 0.76,
-            "range": 1200,
-            "arcwidth": 90,
+            "damage_coeff": 0.473,
+            "range": 1000,
+            "arcwidth": 120,
             "barrel_angle": 0
           }
         ]
@@ -1253,29 +1110,20 @@
       "origin": "Orion",
       "side": "Pirate",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Corvette",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 50.0,
+      "meshscale": 0.199305,
+      "radarscale": 0.6,
+      "exclusionradius": 27.0,
       "meshrotate": 0,
       "shields": [
-        800,
-        800
+        105,
+        89
       ],
       "hullpoints": 3,
       "long_desc": "Orion Corvette Frigate, 1,345 kT^1 forward beams^1 Torpedo tube^Stores for 8 homing, 2 EMP, 1 Mine.^Most common of the pirate fleet.",
       "tubecount": 1,
       "torpedostart": [
         {
-          "Homing": 12
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Homing": 5
         }
       ],
       "internalmapscale": 1.0,
@@ -1300,9 +1148,9 @@
             "color": "green",
             "arccolor": "#500",
             "cycle_time": 4.96,
-            "damage_coeff": 1.24,
-            "range": 1470,
-            "arcwidth": 144,
+            "damage_coeff": 2.232,
+            "range": 1200,
+            "arcwidth": 120,
             "barrel_angle": 0
           }
         ]
@@ -1314,29 +1162,20 @@
       "origin": "Orion",
       "side": "Pirate",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Brigand",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 125.0,
+      "meshscale": 0.222404,
+      "radarscale": 0.75,
+      "exclusionradius": 71.5,
       "meshrotate": 0,
       "shields": [
-        1200,
-        1200
+        160,
+        128
       ],
-      "hullpoints": 6,
+      "hullpoints": 5,
       "long_desc": "Orion Brigand Cruiser, 15,199 kT.^Pirate raider.^6 forward beams, 2 rear beams^2 Torpedo tubes^Stores for 12 homing, 12 EMP, 2 Mines.",
       "tubecount": 2,
       "torpedostart": [
         {
-          "Homing": 24
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Homing": 10
         }
       ],
       "internalmapscale": 1.0,
@@ -1360,10 +1199,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12,
-            "damage_coeff": 1.08,
-            "range": 1680,
-            "arcwidth": 72,
+            "cycle_time": 7.35,
+            "damage_coeff": 0.661,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 12
           },
           {
@@ -1374,10 +1213,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12,
-            "damage_coeff": 1.08,
-            "range": 1680,
-            "arcwidth": 72,
+            "cycle_time": 7.35,
+            "damage_coeff": 0.661,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 348
           },
           {
@@ -1388,10 +1227,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12,
-            "damage_coeff": 1.08,
-            "range": 1680,
-            "arcwidth": 72,
+            "cycle_time": 7.35,
+            "damage_coeff": 0.661,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 18
           },
           {
@@ -1402,10 +1241,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12,
-            "damage_coeff": 1.08,
-            "range": 1680,
-            "arcwidth": 72,
+            "cycle_time": 7.35,
+            "damage_coeff": 0.661,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 342
           },
           {
@@ -1416,10 +1255,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12,
-            "damage_coeff": 1.08,
-            "range": 1680,
-            "arcwidth": 72,
+            "cycle_time": 7.35,
+            "damage_coeff": 0.661,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 24
           },
           {
@@ -1430,10 +1269,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12,
-            "damage_coeff": 1.08,
-            "range": 1680,
-            "arcwidth": 72,
+            "cycle_time": 7.35,
+            "damage_coeff": 0.661,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 336
           },
           {
@@ -1444,10 +1283,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12,
-            "damage_coeff": 1.08,
-            "range": 1680,
-            "arcwidth": 72,
+            "cycle_time": 7.35,
+            "damage_coeff": 0.661,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 168
           },
           {
@@ -1458,10 +1297,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12,
-            "damage_coeff": 1.08,
-            "range": 1680,
-            "arcwidth": 72,
+            "cycle_time": 7.35,
+            "damage_coeff": 0.661,
+            "range": 1400,
+            "arcwidth": 120,
             "barrel_angle": 192
           }
         ]
@@ -1473,37 +1312,17 @@
       "origin": "Federation",
       "side": "USFP",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Nova",
-      "meshscale": 0.1401,
-      "radarscale": 0.675,
-      "exclusionradius": 50.0,
+      "meshscale": 0.128617,
+      "radarscale": 0.7,
+      "exclusionradius": 34.3,
       "meshrotate": 0,
       "shields": [
-        1400,
-        1400
+        80,
+        80
       ],
-      "hullpoints": 4,
+      "hullpoints": 3,
       "long_desc": "Nova Class long range science vessel. Displacement: 98.3 kT",
       "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
       "internalmapscale": 1.0,
       "internalmapw": 13,
       "internalmaph": 17,
@@ -1523,32 +1342,12 @@
       "origin": "Dominion",
       "side": "Skaraan",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/JEM_Attack_Ship",
-      "meshscale": 0.1,
-      "radarscale": 0.75,
+      "meshscale": 0.071966,
+      "radarscale": 0.6,
       "exclusionradius": 25.0,
       "meshrotate": 0,
       "long_desc": "Displacement: 30.7 kT. These Jem'Hadar fighters form the backbone of the Dominion fleet, also serving as patrol ships and scouts.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 1,
       "internalmapscale": 1.0,
       "internalmapw": 17,
       "internalmaph": 17,
@@ -1561,10 +1360,10 @@
       "jump_energy_cost": 1,
       "roles": "ship,warship,medium,loner",
       "shields": [
-        900,
-        900
+        105,
+        89
       ],
-      "hullpoints": 4,
+      "hullpoints": 2,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -1575,9 +1374,9 @@
             ],
             "color": "purple",
             "arccolor": "#500",
-            "cycle_time": 4.85,
-            "damage_coeff": 1.5,
-            "range": 1400,
+            "cycle_time": 4.8,
+            "damage_coeff": 1.392,
+            "range": 1200,
             "arcwidth": 108,
             "barrel_angle": 40
           },
@@ -1589,14 +1388,19 @@
             ],
             "color": "purple",
             "arccolor": "#500",
-            "cycle_time": 4.85,
-            "damage_coeff": 1.5,
-            "range": 1400,
+            "cycle_time": 4.8,
+            "damage_coeff": 1.392,
+            "range": 1200,
             "arcwidth": 108,
             "barrel_angle": 320
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Polaron": 4
+        }
+      ]
     },
     {
       "key": "skaraan_enforcer",
@@ -1604,32 +1408,12 @@
       "origin": "Breen",
       "side": "Skaraan",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/BRN_Chel_Grett",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 70.0,
+      "meshscale": 0.556815,
+      "radarscale": 0.9,
+      "exclusionradius": 97.1,
       "meshrotate": 0,
       "long_desc": "Displacement: 1,284 kT.  These Breen warships made an unwelcome addition to the Dominion forces in 2375.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 2,
       "internalmapscale": 1.0,
       "internalmapw": 19,
       "internalmaph": 19,
@@ -1642,10 +1426,10 @@
       "jump_energy_cost": 1.5,
       "roles": "ship,warship,heavy,loner",
       "shields": [
-        1280,
-        1280
+        265,
+        212
       ],
-      "hullpoints": 15,
+      "hullpoints": 7,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -1657,7 +1441,7 @@
             "color": "purple",
             "arccolor": "#500",
             "cycle_time": 5.48,
-            "damage_coeff": 1.2,
+            "damage_coeff": 1.206,
             "range": 1400,
             "arcwidth": 108,
             "barrel_angle": 20
@@ -1671,7 +1455,7 @@
             "color": "purple",
             "arccolor": "#500",
             "cycle_time": 5.48,
-            "damage_coeff": 1.2,
+            "damage_coeff": 1.206,
             "range": 1400,
             "arcwidth": 108,
             "barrel_angle": 340
@@ -1685,7 +1469,7 @@
             "color": "purple",
             "arccolor": "#500",
             "cycle_time": 5.48,
-            "damage_coeff": 1.2,
+            "damage_coeff": 1.206,
             "range": 1400,
             "arcwidth": 108,
             "barrel_angle": 350
@@ -1699,7 +1483,7 @@
             "color": "purple",
             "arccolor": "#500",
             "cycle_time": 5.48,
-            "damage_coeff": 1.2,
+            "damage_coeff": 1.206,
             "range": 1400,
             "arcwidth": 108,
             "barrel_angle": 10
@@ -1713,13 +1497,19 @@
             "color": "purple",
             "arccolor": "#500",
             "cycle_time": 5.48,
-            "damage_coeff": 1.2,
+            "damage_coeff": 1.206,
             "range": 1400,
             "arcwidth": 108,
             "barrel_angle": 180
           }
         ]
-      }
+      },
+      "drone_launch_timer": 35,
+      "torpedostart": [
+        {
+          "Dampener": 4
+        }
+      ]
     },
     {
       "key": "skaraan_executor",
@@ -1727,32 +1517,12 @@
       "origin": "Dominion",
       "side": "Skaraan",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/JEM_Battlecruiser",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 130.0,
+      "meshscale": 0.36,
+      "radarscale": 1.1,
+      "exclusionradius": 122.7,
       "meshrotate": 0,
       "long_desc": "Displacement: 5,344 kT. Large and dangerous, these cruisers are even more dangerous in groups.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 3,
       "internalmapscale": 1.0,
       "internalmapw": 16,
       "internalmaph": 17,
@@ -1765,10 +1535,10 @@
       "jump_energy_cost": 1,
       "roles": "ship,warship,heavy,loner",
       "shields": [
-        2880,
-        2880
+        370,
+        259
       ],
-      "hullpoints": 16,
+      "hullpoints": 9,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -1779,10 +1549,10 @@
             ],
             "color": "purple",
             "arccolor": "#500",
-            "cycle_time": 15,
-            "damage_coeff": 3,
+            "cycle_time": 7.2,
+            "damage_coeff": 1.531,
             "range": 2000,
-            "arcwidth": 60,
+            "arcwidth": 108,
             "barrel_angle": 20
           },
           {
@@ -1793,10 +1563,10 @@
             ],
             "color": "purple",
             "arccolor": "#500",
-            "cycle_time": 15,
-            "damage_coeff": 3,
+            "cycle_time": 7.2,
+            "damage_coeff": 1.531,
             "range": 2000,
-            "arcwidth": 60,
+            "arcwidth": 108,
             "barrel_angle": 340
           },
           {
@@ -1807,10 +1577,10 @@
             ],
             "color": "purple",
             "arccolor": "#500",
-            "cycle_time": 7.41,
-            "damage_coeff": 1.5,
+            "cycle_time": 3.56,
+            "damage_coeff": 0.765,
             "range": 1400,
-            "arcwidth": 180,
+            "arcwidth": 108,
             "barrel_angle": 180
           },
           {
@@ -1821,10 +1591,10 @@
             ],
             "color": "purple",
             "arccolor": "#500",
-            "cycle_time": 7.41,
-            "damage_coeff": 1.5,
+            "cycle_time": 3.56,
+            "damage_coeff": 0.765,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 108,
             "barrel_angle": 300
           },
           {
@@ -1835,10 +1605,10 @@
             ],
             "color": "purple",
             "arccolor": "#500",
-            "cycle_time": 7.41,
-            "damage_coeff": 1.5,
+            "cycle_time": 3.56,
+            "damage_coeff": 0.765,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 108,
             "barrel_angle": 60
           },
           {
@@ -1849,10 +1619,10 @@
             ],
             "color": "purple",
             "arccolor": "#500",
-            "cycle_time": 7.41,
-            "damage_coeff": 1.5,
+            "cycle_time": 3.56,
+            "damage_coeff": 0.765,
             "range": 1400,
-            "arcwidth": 60,
+            "arcwidth": 108,
             "barrel_angle": 210
           },
           {
@@ -1863,14 +1633,20 @@
             ],
             "color": "purple",
             "arccolor": "#500",
-            "cycle_time": 7.41,
-            "damage_coeff": 1.5,
+            "cycle_time": 3.56,
+            "damage_coeff": 0.765,
             "range": 1400,
-            "arcwidth": 60,
+            "arcwidth": 108,
             "barrel_angle": 150
           }
         ]
-      }
+      },
+      "drone_launch_timer": 22,
+      "torpedostart": [
+        {
+          "Polaron": 10
+        }
+      ]
     },
     {
       "key": "starbase_arvonian",
@@ -1878,17 +1654,17 @@
       "origin": "Cardassian",
       "side": "Arvonian",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Terok_Nor",
-      "meshscale": 0.4,
-      "radarscale": 0.5,
+      "meshscale": 0.529336,
+      "radarscale": 1.0,
       "internalmapscale": 1.0,
       "internalmapw": 30,
       "internalmaph": 30,
       "internalsymmetry": 1,
-      "exclusionradius": 220.0,
+      "exclusionradius": 302.0,
       "shields": [
-        680
+        600
       ],
-      "hullpoints": 75,
+      "hullpoints": 150,
       "roles": "station,carrier",
       "baycount": 14,
       "hull_port_sets": {
@@ -1901,10 +1677,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 285
           },
           {
@@ -1915,10 +1691,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 315
           },
           {
@@ -1929,10 +1705,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 45
           },
           {
@@ -1943,10 +1719,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 75
           },
           {
@@ -1957,10 +1733,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 165
           },
           {
@@ -1971,10 +1747,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 195
           },
           {
@@ -1985,10 +1761,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 165
           },
           {
@@ -1999,10 +1775,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 195
           },
           {
@@ -2013,10 +1789,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 285
           },
           {
@@ -2027,10 +1803,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 315
           },
           {
@@ -2041,10 +1817,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 45
           },
           {
@@ -2055,10 +1831,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 1.25,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.204,
+            "range": 1500,
+            "arcwidth": 120,
             "barrel_angle": 75
           }
         ]
@@ -2071,14 +1847,14 @@
       "side": "USFP",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_GenStation",
       "meshscale": 0.266668,
-      "radarscale": 0.66667,
+      "radarscale": 1.0,
       "internalmapscale": 1.0,
       "internalmapw": 41,
       "internalmaph": 40,
       "internalsymmetry": 1,
-      "exclusionradius": 300.0,
+      "exclusionradius": 125.6,
       "shields": [
-        680
+        320
       ],
       "hullpoints": 100,
       "roles": "station"
@@ -2095,9 +1871,9 @@
       "internalmapw": 30,
       "internalmaph": 30,
       "internalsymmetry": 1,
-      "exclusionradius": 200.0,
+      "exclusionradius": 386.1,
       "shields": [
-        1500
+        700
       ],
       "hullpoints": 200,
       "roles": "station",
@@ -2111,10 +1887,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -2125,10 +1901,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 210
           },
           {
@@ -2139,10 +1915,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -2153,10 +1929,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 210
           },
           {
@@ -2167,10 +1943,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -2181,10 +1957,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 150
           },
           {
@@ -2195,10 +1971,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -2209,10 +1985,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 150
           },
           {
@@ -2223,10 +1999,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -2237,10 +2013,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -2251,10 +2027,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -2265,10 +2041,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 12.22,
-            "damage_coeff": 2.5,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.263,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           }
         ]
@@ -2280,17 +2056,17 @@
       "origin": "Federation",
       "side": "USFP",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Terok_Nor",
-      "meshscale": 0.4,
+      "meshscale": 0.529336,
       "radarscale": 1.0,
       "internalmapscale": 1.0,
       "internalmapw": 30,
       "internalmaph": 30,
       "internalsymmetry": 1,
-      "exclusionradius": 220.0,
+      "exclusionradius": 302.0,
       "shields": [
-        920
+        750
       ],
-      "hullpoints": 81,
+      "hullpoints": 175,
       "roles": "station",
       "hull_port_sets": {
         "beam Primary Beams": [
@@ -2302,10 +2078,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 3,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 4.57,
+            "damage_coeff": 0.207,
+            "range": 1250,
+            "arcwidth": 144,
             "barrel_angle": 165
           },
           {
@@ -2316,10 +2092,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 3,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 4.57,
+            "damage_coeff": 0.207,
+            "range": 1250,
+            "arcwidth": 144,
             "barrel_angle": 195
           },
           {
@@ -2330,10 +2106,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 3,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 4.57,
+            "damage_coeff": 0.207,
+            "range": 1250,
+            "arcwidth": 144,
             "barrel_angle": 285
           },
           {
@@ -2344,10 +2120,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 3,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 4.57,
+            "damage_coeff": 0.207,
+            "range": 1250,
+            "arcwidth": 144,
             "barrel_angle": 315
           },
           {
@@ -2358,10 +2134,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 3,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 4.57,
+            "damage_coeff": 0.207,
+            "range": 1250,
+            "arcwidth": 144,
             "barrel_angle": 45
           },
           {
@@ -2372,10 +2148,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 10.5,
-            "damage_coeff": 3,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 4.57,
+            "damage_coeff": 0.207,
+            "range": 1250,
+            "arcwidth": 144,
             "barrel_angle": 75
           },
           {
@@ -2386,10 +2162,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 165
           },
           {
@@ -2400,10 +2176,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 195
           },
           {
@@ -2414,10 +2190,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 285
           },
           {
@@ -2428,10 +2204,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 315
           },
           {
@@ -2442,10 +2218,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 45
           },
           {
@@ -2456,10 +2232,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 75
           },
           {
@@ -2470,10 +2246,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 165
           },
           {
@@ -2484,10 +2260,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 195
           },
           {
@@ -2498,10 +2274,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 285
           },
           {
@@ -2512,10 +2288,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 315
           },
           {
@@ -2526,10 +2302,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 45
           },
           {
@@ -2540,10 +2316,10 @@
             ],
             "color": "orange",
             "arccolor": "#090",
-            "cycle_time": 16.1,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.133,
+            "range": 1500,
+            "arcwidth": 144,
             "barrel_angle": 75
           }
         ]
@@ -2563,7 +2339,7 @@
       "internalsymmetry": 1,
       "exclusionradius": 120.0,
       "shields": [
-        3000
+        350
       ],
       "hullpoints": 100,
       "roles": "station",
@@ -2577,8 +2353,8 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 6,
-            "damage_coeff": 1,
+            "cycle_time": 6.0,
+            "damage_coeff": 1.2,
             "range": 1000,
             "arcwidth": 360,
             "barrel_angle": 0
@@ -2598,9 +2374,9 @@
       "internalmapw": 30,
       "internalmaph": 30,
       "internalsymmetry": 1,
-      "exclusionradius": 195.0,
+      "exclusionradius": 202.9,
       "shields": [
-        680
+        340
       ],
       "hullpoints": 100,
       "roles": "station"
@@ -2619,7 +2395,7 @@
       "internalsymmetry": 1,
       "exclusionradius": 120.0,
       "shields": [
-        500
+        400
       ],
       "hullpoints": 100,
       "roles": "station",
@@ -2633,8 +2409,8 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 6,
-            "damage_coeff": 1,
+            "cycle_time": 5.6,
+            "damage_coeff": 0.84,
             "range": 1000,
             "arcwidth": 360,
             "barrel_angle": 0
@@ -2647,14 +2423,15 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 6,
-            "damage_coeff": 1,
+            "cycle_time": 5.6,
+            "damage_coeff": 0.84,
             "range": 1000,
             "arcwidth": 360,
             "barrel_angle": 0
           }
         ]
-      }
+      },
+      "drone_launch_timer": 35
     },
     {
       "key": "starbase_torgoth",
@@ -2671,7 +2448,7 @@
       "exclusionradius": 120.0,
       "drone_launch_timer": 30,
       "shields": [
-        600
+        450
       ],
       "hullpoints": 200,
       "roles": "station",
@@ -2685,8 +2462,8 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 6,
-            "damage_coeff": 1,
+            "cycle_time": 6.0,
+            "damage_coeff": 1.5,
             "range": 1500,
             "arcwidth": 360,
             "barrel_angle": 0
@@ -2700,32 +2477,12 @@
       "origin": "Romulan",
       "side": "Torgoth",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_Scimitar",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 180.0,
+      "meshscale": 0.251147,
+      "radarscale": 1.1,
+      "exclusionradius": 186.1,
       "meshrotate": 0,
       "long_desc": "Displacement: 22,312 kT. This massive ship is smaller than the D'Deridex, but is a leap forward in power.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 4,
       "roles": "ship,leader,warship,heavy",
       "internalmapscale": 1.0,
       "internalmapw": 15,
@@ -2739,10 +2496,10 @@
       "jump_energy_cost": 2,
       "drone_launch_timer": 20,
       "shields": [
-        2000,
-        2000
+        420,
+        294
       ],
-      "hullpoints": 20,
+      "hullpoints": 9,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -2753,9 +2510,9 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 26,
-            "damage_coeff": 4,
-            "range": 2800,
+            "cycle_time": 11.25,
+            "damage_coeff": 1.322,
+            "range": 2000,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -2767,9 +2524,9 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 26,
-            "damage_coeff": 4,
-            "range": 2800,
+            "cycle_time": 11.25,
+            "damage_coeff": 1.322,
+            "range": 2000,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -2781,9 +2538,9 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 26,
-            "damage_coeff": 4,
-            "range": 2800,
+            "cycle_time": 11.25,
+            "damage_coeff": 1.322,
+            "range": 2000,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -2795,9 +2552,9 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 26,
-            "damage_coeff": 4,
-            "range": 2800,
+            "cycle_time": 11.25,
+            "damage_coeff": 1.322,
+            "range": 2000,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -2809,10 +2566,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 330
           },
           {
@@ -2823,10 +2580,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 30
           },
           {
@@ -2837,10 +2594,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 345
           },
           {
@@ -2851,10 +2608,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 15
           },
           {
@@ -2865,10 +2622,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 345
           },
           {
@@ -2879,10 +2636,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 15
           },
           {
@@ -2893,10 +2650,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 330
           },
           {
@@ -2907,10 +2664,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 30
           },
           {
@@ -2921,10 +2678,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 300
           },
           {
@@ -2935,10 +2692,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 60
           },
           {
@@ -2949,10 +2706,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 180
           },
           {
@@ -2963,10 +2720,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 240
           },
           {
@@ -2977,14 +2734,19 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 12.97,
-            "damage_coeff": 2,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 5.61,
+            "damage_coeff": 0.66,
+            "range": 1400,
+            "arcwidth": 100,
             "barrel_angle": 120
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Plasma": 8
+        }
+      ]
     },
     {
       "key": "torgoth_destroyer",
@@ -2992,37 +2754,17 @@
       "origin": "Romulan",
       "side": "Torgoth",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_TVaro",
-      "meshscale": 0.1,
-      "radarscale": 0.75,
-      "exclusionradius": 50.0,
+      "meshscale": 0.090686,
+      "radarscale": 0.6,
+      "exclusionradius": 27.0,
       "meshrotate": 0,
       "shields": [
-        720,
-        720
+        110,
+        94
       ],
-      "hullpoints": 4,
+      "hullpoints": 3,
       "long_desc": "Displacement: 182.4 kT. Fast, comes in swarms, and has a huge plasma complement.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 1,
       "internalmapscale": 1.0,
       "internalmapw": 10,
       "internalmaph": 14,
@@ -3046,9 +2788,9 @@
             "color": "green",
             "arccolor": "#500",
             "cycle_time": 3.15,
-            "damage_coeff": 0.92,
-            "range": 1400,
-            "arcwidth": 90,
+            "damage_coeff": 0.347,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 315
           },
           {
@@ -3060,9 +2802,9 @@
             "color": "green",
             "arccolor": "#500",
             "cycle_time": 3.15,
-            "damage_coeff": 0.92,
-            "range": 1400,
-            "arcwidth": 90,
+            "damage_coeff": 0.347,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 45
           },
           {
@@ -3074,9 +2816,9 @@
             "color": "green",
             "arccolor": "#500",
             "cycle_time": 3.15,
-            "damage_coeff": 0.92,
-            "range": 1400,
-            "arcwidth": 60,
+            "damage_coeff": 0.347,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 355
           },
           {
@@ -3088,9 +2830,9 @@
             "color": "green",
             "arccolor": "#500",
             "cycle_time": 3.15,
-            "damage_coeff": 0.92,
-            "range": 1400,
-            "arcwidth": 60,
+            "damage_coeff": 0.347,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 5
           },
           {
@@ -3102,13 +2844,18 @@
             "color": "green",
             "arccolor": "#500",
             "cycle_time": 3.15,
-            "damage_coeff": 0.92,
-            "range": 1400,
-            "arcwidth": 90,
+            "damage_coeff": 0.347,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 180
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Plasma": 3
+        }
+      ]
     },
     {
       "key": "torgoth_goliath",
@@ -3116,37 +2863,17 @@
       "origin": "Romulan",
       "side": "Torgoth",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_Mogai",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 120.0,
+      "meshscale": 0.157337,
+      "radarscale": 0.9,
+      "exclusionradius": 74.0,
       "meshrotate": 0,
       "shields": [
-        1500,
-        1500
+        245,
+        196
       ],
-      "hullpoints": 13,
+      "hullpoints": 7,
       "long_desc": "Displacement: 5,380 kT. Smaller and sleeker than the D'Deridex, it is no less deadly.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 2,
       "internalmapscale": 1.0,
       "internalmapw": 19,
       "internalmaph": 20,
@@ -3169,9 +2896,9 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 28.8,
-            "damage_coeff": 5,
-            "range": 2800,
+            "cycle_time": 10.62,
+            "damage_coeff": 1.064,
+            "range": 1600,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -3183,9 +2910,9 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 28.8,
-            "damage_coeff": 5,
-            "range": 2800,
+            "cycle_time": 10.62,
+            "damage_coeff": 1.064,
+            "range": 1600,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -3197,10 +2924,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 0
           },
           {
@@ -3211,10 +2938,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 345
           },
           {
@@ -3225,10 +2952,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 15
           },
           {
@@ -3239,10 +2966,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 345
           },
           {
@@ -3253,10 +2980,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 15
           },
           {
@@ -3267,10 +2994,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 330
           },
           {
@@ -3281,10 +3008,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 30
           },
           {
@@ -3295,10 +3022,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 225
           },
           {
@@ -3309,10 +3036,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 135
           },
           {
@@ -3323,10 +3050,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 0
           },
           {
@@ -3337,14 +3064,19 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 14.7,
-            "damage_coeff": 2.2,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.42,
+            "damage_coeff": 0.468,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 180
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Plasma": 4
+        }
+      ]
     },
     {
       "key": "torgoth_leviathan",
@@ -3352,32 +3084,12 @@
       "origin": "Romulan",
       "side": "Torgoth",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_DDeridex",
-      "meshscale": 0.839,
-      "radarscale": 1.0,
-      "exclusionradius": 270.0,
+      "meshscale": 0.645919,
+      "radarscale": 0.9,
+      "exclusionradius": 216.7,
       "meshrotate": 0,
       "long_desc": "Displacement: 29,079 kT. This massive ship is larger than Starfleet's Galaxy class.",
-      "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
+      "tubecount": 3,
       "internalmapscale": 1.0,
       "internalmapw": 19,
       "internalmaph": 20,
@@ -3388,13 +3100,13 @@
       "ship_energy_cost": 1.05,
       "warp_energy_cost": 1.1,
       "jump_energy_cost": 1.5,
-      "drone_launch_timer": 30,
+      "drone_launch_timer": 25,
       "roles": "ship,warship,heavy",
       "shields": [
-        1500,
-        1500
+        300,
+        240
       ],
-      "hullpoints": 16,
+      "hullpoints": 8,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -3405,9 +3117,9 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 24.0,
-            "damage_coeff": 4,
-            "range": 2800,
+            "cycle_time": 10.62,
+            "damage_coeff": 1.379,
+            "range": 1600,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -3419,9 +3131,9 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 24,
-            "damage_coeff": 4,
-            "range": 2800,
+            "cycle_time": 10.62,
+            "damage_coeff": 1.379,
+            "range": 1600,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -3433,10 +3145,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 11.94,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.29,
+            "damage_coeff": 0.622,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 315
           },
           {
@@ -3447,10 +3159,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 11.94,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.29,
+            "damage_coeff": 0.622,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 45
           },
           {
@@ -3461,10 +3173,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 11.94,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.29,
+            "damage_coeff": 0.622,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 270
           },
           {
@@ -3475,10 +3187,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 11.94,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.29,
+            "damage_coeff": 0.622,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 90
           },
           {
@@ -3489,10 +3201,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 11.94,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.29,
+            "damage_coeff": 0.622,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 240
           },
           {
@@ -3503,10 +3215,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 11.94,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.29,
+            "damage_coeff": 0.622,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 120
           },
           {
@@ -3517,10 +3229,10 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 11.94,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.29,
+            "damage_coeff": 0.622,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 210
           },
           {
@@ -3531,14 +3243,19 @@
             ],
             "color": "green",
             "arccolor": "#500",
-            "cycle_time": 11.94,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 5.29,
+            "damage_coeff": 0.622,
+            "range": 1200,
+            "arcwidth": 100,
             "barrel_angle": 150
           }
         ]
-      }
+      },
+      "torpedostart": [
+        {
+          "Plasma": 6
+        }
+      ]
     },
     {
       "key": "transport_ship",
@@ -3546,37 +3263,17 @@
       "origin": "Federation",
       "side": "USFP",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Olympic",
-      "meshscale": 0.2158,
-      "radarscale": 0.77,
-      "exclusionradius": 75.0,
+      "meshscale": 0.161795,
+      "radarscale": 0.7,
+      "exclusionradius": 49.9,
       "meshrotate": 0,
       "shields": [
-        640,
-        640
+        90,
+        90
       ],
-      "hullpoints": 6,
+      "hullpoints": 4,
       "long_desc": "Olympic Class Medical Cruiser, often engaged for first response to planetary disasters. Displacement: 768 kT.",
       "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
       "internalmapscale": 1.0,
       "internalmapw": 20,
       "internalmaph": 21,
@@ -3596,24 +3293,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Ambassador",
-      "meshscale": 0.296400010585785,
-      "radarscale": 0.87,
-      "exclusionradius": 105.0,
+      "meshscale": 0.29637,
+      "radarscale": 0.9,
+      "exclusionradius": 109.4,
       "meshrotate": 0,
       "long_desc": "Ambassador Class Advanced Heavy Cruiser^Captain Grade^A next-generation heavy cruiser design^12 beams, 4 Torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 36
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 14
         }
       ],
       "internalmapscale": 1.0,
@@ -3628,10 +3316,10 @@
       "jump_energy_cost": 2.0,
       "roles": "ship,warship,heavy",
       "shields": [
-        810,
-        810
+        230,
+        184
       ],
-      "hullpoints": 9,
+      "hullpoints": 7,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -3642,10 +3330,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 340
           },
           {
@@ -3656,10 +3344,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 20
           },
           {
@@ -3670,10 +3358,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 350
           },
           {
@@ -3684,10 +3372,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 10
           },
           {
@@ -3698,10 +3386,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -3712,10 +3400,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -3726,10 +3414,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -3740,10 +3428,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -3754,10 +3442,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 200
           },
           {
@@ -3768,10 +3456,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 160
           },
           {
@@ -3782,10 +3470,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 210
           },
           {
@@ -3796,10 +3484,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.708,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 150
           }
         ]
@@ -3812,24 +3500,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Galaxy",
-      "meshscale": 0.331099987030029,
-      "radarscale": 0.914,
-      "exclusionradius": 130.0,
+      "meshscale": 0.332605,
+      "radarscale": 0.9,
+      "exclusionradius": 133.6,
       "meshrotate": 0,
       "long_desc": "Galaxy Class Explorer^Captain Grade^A next-generation exploration cruiser design^16 beams, 4 Torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 40
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 16
         }
       ],
       "internalmapscale": 1.0,
@@ -3844,10 +3523,10 @@
       "jump_energy_cost": 2.0,
       "roles": "ship,warship,heavy",
       "shields": [
-        1500,
-        1500
+        280,
+        224
       ],
-      "hullpoints": 11,
+      "hullpoints": 8,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -3858,10 +3537,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -3872,10 +3551,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -3886,10 +3565,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 315
           },
           {
@@ -3900,10 +3579,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 45
           },
           {
@@ -3914,10 +3593,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 225
           },
           {
@@ -3928,10 +3607,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 135
           },
           {
@@ -3942,10 +3621,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -3956,10 +3635,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -3970,10 +3649,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 210
           },
           {
@@ -3984,10 +3663,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.72,
-            "damage_coeff": 1.52,
+            "cycle_time": 6.7,
+            "damage_coeff": 0.492,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 150
           },
           {
@@ -3998,10 +3677,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.589,
             "range": 1540,
-            "arcwidth": 150,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -4012,10 +3691,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.589,
             "range": 1540,
-            "arcwidth": 150,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -4026,10 +3705,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.589,
             "range": 1540,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 240
           },
           {
@@ -4040,10 +3719,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.589,
             "range": 1540,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 120
           },
           {
@@ -4054,10 +3733,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.589,
             "range": 1540,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 195
           },
           {
@@ -4068,10 +3747,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.589,
             "range": 1540,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 165
           }
         ]
@@ -4084,24 +3763,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Danube_Bomber",
-      "meshscale": 0.04,
-      "radarscale": 0.25,
+      "meshscale": 0.040125,
+      "radarscale": 0.3,
       "exclusionradius": 25.0,
       "meshrotate": 0,
       "long_desc": "Danube class Runabout with torpedo pod, 0.71 kT.^Standard bomber of the TSN.^1 forward beam.  10 torpedos.",
       "tubecount": 1,
       "torpedostart": [
         {
-          "Homing": 8
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 4
         }
       ],
       "internalmapscale": 1.0,
@@ -4116,8 +3786,8 @@
       "jump_energy_cost": 1,
       "roles": "cockpit,fighter,bomber",
       "shields": [
-        210,
-        210
+        45,
+        45
       ],
       "hullpoints": 1,
       "hull_port_sets": {
@@ -4131,8 +3801,8 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 2.13,
-            "damage_coeff": 0.72,
-            "range": 1260,
+            "damage_coeff": 0.809,
+            "range": 1000,
             "arcwidth": 144,
             "barrel_angle": 0
           }
@@ -4145,24 +3815,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Akira",
-      "meshscale": 0.266200006008148,
-      "radarscale": 0.833,
-      "exclusionradius": 95.0,
+      "meshscale": 0.280985,
+      "radarscale": 0.9,
+      "exclusionradius": 96.6,
       "meshrotate": 0,
       "long_desc": "Akira Class Advanced Escort^Captain Grade^A next-generation heavy escort cruiser design^12 beams, 4 Torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 40
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 16
         }
       ],
       "baycount": 4,
@@ -4178,10 +3839,10 @@
       "jump_energy_cost": 2.0,
       "roles": "ship,warship,patrol,heavy,carrier",
       "shields": [
-        1440,
-        1440
+        250,
+        200
       ],
-      "hullpoints": 9,
+      "hullpoints": 7,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -4192,10 +3853,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 345
           },
           {
@@ -4206,10 +3867,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 15
           },
           {
@@ -4220,10 +3881,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -4234,10 +3895,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -4248,10 +3909,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -4262,10 +3923,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -4276,10 +3937,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 240
           },
           {
@@ -4290,10 +3951,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 120
           },
           {
@@ -4304,10 +3965,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -4318,10 +3979,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -4332,10 +3993,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 210
           },
           {
@@ -4346,10 +4007,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.85,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 150
           }
         ]
@@ -4361,31 +4022,25 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Defiant",
-      "meshscale": 0.1,
-      "radarscale": 0.625,
-      "exclusionradius": 50.0,
+      "meshscale": 0.142241,
+      "radarscale": 0.75,
+      "exclusionradius": 35.5,
       "meshrotate": 0,
       "long_desc": "Defiant Class Escort^Captain Grade^The Federation's first 'Escort' vessel comissioned after Wolf 359^4 Pulse Beams, 4 Beams, 2 Torpedo tubes.",
       "tubecount": 2,
       "torpedostart": [
         {
-          "Homing": 24
+          "Photon": 10
         },
         {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Quantum": 4
         }
       ],
       "internalmapscale": 1.0,
       "internalmapw": 16,
       "internalmaph": 15,
       "internalsymmetry": 1,
-      "turn_rate": 1.46,
+      "turn_rate": 1.6,
       "speed_coeff": 1.83,
       "scan_strength_coeff": 1,
       "ship_energy_cost": 0.85,
@@ -4393,10 +4048,10 @@
       "jump_energy_cost": 2.0,
       "roles": "ship,support,patrol,light,defender",
       "shields": [
-        1750,
-        1750
+        200,
+        160
       ],
-      "hullpoints": 4,
+      "hullpoints": 5,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -4407,9 +4062,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 0.98,
-            "damage_coeff": 0.56,
-            "range": 1260,
+            "cycle_time": 1.5,
+            "damage_coeff": 0.217,
+            "range": 1050,
             "arcwidth": 30,
             "barrel_angle": 345
           },
@@ -4421,9 +4076,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 0.98,
-            "damage_coeff": 0.56,
-            "range": 1260,
+            "cycle_time": 1.5,
+            "damage_coeff": 0.217,
+            "range": 1050,
             "arcwidth": 30,
             "barrel_angle": 15
           },
@@ -4435,9 +4090,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 0.98,
-            "damage_coeff": 0.56,
-            "range": 1260,
+            "cycle_time": 1.5,
+            "damage_coeff": 0.217,
+            "range": 1050,
             "arcwidth": 30,
             "barrel_angle": 350
           },
@@ -4449,9 +4104,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 0.98,
-            "damage_coeff": 0.56,
-            "range": 1260,
+            "cycle_time": 1.5,
+            "damage_coeff": 0.217,
+            "range": 1050,
             "arcwidth": 30,
             "barrel_angle": 10
           },
@@ -4463,10 +4118,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.85,
-            "damage_coeff": 1.67,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.649,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 0
           },
           {
@@ -4477,10 +4132,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.85,
-            "damage_coeff": 1.67,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.649,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -4491,10 +4146,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.85,
-            "damage_coeff": 1.67,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.649,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -4505,10 +4160,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.85,
-            "damage_coeff": 1.67,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 7.0,
+            "damage_coeff": 0.649,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 180
           }
         ]
@@ -4521,24 +4176,18 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Sovereign",
-      "meshscale": 0.342500001192093,
-      "radarscale": 0.928,
-      "exclusionradius": 140.0,
+      "meshscale": 0.342428,
+      "radarscale": 0.9,
+      "exclusionradius": 142.5,
       "meshrotate": 0,
       "long_desc": "Sovereign Class Heavy Escort^Admiral Grade^A next-generation heavy escort cruiser design^16 beams, 6 Torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 40
+          "Photon": 16
         },
         {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Quantum": 4
         }
       ],
       "baycount": 2,
@@ -4554,10 +4203,10 @@
       "jump_energy_cost": 2.0,
       "roles": "ship,warship,carrier,heavy",
       "shields": [
-        2000,
-        2000
+        300,
+        240
       ],
-      "hullpoints": 14,
+      "hullpoints": 8,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -4568,10 +4217,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 60,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 345
           },
           {
@@ -4582,10 +4231,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 60,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 15
           },
           {
@@ -4596,10 +4245,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 60,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -4610,10 +4259,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 60,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -4624,10 +4273,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 60,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 305
           },
           {
@@ -4638,10 +4287,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 60,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 55
           },
           {
@@ -4652,10 +4301,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -4666,10 +4315,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -4680,10 +4329,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -4694,10 +4343,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -4708,10 +4357,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 240
           },
           {
@@ -4722,10 +4371,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 120
           },
           {
@@ -4736,10 +4385,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 180,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -4750,10 +4399,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 180,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -4764,10 +4413,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 195
           },
           {
@@ -4778,10 +4427,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14.82,
-            "damage_coeff": 2.0,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.691,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 165
           }
         ]
@@ -4793,24 +4442,18 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Intrepid",
-      "meshscale": 0.226699993014336,
-      "radarscale": 0.783,
-      "exclusionradius": 75.0,
+      "meshscale": 0.226903,
+      "radarscale": 0.75,
+      "exclusionradius": 71.5,
       "meshrotate": 0,
       "long_desc": "Intrepid Class Explorer^Commander Grade^A next-generation fast explorer design^8 beams, 3 Torpedo tubes.",
       "tubecount": 3,
       "torpedostart": [
         {
-          "Homing": 24
+          "Photon": 10
         },
         {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Tricobalt": 4
         }
       ],
       "internalmapscale": 1.0,
@@ -4825,10 +4468,10 @@
       "jump_energy_cost": 1.5,
       "roles": "ship,support,patrol,light,defender",
       "shields": [
-        1320,
-        1320
+        170,
+        136
       ],
-      "hullpoints": 6,
+      "hullpoints": 4,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -4840,9 +4483,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.7,
-            "damage_coeff": 1.5,
+            "damage_coeff": 0.628,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -4854,9 +4497,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.7,
-            "damage_coeff": 1.5,
+            "damage_coeff": 0.628,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -4868,9 +4511,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.7,
-            "damage_coeff": 1.5,
+            "damage_coeff": 0.628,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -4882,9 +4525,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.7,
-            "damage_coeff": 1.5,
+            "damage_coeff": 0.628,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -4896,9 +4539,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.7,
-            "damage_coeff": 1.5,
+            "damage_coeff": 0.628,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -4910,9 +4553,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.7,
-            "damage_coeff": 1.5,
+            "damage_coeff": 0.628,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -4924,9 +4567,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.7,
-            "damage_coeff": 1.5,
+            "damage_coeff": 0.628,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 150
           },
           {
@@ -4938,9 +4581,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.7,
-            "damage_coeff": 1.5,
+            "damage_coeff": 0.628,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 210
           }
         ]
@@ -4952,24 +4595,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Peregrine",
-      "meshscale": 0.04,
-      "radarscale": 0.25,
+      "meshscale": 0.046762,
+      "radarscale": 0.3,
       "exclusionradius": 25.0,
       "meshrotate": 0,
       "long_desc": "Peregrine Fighter, 0.76 kT.^Fast attack craft developed by Starfleet.^2 forward beams, 5 torpedos.",
       "tubecount": 1,
       "torpedostart": [
         {
-          "Homing": 4
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 4
         }
       ],
       "internalmapscale": 1.0,
@@ -4984,8 +4618,8 @@
       "jump_energy_cost": 0.4,
       "roles": "cockpit,fighter",
       "shields": [
-        210,
-        210
+        40,
+        40
       ],
       "hullpoints": 1,
       "hull_port_sets": {
@@ -4999,8 +4633,8 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 2.1,
-            "damage_coeff": 0.76,
-            "range": 1470,
+            "damage_coeff": 0.504,
+            "range": 1000,
             "arcwidth": 144,
             "barrel_angle": 355
           },
@@ -5013,8 +4647,8 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 2.1,
-            "damage_coeff": 0.76,
-            "range": 1470,
+            "damage_coeff": 0.504,
+            "range": 1000,
             "arcwidth": 144,
             "barrel_angle": 5
           }
@@ -5027,24 +4661,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Luna",
-      "meshscale": 0.270999997854233,
-      "radarscale": 0.839,
-      "exclusionradius": 95.0,
+      "meshscale": 0.269106,
+      "radarscale": 0.9,
+      "exclusionradius": 93.6,
       "meshrotate": 0,
       "long_desc": "Luna Class Exploration Cruiser^Admiral Class^A fast exploration cruiser^16 beams, 4 Torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 40
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 16
         }
       ],
       "internalmapscale": 1.0,
@@ -5059,10 +4684,10 @@
       "jump_energy_cost": 2.0,
       "roles": "ship,warship,patrol,heavy,exploration",
       "shields": [
-        1440,
-        1440
+        235,
+        188
       ],
-      "hullpoints": 9,
+      "hullpoints": 7,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -5073,10 +4698,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -5087,10 +4712,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -5101,10 +4726,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 345
           },
           {
@@ -5115,10 +4740,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 15
           },
           {
@@ -5129,10 +4754,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.513,
+            "range": 1333,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -5143,10 +4768,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 14,
-            "damage_coeff": 1.8,
-            "range": 1400,
-            "arcwidth": 90,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.513,
+            "range": 1333,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -5157,10 +4782,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 315
           },
           {
@@ -5171,10 +4796,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 45
           },
           {
@@ -5185,10 +4810,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -5199,10 +4824,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -5213,10 +4838,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 275
           },
           {
@@ -5227,10 +4852,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 75
           },
           {
@@ -5241,10 +4866,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 225
           },
           {
@@ -5255,10 +4880,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 135
           },
           {
@@ -5269,10 +4894,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -5283,10 +4908,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.57,
-            "damage_coeff": 1.92,
-            "range": 1680,
-            "arcwidth": 90,
+            "cycle_time": 8.24,
+            "damage_coeff": 0.547,
+            "range": 1600,
+            "arcwidth": 144,
             "barrel_angle": 90
           }
         ]
@@ -5298,24 +4923,18 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_GalaxyX",
-      "meshscale": 0.331099987030029,
-      "radarscale": 0.914,
-      "exclusionradius": 130.0,
+      "meshscale": 0.332605,
+      "radarscale": 1.1,
+      "exclusionradius": 133.6,
       "meshrotate": 0,
       "long_desc": "Galaxy Class Dreadnought^Admiral Grade^A futuristic refit into a heavy weapons platform^16 beams, 2 pulse beams, 1 mega beam, 6 Torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 60
+          "Photon": 24
         },
         {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Quantum": 4
         }
       ],
       "baycount": 2,
@@ -5331,10 +4950,10 @@
       "jump_energy_cost": 2.0,
       "roles": "ship,warship,carrier,heavy",
       "shields": [
-        2880,
-        2880
+        400,
+        280
       ],
-      "hullpoints": 16,
+      "hullpoints": 9,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -5345,9 +4964,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 15.22,
-            "damage_coeff": 8.0,
-            "range": 1680,
+            "cycle_time": 9.0,
+            "damage_coeff": 2.298,
+            "range": 1867,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -5359,9 +4978,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 15.22,
-            "damage_coeff": 8.0,
-            "range": 1680,
+            "cycle_time": 9.0,
+            "damage_coeff": 2.298,
+            "range": 1867,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -5373,9 +4992,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 15.22,
-            "damage_coeff": 8.0,
-            "range": 1680,
+            "cycle_time": 9.0,
+            "damage_coeff": 2.298,
+            "range": 1867,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -5387,9 +5006,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 15.22,
-            "damage_coeff": 8.0,
-            "range": 1680,
+            "cycle_time": 9.0,
+            "damage_coeff": 2.298,
+            "range": 1867,
             "arcwidth": 15,
             "barrel_angle": 0
           },
@@ -5401,9 +5020,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 0.79,
-            "damage_coeff": 0.56,
-            "range": 1260,
+            "cycle_time": 2.0,
+            "damage_coeff": 0.161,
+            "range": 1400,
             "arcwidth": 30,
             "barrel_angle": 345
           },
@@ -5415,9 +5034,9 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 0.79,
-            "damage_coeff": 0.56,
-            "range": 1260,
+            "cycle_time": 2.0,
+            "damage_coeff": 0.161,
+            "range": 1400,
             "arcwidth": 30,
             "barrel_angle": 15
           },
@@ -5429,10 +5048,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -5443,10 +5062,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -5457,10 +5076,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 315
           },
           {
@@ -5471,10 +5090,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 45
           },
           {
@@ -5485,10 +5104,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 225
           },
           {
@@ -5499,10 +5118,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 135
           },
           {
@@ -5513,10 +5132,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -5527,10 +5146,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -5541,10 +5160,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 210
           },
           {
@@ -5555,10 +5174,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.71,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.437,
+            "range": 1633,
+            "arcwidth": 144,
             "barrel_angle": 150
           },
           {
@@ -5569,10 +5188,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.523,
+            "range": 1711,
+            "arcwidth": 144,
             "barrel_angle": 240
           },
           {
@@ -5583,10 +5202,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
-            "range": 1540,
-            "arcwidth": 90,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.523,
+            "range": 1711,
+            "arcwidth": 144,
             "barrel_angle": 120
           },
           {
@@ -5597,10 +5216,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
-            "range": 1540,
-            "arcwidth": 150,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.523,
+            "range": 1711,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -5611,10 +5230,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 17.4,
-            "damage_coeff": 1.82,
-            "range": 1540,
-            "arcwidth": 150,
+            "cycle_time": 9.0,
+            "damage_coeff": 0.523,
+            "range": 1711,
+            "arcwidth": 144,
             "barrel_angle": 90
           }
         ]
@@ -5626,24 +5245,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Constellation",
-      "meshscale": 0.210999995470047,
-      "radarscale": 0.764,
-      "exclusionradius": 65.0,
+      "meshscale": 0.20748,
+      "radarscale": 0.75,
+      "exclusionradius": 63.4,
       "meshrotate": 0,
       "long_desc": "Constellation Class Cruiser^Commander Grade^An older quad cruiser design^8 beams, 2 torpedo tubes.",
       "tubecount": 2,
       "torpedostart": [
         {
-          "Homing": 24
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 10
         }
       ],
       "internalmapscale": 1.0,
@@ -5658,10 +5268,10 @@
       "jump_energy_cost": 1.5,
       "roles": "ship,warship,patrol,light,carrier",
       "shields": [
-        750,
-        750
+        155,
+        124
       ],
-      "hullpoints": 5,
+      "hullpoints": 4,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -5673,9 +5283,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.0,
-            "damage_coeff": 1.33,
+            "damage_coeff": 0.51,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 0
           },
           {
@@ -5687,9 +5297,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.0,
-            "damage_coeff": 1.33,
+            "damage_coeff": 0.51,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 0
           },
           {
@@ -5701,9 +5311,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.0,
-            "damage_coeff": 1.33,
+            "damage_coeff": 0.51,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -5715,9 +5325,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.0,
-            "damage_coeff": 1.33,
+            "damage_coeff": 0.51,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -5729,9 +5339,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.0,
-            "damage_coeff": 1.33,
+            "damage_coeff": 0.51,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -5743,9 +5353,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.0,
-            "damage_coeff": 1.33,
+            "damage_coeff": 0.51,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -5757,9 +5367,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.0,
-            "damage_coeff": 1.33,
+            "damage_coeff": 0.51,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 315
           },
           {
@@ -5771,9 +5381,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 6.0,
-            "damage_coeff": 1.33,
+            "damage_coeff": 0.51,
             "range": 1260,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 45
           }
         ]
@@ -5785,24 +5395,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Saber",
-      "meshscale": 0.165700003504753,
-      "radarscale": 0.707,
-      "exclusionradius": 50.0,
+      "meshscale": 0.127518,
+      "radarscale": 0.6,
+      "exclusionradius": 39.5,
       "meshrotate": 0,
       "long_desc": "Saber Class Cruiser^Commander Grade^A next-generation light cruiser^8 beams, 3 Torpedo tubes.",
       "tubecount": 3,
       "torpedostart": [
         {
-          "Homing": 24
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 10
         }
       ],
       "internalmapscale": 1.0,
@@ -5817,10 +5418,10 @@
       "jump_energy_cost": 1.5,
       "roles": "ship,warship,patrol,heavy,exploration",
       "shields": [
-        1440,
-        1440
+        100,
+        85
       ],
-      "hullpoints": 6,
+      "hullpoints": 3,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -5831,10 +5432,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.55,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.375,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -5845,10 +5446,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.55,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.375,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -5859,10 +5460,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.55,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.375,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 15
           },
           {
@@ -5873,10 +5474,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.55,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.375,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 345
           },
           {
@@ -5887,10 +5488,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.55,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.375,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -5901,10 +5502,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.55,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.375,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -5915,10 +5516,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.55,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.375,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -5929,10 +5530,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 7.55,
-            "damage_coeff": 1.52,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.375,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 90
           }
         ]
@@ -5944,24 +5545,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_ExcelsiorRefit",
-      "meshscale": 0.276800006628036,
-      "radarscale": 0.846,
-      "exclusionradius": 95.0,
+      "meshscale": 0.275457,
+      "radarscale": 0.9,
+      "exclusionradius": 97.1,
       "meshrotate": 0,
       "long_desc": "Excelsior Class Battleship (Refit)^Captain Grade^A major refit to an already capable warship^8 beams, 4 Torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 24
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 10
         }
       ],
       "internalmapscale": 1.0,
@@ -5976,8 +5568,8 @@
       "jump_energy_cost": 1.5,
       "roles": "ship,warship,support,heavy",
       "shields": [
-        810,
-        810
+        215,
+        172
       ],
       "hullpoints": 6,
       "hull_port_sets": {
@@ -5990,10 +5582,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.03,
-            "damage_coeff": 1.4,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.009,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 0
           },
           {
@@ -6004,10 +5596,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.03,
-            "damage_coeff": 1.4,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.009,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 0
           },
           {
@@ -6018,10 +5610,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.03,
-            "damage_coeff": 1.4,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.009,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -6032,10 +5624,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.03,
-            "damage_coeff": 1.4,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.009,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -6046,10 +5638,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.03,
-            "damage_coeff": 1.4,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.009,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -6060,10 +5652,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.03,
-            "damage_coeff": 1.4,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.009,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -6074,10 +5666,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.03,
-            "damage_coeff": 1.4,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.009,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 210
           },
           {
@@ -6088,10 +5680,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.03,
-            "damage_coeff": 1.4,
+            "cycle_time": 8.5,
+            "damage_coeff": 1.009,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 150
           }
         ]
@@ -6103,24 +5695,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Nebula",
-      "meshscale": 0.266200006008148,
-      "radarscale": 0.833,
-      "exclusionradius": 90.0,
+      "meshscale": 0.267813,
+      "radarscale": 0.9,
+      "exclusionradius": 92.0,
       "meshrotate": 0,
       "long_desc": "Nebula Class Heavy Missile Cruiser^Captain Grade^A next-generation heavy missile cruiser design^14 beams, 4 Torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 60
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 24
         }
       ],
       "internalmapscale": 1.0,
@@ -6135,10 +5718,10 @@
       "jump_energy_cost": 2.0,
       "roles": "ship,warship,heavy,support",
       "shields": [
-        900,
-        900
+        240,
+        192
       ],
-      "hullpoints": 10,
+      "hullpoints": 7,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -6149,10 +5732,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -6163,10 +5746,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -6177,10 +5760,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -6191,10 +5774,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -6205,10 +5788,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -6219,10 +5802,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -6233,10 +5816,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -6247,10 +5830,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -6261,10 +5844,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -6275,10 +5858,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -6289,10 +5872,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -6303,10 +5886,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 11.28,
-            "damage_coeff": 1.52,
+            "cycle_time": 7.07,
+            "damage_coeff": 0.539,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -6317,10 +5900,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.574,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 210
           },
           {
@@ -6331,10 +5914,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 13.56,
-            "damage_coeff": 1.62,
+            "cycle_time": 8.5,
+            "damage_coeff": 0.574,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 144,
             "barrel_angle": 150
           }
         ]
@@ -6346,24 +5929,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_California",
-      "meshscale": 0.299299985170364,
-      "radarscale": 0.874,
-      "exclusionradius": 107.0,
+      "meshscale": 0.190286,
+      "radarscale": 0.6,
+      "exclusionradius": 70.7,
       "meshrotate": 0,
       "long_desc": "California Class Advanced Support Ship^Commander Grade^A next-generation support ship design^8 beams, 2 Torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 16
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 6
         }
       ],
       "internalmapscale": 1.0,
@@ -6378,10 +5952,10 @@
       "jump_energy_cost": 1.8,
       "roles": "ship,scout,patrol,support,medium",
       "shields": [
-        720,
-        720
+        90,
+        76
       ],
-      "hullpoints": 8,
+      "hullpoints": 3,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -6392,10 +5966,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 8.11,
-            "damage_coeff": 1.17,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.3,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 315
           },
           {
@@ -6406,10 +5980,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 8.11,
-            "damage_coeff": 1.17,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.3,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 45
           },
           {
@@ -6420,10 +5994,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 8.11,
-            "damage_coeff": 1.17,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.3,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 225
           },
           {
@@ -6434,10 +6008,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 8.11,
-            "damage_coeff": 1.17,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.3,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 135
           },
           {
@@ -6448,10 +6022,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 8.11,
-            "damage_coeff": 1.17,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.3,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 0
           },
           {
@@ -6462,10 +6036,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 8.11,
-            "damage_coeff": 1.17,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.3,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -6476,10 +6050,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 8.11,
-            "damage_coeff": 1.17,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.3,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 90
           },
           {
@@ -6490,10 +6064,10 @@
             ],
             "color": "red",
             "arccolor": "#090",
-            "cycle_time": 8.11,
-            "damage_coeff": 1.17,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 6.0,
+            "damage_coeff": 0.3,
+            "range": 1200,
+            "arcwidth": 144,
             "barrel_angle": 180
           }
         ]
@@ -6506,32 +6080,12 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Danube",
-      "meshscale": 0.04,
-      "radarscale": 0.25,
+      "meshscale": 0.040125,
+      "radarscale": 0.3,
       "exclusionradius": 25.0,
       "meshrotate": 0,
       "long_desc": "Danube class Runabout, 0.67 kT.^Standard shuttle for Starfleet bases and ships.^1 forward beam.",
       "tubecount": 0,
-      "torpedostart": [
-        {
-          "Homing": 0
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
-        },
-        {
-          "PShock": 0
-        },
-        {
-          "Tag": 0
-        }
-      ],
       "internalmapscale": 1.0,
       "internalmapw": 8,
       "internalmaph": 9,
@@ -6544,8 +6098,8 @@
       "jump_energy_cost": 1,
       "roles": "cockpit,shuttle",
       "shields": [
-        210,
-        210
+        45,
+        45
       ],
       "hullpoints": 1,
       "hull_port_sets": {
@@ -6559,8 +6113,8 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 2.33,
-            "damage_coeff": 0.76,
-            "range": 1470,
+            "damage_coeff": 0.746,
+            "range": 1000,
             "arcwidth": 144,
             "barrel_angle": 0
           }
@@ -6573,24 +6127,15 @@
       "origin": "Federation",
       "side": "TSN",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Centaur",
-      "meshscale": 0.170200005173683,
-      "radarscale": 0.713,
-      "exclusionradius": 50.0,
+      "meshscale": 0.266387,
+      "radarscale": 0.75,
+      "exclusionradius": 75.1,
       "meshrotate": 0,
       "long_desc": "Centaur Class Destroyer^Lieutenant Grade^A next generation destroyer^6 beams, 2 Torpedo tubes.",
       "tubecount": 2,
       "torpedostart": [
         {
-          "Homing": 24
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Photon": 10
         }
       ],
       "internalmapscale": 1.0,
@@ -6605,10 +6150,10 @@
       "jump_energy_cost": 1.5,
       "roles": "ship,patrol,support,light",
       "shields": [
-        540,
-        540
+        145,
+        116
       ],
-      "hullpoints": 5,
+      "hullpoints": 4,
       "hull_port_sets": {
         "beam Primary Beams": [
           {
@@ -6620,9 +6165,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 4.82,
-            "damage_coeff": 0.83,
-            "range": 1680,
-            "arcwidth": 90,
+            "damage_coeff": 0.562,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 330
           },
           {
@@ -6634,9 +6179,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 4.82,
-            "damage_coeff": 0.83,
-            "range": 1680,
-            "arcwidth": 90,
+            "damage_coeff": 0.562,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 30
           },
           {
@@ -6648,9 +6193,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 4.82,
-            "damage_coeff": 0.83,
-            "range": 1680,
-            "arcwidth": 90,
+            "damage_coeff": 0.562,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 300
           },
           {
@@ -6662,9 +6207,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 4.82,
-            "damage_coeff": 0.83,
-            "range": 1680,
-            "arcwidth": 90,
+            "damage_coeff": 0.562,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 60
           },
           {
@@ -6676,9 +6221,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 4.82,
-            "damage_coeff": 0.83,
-            "range": 1680,
-            "arcwidth": 90,
+            "damage_coeff": 0.562,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 270
           },
           {
@@ -6690,9 +6235,9 @@
             "color": "red",
             "arccolor": "#090",
             "cycle_time": 4.82,
-            "damage_coeff": 0.83,
-            "range": 1680,
-            "arcwidth": 90,
+            "damage_coeff": 0.562,
+            "range": 1400,
+            "arcwidth": 144,
             "barrel_angle": 90
           }
         ]
@@ -6704,29 +6249,20 @@
       "origin": "Klingon",
       "side": "Ximni",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_VorCha",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 145.0,
+      "meshscale": 0.394736,
+      "radarscale": 0.9,
+      "exclusionradius": 100.1,
       "meshrotate": 0,
       "shields": [
-        1750,
-        1750
+        260,
+        208
       ],
-      "hullpoints": 12,
+      "hullpoints": 7,
       "long_desc": "Vor'Cha Class Battlecruiser^Captain Grade^A next generation battlecruiser design^14 disruptors, 4 torpedo tubes.",
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 24
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Disruptor": 12
         }
       ],
       "internalmapscale": 1.0,
@@ -6750,10 +6286,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 14.08,
-            "damage_coeff": 1.81,
+            "cycle_time": 4.65,
+            "damage_coeff": 0.727,
             "range": 1470,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 345
           },
           {
@@ -6764,10 +6300,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 14.08,
-            "damage_coeff": 1.81,
+            "cycle_time": 4.65,
+            "damage_coeff": 0.727,
             "range": 1470,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 15
           },
           {
@@ -6778,10 +6314,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 14.08,
-            "damage_coeff": 1.81,
+            "cycle_time": 4.65,
+            "damage_coeff": 0.727,
             "range": 1470,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 330
           },
           {
@@ -6792,10 +6328,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 14.08,
-            "damage_coeff": 1.81,
+            "cycle_time": 4.65,
+            "damage_coeff": 0.727,
             "range": 1470,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 30
           },
           {
@@ -6806,10 +6342,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 14.08,
-            "damage_coeff": 1.81,
+            "cycle_time": 4.65,
+            "damage_coeff": 0.727,
             "range": 1470,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 300
           },
           {
@@ -6820,10 +6356,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 14.08,
-            "damage_coeff": 1.81,
+            "cycle_time": 4.65,
+            "damage_coeff": 0.727,
             "range": 1470,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 60
           },
           {
@@ -6834,10 +6370,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.53,
-            "damage_coeff": 4.76,
+            "cycle_time": 6.12,
+            "damage_coeff": 1.911,
             "range": 1470,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 0
           }
         ]
@@ -6849,29 +6385,20 @@
       "origin": "Klingon",
       "side": "Ximni",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_BRel",
-      "meshscale": 0.1,
-      "radarscale": 0.75,
+      "meshscale": 0.090246,
+      "radarscale": 0.6,
       "exclusionradius": 25.0,
       "meshrotate": 0,
       "shields": [
-        400,
-        400
+        95,
+        81
       ],
       "hullpoints": 3,
       "long_desc": "B'Rel Class Scout^Lieutenant Grade^A deceptively small scout^3 disruptors, 2 torpedo tubes.",
       "tubecount": 2,
       "torpedostart": [
         {
-          "Homing": 12
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Disruptor": 6
         }
       ],
       "internalmapscale": 1.0,
@@ -6895,10 +6422,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 6.11,
-            "damage_coeff": 1.5,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 4.32,
+            "damage_coeff": 0.594,
+            "range": 1200,
+            "arcwidth": 75,
             "barrel_angle": 355
           },
           {
@@ -6909,10 +6436,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 6.11,
-            "damage_coeff": 1.5,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 4.32,
+            "damage_coeff": 0.594,
+            "range": 1200,
+            "arcwidth": 75,
             "barrel_angle": 5
           },
           {
@@ -6923,10 +6450,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 6.11,
-            "damage_coeff": 1.5,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 4.32,
+            "damage_coeff": 0.594,
+            "range": 1200,
+            "arcwidth": 75,
             "barrel_angle": 0
           },
           {
@@ -6937,10 +6464,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 6.11,
-            "damage_coeff": 1.5,
-            "range": 1470,
-            "arcwidth": 90,
+            "cycle_time": 4.32,
+            "damage_coeff": 0.594,
+            "range": 1200,
+            "arcwidth": 75,
             "barrel_angle": 0
           }
         ]
@@ -6952,29 +6479,20 @@
       "origin": "Klingon",
       "side": "Ximni",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_KTinga",
-      "meshscale": 0.1333,
-      "radarscale": 0.667,
-      "exclusionradius": 90.0,
+      "meshscale": 0.132638,
+      "radarscale": 0.75,
+      "exclusionradius": 44.6,
       "meshrotate": 0,
       "shields": [
-        1250,
-        1250
+        165,
+        132
       ],
-      "hullpoints": 5,
+      "hullpoints": 4,
       "long_desc": "K'Tinga Class Cruiser^Commander Grade^An older but serviceable cruiser^4 disruptors, 2 torpedo tubes.",
       "tubecount": 2,
       "torpedostart": [
         {
-          "Homing": 16
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Disruptor": 8
         }
       ],
       "internalmapscale": 1.0,
@@ -6998,10 +6516,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 8.62,
-            "damage_coeff": 1.3,
+            "cycle_time": 5.04,
+            "damage_coeff": 0.714,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 345
           },
           {
@@ -7012,10 +6530,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 8.62,
-            "damage_coeff": 1.3,
+            "cycle_time": 5.04,
+            "damage_coeff": 0.714,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 0
           },
           {
@@ -7026,10 +6544,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 8.62,
-            "damage_coeff": 1.3,
+            "cycle_time": 5.04,
+            "damage_coeff": 0.714,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 0
           },
           {
@@ -7040,10 +6558,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 8.62,
-            "damage_coeff": 1.3,
+            "cycle_time": 5.04,
+            "damage_coeff": 0.714,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 15
           },
           {
@@ -7054,10 +6572,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 8.62,
-            "damage_coeff": 1.3,
+            "cycle_time": 5.04,
+            "damage_coeff": 0.714,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 30
           },
           {
@@ -7068,10 +6586,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 8.62,
-            "damage_coeff": 1.3,
+            "cycle_time": 5.04,
+            "damage_coeff": 0.714,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 330
           }
         ]
@@ -7083,30 +6601,21 @@
       "origin": "Klingon",
       "side": "Ximni",
       "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_NeghVar",
-      "meshscale": 0.4,
-      "radarscale": 1.0,
-      "exclusionradius": 140.0,
+      "meshscale": 0.400766,
+      "radarscale": 1.1,
+      "exclusionradius": 141.9,
       "meshrotate": 0,
       "shields": [
-        2000,
-        2000
+        360,
+        252
       ],
-      "hullpoints": 17,
+      "hullpoints": 9,
       "long_desc": "Negh'Var Class Dreadnought^General Grade^A next generation dreadnought design^13 disruptors, 2 Heavy disruptors, 6 torpedo tubes.",
       "baycount": 4,
       "tubecount": 4,
       "torpedostart": [
         {
-          "Homing": 32
-        },
-        {
-          "Nuke": 0
-        },
-        {
-          "EMP": 0
-        },
-        {
-          "Mine": 0
+          "Disruptor": 16
         }
       ],
       "internalmapscale": 1.0,
@@ -7130,10 +6639,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1680,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 330
           },
           {
@@ -7144,10 +6653,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1680,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 30
           },
           {
@@ -7158,10 +6667,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1680,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 330
           },
           {
@@ -7172,10 +6681,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1680,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 30
           },
           {
@@ -7186,10 +6695,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1680,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 0
           },
           {
@@ -7200,10 +6709,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1680,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 0
           },
           {
@@ -7214,10 +6723,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1680,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 270
           },
           {
@@ -7228,10 +6737,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1680,
-            "arcwidth": 60,
+            "arcwidth": 75,
             "barrel_angle": 90
           },
           {
@@ -7242,10 +6751,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 180
           },
           {
@@ -7256,10 +6765,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 18.83,
-            "damage_coeff": 2.58,
+            "cycle_time": 6.48,
+            "damage_coeff": 0.627,
             "range": 1400,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 180
           },
           {
@@ -7270,10 +6779,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 6.07,
-            "damage_coeff": 2.5,
+            "cycle_time": 2.09,
+            "damage_coeff": 0.608,
             "range": 1680,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 300
           },
           {
@@ -7284,10 +6793,10 @@
             ],
             "color": "yellow",
             "arccolor": "#500",
-            "cycle_time": 6.07,
-            "damage_coeff": 2.5,
+            "cycle_time": 2.09,
+            "damage_coeff": 0.608,
             "range": 1680,
-            "arcwidth": 90,
+            "arcwidth": 75,
             "barrel_angle": 60
           }
         ]
