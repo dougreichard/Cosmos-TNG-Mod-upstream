@@ -17,26 +17,6 @@
    "hullpoints": 12,
    "long_desc": "Displacement: 4,156 kT. Post-war developments have led Cardassians to lethal new ships.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "baycount": 6,
    "internalmapscale": 1.0,
    "internalmapw": 20,
@@ -211,26 +191,6 @@
    "hullpoints": 6,
    "long_desc": "Displacement: 1,297 kT. The mainstay of the Cardassian fleet, comparable to the Excelsior or Cheyenne class.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 12,
    "internalmaph": 12,
@@ -357,26 +317,6 @@
    "meshrotate": 0,
    "long_desc": "Displacement: 85.0 kT.  Armament: 4 CBD-1 spiral wave disruptors.  A small patrol ship, dangerous in packs.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 10,
    "internalmaph": 7,
@@ -443,26 +383,6 @@
    "hullpoints": 8,
    "long_desc": "Displacement: 1,585 kT. A major refit of the Galor class, upping their lethality immensely.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "baycount": 4,
    "internalmapscale": 1.0,
    "internalmapw": 16,
@@ -623,26 +543,6 @@
    "hullpoints": 2,
    "long_desc": "An unarmed bulk freighter, slowly moving cheap cargo between the stars. Displacement: 429.8 kt. ",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Photon": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 20,
    "internalmaph": 20,
@@ -668,20 +568,6 @@
    "meshrotate": 0,
    "long_desc": "Displacement: 49 kt. Armament: 2 light beams.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 10,
    "internalmaph": 7,
@@ -748,26 +634,6 @@
    "hullpoints": 6,
    "long_desc": "Kazon Cruiser, 4,528 kT.  A decently powerful battle cruiser, often leads swarms of Raiders.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 16,
    "internalmaph": 19,
@@ -885,26 +751,6 @@
    "hullpoints": 2,
    "long_desc": "Kazon Raider, 14.4 kT.  Numerous and perhaps dangerous in swarms.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 17,
    "internalmaph": 16,
@@ -977,26 +823,6 @@
    "hullpoints": 25,
    "long_desc": "Kazon Carrier, 175,394 kT.  Command and control ship, plus a large complement of fighter craft.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "hull_port_sets": {
     "beam Primary Beams": [
      {
@@ -1135,15 +961,6 @@
    "torpedostart": [
     {
      "Homing": 24
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "baycount": 6,
@@ -1267,15 +1084,6 @@
    "torpedostart": [
     {
      "Homing": 4
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -1342,15 +1150,6 @@
    "torpedostart": [
     {
      "Homing": 12
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -1403,15 +1202,6 @@
    "torpedostart": [
     {
      "Homing": 24
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -1559,26 +1349,6 @@
    "hullpoints": 4,
    "long_desc": "Nova Class long range science vessel. Displacement: 98.3 kT",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Photon": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 13,
    "internalmaph": 17,
@@ -1604,26 +1374,6 @@
    "meshrotate": 0,
    "long_desc": "Displacement: 30.7 kT. These Jem'Hadar fighters form the backbone of the Dominion fleet, also serving as patrol ships and scouts.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 17,
    "internalmaph": 17,
@@ -1685,26 +1435,6 @@
    "meshrotate": 0,
    "long_desc": "Displacement: 1,284 kT.  These Breen warships made an unwelcome addition to the Dominion forces in 2375.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 19,
    "internalmaph": 19,
@@ -1808,26 +1538,6 @@
    "meshrotate": 0,
    "long_desc": "Displacement: 5,344 kT. Large and dangerous, these cruisers are even more dangerous in groups.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 16,
    "internalmaph": 17,
@@ -2781,26 +2491,6 @@
    "meshrotate": 0,
    "long_desc": "Displacement: 22,312 kT. This massive ship is smaller than the D'Deridex, but is a leap forward in power.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "roles": "ship,leader,warship,heavy",
    "internalmapscale": 1.0,
    "internalmapw": 15,
@@ -3078,26 +2768,6 @@
    "hullpoints": 4,
    "long_desc": "Displacement: 182.4 kT. Fast, comes in swarms, and has a huge plasma complement.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 10,
    "internalmaph": 14,
@@ -3202,26 +2872,6 @@
    "hullpoints": 13,
    "long_desc": "Displacement: 5,380 kT. Smaller and sleeker than the D'Deridex, it is no less deadly.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 19,
    "internalmaph": 20,
@@ -3433,26 +3083,6 @@
    "meshrotate": 0,
    "long_desc": "Displacement: 29,079 kT. This massive ship is larger than Starfleet's Galaxy class.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Homing": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 19,
    "internalmaph": 20,
@@ -3632,26 +3262,6 @@
    "hullpoints": 6,
    "long_desc": "Olympic Class Medical Cruiser, often engaged for first response to planetary disasters. Displacement: 768 kT.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Photon": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 20,
    "internalmaph": 21,
@@ -3680,15 +3290,6 @@
    "torpedostart": [
     {
      "Photon": 36
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -3896,15 +3497,6 @@
    "torpedostart": [
     {
      "Photon": 40
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -4168,15 +3760,6 @@
    "torpedostart": [
     {
      "Photon": 8
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -4229,15 +3812,6 @@
    "torpedostart": [
     {
      "Photon": 40
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "baycount": 4,
@@ -4447,13 +4021,7 @@
      "Photon": 24
     },
     {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
+     "Quantum": 4
     }
    ],
    "internalmapscale": 1.0,
@@ -4607,13 +4175,7 @@
      "Photon": 40
     },
     {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
+     "Quantum": 4
     }
    ],
    "baycount": 2,
@@ -4879,13 +4441,7 @@
      "Photon": 24
     },
     {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
+     "Tricobalt": 2
     }
    ],
    "internalmapscale": 1.0,
@@ -5036,15 +4592,6 @@
    "torpedostart": [
     {
      "Photon": 4
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -5111,15 +4658,6 @@
    "torpedostart": [
     {
      "Photon": 40
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -5384,13 +4922,7 @@
      "Photon": 60
     },
     {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
+     "Quantum": 4
     }
    ],
    "baycount": 2,
@@ -5710,15 +5242,6 @@
    "torpedostart": [
     {
      "Photon": 24
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -5869,15 +5392,6 @@
    "torpedostart": [
     {
      "Photon": 24
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -6028,15 +5542,6 @@
    "torpedostart": [
     {
      "Photon": 24
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -6187,15 +5692,6 @@
    "torpedostart": [
     {
      "Photon": 60
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -6430,15 +5926,6 @@
    "torpedostart": [
     {
      "Photon": 16
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -6587,26 +6074,6 @@
    "meshrotate": 0,
    "long_desc": "Danube class Runabout, 0.67 kT.^Standard shuttle for Starfleet bases and ships.^1 forward beam.",
    "tubecount": 0,
-   "torpedostart": [
-    {
-     "Photon": 0
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
-    },
-    {
-     "PShock": 0
-    },
-    {
-     "Tag": 0
-    }
-   ],
    "internalmapscale": 1.0,
    "internalmapw": 8,
    "internalmaph": 9,
@@ -6657,15 +6124,6 @@
    "torpedostart": [
     {
      "Photon": 24
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -6793,15 +6251,6 @@
    "torpedostart": [
     {
      "Homing": 24
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -6938,15 +6387,6 @@
    "torpedostart": [
     {
      "Homing": 12
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -7041,15 +6481,6 @@
    "torpedostart": [
     {
      "Homing": 16
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,
@@ -7173,15 +6604,6 @@
    "torpedostart": [
     {
      "Homing": 32
-    },
-    {
-     "Nuke": 0
-    },
-    {
-     "EMP": 0
-    },
-    {
-     "Mine": 0
     }
    ],
    "internalmapscale": 1.0,

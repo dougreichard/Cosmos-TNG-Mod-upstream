@@ -17,6 +17,21 @@
 # The scale they sit on, from LM: Homing 35 standard, EMP 50 blast+reduce_shields,
 # Nuke 5 blast. Photon is the new baseline; the other two are meant to be scarce.
 
+# CREATE THEM. A type label is inert until it is spawned - `prefab_torpedo_type` is what
+# calls `torpedo_type()` and registers the shared string the engine reads for damage,
+# warhead, speed and colour. LegendaryMissions spawns its own seven in server_console;
+# nothing was spawning these three, so a Federation hull carried Photon ROUNDS out of its
+# `torpedostart` while the engine had no definition of what a Photon is.
+#
+# ORDER DOES NOT MATTER, which is worth knowing before worrying about it:
+# `prefab_torpedo_type` grants the type to every player ship that ALREADY exists, and
+# LM's `//spawn` route grants every registered type to ships that arrive LATER. Whichever
+# way round the two happen, a ship ends up with its rounds.
+prefab_spawn(tng_prefab_photon_torpedo)
+prefab_spawn(tng_prefab_quantum_torpedo)
+prefab_spawn(tng_prefab_tricobalt_device)
+
+
 === tng_prefab_photon_torpedo
 metadata: ```
 key: Photon
