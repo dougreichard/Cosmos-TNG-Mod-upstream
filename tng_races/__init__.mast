@@ -104,7 +104,7 @@ tng_declared = tng_declare_ships()
 # mod's ships at all, which is the first question asked whenever a hull does not
 # appear. `debug.log` carries the detail - which file was found, what path the engine was
 # handed, and whether it took it - written by ship_data_add_extra itself.
-print("tng_races: 51 hulls, " + tng_declared)
+print("tng_races: " + str(len(ship_data_filter_ship_data_by_side("tng_", None) or [])) + " hulls, " + tng_declared)
 
 
 # ---- Interiors and fleets ------------------------------------------

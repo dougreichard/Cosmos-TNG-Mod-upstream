@@ -6874,6 +6874,209 @@
           }
         ]
       }
+    },
+    {
+      "key": "tng_brg_cube",
+      "name": "Borg Cube",
+      "origin": "Borg",
+      "side": "Borg",
+      "artfileroot": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/BRG_Cube",
+      "meshscale": 6.0,
+      "radarscale": 1.1,
+      "exclusionradius": 312.0,
+      "meshrotate": 0,
+      "long_desc": "Displacement: unknown. A self-repairing cube with no bridge, no captain and no interest in surrender. Resistance is futile.",
+      "tubecount": 0,
+      "roles": "heavy,leader,ship,warship",
+      "internalmapscale": 1.0,
+      "internalmapw": 24,
+      "internalmaph": 24,
+      "internalsymmetry": 1,
+      "turn_rate": 0.35,
+      "speed_coeff": 1.1,
+      "scan_strength_coeff": 2,
+      "ship_energy_cost": 1.2,
+      "warp_energy_cost": 1.2,
+      "jump_energy_cost": 2.0,
+      "drone_launch_timer": 25,
+      "baycount": 4,
+      "shields": [
+        450,
+        315
+      ],
+      "hullpoints": 9,
+      "hull_port_sets": {
+        "beam Primary Beams": [
+          {
+            "position": [
+              0,
+              0,
+              50
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 8.0,
+            "damage_coeff": 1.819,
+            "range": 2000,
+            "arcwidth": 30,
+            "barrel_angle": 0
+          },
+          {
+            "position": [
+              50,
+              0,
+              0
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 8.0,
+            "damage_coeff": 1.819,
+            "range": 2000,
+            "arcwidth": 30,
+            "barrel_angle": 90
+          },
+          {
+            "position": [
+              0,
+              0,
+              -50
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 8.0,
+            "damage_coeff": 1.819,
+            "range": 2000,
+            "arcwidth": 30,
+            "barrel_angle": 180
+          },
+          {
+            "position": [
+              -50,
+              0,
+              0
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 8.0,
+            "damage_coeff": 1.819,
+            "range": 2000,
+            "arcwidth": 30,
+            "barrel_angle": 270
+          },
+          {
+            "position": [
+              35,
+              25,
+              35
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 4.0,
+            "damage_coeff": 0.545,
+            "range": 1400,
+            "arcwidth": 144,
+            "barrel_angle": 45
+          },
+          {
+            "position": [
+              35,
+              -25,
+              35
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 4.0,
+            "damage_coeff": 0.545,
+            "range": 1400,
+            "arcwidth": 144,
+            "barrel_angle": 45
+          },
+          {
+            "position": [
+              35,
+              25,
+              -35
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 4.0,
+            "damage_coeff": 0.545,
+            "range": 1400,
+            "arcwidth": 144,
+            "barrel_angle": 135
+          },
+          {
+            "position": [
+              35,
+              -25,
+              -35
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 4.0,
+            "damage_coeff": 0.545,
+            "range": 1400,
+            "arcwidth": 144,
+            "barrel_angle": 135
+          },
+          {
+            "position": [
+              -35,
+              25,
+              -35
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 4.0,
+            "damage_coeff": 0.545,
+            "range": 1400,
+            "arcwidth": 144,
+            "barrel_angle": 225
+          },
+          {
+            "position": [
+              -35,
+              -25,
+              -35
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 4.0,
+            "damage_coeff": 0.545,
+            "range": 1400,
+            "arcwidth": 144,
+            "barrel_angle": 225
+          },
+          {
+            "position": [
+              -35,
+              25,
+              35
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 4.0,
+            "damage_coeff": 0.545,
+            "range": 1400,
+            "arcwidth": 144,
+            "barrel_angle": 315
+          },
+          {
+            "position": [
+              -35,
+              -25,
+              35
+            ],
+            "color": "green",
+            "arccolor": "#0a0",
+            "cycle_time": 4.0,
+            "damage_coeff": 0.545,
+            "range": 1400,
+            "arcwidth": 144,
+            "barrel_angle": 315
+          }
+        ]
+      }
     }
   ]
 }

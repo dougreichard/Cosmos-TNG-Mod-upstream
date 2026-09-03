@@ -122,7 +122,12 @@ def retune(entry, target, bands, factions, rear_ratio, canon, log):
     # to be right in this file; there is no runtime fix-up for it.
     rec = canon["lengths"].get(key, {})
     ext = T.mesh_extent(entry)
-    if rec.get("m") and ext:
+    if rec.get("drawn") and ext:
+        # An explicit size, chosen on purpose. Needed because the class-median pass below
+        # would otherwise quietly overrule it - it did exactly that to the Borg cube,
+        # replacing a deliberate 600 with the capital median of 273.
+        entry["meshscale"] = round(float(rec["drawn"]) / ext, 6)
+    elif rec.get("m") and ext:
         entry["meshscale"] = round((rec["m"] * canon["units_per_meter"]) / ext, 6)
     drawn = T.drawn_size(entry)
     if drawn:
@@ -229,7 +234,8 @@ def _size_by_class(entries, targets, canon, log):
     for e in entries:
         key = e["key"]
         cls = targets["ships"][key]["class"]
-        if cls == "station" or canon["lengths"].get(key, {}).get("m"):
+        rec = canon["lengths"].get(key, {})
+        if cls == "station" or rec.get("m") or rec.get("drawn"):
             continue
         peers = sorted(by_class.get(cls) or [])
         ext = T.mesh_extent(e)

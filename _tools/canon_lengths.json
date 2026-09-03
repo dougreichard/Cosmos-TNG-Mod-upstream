@@ -14,6 +14,9 @@
     "              Treat as fixed.",
     "  approx    - licensed or fan-consensus, no official number exists. Fine to adjust,",
     "              but adjust it HERE so the checker and the ship data cannot disagree.",
+    "  drawn     - an explicit size in game units, honoured over everything else. For a",
+    "              hull whose canonical size is real but unusable in play. Set it only",
+    "              with a note saying why, because it opts out of the convention.",
     "  by_class  - deliberately absent. An original or STO design with no length to",
     "              check against, or a station whose true size would dwarf the play",
     "              area. scale_report skips these; they are sized from their weight",
@@ -219,6 +222,7 @@
     "tng_fed_comms_base": {
       "source": "by_class"
     },
+    "tng_brg_cube":            { "source": "by_class", "drawn": 600, "note": "A DELIBERATE EXCEPTION, and the only one. Canonically ~3036 m per side, which at 0.400 u/m is 1214 units - larger than every hull in the game and 1.6x the Command Starbase. Drawn at 600 instead: 2.3x a Galaxy, so it still reads as the biggest thing on the screen without swallowing the play area. by_class so the scale check skips it rather than being weakened for everyone else." },
     "tng_kaz_base": {
       "source": "by_class",
       "note": "borrows stock art, ships no .obj"

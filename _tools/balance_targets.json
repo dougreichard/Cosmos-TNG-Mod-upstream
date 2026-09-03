@@ -63,7 +63,8 @@
     "Dominion":   { "arc": 108, "cycle_bias": 0.80 },
     "Breen":      { "arc": 108, "cycle_bias": 0.90 },
     "Kazon":      { "arc": 144, "cycle_bias": 1.15 },
-    "Orion":      { "arc": 120, "cycle_bias": 1.05 }
+    "Orion":      { "arc": 120, "cycle_bias": 1.05 },
+    "Borg":       { "arc": 144, "cycle_bias": 1.00 }
   },
 
   "#ships_comment": [
@@ -153,6 +154,7 @@
     "tng_orn_corsair":         { "class": "heavy",    "front": 210, "hull": 6, "guns": 0.90, "tubes": 2, "torps": {"Homing": 10}, "note": "was unclassed" },
     "tng_orn_brigand":         { "class": "medium",   "front": 160, "hull": 5, "guns": 0.72, "tubes": 2, "torps": {"Homing": 10}, "note": "was unclassed" },
     "tng_orn_corvette":        { "class": "light",    "front": 105, "hull": 3, "guns": 0.45, "tubes": 1, "torps": {"Homing": 5}, "note": "was unclassed" },
+    "tng_brg_cube":            { "class": "capital",  "front": 450, "hull": 9, "guns": 2.00, "turn": 0.35, "drone": 25, "note": "The CEILING of the capital band in shields and guns - the strongest hull in the game, and the bands stay intact. A canon-faithful Borg cube would need a band ABOVE capital; that is a design decision, not something to smuggle in by quietly breaking the contract everything else obeys." },
     "tng_orn_interceptor":     { "class": "fighter",  "front": 42,  "hull": 1, "guns": 0.45, "tubes": 1, "torps": {"Homing": 4} }
   }
 }
