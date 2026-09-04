@@ -1,0 +1,27 @@
+# Settings for running THIS MOD AS ITS OWN MISSION - the ship viewer and the pre-session
+# paxmesh bake:
+#
+#   Artemis3-x64-release.exe autostartserver defaultmission=Cosmos-TNG-Mod \
+#                            map=tng_ships bake=tng
+#
+# It has no effect when the mod is loaded as an ADDON: a consuming mission reads its own
+# settings.yaml (Gamma with a Q) or a profile (LegendaryMissions' `tng_all`), never this
+# file. So this is purely what the mod needs to stand up alone.
+
+# THE MOD'S OWN HULLS ONLY EXIST WITH THIS ON. `tng_declare_ships` declares them through
+# `ship_data.add_extra`, which returns False WITHOUT LOOKING FOR THE FILE while
+# EXTRA_SHIP_DATA is off - and off is the library default (settings.py), because the
+# v1.3.4 engine cannot do it.
+#
+# Without it the viewer does not merely look empty, it DIES: `tngview_ships()` filters the
+# ship table for `tng` and gets nothing, so `TNGVIEW_SHIP` is None, `gui_ship(None)` raises
+# a TypeError out of ship.py, the failing expression stops the assign, and the GUI task is
+# gone - after which the page raises "EDGE CASE: Did you set END or Yield the last GUI
+# Task?" every frame and the sim pauses. Nothing renders, so NOTHING BAKES.
+#
+# That is the whole reason this file exists. The bake is not optional polish: an unbaked
+# hull is baked on its first draw in-game, and mesh load is where the engine is fragile.
+# The tell when this is off is a debug.log with the `tng_races: __init__.mast reached the
+# Ships section` breadcrumb and NO line after it from `ship_data_add_extra` - because
+# add_extra returned before it ever went looking.
+EXTRA_SHIP_DATA: true
