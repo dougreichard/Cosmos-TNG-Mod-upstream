@@ -1,0 +1,311 @@
+# [TNG Crews](tng_crews)
+
+The senior staff of the four ships everyone already knows, bound to the hulls that wear
+their silhouettes. Sit at engineering on a Galaxy-class and you are Geordi.
+
+`Hull:` is the MOD tier of the crew resolution - it says "any ship of this class arrives
+with these people" and loses to a mission naming its own crew for a named ship, to an
+operator picking a roster for the game, and to anything a player chose about themselves.
+So this is an answer, never an imposition.
+
+Each member carries a `Portrait:`, not a `Face:`. The 127 portraits register out of the
+media pack with nothing to install; the 568 face cells need `data/graphics/allFaceFiles.txt`
+edited by hand, which a mastlib cannot do, so a face here would silently fail to draw for
+most installs.
+
+No `Gender:` anywhere here, deliberately. That field says which face to ROLL for somebody
+who has none of their own, and everyone below carries a portrait; the faces behind them are
+a mod race's whole drawn busts, which have no gender axis to steer. The stock crews use it
+because a terran face is built from parts and does have one.
+
+Hulls with no cast - Sovereign, Akira, Nebula, Luna and the rest - are deliberately absent.
+They are nobody's ship, so they get an automatic crew like any other, and every one of them
+is a different person.
+
+## [Enterprise-D](tng_enterprise_d)
+---
+crew
+Hull: tng_fed_galaxy, tng_fed_galaxy_x, tng_fed_ambassador
+Ship: Enterprise, Enterprise-D
+Race: human
+---
+The Galaxy-class flagship's senior staff.
+
+### [Jean-Luc Picard](picard)
+---
+Rank: Captain
+Console: mainscreen
+Portrait: tng:picard
+Roles: command, diplomacy
+---
+
+### [William T. Riker](riker)
+---
+Rank: Commander
+Console: helm
+Portrait: tng:riker
+Roles: command, tactical
+---
+
+### [Worf](worf)
+---
+Rank: Lieutenant
+Console: weapons
+Portrait: tng:worf
+Roles: tactical, security
+---
+
+### [Data](data)
+---
+Rank: Lt. Commander
+Console: science
+Portrait: tng:data
+Roles: science, operations
+---
+
+### [Geordi La Forge](geordi)
+---
+Rank: Lt. Commander
+Console: engineering
+Portrait: tng:geordi
+Roles: engineering
+---
+
+### [Deanna Troi](troi)
+---
+Rank: Commander
+Console: comms
+Portrait: tng:troi
+Roles: counselor, diplomacy
+---
+
+### [Beverly Crusher](crusher)
+---
+Rank: Commander
+Portrait: tng:beverly_crusher
+Roles: medical
+---
+
+### [Miles O'Brien](obrien_d)
+---
+Rank: Chief Petty Officer
+Console: hangar
+Portrait: tng:obrien
+Roles: engineering, operations
+---
+
+### [Wesley Crusher](wesley)
+---
+Rank: Ensign
+Portrait: tng:wesley
+Roles: engineering, science
+---
+
+## [Voyager](tng_voyager)
+---
+crew
+Hull: tng_fed_intrepid
+Ship: Voyager
+Race: human
+---
+An Intrepid-class a long way from home, crewed half by Starfleet and half by the Maquis.
+
+### [Kathryn Janeway](janeway)
+---
+Rank: Captain
+Console: mainscreen
+Portrait: tng:janeway
+Roles: command, science
+---
+
+### [Tom Paris](paris)
+---
+Rank: Lieutenant
+Console: helm
+Portrait: tng:voy_maquis_01
+Roles: pilot, medical
+---
+
+### [Tuvok](tuvok)
+---
+Rank: Lt. Commander
+Console: weapons
+Portrait: tng:tuvok
+Roles: tactical, security
+---
+
+### [Seven of Nine](seven)
+---
+Console: science
+Portrait: tng:seven_of_nine
+Roles: science, operations
+---
+
+### [B'Elanna Torres](torres)
+---
+Rank: Lieutenant
+Console: engineering
+Portrait: tng:torres
+Roles: engineering
+---
+
+### [Harry Kim](kim)
+---
+Rank: Ensign
+Console: comms
+Portrait: tng:kim
+Roles: operations
+---
+
+### [Chakotay](chakotay)
+---
+Rank: Commander
+Portrait: tng:chakotay
+Roles: command
+---
+
+### [The Doctor](doctor)
+---
+Portrait: tng:the_doctor
+Roles: medical
+---
+
+### [Neelix](neelix)
+---
+Portrait: tng:neelix
+Roles: civilian, cook
+---
+
+## [Defiant](tng_defiant)
+---
+crew
+Hull: tng_fed_defiant, tng_fed_ds9
+Ship: Defiant
+Race: human
+---
+The station's warship, crewed off Deep Space Nine.
+
+### [Benjamin Sisko](sisko)
+---
+Rank: Captain
+Console: mainscreen
+Portrait: tng:sisko
+Roles: command
+---
+
+### [Kira Nerys](kira)
+---
+Rank: Major
+Console: helm
+Portrait: tng:kira
+Roles: command, tactical
+---
+
+### [Worf](worf_ds9)
+---
+Rank: Lt. Commander
+Console: weapons
+Portrait: tng:worf
+Roles: tactical, security
+---
+
+### [Jadzia Dax](dax)
+---
+Rank: Lieutenant
+Console: science
+Portrait: tng:dax
+Roles: science
+---
+
+### [Miles O'Brien](obrien)
+---
+Rank: Chief Petty Officer
+Console: engineering
+Portrait: tng:obrien
+Roles: engineering, operations
+---
+
+### [Odo](odo)
+---
+Console: comms
+Portrait: tng:odo
+Roles: security
+---
+
+### [Julian Bashir](bashir)
+---
+Rank: Lieutenant
+Portrait: tng:bashir
+Roles: medical
+---
+
+## [Enterprise](tng_enterprise)
+---
+crew
+Hull: tng_fed_excelsior_refit, tng_fed_constellation
+Ship: Enterprise-A
+Race: human
+---
+The original watch, for the older hulls.
+
+### [James T. Kirk](kirk)
+---
+Rank: Captain
+Console: mainscreen
+Portrait: tng:kirk
+Roles: command
+---
+
+### [Hikaru Sulu](sulu)
+---
+Rank: Lieutenant
+Console: helm
+Portrait: tng:sulu
+Roles: pilot, tactical
+---
+
+### [Pavel Chekov](chekov)
+---
+Rank: Ensign
+Console: weapons
+Portrait: tng:chekov
+Roles: tactical, navigation
+---
+
+### [Spock](spock)
+---
+Rank: Commander
+Console: science
+Portrait: tng:spock
+Roles: science, command
+---
+
+### [Montgomery Scott](scotty)
+---
+Rank: Lt. Commander
+Console: engineering
+Portrait: tng:scotty
+Roles: engineering
+---
+
+### [Nyota Uhura](uhura)
+---
+Rank: Lieutenant
+Console: comms
+Portrait: tng:uhura
+Roles: communications
+---
+
+### [Leonard McCoy](mccoy)
+---
+Rank: Lt. Commander
+Portrait: tng:mccoy
+Roles: medical
+---
+
+### [Christine Chapel](chapel)
+---
+Rank: Lieutenant
+Portrait: tng:chapel
+Roles: medical
+---

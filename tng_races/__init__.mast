@@ -139,6 +139,22 @@ tng_portrait_status = tng_register_portraits(tng_portrait_sheet, tng_portrait_na
 log("tng_races: " + tng_portrait_status, "tng_races")
 
 
+# ---- Crews ---------------------------------------------------------
+#
+# Who is at the console. `Hull:` inside the file binds each roster to its class, so a Galaxy
+# arrives with Picard's staff and an Intrepid with Janeway's - the MOD tier of the crew
+# resolution, which loses to a mission's own crew, to the operator's Crew dropdown, and to
+# anything a player chose about themselves. An answer, never an imposition.
+#
+# `crew_declare_amd`, not `crew_load_amd`: the latter resolves MISSION-relative and an addon
+# lives inside a zip. Same trap `sides_load_amd` has.
+#
+# Portraits rather than faces, for the reason the block below spells out - a portrait needs
+# nothing installed, a face needs allFaceFiles.txt edited by hand.
+tng_crew_rosters = crew_declare_amd(amd_document(media_read_relative_file("tng_crew.amd"), data_parser=amd_crew_data))
+log("tng_races: " + str(len(tng_crew_rosters)) + " crew rosters", "tng_races")
+
+
 # ---- Faces ---------------------------------------------------------
 #
 # The atlas sheets are a DIFFERENT mechanism from the portraits above. A portrait is a
