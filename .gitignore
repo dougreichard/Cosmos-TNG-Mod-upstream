@@ -35,3 +35,6 @@ _tools/lora_data/
 new/gen/
 new/work/
 new/builder/
+
+# The standalone site from `sbs site --emit site` - build output, not source.
+__site__/
