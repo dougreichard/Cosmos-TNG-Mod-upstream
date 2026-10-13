@@ -209,6 +209,27 @@ _TNG_FACTION_RACES = {
 }
 
 
+def _tng_sheet(face_register_sheet, n):
+    """Register sheet `tng<n>`, handing its art to the engine where the library can.
+
+    Returns True when the engine took it, False when it could not, None when this
+    sbs_utils is from before the engine could be told at all.
+
+    `media_shared` answers the sheet's path inside whichever media pack is pinned, so
+    the pack's version is never written into a path here. The old route - a line in
+    `data/graphics/allFaceFiles.txt` - had it baked in, and a version bump silently
+    broke every face until the file was pasted again.
+    """
+    alias = "tng%d" % n
+    try:
+        from sbs_utils.procedural.media_paths import media_shared
+        return face_register_sheet(alias, 8, 8,
+                                   filename=media_shared("faces_tng/TNG_Faces_%d" % n))
+    except (ImportError, TypeError):
+        face_register_sheet(alias, 8, 8)
+        return None
+
+
 def tng_register_faces(faces, index=None, sheets=None):
     """Make the TNG face sheets reachable from MAST.
 
@@ -224,10 +245,16 @@ def tng_register_faces(faces, index=None, sheets=None):
       * a POOL PER RACE and per role, so `random_face("klingon")` and
         `random_face("klingon", "command")` work as they do for stock races.
 
-    It does NOT make the sheets loadable. The engine maps an alias to a file through
-    `data/graphics/allFaceFiles.txt`, which a mastlib cannot write because a mastlib
-    is a zip - so those lines are still pasted in by hand. Same engine-owned seam as
-    art paths, SFX and font names; `_tools/facesheets.py` prints the exact lines.
+    And it hands each sheet's ART to the engine (`sbs.add_face_bitmap_sheet`, engine
+    1.3.15), through the library's `face_register_sheet(..., filename=)`. Where the
+    engine takes it, nothing has to be pasted into `data/graphics/allFaceFiles.txt`.
+
+    Where it does not, the old route still applies and `_tools/facesheets.py` still
+    prints the lines: an engine before 1.3.15 has no such call, and the 1.3.15 exe of
+    2026-10-13 can only re-point a tag that file ALREADY names - it raises for a new one.
+    On an install with the lines pasted that is still a gain: the call re-points each tag
+    at the pinned pack, so a pack version bump no longer breaks the faces. The status
+    line says how many sheets the engine took.
 
     `index` is `tng_face_index.json`, shipped beside the face map. Do not try to
     infer race from the key instead: that reads `picard` as a race called "picard",
@@ -264,8 +291,7 @@ def tng_register_faces(faces, index=None, sheets=None):
                 alias = str(face).split(" ")[0]
                 if alias.startswith("tng") and alias[3:].isdigit():
                     sheets = max(sheets, int(alias[3:]))
-        for n in range(1, int(sheets) + 1):
-            face_register_sheet("tng%d" % n, 8, 8)
+        told = [_tng_sheet(face_register_sheet, n) for n in range(1, int(sheets) + 1)]
         pools = {}
         skipped = 0
         for key, face in faces.items():
@@ -320,7 +346,11 @@ def tng_register_faces(faces, index=None, sheets=None):
     # Count DISTINCT faces: the faction aliases re-list their members' faces, so
     # summing the pools reports 652 for a 370-face set.
     distinct = len(set(f for v in pools.values() for f in v["any"]))
-    return "%d faces over %d races and factions%s" % (distinct, len(pools), note)
+    if all(t is None for t in told):
+        engine = "sheets not handed to the engine (this sbs_utils cannot)"
+    else:
+        engine = "engine took %d of %d sheets" % (sum(1 for t in told if t), len(told))
+    return "%d faces over %d races and factions%s; %s" % (distinct, len(pools), note, engine)
 
 
 def tng_face_assimilate(face, *overlays):

@@ -163,12 +163,13 @@ log("tng_races: " + str(len(tng_crew_rosters)) + " crew rosters", "tng_races")
 # stack layers - which is what lets an implant overlay be drawn once and worn by anyone.
 #
 # `tng_faces.json` shipped in this mastlib from the first build and nothing read it, so
-# `random_face("klingon")` was impossible. Registering it fixes that. What registration
-# CANNOT do is make the engine find the sheets: only allFaceFiles.txt does that, and a
-# mastlib is a zip, so those lines are pasted by hand (`_tools/facesheets.py` prints them).
-# Registering anyway is still right - the mock, the AMD site and the VS Code preview all
-# read the registry, and a missing sheet degrades to a face that does not draw rather
-# than to an error.
+# `random_face("klingon")` was impossible. Registering it fixes that, and since engine
+# 1.3.15 it also hands each sheet's art to the engine, out of the pinned media pack.
+#
+# An engine that cannot take a sheet (older than 1.3.15, or the first 1.3.15 exes, which
+# only re-point a tag allFaceFiles.txt already names) still needs the pasted lines that
+# `_tools/facesheets.py` prints. The status line logged below says how many it took. A
+# sheet the engine does not have degrades to a face that does not draw, not to an error.
 tng_face_map = load_json_string(media_read_relative_file("tng_faces.json"))
 tng_face_index = load_json_string(media_read_relative_file("tng_face_index.json"))
 tng_face_status = tng_register_faces(tng_face_map, tng_face_index)

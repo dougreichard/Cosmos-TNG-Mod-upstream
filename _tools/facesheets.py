@@ -168,9 +168,14 @@ def build_portraits(roster_path, cells_dirs, out_dir, cols=16, cell=256):
 
 
 def print_registry(out_dir, sheets, pack_version):
-    """The allFaceFiles.txt lines to paste. The library cannot write this file."""
+    """The allFaceFiles.txt lines to paste, for an engine that cannot register a sheet.
+
+    Since engine 1.3.15 tng_register_faces hands each sheet to the engine itself; these
+    lines are for an older engine, and for a 1.3.15 exe that can only re-point a tag this
+    file already names."""
     print("\n" + "=" * 72)
-    print("Paste into <cosmos>/data/graphics/allFaceFiles.txt (engine-owned):")
+    print("Only if the engine cannot take the sheets itself (see tng_register_faces),")
+    print("paste into <cosmos>/data/graphics/allFaceFiles.txt (engine-owned):")
     for name, _ in sheets:
         alias = "tng%s" % name.split("_")[-1]
         print("%s ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.%s/faces_tng/%s"
