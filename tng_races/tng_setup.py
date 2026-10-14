@@ -249,12 +249,14 @@ def tng_register_faces(faces, index=None, sheets=None):
     1.3.15), through the library's `face_register_sheet(..., filename=)`. Where the
     engine takes it, nothing has to be pasted into `data/graphics/allFaceFiles.txt`.
 
-    Where it does not, the old route still applies and `_tools/facesheets.py` still
-    prints the lines: an engine before 1.3.15 has no such call, and the 1.3.15 exe of
-    2026-10-13 can only re-point a tag that file ALREADY names - it raises for a new one.
-    On an install with the lines pasted that is still a gain: the call re-points each tag
-    at the pinned pack, so a pack version bump no longer breaks the faces. The status
-    line says how many sheets the engine took.
+    Engine-verified 2026-10-14: all nine sheets drew with a stock allFaceFiles.txt.
+
+    Where the engine does not take a sheet, the old route still applies and
+    `_tools/facesheets.py` still prints the lines: an engine before 1.3.15 has no such
+    call, and the first 1.3.15 exes could only re-point a tag that file already named. On
+    an install with the lines pasted the call still re-points each tag at the pinned pack,
+    so a pack version bump no longer breaks the faces. The status line says how many
+    sheets the engine took.
 
     `index` is `tng_face_index.json`, shipped beside the face map. Do not try to
     infer race from the key instead: that reads `picard` as a race called "picard",
