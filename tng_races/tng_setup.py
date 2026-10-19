@@ -124,12 +124,27 @@ def tng_declare_ships(ships_file=None):
     # the pack ships only the JSON (the engine reads these as HJSON, not YAML, and prefers
     # a .yaml sitting beside it - so shipping both is how the engine ends up with neither).
     reached = add_extra("tng_ships", mod="tng_races")
+    tng_load_portraits()
 
     # A verification, NOT a merge gate. add_extra has already merged library-side; asking
     # for a known key afterwards is how we can say "library=ok" and mean it.
     have = get_ship_data_for("tng_fed_saber") is not None
     return tng_safe_status("engine=" + str(reached)
                            + " library=" + ("ok" if have else "MISSING - file not found"))
+
+
+def tng_load_portraits():
+    """Register the TNG ship PORTRAIT sheet (media/ship_portraits/tng, built by
+    `sbs art portraits Cosmos-TNG-Mod --set tng`), so a TNG hull in a list or a card
+    draws as a picture rather than a live 3D ship - which is also the engine's
+    first-sight-of-a-mod-hull crash path (HCDraw3DShip) avoided. Returns the number of
+    hulls registered; 0 on a library without portraits (older than 2026-10-19)."""
+    try:
+        from sbs_utils.procedural.ship_portraits import ship_portrait_load
+    except ImportError:
+        return 0
+    # A LOGICAL path: the library finds the manifest in whichever pack carries it.
+    return ship_portrait_load("ship_portraits/tng")
 
 
 def _tng_enabled(manifest, test):

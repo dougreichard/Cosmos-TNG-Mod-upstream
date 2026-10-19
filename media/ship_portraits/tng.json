@@ -1,0 +1,392 @@
+{
+ "alias": "shp_tng",
+ "cell": [
+  256,
+  256
+ ],
+ "cells": {
+  "tng_brg_cube": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/BRG_Cube",
+   "col": 1,
+   "page": 0,
+   "row": 0,
+   "sig": "91f2c41872bb4c5f9250178ba9a83bc409ff8037"
+  },
+  "tng_brn_chel_grett": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/BRN_Chel_Grett",
+   "col": 2,
+   "page": 0,
+   "row": 0,
+   "sig": "4a70ea7201ce5cd6fb9c927c30dea89da1ad0237"
+  },
+  "tng_crd_damar": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Damar",
+   "col": 3,
+   "page": 0,
+   "row": 0,
+   "sig": "a5770f17bd765ccd622d11877df3368e02f71b76"
+  },
+  "tng_crd_galor": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Galor",
+   "col": 4,
+   "page": 0,
+   "row": 0,
+   "sig": "8e75f26e92ebfc0229d23661416d0ed921e63403"
+  },
+  "tng_crd_heideki": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Heideki",
+   "col": 5,
+   "page": 0,
+   "row": 0,
+   "sig": "9af06ed6f42a58ef84da3876c8c47200f38ead11"
+  },
+  "tng_crd_keldon": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Keldon",
+   "col": 6,
+   "page": 0,
+   "row": 0,
+   "sig": "292941bbfd5c8e07c36c85fc39b283d9d9b7a457"
+  },
+  "tng_crd_terok_nor": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Terok_Nor",
+   "col": 7,
+   "page": 0,
+   "row": 0,
+   "sig": "b7767963318efb81a5540836b8c3d5550b0b04d1"
+  },
+  "tng_fed_akira": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Akira",
+   "col": 8,
+   "page": 0,
+   "row": 0,
+   "sig": "45773843223b42d782534dbcf4e687e44fb2b432"
+  },
+  "tng_fed_ambassador": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Ambassador",
+   "col": 9,
+   "page": 0,
+   "row": 0,
+   "sig": "62176877cf59496db825694aa7195f99cb989589"
+  },
+  "tng_fed_california": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_California",
+   "col": 10,
+   "page": 0,
+   "row": 0,
+   "sig": "060fa5c073efaa04c557f6aefd523a56d6e4b7a5"
+  },
+  "tng_fed_centaur": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Centaur",
+   "col": 11,
+   "page": 0,
+   "row": 0,
+   "sig": "c4a54731714c428c1988255d9431460c0edd578f"
+  },
+  "tng_fed_comms_base": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_ScienceBase",
+   "col": 12,
+   "page": 0,
+   "row": 0,
+   "sig": "efe20af7ff8562fe21480cc6b955521906e81592"
+  },
+  "tng_fed_constellation": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Constellation",
+   "col": 13,
+   "page": 0,
+   "row": 0,
+   "sig": "f56be05d81c999251a188ba8d2fd044bc8130c93"
+  },
+  "tng_fed_danube": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Danube",
+   "col": 14,
+   "page": 0,
+   "row": 0,
+   "sig": "de3047c581e1b375a17059597bfe6f2d4244f341"
+  },
+  "tng_fed_danube_rollbar": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Danube_Bomber",
+   "col": 15,
+   "page": 0,
+   "row": 0,
+   "sig": "db9026b4348b80b4fabb2a5160fe7dddcaa82989"
+  },
+  "tng_fed_defiant": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Defiant",
+   "col": 0,
+   "page": 0,
+   "row": 1,
+   "sig": "5a04bcf7059903d2dd95fdc836da11c5a9404632"
+  },
+  "tng_fed_ds9": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/CRD_Terok_Nor",
+   "col": 1,
+   "page": 0,
+   "row": 1,
+   "sig": "b7767963318efb81a5540836b8c3d5550b0b04d1"
+  },
+  "tng_fed_excelsior_refit": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_ExcelsiorRefit",
+   "col": 2,
+   "page": 0,
+   "row": 1,
+   "sig": "e418086dec3545128b478f3c6d192187200c1323"
+  },
+  "tng_fed_freighter": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/GNR_Freighter",
+   "col": 3,
+   "page": 0,
+   "row": 1,
+   "sig": "53182713d5a77dce3119e639e8fadedc1b8b5101"
+  },
+  "tng_fed_galaxy": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Galaxy",
+   "col": 4,
+   "page": 0,
+   "row": 1,
+   "sig": "8704256757ee67d32f26ed1e60c6412f74b9f629"
+  },
+  "tng_fed_galaxy_x": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_GalaxyX",
+   "col": 5,
+   "page": 0,
+   "row": 1,
+   "sig": "f3a370aa2285dcada1cc68d8630f2fab97d27fbe"
+  },
+  "tng_fed_intrepid": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Intrepid",
+   "col": 6,
+   "page": 0,
+   "row": 1,
+   "sig": "f1c3d0dc8edf284158144820f052aef3e31811d5"
+  },
+  "tng_fed_luna": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Luna",
+   "col": 7,
+   "page": 0,
+   "row": 1,
+   "sig": "f66993e960aa91a6dabd484ffd50ecbd67163ef0"
+  },
+  "tng_fed_nebula": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Nebula",
+   "col": 8,
+   "page": 0,
+   "row": 1,
+   "sig": "cde968f2ea5d96b62d4f1a14c3045755a61c9594"
+  },
+  "tng_fed_nova": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Nova",
+   "col": 9,
+   "page": 0,
+   "row": 1,
+   "sig": "bb8d29c6c34f936f61d5040e16591e6e1cda266e"
+  },
+  "tng_fed_olympic": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Olympic",
+   "col": 10,
+   "page": 0,
+   "row": 1,
+   "sig": "79b524e94049e874a3f83f508c8394a6045ea404"
+  },
+  "tng_fed_peregrine": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Peregrine",
+   "col": 11,
+   "page": 0,
+   "row": 1,
+   "sig": "191873fc2e63d509bd3c1a961db8ee7f7b086d2b"
+  },
+  "tng_fed_saber": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Saber",
+   "col": 12,
+   "page": 0,
+   "row": 1,
+   "sig": "9d865fb51814e0ade572c47dfcf3ee507a6ba249"
+  },
+  "tng_fed_sovereign": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Sovereign",
+   "col": 13,
+   "page": 0,
+   "row": 1,
+   "sig": "17ab86b841aa13f786d55d91f214ef828ef8265a"
+  },
+  "tng_fed_starbase": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_CommandBase",
+   "col": 14,
+   "page": 0,
+   "row": 1,
+   "sig": "04b0e7313439aeedb743109d1e0c46c564a33e4b"
+  },
+  "tng_fed_station": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_GenStation",
+   "col": 15,
+   "page": 0,
+   "row": 1,
+   "sig": "9bc54fe24199be69d1ade457b50b82da6a579d23"
+  },
+  "tng_jem_attack_ship": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/JEM_Attack_Ship",
+   "col": 0,
+   "page": 0,
+   "row": 2,
+   "sig": "aa761d6921734e4ddbf06ae752181071cdaa1591"
+  },
+  "tng_jem_base": {
+   "art": "ships/skaraan_station",
+   "col": 1,
+   "page": 0,
+   "row": 2,
+   "sig": "81ee476eb1e2fdcdaf3b1eb84406191515d9e55c"
+  },
+  "tng_jem_battlecruiser": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/JEM_Battlecruiser",
+   "col": 2,
+   "page": 0,
+   "row": 2,
+   "sig": "067756a415a328c5c267b0af47e3e32460cd2643"
+  },
+  "tng_kaz_base": {
+   "art": "ships/kralien_station",
+   "col": 3,
+   "page": 0,
+   "row": 2,
+   "sig": "9eace2de1995d8c62a1ef997a845b012bbb0157d"
+  },
+  "tng_kaz_carrier": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Carrier",
+   "col": 4,
+   "page": 0,
+   "row": 2,
+   "sig": "a86f85a8215e2e08b1597ce4d0440f3c1a23b3de"
+  },
+  "tng_kaz_cruiser": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Cruiser",
+   "col": 5,
+   "page": 0,
+   "row": 2,
+   "sig": "006502721017eff6273b328a85e5093450ac8f44"
+  },
+  "tng_kaz_fighter": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Raider",
+   "col": 6,
+   "page": 0,
+   "row": 2,
+   "sig": "dde36fa8cc4f0d2caa970dd1d42e28c0c5e5a310"
+  },
+  "tng_kaz_raider": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KAZ_Raider",
+   "col": 7,
+   "page": 0,
+   "row": 2,
+   "sig": "dde36fa8cc4f0d2caa970dd1d42e28c0c5e5a310"
+  },
+  "tng_klg_brel": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_BRel",
+   "col": 8,
+   "page": 0,
+   "row": 2,
+   "sig": "52e48762edaf03529299c7f3709e8a4da1e25f50"
+  },
+  "tng_klg_ktinga": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_KTinga",
+   "col": 9,
+   "page": 0,
+   "row": 2,
+   "sig": "a8f9667b4dd683d708c28dde1204607c16b2dc17"
+  },
+  "tng_klg_neghvar": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_NeghVar",
+   "col": 10,
+   "page": 0,
+   "row": 2,
+   "sig": "c0840ef20abf8f370668a3d18657f1c63dd0cb07"
+  },
+  "tng_klg_vorcha": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/KLG_VorCha",
+   "col": 11,
+   "page": 0,
+   "row": 2,
+   "sig": "1ab15c51ad50ea72ebeea1fae93d1ed02bac5cdf"
+  },
+  "tng_orn_brigand": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Brigand",
+   "col": 12,
+   "page": 0,
+   "row": 2,
+   "sig": "a2239e4e3ff706363bf58f9931b3115785a94697"
+  },
+  "tng_orn_corsair": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Corsair",
+   "col": 13,
+   "page": 0,
+   "row": 2,
+   "sig": "3d251ba2642b5bdc9d9ebe809fcc7c819941a228"
+  },
+  "tng_orn_corvette": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Corvette",
+   "col": 14,
+   "page": 0,
+   "row": 2,
+   "sig": "fb6be46723e91f9e52c2350c0751c7ea0507cbdc"
+  },
+  "tng_orn_interceptor": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/ORN_Interceptor",
+   "col": 15,
+   "page": 0,
+   "row": 2,
+   "sig": "b95b4c37cb195716a9251a98ebfac4f9a8f44d31"
+  },
+  "tng_rmn_base": {
+   "art": "ships/torgoth_station",
+   "col": 0,
+   "page": 0,
+   "row": 3,
+   "sig": "ef454af23ea6d29d665095e92f714522cf83aee4"
+  },
+  "tng_rmn_dderidex": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_DDeridex",
+   "col": 1,
+   "page": 0,
+   "row": 3,
+   "sig": "716cabda3a1dabcfe9b112aa1cdd60e1498bf0fe"
+  },
+  "tng_rmn_mogai": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_Mogai",
+   "col": 2,
+   "page": 0,
+   "row": 3,
+   "sig": "6add2dba07cdf40c533911fef9ab7e4973bf22aa"
+  },
+  "tng_rmn_scimitar": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_Scimitar",
+   "col": 3,
+   "page": 0,
+   "row": 3,
+   "sig": "cd1bb856536e247f95238ecf048112ea0c6b723a"
+  },
+  "tng_rmn_tvaro": {
+   "art": "data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/RMN_TVaro",
+   "col": 4,
+   "page": 0,
+   "row": 3,
+   "sig": "1df3d078136500612b5c343339683afce5e51a05"
+  }
+ },
+ "cols": 16,
+ "extras": {
+  "unknown": {
+   "col": 0,
+   "page": 0,
+   "row": 0,
+   "sig": "fc67f1192dc975ac35b3b4d7a403fb2d9b7f844f"
+  }
+ },
+ "format": 1,
+ "pages": [
+  {
+   "file": "tng_0",
+   "rows": 4
+  }
+ ],
+ "preset": "three-quarter/1",
+ "renderer": "browser-three/1",
+ "set": "tng"
+}
