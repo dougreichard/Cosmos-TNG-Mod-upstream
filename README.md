@@ -1,6 +1,6 @@
 # Cosmos-TNG-Mod
 
-51 Star Trek hulls across seven factions, restructured from this repo's v0.2.3 release
+52 Star Trek hulls across eight factions (the original 51 plus a Borg Cube), restructured from this repo's v0.2.3 release
 (`Cosmos-TNG-Mod_v0-2-3.zip`, Cosmos 1.2.0, October 2025 - "the zip" below) so they
 **declare** themselves to the game instead of overwriting its files.
 
@@ -62,7 +62,7 @@ a real disk) versus **what MAST reads** (perfectly happy inside a zip).
 Cosmos-TNG-Mod/
   __lib__.json          {"version":"v0.2.3","mastlib":["tng_races"],"zip":["media"]}
   media/                -> artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3.zip
-    tng_ships.json         51 hulls: the ENGINE opens this one itself.
+    tng_ships.json         52 hulls: the ENGINE opens this one itself.
                            JSON, and the ONLY ship file - the engine searches for
                            .yaml FIRST, so a .yaml sitting beside it is opened
                            instead and silently rejected whole (the add-on still
@@ -130,6 +130,7 @@ in the running game a Kazon Raider still reported itself Kralien. The mapping wa
 | Orion | 4 | yes | |
 | Dominion | 3 | yes | |
 | Breen | 1 | folded into Dominion | the Chel Grett is Breen hardware in Dominion service |
+| Borg | 1 | - | hostile to everyone, including the other TNG factions |
 
 Two places the art prefix is the wrong answer, so they are named explicitly: **DS9** wears
 Cardassian art but is Federation-run and the zip lists it under USFP; and the three bases on
