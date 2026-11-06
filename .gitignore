@@ -17,6 +17,8 @@ __pycache__/
 *.tmp
 mast.compile.log
 mast.runtime.log
+mast.runtime.run*.log
+debug.log
 
 # ---- Art-pipeline working set -------------------------------------------------
 #
