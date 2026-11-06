@@ -178,7 +178,7 @@ def print_registry(out_dir, sheets, pack_version):
     print("paste into <cosmos>/data/graphics/allFaceFiles.txt (engine-owned):")
     for name, _ in sheets:
         alias = "tng%s" % name.split("_")[-1]
-        print("%s ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.%s/faces_tng/%s"
+        print("%s ../missions/__lib__/media/ScornMandark.Cosmos-TNG-Mod.media.%s/faces_tng/%s"
               % (alias, pack_version, name))
     print("=" * 72)
     print("NOTE the version is baked into these paths. Bumping the media pack "
@@ -192,7 +192,7 @@ def main():
     ap.add_argument("--cells", action="append", default=None,
                     help="cell directory; repeatable, earlier wins")
     ap.add_argument("-o", "--out", default=os.path.join(HERE, "out", "sheets"))
-    ap.add_argument("--pack-version", default="v0.2.3")
+    ap.add_argument("--pack-version", default="v0.3.0")
     a = ap.parse_args()
     cells = a.cells or [os.path.join(HERE, "out", "cells_named"),
                         os.path.join(HERE, "out", "cells_generated")]

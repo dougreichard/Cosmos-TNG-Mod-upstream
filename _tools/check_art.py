@@ -214,7 +214,7 @@ def short_root(artfileroot):
     """An artfileroot shortened for display: "<pack tag>/<basename>".
 
     A pack path is ~90 characters of boilerplate ("data/missions/__lib__/media/
-    artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Galaxy"), and truncating it from
+    ScornMandark.Cosmos-TNG-Mod.media.v0.3.0/ships/FED_Galaxy"), and truncating it from
     either end hides the half that identifies the hull.
     """
     parts = artfileroot.replace("\\", "/").split("/")

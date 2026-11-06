@@ -1,6 +1,6 @@
 {
  "mod": "Cosmos-TNG-Mod",
- "version": "v0.2.3",
+ "version": "v0.3.0",
  "interiors": {
   "Breen": [
    "tng_brn_chel_grett.grid"

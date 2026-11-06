@@ -6,9 +6,9 @@ it will tell you what changed and what that release would cost.
 
 WHAT THIS PRODUCES
 
-    media/          -> artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3.zip, unpacked ONCE into
+    media/          -> ScornMandark.Cosmos-TNG-Mod.media.v0.3.0.zip, unpacked ONCE into
                        __lib__/media/<pack>/ and read from there by every mission
-    tng_races/      -> artemis-sbs.Cosmos-TNG-Mod.tng_races.v0.2.3.mastlib (FLAT)
+    tng_races/      -> ScornMandark.Cosmos-TNG-Mod.tng_races.v0.3.0.mastlib (FLAT)
 
 THE ONE DECISION EVERYTHING ELSE FOLLOWS FROM: the ships get their OWN keys.
 
@@ -48,11 +48,11 @@ import yaml                                                     # noqa: E402
 # VERSION AND ART PATH, both derived from __lib__.json so there is ONE place to bump.
 #
 # The pack unpacks to `__lib__/media/{owner}.{repo}.media.{version}/`, and every part of
-# that is known at BUILD time - owner defaults to `artemis-sbs` in `sbs.pyz lib`, repo is
+# that is known at BUILD time - owner is the `-u` of `sbs.pyz lib` (and the repo owner in CI), repo is
 # this folder, version is below. So the ART PATH is baked into `artfileroot` here rather
 # than patched at runtime, which means a release built by CI carries the right path already
 # and no mod has to write a file while the game is running.
-OWNER = "artemis-sbs"                              # `sbs.pyz lib -u` default
+OWNER = "ScornMandark"                             # must match `sbs.pyz lib -u`
 REPO = os.path.basename(HERE)
 
 

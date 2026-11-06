@@ -64,7 +64,7 @@ def main():
     ap.add_argument("--index", default="../tng_races/tng_face_index.json")
     ap.add_argument("--per-species", type=int, default=22)
     ap.add_argument("--first-sheet", type=int, default=3)
-    ap.add_argument("--pack-version", default="v0.2.3")
+    ap.add_argument("--pack-version", default="v0.3.0")
     ap.add_argument("-o", "--out", default=os.path.join(
         os.path.dirname(os.path.abspath(__file__)), "out", "sheets_new"))
     a = ap.parse_args()
@@ -125,7 +125,7 @@ def main():
     # pastes cleanly, and resolves to nothing.
     print("\nPaste into <cosmos>/data/graphics/allFaceFiles.txt (engine-owned):")
     for n in sheets:
-        print("tng%s ../missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.%s/"
+        print("tng%s ../missions/__lib__/media/ScornMandark.Cosmos-TNG-Mod.media.%s/"
               "faces_tng/%s" % (n.split("_")[-1], a.pack_version, n))
 
 

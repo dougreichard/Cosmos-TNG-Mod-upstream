@@ -21,19 +21,54 @@ folder either.
 
 ## Installing
 
-This replaces the old "unzip into the Cosmos folder" install. That version overwrote
-`preferences.json`, `gridData.json` and `shipData.yaml`; this one overwrites nothing, so
-there is no backup step and nothing to restore.
+One command, run from the Cosmos `data/missions` folder (where `sbs.pyz` lives):
 
-1. Put this repo in `data/missions/Cosmos-TNG-Mod/`.
-2. Build it: `python sbs.pyz lib Cosmos-TNG-Mod` (from `data/missions`). That writes the
-   mastlib and media pack into `data/missions/__lib__/` and unpacks the pack once.
-3. In the `story.json` of each mission that should use it, add the two lines shown under
-   [Layout](#layout-who-reads-it-decides-where-it-lives), and set `EXTRA_SHIP_DATA: true`
-   in that mission's settings (or a profile).
+```
+python sbs.pyz fetch Cosmos-TNG-Mod -u ScornMandark
+```
 
-The repo is also a small mission of its own - a viewer for the faces and hulls - so it
-shows up in the mission list as **TNG Mod Viewer (dev)**.
+That downloads the viewer mission into `data/missions/Cosmos-TNG-Mod/`, then the mod's
+built mastlib and media pack its `story.json` pins (this repo's release of that version) into
+`data/missions/__lib__/`,
+and unpacks the art there once. Nothing in the Cosmos install is overwritten - no
+`preferences.json`, `gridData.json` or `shipData.yaml` - so there is no backup step and
+nothing to restore. (This replaces the old "unzip into the Cosmos folder" install.)
+
+The viewer shows up in the mission list as **TNG Mod Viewer (dev)**: every face and hull,
+with stats and the 3D model.
+
+### Using the mod in a mission
+
+Add the two lines shown under [Layout](#layout-who-reads-it-decides-where-it-lives) to the
+mission's `story.json`, and set `EXTRA_SHIP_DATA: true` in its `settings.yaml` (or a
+profile). With those pins in place, `sbs fetch` of **that** mission downloads the mod
+too - a player never installs it separately.
+
+### Working on the mod itself
+
+`sbs fetch` leaves out the source folders (`tng_races/`, `media/`, `_tools/`, `new/` are
+`export-ignore` - a fetched copy loads the released build). To edit the mod, clone it
+instead, then build it locally under the same owner name the pins use:
+
+```
+git clone https://github.com/ScornMandark/Cosmos-TNG-Mod.git    # into data/missions/
+python sbs.pyz lib Cosmos-TNG-Mod -u ScornMandark
+```
+
+The `-u ScornMandark` matters: without it `sbs lib` names the build
+`artemis-sbs.Cosmos-TNG-Mod.*`, which nothing pins. (`python sbs.pyz fetch Cosmos-TNG-Mod
+-u ScornMandark --source` does the clone and build in one step.)
+
+### Releasing
+
+1. Bump `"version"` in `__lib__.json`, and the same string in `story.json`,
+   `tng_races/tng_manifest.json` and the `artfileroot` prefix in `media/tng_ships.json`,
+   `media/tng_reskin.json` and `media/ship_portraits/tng.json` (a search-and-replace of
+   `media.v0.3.0` does the last three).
+2. Commit, then push a tag with exactly that version: `git tag v0.3.1 && git push origin v0.3.1`.
+
+`.github/workflows/main.yml` builds the assets and attaches them to the release; it fails
+straight away if the tag does not match `__lib__.json`.
 
 ## The mod is ADDITIVE, not a re-skin
 
@@ -60,15 +95,15 @@ a real disk) versus **what MAST reads** (perfectly happy inside a zip).
 
 ```
 Cosmos-TNG-Mod/
-  __lib__.json          {"version":"v0.2.3","mastlib":["tng_races"],"zip":["media"]}
-  media/                -> artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3.zip
+  __lib__.json          {"version":"v0.3.0","mastlib":["tng_races"],"zip":["media"]}
+  media/                -> ScornMandark.Cosmos-TNG-Mod.media.v0.3.0.zip
     tng_ships.json         52 hulls: the ENGINE opens this one itself.
                            JSON, and the ONLY ship file - the engine searches for
                            .yaml FIRST, so a .yaml sitting beside it is opened
                            instead and silently rejected whole (the add-on still
                            merges library-side, so nothing else notices).
     ships/  audio/  fonts/  faces/
-  tng_races/            -> artemis-sbs.Cosmos-TNG-Mod.tng_races.v0.2.3.mastlib  (FLAT)
+  tng_races/            -> ScornMandark.Cosmos-TNG-Mod.tng_races.v0.3.0.mastlib  (FLAT)
     __init__.mast  tng_setup.py  tng_manifest.json
     tng_sides.amd          seven factions + diplomacy
     tng_taunts.json        Trek taunts, keyed by faction
@@ -78,14 +113,14 @@ Cosmos-TNG-Mod/
   _build_from_zip.py    regenerates all of it from the zip, reporting every repair
 ```
 
-`sbs.pyz lib Cosmos-TNG-Mod` builds both and unpacks the media pack **once** into
+`sbs.pyz lib Cosmos-TNG-Mod -u ScornMandark` (or the release workflow) builds both and unpacks the media pack **once** into
 `__lib__/media/<pack>/`, where every mission reads the same copy.
 
 A mission takes the mod with two lines:
 
 ```json
-"mastlib": [ ..., "artemis-sbs.Cosmos-TNG-Mod.tng_races.v0.2.3.mastlib" ],
-"shared_media": [ "artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3.zip" ]
+"mastlib": [ ..., "ScornMandark.Cosmos-TNG-Mod.tng_races.v0.3.0.mastlib" ],
+"shared_media": [ "ScornMandark.Cosmos-TNG-Mod.media.v0.3.0.zip" ]
 ```
 
 Both are needed: the mastlib is the logic, and the pack is where the engine-read ship data
@@ -184,7 +219,7 @@ rooms is not a restructuring job. Every mismatch prints as a `WARN`.
 Since engine 1.3.6, `artfileroot` carries the whole path, relative to the exe:
 
 ```yaml
-artfileroot: data/missions/__lib__/media/artemis-sbs.Cosmos-TNG-Mod.media.v0.2.3/ships/FED_Saber
+artfileroot: data/missions/__lib__/media/ScornMandark.Cosmos-TNG-Mod.media.v0.3.0/ships/FED_Saber
 ```
 
 That prefix is **baked at build time** from `__lib__.json` (`art_path()` in
@@ -237,7 +272,7 @@ Three things this mod ran into. None are applied here - they belong in `sbs_util
 ## Verifying
 
 ```
-python sbs.pyz lib Cosmos-TNG-Mod
+python sbs.pyz lib Cosmos-TNG-Mod -u ScornMandark
 python -m cosmos_dev.mission_runner TNG_TestRange --test 8 --map 0
 ```
 
